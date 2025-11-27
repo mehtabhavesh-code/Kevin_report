@@ -1,0 +1,2980 @@
+{
+  "Genre": {
+    "Fantasy": {
+      "Definition": "Stories set in imaginary worlds fundamentally different from reality, featuring magic as a systematic force, supernatural elements as natural components of the world, or mythical creatures as integral parts of society. Distinguished by extensive worldbuilding that establishes unique rules, power hierarchies, and cosmologies. Central conflicts often involve mastery of supernatural forces, epic struggles between opposing powers, or journeys of transformation through magical means.",
+      "Key_Themes": [
+        "Systematic magic with defined rules",
+        "Power progression through training",
+        "Epic quests with world-altering stakes",
+        "Detailed worldbuilding and cultures",
+        "Conflicts between magical factions"
+      ],
+      "Examples": [
+        "My Vampire System",
+        "Shadow Slave",
+        "Lord of the Rings",
+        "Harry Potter",
+        "Cradle",
+        "Mage Errant",
+        "God Eye",
+        "First Legendary Beast Master",
+        "Super Gene"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Mastering magic or resolving magical conflicts",
+        "Setting_And_World": "Imaginary realms with unique magical laws",
+        "Central_Conflict_Type": "Epic magical struggles or supernatural quests",
+        "Tone_And_Atmosphere": "Wonder and heroic grandeur",
+        "Character_Arc_Focus": "Magical mastery or destiny fulfillment",
+        "Power_Ability_System": "Systematic magic with clear rules",
+        "Stakes_And_Consequences": "World destruction or reality alteration"
+      },
+      "Sub-Genre": {
+        "High Fantasy": {
+          "Definition": "Grand-scale fantasy with extensive worldbuilding, complex magic systems, and epic conflicts affecting entire civilizations or worlds. Features detailed secondary worlds with rich histories, multiple interconnected storylines, and sophisticated power systems. Includes traditional quest narratives, cultivation systems, portal transportation, and mythological elements. Distinguished by scope, depth of worldbuilding, and emphasis on magical systems as fundamental to reality.",
+          "Key_Themes": [
+            "Epic scope affecting civilizations",
+            "Complex systematic magic",
+            "Rich world histories and lore",
+            "Multiple interconnected storylines",
+            "Prophetic destinies and chosen ones"
+          ],
+          "Examples": [
+            "God Eye",
+            "Supreme Magus",
+            "Game of Thrones",
+            "Wheel of Time",
+            "A Record of a Mortal's Journey to Immortality",
+            "Jack's Retribution",
+            "Soul of a Warrior",
+            "Rise of the Warrior"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Epic quests or civilization-scale conflicts",
+            "Setting_And_World": "Detailed secondary worlds with histories",
+            "Central_Conflict_Type": "Nations, sects, or cosmic forces clash",
+            "Tone_And_Atmosphere": "Grand, sweeping, monumental stakes",
+            "Character_Arc_Focus": "Power progression or political ascension",
+            "Power_Ability_System": "Structured cultivation or systematic magic",
+            "Stakes_And_Consequences": "Civilization collapse or dimensional destruction"
+          },
+          "Sub-Sub-Genre": {
+            "Immortal Cultivation (Xianxia)": {
+              "Definition": "Stories explicitly focused on cultivating qi/spiritual energy to achieve immortality through multiple defined realms with heavenly tribulations testing worthiness. Features Chinese-inspired settings, sect politics, pill refinement, spirit beasts, and comprehending heavenly dao. Ultimate goal is ascending to higher planes or achieving eternal life. Distinguished by systematic realm progression, Eastern philosophical framework, and immortality as central goal.",
+              "Key_Themes": [
+                "Qi cultivation toward immortality",
+                "Breakthrough tribulations and realms",
+                "Sect politics and hierarchies",
+                "Pill refinement and alchemy",
+                "Comprehending universal laws"
+              ],
+              "Examples": [
+                "Battle Through The Heavens",
+                "Heart of a Phoenix",
+                "Renegade Immortal",
+                "I Shall Seal the Heavens",
+                "A Will Eternal",
+                "King of the Nine Flames",
+                "Strongest Replication"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Ascending cultivation realms toward immortality",
+                "Setting_And_World": "Ancient Chinese-inspired immortal realms",
+                "Central_Conflict_Type": "Sect warfare and tribulation survival",
+                "Tone_And_Atmosphere": "Epic mystical with philosophical depth",
+                "Character_Arc_Focus": "Mortal to immortal progression",
+                "Power_Ability_System": "Hierarchical qi cultivation realms",
+                "Stakes_And_Consequences": "Failed tribulation means death"
+              }
+            },
+            "Wuxia (Martial Heroes)": {
+              "Definition": "Martial arts-focused stories in historical Chinese settings emphasizing honor codes, clan loyalties, and martial prowess without supernatural cultivation systems. Power gained through dedicated training in martial schools rather than cultivation realms. Features jianghu politics, master-disciple bonds, righteous versus unorthodox paths. Distinguished by focus on martial skill over spiritual cultivation and grounded historical settings.",
+              "Key_Themes": [
+                "Martial arts mastery through discipline",
+                "Honor and clan loyalty",
+                "Jianghu martial world politics",
+                "Master-disciple relationships",
+                "Righteous versus demonic paths"
+              ],
+              "Examples": [
+                "Crouching Tiger Hidden Dragon",
+                "Hero (2002)",
+                "Legend of the Condor Heroes"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Martial mastery and clan honor",
+                "Setting_And_World": "Historical Chinese dynasties",
+                "Central_Conflict_Type": "Clan feuds and personal vendettas",
+                "Tone_And_Atmosphere": "Romantic and honor-bound",
+                "Character_Arc_Focus": "Technique mastery and reputation",
+                "Power_Ability_System": "Martial training without supernatural realms",
+                "Stakes_And_Consequences": "Clan destruction or lost honor"
+              }
+            },
+            "Sword & Magic": {
+              "Definition": "Traditional Western high fantasy combining swordplay with magic systems, often featuring medieval-inspired settings, chosen heroes, and epic quests. Magic and martial prowess coexist with adventuring parties, dungeons, and legendary weapons. Distinguished by Western fantasy conventions, blending physical combat with spellcasting, and often quest-driven narratives.",
+              "Key_Themes": [
+                "Combination of martial and magical abilities",
+                "Quest narratives and adventures",
+                "Medieval-inspired fantasy settings",
+                "Legendary weapons and artifacts",
+                "Adventuring parties and companions"
+              ],
+              "Examples": [
+                "Soul of a Warrior",
+                "The Witcher",
+                "Dungeons & Dragons",
+                "The Name of the Wind"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Epic quests defeating dark forces",
+                "Setting_And_World": "Medieval fantasy with diverse races",
+                "Central_Conflict_Type": "Good versus evil, dungeon challenges",
+                "Tone_And_Atmosphere": "Heroic adventure with classic wonder",
+                "Character_Arc_Focus": "Novice to legendary hero",
+                "Power_Ability_System": "Spells, combat skills, character classes",
+                "Stakes_And_Consequences": "Dark lord victory or artifact misuse"
+              }
+            },
+            "Portal & Isekai": {
+              "Definition": "Characters transported from modern Earth to fantasy realms through portals, truck accidents, death, or summoning. Must adapt to new worlds while often possessing special advantages from previous world knowledge or unique abilities. Features culture shock, fish-out-of-water dynamics, and question of returning home. Distinguished by transportation event and outsider perspective.",
+              "Key_Themes": [
+                "World transportation to fantasy realm",
+                "Special advantages from previous life",
+                "Cultural clash and adaptation",
+                "Question of returning home",
+                "Outsider perspective on fantasy world"
+              ],
+              "Examples": [
+                "Supreme Lord",
+                "Strongest Necromancer",
+                "Spirited Away",
+                "Re:Zero",
+                "Mushoku Tensei",
+                "The Beginning After the End",
+                "Dark Magus Returns",
+                "Release That Witch",
+                "Falling for the Beast"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Adapting to fantasy world with unique advantages",
+                "Setting_And_World": "Fantasy realm different from modern Earth",
+                "Central_Conflict_Type": "Survival and demon lord threats",
+                "Tone_And_Atmosphere": "Wonder mixed with displacement",
+                "Character_Arc_Focus": "Building new identity in foreign world",
+                "Power_Ability_System": "Cheat abilities or modern knowledge edge",
+                "Stakes_And_Consequences": "Death or permanent exile from home"
+              }
+            },
+            "Mythical Cultivation (Xuanhuan)": {
+              "Definition": "Chinese fantasy blending cultivation elements with diverse magical systems including Western magic, divine powers, or unique abilities beyond traditional qi cultivation. More flexible than xianxia with varied power sources and less rigid realm structures. Features mixture of Eastern and Western fantasy elements. Distinguished by eclectic power systems and mysterious fantasy elements.",
+              "Key_Themes": [
+                "Diverse magical and cultivation systems",
+                "Blend of Eastern and Western elements",
+                "Mysterious fantasy powers",
+                "Flexible power progression paths",
+                "Divine or unique ability manifestations"
+              ],
+              "Examples": [
+                "God Eye",
+                "Supreme Magus",
+                "Battle Through the Heavens",
+                "Coiling Dragon",
+                "Desolate Era",
+                "Jack's Retribution",
+                "Rise of the Warrior",
+                "The Joseph Family"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Discovering and mastering unique powers",
+                "Setting_And_World": "Chinese-inspired with diverse magic",
+                "Central_Conflict_Type": "Conflicts over mysterious abilities",
+                "Tone_And_Atmosphere": "Mysterious and eclectic",
+                "Character_Arc_Focus": "Awakening unique bloodline or talent",
+                "Power_Ability_System": "Flexible systems beyond pure qi",
+                "Stakes_And_Consequences": "Power loss or faction destruction"
+              }
+            },
+            "Dark Fantasy": {
+              "Definition": "Fantasy emphasizing grim, morally ambiguous worlds where violence, tragedy, and moral complexity dominate over heroic triumph. Features antiheroes, morally gray characters, and settings where cruelty and suffering are pervasive. Magic often comes with terrible costs, and happy endings are rare or pyrrhic. May incorporate horror elements, grimdark aesthetics, and deconstructions of traditional fantasy tropes. Distinguished by cynical tone, brutal consequences, and rejection of clear good-versus-evil narratives.",
+              "Key_Themes": [
+                "Moral ambiguity and gray characters",
+                "Brutal violence with lasting consequences",
+                "Magic with terrible costs",
+                "Cynical deconstruction of heroic tropes",
+                "Survival in cruel, unforgiving worlds"
+              ],
+              "Examples": [
+                "The Princess and The Sea Witch",
+                "Berserk",
+                "The First Law Trilogy",
+                "Prince of Thorns",
+                "The Black Company"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving brutal world or pursuing morally complex goals",
+                "Setting_And_World": "Grim worlds where cruelty is commonplace",
+                "Central_Conflict_Type": "Morally gray conflicts with no clear heroes",
+                "Tone_And_Atmosphere": "Grimdark, cynical, and violent",
+                "Character_Arc_Focus": "Corruption, survival, or maintaining humanity",
+                "Power_Ability_System": "Magic with severe costs or corrupting influence",
+                "Stakes_And_Consequences": "Death, corruption, or pyrrhic victories"
+              }
+            }
+          }
+        },
+        "Urban Fantasy": {
+          "Definition": "Fantasy elements integrated with contemporary settings, modern technology, or game-like progression systems. Features characters balancing magical abilities with modern life, game mechanics as reality, or cultivation in urban environments. Distinguished by modern settings, progression systems with visible metrics, and intersection of magic with contemporary society.",
+          "Key_Themes": [
+            "Magic in contemporary settings",
+            "Game-like progression systems",
+            "Balancing magical and modern lives",
+            "Quantifiable power growth",
+            "Technology intersecting with magic"
+          ],
+          "Examples": [
+            "Solo Leveling",
+            "The Gamer",
+            "Omniscient Reader's Viewpoint"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Leveling up or balancing dual lives",
+            "Setting_And_World": "Modern cities or game-transformed reality",
+            "Central_Conflict_Type": "System challenges or hidden world threats",
+            "Tone_And_Atmosphere": "Contemporary with game-like excitement",
+            "Character_Arc_Focus": "Optimizing builds or mastering dual identity",
+            "Power_Ability_System": "Explicit stats, levels, or modern cultivation",
+            "Stakes_And_Consequences": "Game over death or world exposure"
+          },
+          "Sub-Sub-Genre": {
+            "LitRPG & System": {
+              "Definition": "Stories featuring explicit video game mechanics as fundamental reality including visible stats, experience points, skill trees, inventory systems, and quest logs. Characters interact with system notifications, level up, and acquire loot with rarities. World operates by game logic. Distinguished by overt game terminology and interface elements characters can see and interact with.",
+              "Key_Themes": [
+                "Explicit game mechanics governing reality",
+                "Visible stats and progression metrics",
+                "Quest systems and rewards",
+                "Strategic optimization of builds",
+                "Dungeon raids and loot acquisition"
+              ],
+              "Examples": [
+                "Super Gene",
+                "Reincarnated With The Strongest System",
+                "Ready Player One",
+                "Solo Leveling",
+                "The Legendary Mechanic",
+                "Re:Evolution Online",
+                "Cultivation Online",
+                "The Wish Lord"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Leveling up and conquering dungeons",
+                "Setting_And_World": "VR games or game-like alternate worlds",
+                "Central_Conflict_Type": "Boss battles and guild warfare",
+                "Tone_And_Atmosphere": "Strategic gaming excitement",
+                "Character_Arc_Focus": "Build optimization and power growth",
+                "Power_Ability_System": "Explicit stats, skills, and classes",
+                "Stakes_And_Consequences": "Character death or quest failure"
+              }
+            },
+            "Academy & Training": {
+              "Definition": "Protagonists attending formal magical academies or combat schools with structured curriculums, rankings, and competitive advancement. Power progression through formal education, examinations, and academic competitions. Features rigid hierarchies, student rivalries, and institutional politics. Distinguished by emphasis on formal education structure and academy as primary environment.",
+              "Key_Themes": [
+                "Magical academy setting",
+                "Student ranking systems",
+                "Academic competitions and exams",
+                "Teacher mentorship relationships",
+                "Institutional politics affecting students"
+              ],
+              "Examples": [
+                "My Vampire System",
+                "Library of Heaven's Path",
+                "Harry Potter",
+                "Little Witch Academia",
+                "Super Powereds"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Advancing ranks through competitions",
+                "Setting_And_World": "Magical schools with structured curriculum",
+                "Central_Conflict_Type": "Academic rivalries and tournaments",
+                "Tone_And_Atmosphere": "School-life with competitive pressure",
+                "Character_Arc_Focus": "Rising through academic rankings",
+                "Power_Ability_System": "Graded advancement and curriculum",
+                "Stakes_And_Consequences": "Expulsion or ranking failure"
+              }
+            },
+            "Urban Cultivation": {
+              "Definition": "Traditional cultivation power systems transplanted into contemporary urban settings. Hidden cultivation sects operate in cities, powerful cultivators maintain secret identities, and ancient practices interact with modern technology. Characters balance cultivation with modern responsibilities. Distinguished by contemporary setting with traditional Eastern cultivation mechanics.",
+              "Key_Themes": [
+                "Cultivation in modern cities",
+                "Hidden cultivation sects in society",
+                "Dual identity management",
+                "Traditional powers in modern world",
+                "Balancing cultivation and contemporary life"
+              ],
+              "Examples": [
+                "Love Potion",
+                "My Wife is a Beautiful CEO",
+                "Urban Banished Immortal"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Cultivating while maintaining modern cover",
+                "Setting_And_World": "Contemporary cities with hidden sects",
+                "Central_Conflict_Type": "Sect conflicts in modern setting",
+                "Tone_And_Atmosphere": "Modern normalcy masking ancient power",
+                "Character_Arc_Focus": "Realm progression with dual identity",
+                "Power_Ability_System": "Traditional cultivation in urban context",
+                "Stakes_And_Consequences": "Secret exposure or cultivation war"
+              }
+            }
+          }
+        },
+        "Low Fantasy": {
+          "Definition": "Fantasy with subtle magical elements, darker tones, or magic grounded in realistic settings. Includes magical realism, historical periods with magic, non-system progression, and supernatural/paranormal elements. Distinguished by understated or mysterious magic, emphasis on realism despite fantasy elements, and often lack of explicit power systems.",
+          "Key_Themes": [
+            "Subtle or mysterious magical elements",
+            "Grounded realistic settings",
+            "Magic as rare or costly force",
+            "Emphasis on atmosphere over mechanics",
+            "Character-driven narratives"
+          ],
+          "Examples": [
+            "Shadow Slave",
+            "First Legendary Beast Master",
+            "Pan's Labyrinth",
+            "The Dark Tower",
+            "Jonathan Strange & Mr Norrell"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving dark worlds or uncovering mysteries",
+            "Setting_And_World": "Realistic or historical with subtle magic",
+            "Central_Conflict_Type": "Personal struggles and mysterious forces",
+            "Tone_And_Atmosphere": "Dark, mysterious, or literary",
+            "Character_Arc_Focus": "Personal growth through challenges",
+            "Power_Ability_System": "Ambiguous magic with uncertain rules",
+            "Stakes_And_Consequences": "Personal tragedy or loss of innocence"
+          },
+          "Sub-Sub-Genre": {
+            "Magical Realism": {
+              "Definition": "Subtle magical elements seamlessly integrated into realistic settings, treated as natural or mundane occurrences. Magic operates by dream logic or remains deliberately ambiguous. Characters accept supernatural without shock. Distinguished by understated normalization of magic and literary tone focusing on character and theme.",
+              "Key_Themes": [
+                "Subtle magic in realistic settings",
+                "Supernatural as everyday occurrence",
+                "Ambiguous unexplained phenomena",
+                "Literary character focus",
+                "Emotional truth over logical explanation"
+              ],
+              "Examples": [
+                "Like Water for Chocolate",
+                "The House of the Spirits"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Emotional journeys with magical undertones",
+                "Setting_And_World": "Grounded reality with subtle magic",
+                "Central_Conflict_Type": "Personal and emotional struggles",
+                "Tone_And_Atmosphere": "Literary and contemplative",
+                "Character_Arc_Focus": "Emotional growth in ambiguous reality",
+                "Power_Ability_System": "No systematic magic; subtle phenomena",
+                "Stakes_And_Consequences": "Emotional and psychological impacts"
+              }
+            },
+            "Epic & Medieval Fantasy": {
+              "Definition": "Fantasy elements integrated into specific historical periods, blending real events, figures, and settings with supernatural components. Requires historical accuracy while introducing period-appropriate magic. Real conflicts gain supernatural dimensions. Distinguished by commitment to historical authenticity alongside genuine magic.",
+              "Key_Themes": [
+                "Historical periods with magic",
+                "Period-appropriate supernatural elements",
+                "Real historical figures and events",
+                "Alternate history possibilities",
+                "Cultural traditions incorporating magic"
+              ],
+              "Examples": [
+                "Jonathan Strange & Mr Norrell",
+                "Temeraire series"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Historical events with magical influence",
+                "Setting_And_World": "Authentic history with period magic",
+                "Central_Conflict_Type": "Historical struggles with supernatural",
+                "Tone_And_Atmosphere": "Historical authenticity with wonder",
+                "Character_Arc_Focus": "Operating within period constraints",
+                "Power_Ability_System": "Magic reflecting era's beliefs",
+                "Stakes_And_Consequences": "Altering historical outcomes"
+              }
+            },
+            "Non System Progression": {
+              "Definition": "Fantasy with power growth through organic character development, training, and experience without explicit game-like systems or numerical progression. Growth is gradual, earned through struggle, and measured by capability rather than stats. Distinguished by absence of system notifications, levels, or quantified advancement.",
+              "Key_Themes": [
+                "Organic gradual power growth",
+                "Training and experience-based advancement",
+                "No explicit stats or levels",
+                "Earned capability through struggle",
+                "Character-driven progression"
+              ],
+              "Examples": [
+                "Shadow Slave",
+                "Mother of Learning",
+                "The Stormlight Archive"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Growth through challenges and practice",
+                "Setting_And_World": "Fantasy without game mechanics",
+                "Central_Conflict_Type": "Personal struggles requiring skill growth",
+                "Tone_And_Atmosphere": "Grounded fantasy with earned progress",
+                "Character_Arc_Focus": "Natural development through experience",
+                "Power_Ability_System": "Traditional learning, no numerical systems",
+                "Stakes_And_Consequences": "Permanent death without respawn"
+              }
+            },
+            "Supernatural & Paranormal": {
+              "Definition": "Fantasy featuring ghosts, spirits, psychic abilities, or paranormal phenomena as primary elements. Often involves investigating supernatural occurrences, haunted locations, or psychic powers. Tone ranges from mysterious to horror-tinged. Distinguished by focus on paranormal/supernatural specific to ghosts, spirits, and psychic phenomena.",
+              "Key_Themes": [
+                "Ghost and spirit interactions",
+                "Psychic abilities and phenomena",
+                "Paranormal investigations",
+                "Haunted locations and objects",
+                "Mysterious supernatural occurrences"
+              ],
+              "Examples": [
+                "The Sixth Sense",
+                "Ghost Whisperer",
+                "The Dresden Files"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Investigating or resolving paranormal events",
+                "Setting_And_World": "Real world with heavy spirit presence",
+                "Central_Conflict_Type": "Hauntings and paranormal threats",
+                "Tone_And_Atmosphere": "Mysterious and eerie",
+                "Character_Arc_Focus": "Developing psychic abilities",
+                "Power_Ability_System": "Psychic powers and mediumship",
+                "Stakes_And_Consequences": "Possession or spirit corruption"
+              }
+            },
+            "Beast Taming": {
+              "Definition": "Fantasy centered on protagonists forming bonds with magical creatures, monsters, or fantastical beasts through training, trust-building, and mutual partnership rather than explicit system mechanics. Features organic relationship development between tamers and their companions, creature hierarchies and ecosystems, and progression through acquiring and nurturing increasingly powerful or rare beasts. Distinguished from high fantasy beast elements by focus on tamer-creature relationship as central narrative and from system-based beast taming by absence of explicit game mechanics governing bonds.",
+              "Key_Themes": [
+                "Tamer-creature bond development",
+                "Training and trust-building with beasts",
+                "Creature collection and nurturing",
+                "Magical creature ecosystems and hierarchies",
+                "Partnership growth through challenges",
+                "Rare and legendary beast acquisition"
+              ],
+              "Examples": [
+                "First Legendary Beast Master",
+                "How to Train Your Dragon (2010)",
+                "Pokemon (anime)",
+                "Monster Pet Evolution"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Building bonds, collecting powerful creatures",
+                "Setting_And_World": "Worlds with tameable magical creatures",
+                "Central_Conflict_Type": "Beast competitions, protecting companions, rival tamers",
+                "Tone_And_Atmosphere": "Adventurous with creature partnership warmth",
+                "Character_Arc_Focus": "Growing alongside beast companions",
+                "Power_Ability_System": "Organic bonds, no explicit system mechanics",
+                "Stakes_And_Consequences": "Creature death, bond breaking, failing beasts"
+              }
+            }
+          }
+        },
+        "Female Fantasy": {
+          "Definition": "Fantasy stories centered on female protagonists navigating worlds where romance, relationships, personal agency, and emotional journeys are primary drivers alongside fantasy elements. Features women overcoming societal constraints, building power through various means, and pursuing goals that interweave personal fulfillment with larger conflicts. Distinguished from general fantasy by explicit focus on female experience and from pure romance by fantasy worldbuilding being integral rather than backdrop.",
+          "Key_Themes": [
+            "Female protagonist agency and empowerment",
+            "Romance integrated with fantasy plots",
+            "Navigating societal expectations and constraints",
+            "Emotional intelligence as strength",
+            "Building power through unconventional means",
+            "Complex female relationships and rivalries"
+          ],
+          "Examples": [
+            "The Remarried Empress",
+            "Who Made Me a Princess",
+            "Lucia",
+            "Death Is the Only Ending for the Villainess"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Female protagonist pursuing agency amid fantasy conflicts",
+            "Setting_And_World": "Fantasy settings with gendered power structures",
+            "Central_Conflict_Type": "Social maneuvering, romance obstacles, and survival",
+            "Tone_And_Atmosphere": "Emotional depth with fantasy intrigue",
+            "Character_Arc_Focus": "Claiming autonomy and navigating relationships",
+            "Power_Ability_System": "Varied; often social, magical, or knowledge-based",
+            "Stakes_And_Consequences": "Loss of status, heartbreak, or death"
+          },
+          "Sub-Sub-Genre": {
+            "Historical Fantasy": {
+              "Definition": "Female-focused fantasy set in historical or pseudo-historical periods featuring aristocratic societies, royal courts, or ancient civilizations. Protagonists navigate rigid social hierarchies, arranged marriages, palace intrigue, and gendered expectations while pursuing romance or personal goals. Often features reincarnation, transmigration, or regression into historical settings. Distinguished by historical aesthetics, court politics, and female protagonist navigating period-specific constraints.",
+              "Key_Themes": [
+                "Noble society and court intrigue",
+                "Navigating arranged marriages and expectations",
+                "Reincarnation or transmigration into historical roles",
+                "Building influence within restrictive systems",
+                "Romance amid political maneuvering",
+                "Subverting or working within gender roles"
+              ],
+              "Examples": [
+                "The Remarried Empress",
+                "Lucia",
+                "Suddenly Became a Princess One Day",
+                "Doctor Elise"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving court politics while pursuing love or status",
+                "Setting_And_World": "Historical courts, noble estates, palace settings",
+                "Central_Conflict_Type": "Political rivals, arranged marriages, family schemes",
+                "Tone_And_Atmosphere": "Elegant intrigue with romantic tension",
+                "Character_Arc_Focus": "Rising in status or escaping tragic fate",
+                "Power_Ability_System": "Social influence, knowledge from past life, rare magic",
+                "Stakes_And_Consequences": "Exile, death, or losing love interest to rivals"
+              }
+            },
+            "Urban Female Fantasy": {
+              "Definition": "Female-focused fantasy set in contemporary or modern settings where magic, supernatural elements, or fantasy systems intersect with urban life. Protagonists balance careers, relationships, and personal growth while navigating hidden magical worlds or awakening to supernatural abilities. Features modern relationship dynamics, career conflicts, and contemporary social issues alongside fantasy elements. Distinguished by modern setting, relatable contemporary struggles, and female protagonist discovering or managing magical abilities in everyday life.",
+              "Key_Themes": [
+                "Magic intersecting with modern life",
+                "Career and romance balance",
+                "Discovering hidden magical worlds",
+                "Modern relationship dynamics",
+                "Female empowerment in contemporary setting",
+                "Secret supernatural communities"
+              ],
+              "Examples": [
+                "My Wife is a Beautiful CEO",
+                "Hidden Marriage",
+                "Full Marks Hidden Marriage",
+                "The CEO's Villainess Childhood Friend"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Balancing modern life with supernatural elements",
+                "Setting_And_World": "Contemporary cities with hidden magic",
+                "Central_Conflict_Type": "Career obstacles, romantic rivals, supernatural threats",
+                "Tone_And_Atmosphere": "Contemporary drama with fantasy elements",
+                "Character_Arc_Focus": "Achieving success while managing dual life",
+                "Power_Ability_System": "Modern manifestations of magic or hidden abilities",
+                "Stakes_And_Consequences": "Career ruin, exposure, or relationship collapse"
+              }
+            },
+            "Sci-fi & Futuristic Fantasy": {
+              "Definition": "Female-focused stories blending science fiction settings with fantasy elements or romance-driven narratives. Features female protagonists in interstellar empires, futuristic societies, or technology-advanced worlds navigating relationships, power structures, and personal agency. May include ABO dynamics, sentinel/guide bonds, mecha pilots, or space opera romance. Distinguished by sci-fi aesthetics combined with relationship-focused narratives and female protagonist perspective.",
+              "Key_Themes": [
+                "Romance in futuristic settings",
+                "Female agency in sci-fi societies",
+                "Interstellar politics and relationships",
+                "Technology intersecting with bonds or abilities",
+                "Navigating futuristic social hierarchies",
+                "Survival and romance in space"
+              ],
+              "Examples": [
+                "The Reader and Protagonist Definitely Have to Be in True Love",
+                "Interstellar Super Doctor",
+                "The General's Cat Always Wants to Climb Into My Bed"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Romance and survival in futuristic setting",
+                "Setting_And_World": "Space empires, future Earth, advanced civilizations",
+                "Central_Conflict_Type": "Interstellar conflicts, social hierarchies, romantic obstacles",
+                "Tone_And_Atmosphere": "Sci-fi wonder with romantic focus",
+                "Character_Arc_Focus": "Finding love and agency in futuristic society",
+                "Power_Ability_System": "Technology, genetic abilities, or special bonds",
+                "Stakes_And_Consequences": "Planetary destruction, social exile, or losing partner"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Romantasy": {
+      "Definition": "Romance where fantasy worldbuilding and magical elements are integral with equal weight on romantic and fantastical elements. Love develops within fantasy framework where magic, supernatural bonds, or fantasy politics directly affect relationships. Distinguished from paranormal romance by fantasy world settings and from fantasy with romance subplot by romance being equal focus.",
+      "Key_Themes": [
+        "Romance and fantasy equally weighted",
+        "Magical bonds between lovers",
+        "Fantasy politics affecting relationships",
+        "Supernatural courtship dynamics",
+        "Love transcending fantasy barriers"
+      ],
+      "Examples": [
+        "The Alpha's Bride",
+        "My Dragon Princess",
+        "A Court of Thorns and Roses",
+        "From Blood and Ash",
+        "My Three Wives Are Beautiful Vampires",
+        "Fated To Rebel",
+        "Chosen By Fate Rejected By The Alpha"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Romance intertwined with fantasy conflicts",
+        "Setting_And_World": "Fantasy realms with integral magic",
+        "Central_Conflict_Type": "Magical obstacles to romance",
+        "Tone_And_Atmosphere": "Romantic with fantasy wonder",
+        "Character_Arc_Focus": "Falling in love amid magical challenges",
+        "Power_Ability_System": "Mate bonds and magical compatibility",
+        "Stakes_And_Consequences": "Supernatural mate loss or bond breaking"
+      },
+      "Sub-Genre": {
+        "Mythological Creatures": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {
+            "Vampire Romance": {
+              "Definition": "Romance featuring vampires with emphasis on immortality themes, blood bonds creating supernatural connections, vampire clan politics, and human-vampire relationship complications. Central conflicts include immortality versus mortality, blood hunger control, turning decisions, and forbidden love between rival clans. Distinguished by immortality focus and vampire society sophistication.",
+              "Key_Themes": [
+                "Immortality and eternal love",
+                "Blood bonds and connections",
+                "Vampire clan politics",
+                "Human mortality versus vampire eternity",
+                "Turning decision consequences"
+              ],
+              "Examples": [
+                "My Three Wives Are Beautiful Vampires",
+                "The Vampire Prince",
+                "Twilight",
+                "Vampire Academy",
+                "Twilight's Harem"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Navigating blood bonds and turning decisions",
+                "Setting_And_World": "Gothic settings with vampire societies",
+                "Central_Conflict_Type": "Forbidden clan love, mortality angst",
+                "Tone_And_Atmosphere": "Gothic, dark, sensual",
+                "Character_Arc_Focus": "Accepting immortal partner",
+                "Power_Ability_System": "Blood bonds and vampire abilities",
+                "Stakes_And_Consequences": "Permanent turning or eternal separation"
+              }
+            },
+            "Dragon & Monster Romance": {
+              "Definition": "Romance with dragon riders, human-form dragons, or individuals bonded to powerful creatures, emphasizing primal connections. Dragon bonds may be mental/magical connections affecting personality. Features territorial instincts, mate bonds through primal recognition, protective possessiveness, and tension between human rationality and creature instincts. Distinguished by dragon/large creature focus and primal dynamics.",
+              "Key_Themes": [
+                "Dragon bonds and connections",
+                "Primal mate recognition",
+                "Territorial possessive instincts",
+                "Human versus creature nature",
+                "Powerful beings as partners"
+              ],
+              "Examples": [
+                "My Dragon Princess",
+                "Fourth Wing",
+                "Firelight",
+                "Dragon Bound"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Bonding with dragon or creature mate",
+                "Setting_And_World": "Dragon realms or rider societies",
+                "Central_Conflict_Type": "Territorial conflicts and primal urges",
+                "Tone_And_Atmosphere": "Epic and primal",
+                "Character_Arc_Focus": "Accepting bond with powerful creature",
+                "Power_Ability_System": "Dragon bonds and primal instincts",
+                "Stakes_And_Consequences": "Bond breaking means death"
+              }
+            },
+            "Fae & Fairy Tale Romance": {
+              "Definition": "Romance featuring fae courts, fairy creatures, or fairy tale retellings with romantic focus. Explores Seelie/Unseelie politics, fae bargains creating entanglements, immortal fae falling for mortals, and dangerous fae world beauty. Features trickery, contracts, curses requiring breaking, and time differences. Distinguished by specific fae elements and fairy tale frameworks.",
+              "Key_Themes": [
+                "Fae court politics and intrigue",
+                "Magical bargains and contracts",
+                "Curses requiring true love",
+                "Immortal fae and mortal humans",
+                "Fairy tale retellings with romance"
+              ],
+              "Examples": [
+                "A Court of Thorns and Roses",
+                "Cruel Prince",
+                "Beauty and the Beast retellings"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Breaking curses and surviving fae bargains",
+                "Setting_And_World": "Fae courts where time flows differently",
+                "Central_Conflict_Type": "Dangerous bargains and court intrigue",
+                "Tone_And_Atmosphere": "Enchanting but deadly",
+                "Character_Arc_Focus": "Surviving fae world for love",
+                "Power_Ability_System": "Fae magic and true name power",
+                "Stakes_And_Consequences": "Trapped by bargains forever"
+              }
+            },
+            "Witch & Magic User Romance": {
+              "Definition": "Romance featuring witches, mages, or magic users where magical abilities and compatibility directly intertwine with romantic connection. Characters discover love enhances powers, require magical compatibility, or face forbidden magic obstacles. Features coven rules, magical bonding rituals, power sharing, and magical hierarchies affecting relationships. Distinguished by focus on magic users and how magic shapes romance.",
+              "Key_Themes": [
+                "Magical compatibility between partners",
+                "Witch covens and magical communities",
+                "Power bonding and sharing",
+                "Forbidden magic creating obstacles",
+                "Magic manifesting through emotion"
+              ],
+              "Examples": [
+                "Practical Magic",
+                "A Discovery of Witches"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Discovering magical compatibility",
+                "Setting_And_World": "Magical communities and covens",
+                "Central_Conflict_Type": "Forbidden magic and coven rules",
+                "Tone_And_Atmosphere": "Mystical and intimate",
+                "Character_Arc_Focus": "Mastering magic together",
+                "Power_Ability_System": "Spellwork and power compatibility",
+                "Stakes_And_Consequences": "Magical imbalance or coven banishment"
+              }
+            }
+          }
+        },
+        "Shapeshifter Romance": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {
+            "Werewolf Romance": {
+              "Definition": "Romance within werewolf pack structures featuring mate bonds recognized through scent/primal connection, pack hierarchies with alpha/beta/omega dynamics, and territorial conflicts. Central elements include forced shifting, full moon influences, rejection trauma, and conflicts between human reason and wolf instincts. Distinguished by specific wolf pack dynamics and mate bond recognition.",
+              "Key_Themes": [
+                "Mate bond recognition and completion",
+                "Pack hierarchy and alpha dynamics",
+                "Wolf versus human nature conflicts",
+                "Territorial pack claims",
+                "Rejection trauma and acceptance"
+              ],
+              "Examples": [
+                "The Alpha's Bride",
+                "Fated To Rebel",
+                "Blood and Chocolate",
+                "Alpha's Rejected Mate",
+                "Fated to the Alpha",
+                "Chosen By Fate Rejected By The Alpha",
+                "Lunaris Academy"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Finding and completing mate bond",
+                "Setting_And_World": "Pack territories and compounds",
+                "Central_Conflict_Type": "Pack politics and mate rejection",
+                "Tone_And_Atmosphere": "Primal and possessive",
+                "Character_Arc_Focus": "Accepting bond and pack place",
+                "Power_Ability_System": "Mate bonds and shifting abilities",
+                "Stakes_And_Consequences": "Rejected mate trauma or pack exile"
+              }
+            },
+            "Shifter & Paranormal Romance": {
+              "Definition": "Romance featuring shapeshifters beyond werewolves (bears, cats, dragons, birds), fae, witches, demons, angels, or other supernatural beings. Each creature type brings specific traits: fae bargains, shifter instincts, demon contracts, angel restrictions. Distinguished by variety of supernatural types and their unique courtship rules and obstacles.",
+              "Key_Themes": [
+                "Diverse supernatural creature types",
+                "Species-specific courtship rituals",
+                "Cross-species romance challenges",
+                "Supernatural community diversity",
+                "Unique paranormal abilities"
+              ],
+              "Examples": [
+                "A God Among Men",
+                "A Queen Betrayed",
+                "Immortals After Dark series",
+                "Guild Hunter series"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Navigating species-specific romance rules",
+                "Setting_And_World": "Diverse supernatural communities",
+                "Central_Conflict_Type": "Cross-species barriers",
+                "Tone_And_Atmosphere": "Varied by creature type",
+                "Character_Arc_Focus": "Accepting partner's supernatural nature",
+                "Power_Ability_System": "Varied creature-specific abilities",
+                "Stakes_And_Consequences": "Species incompatibility or community rejection"
+              }
+            }
+          }
+        },
+        "Dark Academia Romance": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {}
+        },
+        "Isekai & Portal Romance": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {}
+        }
+      }
+    },
+    "Romance": {
+      "Definition": "Stories where romantic relationship development and resolution is primary plot focus with emotional connection, attraction, and relationship obstacles driving narrative. Distinguished by centrality of romance and emotionally satisfying ending. Features character chemistry, emotional intimacy, and personal growth through love. Success depends on convincing romantic chemistry.",
+      "Key_Themes": [
+        "Romantic relationship as central focus",
+        "Emotional connection and chemistry",
+        "Relationship obstacles creating tension",
+        "Personal growth through love",
+        "Trust and vulnerability building"
+      ],
+      "Examples": [
+        "The Duke's Masked Bride",
+        "The Royal Accident",
+        "Pride and Prejudice",
+        "The Notebook",
+        "Bridgerton",
+        "Rekindled Heartache",
+        "The Billionaire's Accidental Bride",
+        "Between The Sheets With Mr. Billionaire"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Developing romance and overcoming obstacles",
+        "Setting_And_World": "Varies but romance-focused",
+        "Central_Conflict_Type": "Relationship obstacles and barriers",
+        "Tone_And_Atmosphere": "Emotionally intimate and romantic",
+        "Character_Arc_Focus": "Opening to love and personal growth",
+        "Power_Ability_System": "No powers; emotional vulnerability",
+        "Stakes_And_Consequences": "Heartbreak or losing love interest"
+      },
+      "Sub-Genre": {
+        "Contemporary Romance": {
+          "Definition": "Romance in modern times without fantasy, historical, or sci-fi elements, focusing on realistic relationship development in contemporary contexts. Features modern dating dynamics, technology in relationships, contemporary career pressures, and current social issues affecting couples. Distinguished by exclusively contemporary realistic settings and modern relationship dynamics.",
+          "Key_Themes": [
+            "Modern dating and relationships",
+            "Work-life balance affecting love",
+            "Contemporary social issues",
+            "Technology in romance",
+            "Realistic modern obstacles"
+          ],
+          "Examples": [
+            "The Royal Accident",
+            "Rekindled Heartache",
+            "Crazy Rich Asians",
+            "To All the Boys I've Loved Before",
+            "The Billionaire's Accidental Bride",
+            "Between The Sheets With Mr. Billionaire",
+            "Trading Up"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Modern couples overcoming contemporary obstacles",
+            "Setting_And_World": "Current time with modern settings",
+            "Central_Conflict_Type": "Career vs love, modern challenges",
+            "Tone_And_Atmosphere": "Relatable and contemporary",
+            "Character_Arc_Focus": "Finding balance in modern life",
+            "Power_Ability_System": "No powers; modern communication",
+            "Stakes_And_Consequences": "Modern heartbreak or career sacrifice"
+          },
+          "Sub-Sub-Genre": {
+            "Billionaire/CEO Romance": {
+              "Definition": "Romance between extremely wealthy, powerful business figures and typically less privileged partners, emphasizing power dynamics and luxury lifestyle contrasts. Features corporate settings, power imbalances, and wealthy protagonist transforming through love. Distinguished by extreme wealth disparity and corporate power focus.",
+              "Key_Themes": [
+                "Extreme wealth disparity",
+                "Power imbalance in relationship",
+                "Corporate world settings",
+                "Class differences as obstacles",
+                "Cold tycoon transformation"
+              ],
+              "Examples": [
+                "The Billionaire's Accidental Bride",
+                "Cupid's Curse",
+                "Fifty Shades of Grey",
+                "The Hating Game",
+                "The Invisible Billionaire",
+                "I'm Married To A Stranger",
+                "Love Trap"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Wealthy alpha falling for ordinary partner",
+                "Setting_And_World": "Corporate offices and luxury environments",
+                "Central_Conflict_Type": "Class barriers and power imbalance",
+                "Tone_And_Atmosphere": "Glamorous with power tension",
+                "Character_Arc_Focus": "Tycoon softening, partner maintaining dignity",
+                "Power_Ability_System": "Wealth and corporate power",
+                "Stakes_And_Consequences": "Class destroying relationship"
+              }
+            },
+            "Fake Relationship": {
+              "Definition": "Characters entering convenience relationships (contract marriage, fake dating) that develop into genuine love through forced proximity. Initial practical arrangement serves purposes like inheritance or silencing gossip. Distinguished by fake-to-real trajectory and convenience marriage tropes.",
+              "Key_Themes": [
+                "Contract relationships becoming real",
+                "Forced proximity developing feelings",
+                "Pretend turning into reality",
+                "Convenience arrangements",
+                "Negotiating relationship boundaries"
+              ],
+              "Examples": [
+                "Trading Up",
+                "The Return",
+                "The Proposal",
+                "To All the Boys I've Loved Before",
+                "Beauty and the Billionaire",
+                "Love Contract",
+                "Hellbound With You"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Fake relationship becoming real love",
+                "Setting_And_World": "Settings requiring relationship appearance",
+                "Central_Conflict_Type": "Fighting real feelings while pretending",
+                "Tone_And_Atmosphere": "Tension between pretense and reality",
+                "Character_Arc_Focus": "Realizing pretend became real",
+                "Power_Ability_System": "Emotional barriers breaking down",
+                "Stakes_And_Consequences": "Contract ending before confession"
+              }
+            },
+            "Single Parent Romance": {
+              "Definition": "Romance where one or both are single parents navigating love while prioritizing children's welfare. Central tension balancing relationship with parental duties and children's acceptance. Distinguished by parental responsibilities creating unique obstacles and slow burn from caution.",
+              "Key_Themes": [
+                "Parenting while pursuing romance",
+                "Children's acceptance crucial",
+                "Slow burn due to caution",
+                "Found family formation",
+                "Protecting children emotionally"
+              ],
+              "Examples": [
+                "The Royal Accident",
+                "Between The Sheets With Mr. Billionaire",
+                "Jerry Maguire",
+                "Sleepless in Seattle"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Building romance while protecting children",
+                "Setting_And_World": "Family environments with kids present",
+                "Central_Conflict_Type": "Balancing kids and romance",
+                "Tone_And_Atmosphere": "Tender with family warmth",
+                "Character_Arc_Focus": "Partner accepting parental role",
+                "Power_Ability_System": "Family bonding as milestone",
+                "Stakes_And_Consequences": "Children hurt by relationship"
+              }
+            },
+            "Second Chance Romance": {
+              "Definition": "Former lovers reuniting after separation, overcoming past hurts or circumstances that ended relationship originally. Features history and baggage from previous relationship with unresolved feelings surfacing. Distinguished by pre-existing relationship history and need to overcome specific past hurts.",
+              "Key_Themes": [
+                "Reconnecting with past love",
+                "Overcoming relationship history",
+                "Forgiveness for past hurts",
+                "Both partners having grown",
+                "Rekindling dormant feelings"
+              ],
+              "Examples": [
+                "Rekindled Heartache",
+                "When Heart Comes Calling",
+                "The Notebook",
+                "Sweet Home Alabama",
+                "My Sister's Husband"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Reuniting and addressing past problems",
+                "Setting_And_World": "Settings forcing proximity with ex",
+                "Central_Conflict_Type": "Trusting again after past hurt",
+                "Tone_And_Atmosphere": "Bittersweet nostalgia",
+                "Character_Arc_Focus": "Growing beyond past mistakes",
+                "Power_Ability_System": "Emotional maturity for reconciliation",
+                "Stakes_And_Consequences": "Repeating past mistakes"
+              }
+            },
+            "Workplace Romance": {
+              "Definition": "Romance in professional settings between coworkers, boss-employee, or business rivals where career and romance intersect. Features tension between professional boundaries and attraction, with workplace politics affecting relationship. Distinguished by workplace setting creating specific obstacles and professional reputation stakes.",
+              "Key_Themes": [
+                "Office romance development",
+                "Professional boundaries tension",
+                "Boss-employee dynamics",
+                "Career complications from love",
+                "Workplace policies as obstacles"
+              ],
+              "Examples": [
+                "The Office",
+                "Set It Up"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Navigating attraction while working together",
+                "Setting_And_World": "Corporate offices and work environments",
+                "Central_Conflict_Type": "Career vs love, office policies",
+                "Tone_And_Atmosphere": "Professional tension with attraction",
+                "Character_Arc_Focus": "Choosing between career and love",
+                "Power_Ability_System": "Professional competence",
+                "Stakes_And_Consequences": "Career damage or job loss"
+              }
+            },
+            "Sports Romance": {
+              "Definition": "Romance within sports environments featuring athletes, coaches, or sports-adjacent characters. Features athletic competition, sports pressures, team dynamics affecting relationships, and balancing sports career with love. Distinguished by sports setting and athletic lifestyle shaping romance.",
+              "Key_Themes": [
+                "Athletic competition and dedication",
+                "Sports career pressures on relationship",
+                "Team dynamics affecting romance",
+                "Balancing sports and love",
+                "Athlete lifestyle challenges"
+              ],
+              "Examples": [
+                "A League of Their Own",
+                "Love & Basketball"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Balancing sports demands with romance",
+                "Setting_And_World": "Sports facilities and competitions",
+                "Central_Conflict_Type": "Career demands vs relationship time",
+                "Tone_And_Atmosphere": "Energetic with athletic tension",
+                "Character_Arc_Focus": "Finding balance between sport and love",
+                "Power_Ability_System": "Athletic skills as character trait",
+                "Stakes_And_Consequences": "Career sacrifice or losing both"
+              }
+            },
+            "Enemies to Lovers": {
+              "Definition": "Romance between initial rivals or enemies where antagonism transforms into attraction through forced cooperation or understanding. Features genuine initial dislike, competitive banter, and gradual shift from hostility to attraction. Distinguished by enemies-to-lovers trajectory and initial genuine conflict.",
+              "Key_Themes": [
+                "Initial antagonism and rivalry",
+                "Competitive banter and sparring",
+                "Forced cooperation revealing depth",
+                "Hate to love transformation",
+                "Breaking down prejudices"
+              ],
+              "Examples": [
+                "Pride and Prejudice",
+                "10 Things I Hate About You",
+                "The Hating Game"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Enemies discovering mutual attraction",
+                "Setting_And_World": "Settings bringing rivals into conflict",
+                "Central_Conflict_Type": "Overcoming hatred and pride",
+                "Tone_And_Atmosphere": "Tension-filled with sharp dialogue",
+                "Character_Arc_Focus": "Seeing beyond surface conflict",
+                "Power_Ability_System": "Pride as obstacle to overcome",
+                "Stakes_And_Consequences": "Pride destroying connection"
+              }
+            }
+          }
+        },
+        "Historical Romance": {
+          "Definition": "Romance in specific historical periods featuring period-appropriate courtship customs, social constraints, and historical accuracy alongside emotional connection. Features restricted courtship rules, chaperones, class barriers, and honor concerns reflecting historical values. Distinguished by historical setting fundamentally shaping courtship and lack of magic.",
+          "Key_Themes": [
+            "Historical period settings",
+            "Period-appropriate courtship",
+            "Social constraints on relationships",
+            "Class barriers and propriety",
+            "Historical accuracy in culture"
+          ],
+          "Examples": [
+            "The Duke's Masked Bride",
+            "Outlander",
+            "Bridgerton",
+            "Pride and Prejudice"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Navigating historical courtship rules",
+            "Setting_And_World": "Specific historical periods",
+            "Central_Conflict_Type": "Class and propriety barriers",
+            "Tone_And_Atmosphere": "Period atmosphere with romantic longing",
+            "Character_Arc_Focus": "Choosing love despite social cost",
+            "Power_Ability_System": "Social status and reputation",
+            "Stakes_And_Consequences": "Social ruin or forced marriage"
+          },
+          "Sub-Sub-Genre": {
+            "Regency Romance": {
+              "Definition": "Romance in English Regency era (1811-1820) featuring aristocratic society, London Season, strict courtship rules, and marriage market dynamics. Heavily influenced by Jane Austen-style social commentary. Distinguished by specific era, English setting, and emphasis on social hierarchy and propriety.",
+              "Key_Themes": [
+                "Regency England setting",
+                "Balls and social season",
+                "Aristocratic society rules",
+                "Marriage mart dynamics",
+                "Wit and propriety balance"
+              ],
+              "Examples": [
+                "The Duke's Masked Bride",
+                "Bridgerton",
+                "Pride and Prejudice",
+                "Emma"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Finding love match in marriage mart",
+                "Setting_And_World": "Regency England ton society",
+                "Central_Conflict_Type": "Class and scandal threats",
+                "Tone_And_Atmosphere": "Elegant wit with strict rules",
+                "Character_Arc_Focus": "Debutante finding worthy match",
+                "Power_Ability_System": "Social status and dowries",
+                "Stakes_And_Consequences": "Social ruin from scandal"
+              }
+            },
+            "Historical Western": {
+              "Definition": "Romance in American West frontier era featuring cowboys, ranchers, pioneers navigating love in harsh conditions. Setting includes ranches, frontier towns, wagon trains. Features rugged individualism, survival challenges, mail-order brides. Distinguished by American West setting and frontier survival elements.",
+              "Key_Themes": [
+                "American frontier setting",
+                "Cowboys and ranchers",
+                "Harsh survival conditions",
+                "Mail-order bride arrangements",
+                "Pioneer spirit and determination"
+              ],
+              "Examples": [
+                "Westworld (romance elements)",
+                "Lonesome Dove"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Finding love on harsh frontier",
+                "Setting_And_World": "1800s American West ranches and towns",
+                "Central_Conflict_Type": "Survival and outlaw threats",
+                "Tone_And_Atmosphere": "Rugged and adventurous",
+                "Character_Arc_Focus": "Capable heroines, protective cowboys",
+                "Power_Ability_System": "Frontier skills and resilience",
+                "Stakes_And_Consequences": "Death from harsh conditions"
+              }
+            },
+            "Ancient World Romance": {
+              "Definition": "Romance in ancient civilizations (Rome, Greece, Egypt, China) featuring historically accurate social structures, cultural customs, and empire politics. Romance develops within ancient social hierarchies, often crossing class or cultural boundaries. Distinguished by ancient setting requiring extensive research and historical rather than magical focus.",
+              "Key_Themes": [
+                "Ancient civilization settings",
+                "Historical social structures",
+                "Empire politics affecting love",
+                "Cultural authenticity",
+                "Cross-class ancient romance"
+              ],
+              "Examples": [
+                "Gladiator (romance subplot)",
+                "Rome (TV series)"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Love across ancient social barriers",
+                "Setting_And_World": "Ancient Rome, Greece, Egypt, China",
+                "Central_Conflict_Type": "Slavery, class, empire conflicts",
+                "Tone_And_Atmosphere": "Epic historical scope",
+                "Character_Arc_Focus": "Crossing social barriers",
+                "Power_Ability_System": "Social class and cultural status",
+                "Stakes_And_Consequences": "Execution for forbidden love"
+              }
+            },
+            "Fantastical Romance": {
+              "Definition": "Romance blending historical or fantasy settings with lighter supernatural elements than full Romantasy, featuring magical elements that enhance romantic plots without dominating them. May include subtle magic, folklore-inspired settings, or fantasy lite elements that serve the romance. Distinguished from Romantasy by romance remaining primary focus with fantasy as enhancement rather than equal partner.",
+              "Key_Themes": [
+                "Romance with fantasy enhancement",
+                "Lighter supernatural elements",
+                "Folklore-inspired romance settings",
+                "Magic serving romantic plots",
+                "Fantasy lite worldbuilding"
+              ],
+              "Examples": [
+                "Stardust",
+                "The Princess Bride",
+                "Ella Enchanted"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Romance enhanced by magical elements",
+                "Setting_And_World": "Fantasy-lite or folklore-inspired settings",
+                "Central_Conflict_Type": "Romantic obstacles with magical twists",
+                "Tone_And_Atmosphere": "Romantic fairy tale with wonder",
+                "Character_Arc_Focus": "Finding love despite magical complications",
+                "Power_Ability_System": "Light magic enhancing romance",
+                "Stakes_And_Consequences": "Magical curses threatening love"
+              }
+            }
+          }
+        },
+        "Young Adult Romance": {
+          "Definition": "Romance stories featuring teenage or young adult protagonists (typically 15-22) navigating first love, identity discovery, and relationships during formative years. Often includes coming-of-age elements, school settings, and age-appropriate romantic development. Distinguished by young protagonist age and developmental stage focus.",
+          "Key_Themes": [
+            "First love experiences",
+            "Identity discovery through relationships",
+            "Age-appropriate romance development",
+            "School and social settings",
+            "Coming-of-age emotional growth"
+          ],
+          "Examples": [
+            "The Fault in Our Stars",
+            "To All the Boys I've Loved Before"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "First love and identity discovery",
+            "Setting_And_World": "High schools, colleges, youth environments",
+            "Central_Conflict_Type": "First relationship challenges",
+            "Tone_And_Atmosphere": "Emotionally intense first experiences",
+            "Character_Arc_Focus": "Growing through first love",
+            "Power_Ability_System": "Emotional development as growth",
+            "Stakes_And_Consequences": "First heartbreak and identity rejection"
+          },
+          "Sub-Sub-Genre": {
+            "High School & College Romance": {
+              "Definition": "Romance set in educational institutions featuring young adult relationships developing in school environments. Includes academic pressures, social hierarchies, first relationships, and balancing education with romance. Distinguished by school setting and educational environment shaping relationship development.",
+              "Key_Themes": [
+                "School-based romance development",
+                "Academic pressures affecting relationships",
+                "Social hierarchies and cliques",
+                "First relationship experiences",
+                "Balancing education and love"
+              ],
+              "Examples": [
+                "10 Things I Hate About You",
+                "Love, Simon"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Romance while navigating school life",
+                "Setting_And_World": "High schools or college campuses",
+                "Central_Conflict_Type": "Social cliques and peer pressure",
+                "Tone_And_Atmosphere": "Youthful energy with social drama",
+                "Character_Arc_Focus": "First serious relationship",
+                "Power_Ability_System": "Social status and academic standing",
+                "Stakes_And_Consequences": "Social rejection or heartbreak"
+              }
+            },
+            "LGBTQ+ Romance": {
+              "Definition": "Romance featuring LGBTQ+ protagonists navigating same-sex or queer relationships, often including coming out narratives, identity acceptance, and societal challenges specific to LGBTQ+ experiences. Distinguished by LGBTQ+ representation as central element and queer-specific relationship dynamics.",
+              "Key_Themes": [
+                "LGBTQ+ identity discovery",
+                "Coming out narratives",
+                "Queer relationship dynamics",
+                "Overcoming societal prejudice",
+                "Finding accepting community"
+              ],
+              "Examples": [
+                "Love, Simon",
+                "Call Me By Your Name",
+                "Heartstopper"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Accepting identity and finding love",
+                "Setting_And_World": "Settings with varying LGBTQ+ acceptance",
+                "Central_Conflict_Type": "Coming out and societal prejudice",
+                "Tone_And_Atmosphere": "Emotional with identity affirmation",
+                "Character_Arc_Focus": "Accepting queer identity",
+                "Power_Ability_System": "Courage for authenticity",
+                "Stakes_And_Consequences": "Family rejection or ostracism"
+              }
+            },
+            "Self Discovery & Coming of Age": {
+              "Definition": "Romance intertwined with self-discovery and identity formation during young adult years. Romance serves as catalyst or accompaniment to finding oneself, with equal focus on personal growth and romantic development. Distinguished by emphasis on identity discovery through romantic experiences.",
+              "Key_Themes": [
+                "Identity discovery through romance",
+                "Personal growth alongside love",
+                "Finding authentic self",
+                "First serious relationships shaping identity",
+                "Independence from family"
+              ],
+              "Examples": [
+                "The Perks of Being a Wallflower",
+                "Lady Bird"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Discovering identity while experiencing love",
+                "Setting_And_World": "Transitional life stage environments",
+                "Central_Conflict_Type": "Identity questions and independence",
+                "Tone_And_Atmosphere": "Introspective and emotional",
+                "Character_Arc_Focus": "Becoming oneself through love",
+                "Power_Ability_System": "Self-knowledge as growth",
+                "Stakes_And_Consequences": "Losing self in relationship"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Contemporary Drama": {
+      "Definition": "Realistic stories in modern times focusing on personal relationships, emotional journeys, social issues, and character development without fantasy, sci-fi, or historical elements. Emphasizes authentic human experiences, complex emotions, and realistic conflicts grounded in contemporary society. Distinguished by realistic contemporary settings, focus on emotional truth, and exploration of modern life's complexities.",
+      "Key_Themes": [
+        "Realistic contemporary conflicts",
+        "Personal growth through challenges",
+        "Complex family dynamics",
+        "Contemporary social issues",
+        "Authentic human emotions"
+      ],
+      "Examples": [
+        "Saving Nora",
+        "The Accidental Mother",
+        "This Is Us",
+        "Parenthood",
+        "Manchester by the Sea",
+        "Outsider",
+        "Campus King",
+        "Accidentally Yours"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Personal relationships and emotional journeys",
+        "Setting_And_World": "Modern realistic settings",
+        "Central_Conflict_Type": "Family tensions and personal struggles",
+        "Tone_And_Atmosphere": "Realistic and grounded",
+        "Character_Arc_Focus": "Personal growth and emotional healing",
+        "Power_Ability_System": "No powers; emotional resilience",
+        "Stakes_And_Consequences": "Emotional damage or relationship loss"
+      },
+      "Sub-Genre": {
+        "Family Drama": {
+          "Definition": "Stories centered on family relationships, generational conflicts, domestic struggles, and complexities of family bonds in modern contexts. Explores dynamics between parents-children, siblings, or chosen family with realistic portrayal of love, dysfunction, resentment, and reconciliation. Distinguished by focus on family as primary source of conflict and meaning.",
+          "Key_Themes": [
+            "Family relationships as focus",
+            "Generational conflicts",
+            "Domestic struggles and tensions",
+            "Family secrets and revelations",
+            "Chosen versus blood family"
+          ],
+          "Examples": [
+            "Saving Nora",
+            "Outsider",
+            "This Is Us",
+            "Succession",
+            "August: Osage County",
+            "First Love Never Dies"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Navigating family dynamics and conflicts",
+            "Setting_And_World": "Family homes and domestic environments",
+            "Central_Conflict_Type": "Parent-child and sibling tensions",
+            "Tone_And_Atmosphere": "Emotionally complex family dynamics",
+            "Character_Arc_Focus": "Healing wounds or establishing boundaries",
+            "Power_Ability_System": "Emotional intelligence as tool",
+            "Stakes_And_Consequences": "Estrangement or trauma repetition"
+          },
+          "Sub-Sub-Genre": {
+            "Toxic Family & Redemption": {
+              "Definition": "Stories of escaping or overcoming toxic family dynamics including emotional abuse, manipulation, gaslighting, or controlling behavior. Characters establish boundaries, recognize dysfunction, and often distance from toxic relatives. Distinguished by focus on specific toxicity requiring escape or radical boundary-setting.",
+              "Key_Themes": [
+                "Toxic family dynamics",
+                "Breaking free from abuse",
+                "Establishing healthy boundaries",
+                "Found family replacing blood",
+                "Healing from family trauma"
+              ],
+              "Examples": [
+                "Saving Nora",
+                "Outsider",
+                "Mommie Dearest",
+                "Sharp Objects",
+                "Glass Castle",
+                "First Love Never Dies"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Escaping toxicity and building new life",
+                "Setting_And_World": "Toxic home then safe spaces",
+                "Central_Conflict_Type": "Breaking free from control",
+                "Tone_And_Atmosphere": "Dark initially, healing forward",
+                "Character_Arc_Focus": "Recognizing abuse and finding strength",
+                "Power_Ability_System": "Emotional strength and support systems",
+                "Stakes_And_Consequences": "Remaining trapped or family retaliation"
+              }
+            },
+            "Multi-Generational Saga": {
+              "Definition": "Epic family stories spanning multiple generations exploring how choices, secrets, and events in one generation affect descendants. Follows family line across decades or centuries showing patterns repeating or breaking. Distinguished by scope across time and focus on generational patterns and legacy.",
+              "Key_Themes": [
+                "Generational impact and patterns",
+                "Family legacy across time",
+                "Ancestral secrets affecting descendants",
+                "Historical events shaping family",
+                "Breaking or continuing cycles"
+              ],
+              "Examples": [
+                "Roots",
+                "One Hundred Years of Solitude",
+                "Pachinko"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Understanding generational patterns",
+                "Setting_And_World": "Multiple time periods, same family",
+                "Central_Conflict_Type": "Inherited traumas and secrets",
+                "Tone_And_Atmosphere": "Epic sweep with family weight",
+                "Character_Arc_Focus": "Breaking or continuing cycles",
+                "Power_Ability_System": "Family patterns as influence",
+                "Stakes_And_Consequences": "Repeating mistakes or losing legacy"
+              }
+            },
+            "Single Parent Struggles": {
+              "Definition": "Stories focusing on single parents navigating parenthood without partner support, balancing career and parenting, facing financial struggles, and managing identity beyond parental role. Distinguished from single parent romance by not focusing on romantic relationship and from general family drama by specific solo parenting challenges.",
+              "Key_Themes": [
+                "Solo parenting without support",
+                "Work-life balance struggles",
+                "Financial hardships",
+                "Children's welfare as priority",
+                "Maintaining identity beyond parent role"
+              ],
+              "Examples": [
+                "Erin Brockovich",
+                "Florida Project",
+                "CODA"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving as single parent",
+                "Setting_And_World": "Single parent household dynamics",
+                "Central_Conflict_Type": "Financial and time management struggles",
+                "Tone_And_Atmosphere": "Realistic with resilience and love",
+                "Character_Arc_Focus": "Finding strength while maintaining identity",
+                "Power_Ability_System": "Resilience and support networks",
+                "Stakes_And_Consequences": "Unable to provide or breakdown"
+              }
+            },
+            "Brotherhood & Family Bond": {
+              "Definition": "",
+              "Key_Themes": [],
+              "Examples": [],
+              "Comparison": {}
+            }
+          }
+        },
+        "Coming of Age": {
+          "Definition": "Stories of adolescents or young adults discovering identity, navigating first experiences, transitioning to adulthood, and finding place in world within contemporary settings. Features identity exploration, independence from family, and growth from innocence to maturity. Distinguished by focus on specific life stage of transition to adulthood and identity formation.",
+          "Key_Themes": [
+            "Identity discovery and formation",
+            "First experiences shaping character",
+            "Independence from family",
+            "Self-discovery through challenges",
+            "Transition to adulthood"
+          ],
+          "Examples": [
+            "Campus King",
+            "Lady Bird",
+            "The Breakfast Club",
+            "Boyhood"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Discovering identity and choosing path",
+            "Setting_And_World": "High schools, colleges, transitional stages",
+            "Central_Conflict_Type": "Identity questions and peer pressure",
+            "Tone_And_Atmosphere": "Growth-focused with uncertainty",
+            "Character_Arc_Focus": "Finding identity and making decisions",
+            "Power_Ability_System": "Self-knowledge as development",
+            "Stakes_And_Consequences": "Wrong path or failing to launch"
+          },
+          "Sub-Sub-Genre": {
+            "College & Campus Life": {
+              "Definition": "Stories in university environments exploring academic pressures, newfound independence, social hierarchies, and forming identity away from family. Features dorm life, campus relationships, and young adult challenges. Distinguished by specific college setting and unique pressures of higher education.",
+              "Key_Themes": [
+                "University life and culture",
+                "Academic pressure and performance",
+                "Independence from family",
+                "Campus social dynamics",
+                "Finding direction and major"
+              ],
+              "Examples": [
+                "Campus King",
+                "The Social Network",
+                "Pitch Perfect",
+                "Legally Blonde"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Navigating college and finding direction",
+                "Setting_And_World": "University campuses and dorms",
+                "Central_Conflict_Type": "Academic pressure and social hierarchies",
+                "Tone_And_Atmosphere": "Freedom mixed with pressure",
+                "Character_Arc_Focus": "Managing independence and discovering passion",
+                "Power_Ability_System": "Academic abilities and social navigation",
+                "Stakes_And_Consequences": "Academic failure or wrong direction"
+              }
+            },
+            "Sports & Competition": {
+              "Definition": "Stories centered on athletic pursuits, competitive drive, training dedication, and achieving excellence in sports. Features training regimens, competition pressure, team dynamics, and questioning sacrifice worth. Distinguished by sports as central focus and competitive environment shaping development.",
+              "Key_Themes": [
+                "Athletic competition focus",
+                "Training dedication and sacrifice",
+                "Team dynamics and camaraderie",
+                "Competition pressures",
+                "Questioning sacrifice worth"
+              ],
+              "Examples": [
+                "Friday Night Lights",
+                "Remember the Titans",
+                "Hoosiers"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Pursuing athletic excellence",
+                "Setting_And_World": "Sports facilities and competitions",
+                "Central_Conflict_Type": "Competition pressure and injuries",
+                "Tone_And_Atmosphere": "Intense with physical challenge",
+                "Character_Arc_Focus": "Mastering sport and identity beyond it",
+                "Power_Ability_System": "Athletic skills and dedication",
+                "Stakes_And_Consequences": "Career-ending injury or failed sacrifice"
+              }
+            },
+            "Arts & Creative Pursuit": {
+              "Definition": "Characters pursuing artistic careers or creative passions navigating entertainment industry or artistic communities. Features tension between art and commercial success, creative struggles, and financial instability. Distinguished by arts as identity exploration vehicle and specific creative pursuit challenges.",
+              "Key_Themes": [
+                "Artistic passion and dedication",
+                "Creative career pursuit",
+                "Commercial versus artistic integrity",
+                "Industry competition",
+                "Financial instability in arts"
+              ],
+              "Examples": [
+                "Whiplash",
+                "La La Land",
+                "Black Swan"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Pursuing artistic dreams",
+                "Setting_And_World": "Artistic communities and industry",
+                "Central_Conflict_Type": "Industry rejection and creative blocks",
+                "Tone_And_Atmosphere": "Passionate with creative struggle",
+                "Character_Arc_Focus": "Developing artistic voice",
+                "Power_Ability_System": "Creative talent and perseverance",
+                "Stakes_And_Consequences": "Creative failure or selling out"
+              }
+            }
+          }
+        },
+        "Workplace & Professional": {
+          "Definition": "Stories set primarily in professional environments exploring career ambitions, office politics, professional growth, and work challenges without romance as central focus. Features realistic portrayal of various industries. Distinguished from romance by focusing on career rather than love and from family drama by workplace as primary setting.",
+          "Key_Themes": [
+            "Career ambitions and goals",
+            "Office politics and power struggles",
+            "Professional growth challenges",
+            "Work-life balance struggles",
+            "Industry-specific challenges"
+          ],
+          "Examples": [
+            "Accidentally Yours",
+            "The Devil Wears Prada",
+            "Mad Men",
+            "The Big Short"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Advancing career and navigating politics",
+            "Setting_And_World": "Offices, hospitals, entertainment industry",
+            "Central_Conflict_Type": "Career obstacles and ethical dilemmas",
+            "Tone_And_Atmosphere": "Professional with career-focused tension",
+            "Character_Arc_Focus": "Defining success and maintaining integrity",
+            "Power_Ability_System": "Professional skills and strategic thinking",
+            "Stakes_And_Consequences": "Career failure or reputation damage"
+          },
+          "Sub-Sub-Genre": {
+            "Corporate Politics": {
+              "Definition": "Stories of power struggles, strategic maneuvering, and competition within business environments and corporate hierarchies. Features office alliances, backstabbing, boardroom battles, and climbing ladder often at moral cost. Distinguished by focus on political maneuvering and power dynamics.",
+              "Key_Themes": [
+                "Power struggles in workplace",
+                "Strategic corporate maneuvering",
+                "Boardroom battles",
+                "Office alliances and betrayals",
+                "Ethical compromises for success"
+              ],
+              "Examples": [
+                "Succession",
+                "Wall Street",
+                "Margin Call"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Climbing ladder through office politics",
+                "Setting_And_World": "Corporate offices and boardrooms",
+                "Central_Conflict_Type": "Power struggles and backstabbing",
+                "Tone_And_Atmosphere": "Cynical and cutthroat",
+                "Character_Arc_Focus": "Deciding how far to go for success",
+                "Power_Ability_System": "Strategic thinking and manipulation",
+                "Stakes_And_Consequences": "Career destruction or moral corruption"
+              }
+            },
+            "Entertainment Industry": {
+              "Definition": "Behind-the-scenes look at entertainment business exploring fame's dark side, industry exploitation, and cutthroat competition. Features public scrutiny, industry pressure, and talent versus connections debate. Distinguished by focus on industry business side and fame's impact rather than artistic development.",
+              "Key_Themes": [
+                "Entertainment business realities",
+                "Fame and public scrutiny",
+                "Industry exploitation",
+                "Career comebacks and failures",
+                "Public image management"
+              ],
+              "Examples": [
+                "Accidentally Yours",
+                "A Star Is Born",
+                "Bombshell",
+                "The Morning Show"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving fame and industry pressures",
+                "Setting_And_World": "Studios, agencies, spotlight environments",
+                "Central_Conflict_Type": "Industry exploitation and scandals",
+                "Tone_And_Atmosphere": "Glamorous surface, dark reality",
+                "Character_Arc_Focus": "Maintaining authenticity or recovering",
+                "Power_Ability_System": "Talent, connections, public image",
+                "Stakes_And_Consequences": "Career destruction or losing self"
+              }
+            },
+            "Medical Drama": {
+              "Definition": "Stories in medical environments focusing on healthcare professionals, ethical dilemmas, life-death decisions, and medical work's impact on practitioners. Features doctors, nurses, or healthcare workers dealing with difficult cases and hospital politics. Distinguished by medical setting and life-death stakes.",
+              "Key_Themes": [
+                "Medical ethics and dilemmas",
+                "Life and death decisions",
+                "Healthcare professional challenges",
+                "Hospital politics",
+                "Emotional toll on medical workers"
+              ],
+              "Examples": [
+                "Grey's Anatomy",
+                "House",
+                "ER"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Making life-death medical decisions",
+                "Setting_And_World": "Hospitals and medical facilities",
+                "Central_Conflict_Type": "Ethical dilemmas and difficult cases",
+                "Tone_And_Atmosphere": "Intense with life-death gravity",
+                "Character_Arc_Focus": "Becoming better doctor, handling losses",
+                "Power_Ability_System": "Medical knowledge and skills",
+                "Stakes_And_Consequences": "Patient death or malpractice"
+              }
+            },
+            "Sports Drama": {
+              "Definition": "Professional sports environments focusing on athletic careers, team dynamics, sports industry politics, and athlete life pressures without romance focus. Features professional competition, sports business, career management, and sports-specific challenges. Distinguished by professional sports setting and career focus.",
+              "Key_Themes": [
+                "Professional athletic careers",
+                "Sports industry business",
+                "Team dynamics and competition",
+                "Career pressures and injuries",
+                "Sports politics and management"
+              ],
+              "Examples": [
+                "Moneyball",
+                "Jerry Maguire",
+                "Draft Day"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Maintaining professional sports career",
+                "Setting_And_World": "Professional sports and business",
+                "Central_Conflict_Type": "Career injuries and industry politics",
+                "Tone_And_Atmosphere": "Competitive with professional stakes",
+                "Character_Arc_Focus": "Achieving peak or managing career end",
+                "Power_Ability_System": "Athletic abilities and sports skills",
+                "Stakes_And_Consequences": "Career end or post-sports identity loss"
+              }
+            }
+          }
+        },
+        "Rise & Resilience": {
+          "Definition": "Stories of characters overcoming adversity, rising from difficult circumstances, or achieving success against odds through determination and resilience. Features protagonists facing significant obstacles (poverty, discrimination, disaster) and building better lives. Distinguished by focus on overcoming adversity and achieving success despite challenges.",
+          "Key_Themes": [
+            "Overcoming adversity and obstacles",
+            "Rising from difficult circumstances",
+            "Determination and resilience",
+            "Building success from nothing",
+            "Transforming life circumstances"
+          ],
+          "Examples": [
+            "The Accidental Mother",
+            "Insta Millionaire",
+            "The Pursuit of Happyness",
+            "Slumdog Millionaire",
+            "Hidden Figures",
+            "Emily's Return",
+            "Rothman's Secret",
+            "Cutthroat Courtship"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Overcoming adversity through determination",
+            "Setting_And_World": "Challenging circumstances and obstacles",
+            "Central_Conflict_Type": "Economic, social, or survival barriers",
+            "Tone_And_Atmosphere": "Inspirational with resilience focus",
+            "Character_Arc_Focus": "Rising above circumstances",
+            "Power_Ability_System": "Determination and resilience as tools",
+            "Stakes_And_Consequences": "Failing to escape or losing everything"
+          },
+          "Sub-Sub-Genre": {
+            "Rags to Riches": {
+              "Definition": "Stories of characters rising from poverty or low status to wealth and success through hard work, talent, business acumen, or opportunity. Features overcoming class barriers, building wealth, and often maintaining values despite success. Distinguished by specific focus on economic transformation from poor to wealthy.",
+              "Key_Themes": [
+                "Rising from poverty to wealth",
+                "Building business or career success",
+                "Overcoming class barriers",
+                "Maintaining values despite wealth",
+                "Transforming economic circumstances"
+              ],
+              "Examples": [
+                "Rothman's Secret",
+                "The Pursuit of Happyness",
+                "Joy",
+                "The Wolf of Wall Street"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Building wealth from poverty",
+                "Setting_And_World": "Contrast between poverty and wealth",
+                "Central_Conflict_Type": "Economic barriers and class discrimination",
+                "Tone_And_Atmosphere": "Inspirational economic transformation",
+                "Character_Arc_Focus": "Escaping poverty while staying grounded",
+                "Power_Ability_System": "Business skills and work ethic",
+                "Stakes_And_Consequences": "Business failure or losing values"
+              }
+            },
+            "Survival & Resilience": {
+              "Definition": "Stories of characters surviving extreme circumstances (disasters, trauma, illness) and rebuilding lives through resilience. Focus on immediate survival, coping mechanisms, and long-term recovery. Distinguished by emphasis on surviving specific hardships and emotional/physical resilience.",
+              "Key_Themes": [
+                "Surviving extreme circumstances",
+                "Building resilience through hardship",
+                "Recovery and healing journeys",
+                "Coping with trauma",
+                "Finding strength to continue"
+              ],
+              "Examples": [
+                "The Accidental Mother",
+                "127 Hours",
+                "Wild",
+                "Unbroken"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving and rebuilding after hardship",
+                "Setting_And_World": "Disaster, illness, or trauma contexts",
+                "Central_Conflict_Type": "Survival challenges and recovery",
+                "Tone_And_Atmosphere": "Raw and emotional with endurance focus",
+                "Character_Arc_Focus": "Surviving and processing trauma",
+                "Power_Ability_System": "Emotional resilience and inner strength",
+                "Stakes_And_Consequences": "Death or failing to recover"
+              }
+            },
+            "Entrepreneurship & Big Dreams": {
+              "Definition": "Stories of characters pursuing entrepreneurial dreams, building businesses, or chasing ambitious goals despite obstacles. Features startup challenges, innovation, risk-taking, and balancing dreams with practical realities. Distinguished by focus on entrepreneurship and ambitious goal pursuit.",
+              "Key_Themes": [
+                "Pursuing entrepreneurial dreams",
+                "Building businesses from ideas",
+                "Innovation and risk-taking",
+                "Overcoming startup obstacles",
+                "Balancing dreams with reality"
+              ],
+              "Examples": [
+                "The Social Network",
+                "Joy",
+                "Steve Jobs"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Building business from idea",
+                "Setting_And_World": "Startups and innovation spaces",
+                "Central_Conflict_Type": "Business obstacles and funding challenges",
+                "Tone_And_Atmosphere": "Ambitious with entrepreneurial pressure",
+                "Character_Arc_Focus": "Taking risks and learning from failure",
+                "Power_Ability_System": "Business acumen and innovation",
+                "Stakes_And_Consequences": "Business failure or financial ruin"
+              }
+            }
+          }
+        },
+        "Revenge": {
+          "Definition": "Stories centered on protagonists seeking vengeance against those who wronged them, featuring methodical payback, elaborate revenge plots, or karmic justice delivered to antagonists. Characters may transform from victims to avengers, often navigating moral complexity as revenge consumes them. Distinguished by revenge as primary motivation driving plot and character actions.",
+          "Key_Themes": [
+            "Seeking vengeance for past wrongs",
+            "Elaborate revenge plotting",
+            "Transformation from victim to avenger",
+            "Moral cost of pursuing revenge",
+            "Karmic justice and payback"
+          ],
+          "Examples": [
+            "Insta Millionaire",
+            "Emily's Return",
+            "Kill Bill",
+            "The Count of Monte Cristo",
+            "John Wick",
+            "Oldboy",
+            "Cutthroat Courtship"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Executing revenge against wrongdoers",
+            "Setting_And_World": "Varied settings enabling revenge schemes",
+            "Central_Conflict_Type": "Protagonist versus those who wronged them",
+            "Tone_And_Atmosphere": "Dark and determined with cathartic payoff",
+            "Character_Arc_Focus": "Victim becoming avenger, moral cost",
+            "Power_Ability_System": "Planning, resources, and determination",
+            "Stakes_And_Consequences": "Losing self to vengeance or failing"
+          },
+          "Sub-Sub-Genre": {}
+        },
+        "Crime & Security Drama": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {
+            "Mafia & Organized Crime": {
+              "Definition": "Stories within crime families exploring loyalty codes, family business dynamics, territorial conflicts, and organized crime hierarchies. Features made men, bosses, and criminal dynasties where family and business intertwine. Distinguished by focus on organized hierarchical crime structures.",
+              "Key_Themes": [
+                "Crime family dynamics",
+                "Mafia codes and loyalty",
+                "Territorial wars between organizations",
+                "Criminal empire building",
+                "Loyalty versus betrayal dilemmas"
+              ],
+              "Examples": [
+                "The Godfather's Son",
+                "The Godfather",
+                "Goodfellas",
+                "The Sopranos"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Navigating crime family politics",
+                "Setting_And_World": "Mafia territories and underworld",
+                "Central_Conflict_Type": "Territory wars and family betrayals",
+                "Tone_And_Atmosphere": "Dark family drama with violence",
+                "Character_Arc_Focus": "Rising in family or choosing escape",
+                "Power_Ability_System": "Family connections and enforcement",
+                "Stakes_And_Consequences": "Execution for betrayal"
+              }
+            },
+            "Police Action Drama": {
+              "Definition": "",
+              "Key_Themes": [],
+              "Examples": [],
+              "Comparison": {}
+            },
+            "Patriotic Drama": {
+              "Definition": "",
+              "Key_Themes": [],
+              "Examples": [],
+              "Comparison": {}
+            }
+          }
+        }
+      }
+    },
+    "Science Fiction": {
+      "Definition": "Speculative fiction extrapolating from scientific principles, technological advancement, or theoretical concepts to explore potential futures or scientifically possible scenarios. Central focus on how scientific progress shapes society and individuals. Distinguished from fantasy by grounding in science and technology rather than magic. Explores consequences and ethical implications of technological advancement.",
+      "Key_Themes": [
+        "Advanced technology shaping society",
+        "Scientific speculation and extrapolation",
+        "Ethical dilemmas from progress",
+        "Space exploration and colonization",
+        "Consequences of technological change"
+      ],
+      "Examples": [
+        "The Mech Touch",
+        "Royal Stitches",
+        "Dune",
+        "The Expanse",
+        "Blade Runner",
+        "Soul Record: Apocalypse",
+        "Infinite Mana in the Apocalypse",
+        "Ashes to Fire"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Technology challenges or space conflicts",
+        "Setting_And_World": "Future societies or alternate tech timelines",
+        "Central_Conflict_Type": "Tech ethics or interstellar warfare",
+        "Tone_And_Atmosphere": "Varies from optimistic to dystopian",
+        "Character_Arc_Focus": "Adapting to technology's impact",
+        "Power_Ability_System": "Technology-based, not magical",
+        "Stakes_And_Consequences": "Civilization collapse or extinction"
+      },
+      "Sub-Genre": {
+        "Space Opera & Military SF": {
+          "Definition": "Large-scale space adventures featuring interstellar conflicts, space fleet warfare, galactic politics, and military campaigns across star systems. Combines space technology, alien civilizations, and military structures with adventure. Distinguished by grand scale, military organizations, and epic dramatic conflicts between opposing forces across galaxies.",
+          "Key_Themes": [
+            "Space fleet warfare and tactics",
+            "Galactic empires and politics",
+            "Military hierarchy and life",
+            "Alien civilizations and contact",
+            "Interstellar conflicts and strategy"
+          ],
+          "Examples": [
+            "Star Wars",
+            "Battlestar Galactica",
+            "Legend of the Galactic Heroes"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Space battles and galactic intrigue",
+            "Setting_And_World": "Multiple star systems and alien worlds",
+            "Central_Conflict_Type": "Interstellar warfare and empire building",
+            "Tone_And_Atmosphere": "Epic and grand",
+            "Character_Arc_Focus": "Rising military ranks or space heroism",
+            "Power_Ability_System": "Advanced space technology",
+            "Stakes_And_Consequences": "Planetary destruction or galactic war"
+          },
+          "Sub-Sub-Genre": {
+            "Galactic Empire": {
+              "Definition": "Stories centered on vast interstellar empires, their politics, expansion strategies, and individuals navigating imperial power structures. Features complex galactic politics with competing factions. Explores colonialism, rebellion, succession crises, and maintaining order across vast distances. Distinguished by focus on empire as institution.",
+              "Key_Themes": [
+                "Imperial politics across star systems",
+                "Empire building and expansion",
+                "Rebellion versus authority",
+                "Colonial conflicts on worlds",
+                "Succession wars and crises"
+              ],
+              "Examples": [
+                "Dune",
+                "Foundation",
+                "Star Wars Empire"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Imperial politics and succession",
+                "Setting_And_World": "Vast empire spanning star systems",
+                "Central_Conflict_Type": "Rebellion and noble rivalries",
+                "Tone_And_Atmosphere": "Grand political intrigue",
+                "Character_Arc_Focus": "Rising through imperial hierarchy",
+                "Power_Ability_System": "Political power and military might",
+                "Stakes_And_Consequences": "Empire collapse or planetary subjugation"
+              }
+            },
+            "Military Space Combat": {
+              "Definition": "Science fiction emphasizing military operations, space fleet tactics, zero-gravity combat, and soldier experiences in futuristic warfare. Features detailed military life, training, combat stress, and tactical aspects of space warfare. Distinguished by focus on military operations and soldier perspective rather than politics.",
+              "Key_Themes": [
+                "Space warfare tactics",
+                "Military life in space",
+                "Soldier perspective on conflicts",
+                "Zero-gravity combat",
+                "Military discipline and hierarchy"
+              ],
+              "Examples": [
+                "Starship Troopers",
+                "Ender's Game",
+                "The Forever War"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Military missions and space battles",
+                "Setting_And_World": "Military spacecraft and battlefields",
+                "Central_Conflict_Type": "Tactical space combat",
+                "Tone_And_Atmosphere": "Military realism with intensity",
+                "Character_Arc_Focus": "Becoming veteran soldier",
+                "Power_Ability_System": "Military tech and tactics",
+                "Stakes_And_Consequences": "Soldier death or mission failure"
+              }
+            }
+          }
+        },
+        "Apocalyptic & Post-Apocalyptic": {
+          "Definition": "Stories during or after civilization-ending events focusing on survival, adaptation, or rebuilding. Features resource scarcity, social breakdown, and human nature under extreme pressure. Causes vary but emphasis remains on survival and human response to societal destruction. Distinguished by permanent change and long-term adaptation focus.",
+          "Key_Themes": [
+            "Societal collapse and survival",
+            "Resource scarcity conflicts",
+            "Rebuilding from ruins",
+            "Human nature under pressure",
+            "Adaptation to changed world"
+          ],
+          "Examples": [
+            "Soul Record: Apocalypse",
+            "Infinite Mana in the Apocalypse",
+            "Mad Max",
+            "The Walking Dead",
+            "The Road"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving collapse and rebuilding",
+            "Setting_And_World": "Post-collapse ruins and harsh environments",
+            "Central_Conflict_Type": "Resource conflicts and survivor tensions",
+            "Tone_And_Atmosphere": "Bleak and desperate",
+            "Character_Arc_Focus": "Learning survival and maintaining humanity",
+            "Power_Ability_System": "Survival skills or system powers",
+            "Stakes_And_Consequences": "Death or extinction"
+          },
+          "Sub-Sub-Genre": {
+            "System Apocalypse": {
+              "Definition": "Earth transformed by game-like system during apocalyptic event with survivors gaining powers through leveling, classes, and skills. Combines LitRPG mechanics with post-apocalyptic survival. Features safe zones, settlement building, and tension between optimizing builds and immediate survival. Distinguished by game mechanics transforming real world.",
+              "Key_Themes": [
+                "System integration into reality",
+                "Monster spawns and dungeons",
+                "Class selection under pressure",
+                "Safe zone establishment",
+                "Balancing optimization and survival"
+              ],
+              "Examples": [
+                "Soul Record: Apocalypse",
+                "Infinite Mana in the Apocalypse",
+                "Defiance of the Fall",
+                "The System Apocalypse series"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Leveling to survive transformed world",
+                "Setting_And_World": "Earth with game mechanics and dungeons",
+                "Central_Conflict_Type": "Monster threats and human PvP",
+                "Tone_And_Atmosphere": "Urgent survival with progression excitement",
+                "Character_Arc_Focus": "Learning system to protect others",
+                "Power_Ability_System": "Game classes, levels, and skills",
+                "Stakes_And_Consequences": "Permanent death or zone collapse"
+              }
+            },
+            "Zombie Apocalypse": {
+              "Definition": "Undead outbreak overwhelming civilization creating scenario where survivors fight mindless hordes and desperate humans. Focuses on survival groups, safe zones, scavenging, and psychological toll. Central tension between zombie threat and human threats. Distinguished by specific zombie threat creating unique challenges.",
+              "Key_Themes": [
+                "Undead outbreak and hordes",
+                "Survival group dynamics",
+                "Safe zone fortification",
+                "Infection threat and paranoia",
+                "Humans as greater threat"
+              ],
+              "Examples": [
+                "The Walking Dead",
+                "Train to Busan",
+                "World War Z"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving hordes and human dangers",
+                "Setting_And_World": "Zombie-infested ruined civilization",
+                "Central_Conflict_Type": "Zombie attacks and survivor conflicts",
+                "Tone_And_Atmosphere": "Constant dread and deteriorating hope",
+                "Character_Arc_Focus": "Becoming hardened survivor",
+                "Power_Ability_System": "Survival skills, no supernatural powers",
+                "Stakes_And_Consequences": "Infection or group collapse"
+              }
+            },
+            "Nuclear/Environmental Collapse": {
+              "Definition": "Apocalypse from nuclear war, climate catastrophe, or ecological collapse creating permanently hostile environment. Features radiation, climate extremes, resource depletion, or toxic environments. Often explores human responsibility and whether humanity deserves survival. Distinguished by environmental causes and hostile planet as antagonist.",
+              "Key_Themes": [
+                "Environmental catastrophe",
+                "Radiation and contamination",
+                "Hostile planet conditions",
+                "Bunker or shelter survival",
+                "Human responsibility for disaster"
+              ],
+              "Examples": [
+                "The Road",
+                "Fallout series",
+                "Waterworld"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving hostile environment",
+                "Setting_And_World": "Radioactive wastelands or toxic Earth",
+                "Central_Conflict_Type": "Environmental hazards and resource wars",
+                "Tone_And_Atmosphere": "Bleak with human culpability",
+                "Character_Arc_Focus": "Adapting to ruined world",
+                "Power_Ability_System": "Environmental suits and survival tech",
+                "Stakes_And_Consequences": "Radiation death or extinction"
+              }
+            }
+          }
+        },
+        "Cyberpunk & Tech Noir": {
+          "Definition": "Dystopian near-future featuring advanced technology contrasted with societal decay. Mega-corporations replace governments, cybernetics blur human-machine boundaries, urban sprawls house vast inequality. Characterized by noir aesthetics, hacker protagonists, and themes of dehumanization. Distinguished by specific aesthetic and anti-corporate themes.",
+          "Key_Themes": [
+            "Corporate dystopia control",
+            "Cybernetic augmentation",
+            "Digital warfare and hacking",
+            "AI consciousness questions",
+            "Technology's dark side"
+          ],
+          "Examples": [
+            "The Mech Touch",
+            "Blade Runner",
+            "The Matrix",
+            "Ghost in the Shell"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Fighting corporate control or digital threats",
+            "Setting_And_World": "Neon cities with massive inequality",
+            "Central_Conflict_Type": "Corporate warfare or AI conflicts",
+            "Tone_And_Atmosphere": "Noir and gritty with neon aesthetics",
+            "Character_Arc_Focus": "Questioning humanity amid tech",
+            "Power_Ability_System": "Cybernetics and hacking skills",
+            "Stakes_And_Consequences": "Humanity loss or digital death"
+          },
+          "Sub-Sub-Genre": {
+            "Simulation & Virtual Reality": {
+              "Definition": "Stories exploring virtual reality and digital worlds where consciousness exists separate from bodies, or simulation theory questions. Features characters in persistent virtual worlds, uploaded minds, or questioning whether reality itself is simulation. Distinguished by focus on digital existence and reality questioning.",
+              "Key_Themes": [
+                "Virtual reality as real as physical",
+                "Digital consciousness and uploaded minds",
+                "Simulation theory and questioning reality",
+                "Living in permanent virtual worlds",
+                "Boundaries between physical and digital"
+              ],
+              "Examples": [
+                "The Matrix",
+                "Ready Player One",
+                "Sword Art Online"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Navigating or escaping virtual reality",
+                "Setting_And_World": "Virtual landscapes or simulated reality",
+                "Central_Conflict_Type": "Virtual dangers or simulation control",
+                "Tone_And_Atmosphere": "Mind-bending and philosophical",
+                "Character_Arc_Focus": "Accepting digital versus physical existence",
+                "Power_Ability_System": "Digital manipulation abilities",
+                "Stakes_And_Consequences": "Permanent digital death or body loss"
+              }
+            },
+            "AI & Digital Worlds": {
+              "Definition": "Stories exploring AI consciousness, rights, and relationships with humans. Questions whether AI can be truly conscious, what rights synthetic beings deserve, and implications of digital immortality. Features AI gaining sentience or humans uploading consciousness. Distinguished by focus on AI consciousness philosophy.",
+              "Key_Themes": [
+                "AI sentience and consciousness",
+                "Synthetic being rights",
+                "Human-AI relationships",
+                "Digital immortality",
+                "Defining consciousness and humanity"
+              ],
+              "Examples": [
+                "Ex Machina",
+                "Her",
+                "Westworld"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "AI seeking recognition or consciousness questions",
+                "Setting_And_World": "Near-future with advanced AI",
+                "Central_Conflict_Type": "AI rights and human-synthetic conflicts",
+                "Tone_And_Atmosphere": "Philosophical consciousness exploration",
+                "Character_Arc_Focus": "Defining personhood across human and AI",
+                "Power_Ability_System": "AI capabilities and digital existence",
+                "Stakes_And_Consequences": "AI extinction or synthetic persecution"
+              }
+            },
+            "Mecha Worlds": {
+              "Definition": "Stories featuring giant piloted robots (mecha) as central element, often in war or competitive contexts. Pilots bond with machines, engage in mecha combat, and navigate societies built around mecha technology. Distinguished by focus on human-machine bonding and giant robot warfare.",
+              "Key_Themes": [
+                "Giant robot piloting",
+                "Human-mecha bonding",
+                "Mecha warfare and combat",
+                "Pilot training and selection",
+                "Societies built on mecha technology"
+              ],
+              "Examples": [
+                "The Mech Touch",
+                "Pacific Rim",
+                "Neon Genesis Evangelion",
+                "Gundam series"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Mastering mecha and winning battles",
+                "Setting_And_World": "Societies with mecha technology",
+                "Central_Conflict_Type": "Mecha wars between factions",
+                "Tone_And_Atmosphere": "Action-focused with pilot drama",
+                "Character_Arc_Focus": "Becoming ace pilot, bonding with mecha",
+                "Power_Ability_System": "Mecha capabilities and pilot compatibility",
+                "Stakes_And_Consequences": "Pilot death or faction defeat"
+              }
+            }
+          }
+        },
+        "Time Travel & Alternate Reality": {
+          "Definition": "Science fiction exploring temporal manipulation, time loops, parallel dimensions, or alternate timelines. Features time machines, natural phenomena, or abilities to access alternate timelines. Central themes include paradoxes, butterfly effects, and roads not taken. Distinguished by scientific explanations and focus on logical consequences.",
+          "Key_Themes": [
+            "Time paradoxes and logic",
+            "Changing history consequences",
+            "Parallel worlds and timelines",
+            "Temporal manipulation ethics",
+            "Butterfly effect impacts"
+          ],
+          "Examples": [
+            "Royal Stitches",
+            "Ashes to Fire",
+            "Back to the Future",
+            "Interstellar",
+            "Dark",
+            "Major League System"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Changing past or escaping time traps",
+            "Setting_And_World": "Multiple timelines or repeating periods",
+            "Central_Conflict_Type": "Paradoxes and timeline protection",
+            "Tone_And_Atmosphere": "Mind-bending with consequences focus",
+            "Character_Arc_Focus": "Using time knowledge wisely",
+            "Power_Ability_System": "Time travel tech or temporal abilities",
+            "Stakes_And_Consequences": "Timeline collapse or erased existence"
+          },
+          "Sub-Sub-Genre": {
+            "Regression & Second Chance": {
+              "Definition": "Characters returning to past moments with full future knowledge, using foreknowledge to change outcomes or optimize lives. Often triggered by death or regret. Core appeal from information advantage and preventing tragedies. Distinguished by focus on character's own timeline and second chance themes.",
+              "Key_Themes": [
+                "Return to past with knowledge",
+                "Preventing personal tragedies",
+                "Strategic use of foreknowledge",
+                "Building better future",
+                "Correcting past mistakes"
+              ],
+              "Examples": [
+                "Royal Stitches",
+                "Ashes to Fire",
+                "About Time",
+                "Re:Zero",
+                "The First Day of My New Life",
+                "Major League System"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Using foreknowledge to change fate",
+                "Setting_And_World": "Character's own past timeline",
+                "Central_Conflict_Type": "Outmaneuvering enemies with future info",
+                "Tone_And_Atmosphere": "Dramatic irony and satisfaction",
+                "Character_Arc_Focus": "Making better choices with wisdom",
+                "Power_Ability_System": "Perfect memory of future events",
+                "Stakes_And_Consequences": "Changes making things worse"
+              }
+            },
+            "Time Loop": {
+              "Definition": "Characters trapped in repeating time periods with memory persisting across iterations, learning through cycles to eventually break free or achieve goals. Core appeal is puzzle-solving across repetitions. Features loop rules and creative solutions. Distinguished by Groundhog Day format and repetition structure.",
+              "Key_Themes": [
+                "Repeating time with memory",
+                "Learning through iterations",
+                "Breaking loop as goal",
+                "Incremental progress across cycles",
+                "Psychological toll of repetition"
+              ],
+              "Examples": [
+                "Groundhog Day",
+                "Edge of Tomorrow",
+                "Mother of Learning"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Understanding and breaking the loop",
+                "Setting_And_World": "Same period repeating endlessly",
+                "Central_Conflict_Type": "Solving loop mystery",
+                "Tone_And_Atmosphere": "Initially comedic turning existential",
+                "Character_Arc_Focus": "Mastering loop and maintaining sanity",
+                "Power_Ability_System": "Memory retention across loops",
+                "Stakes_And_Consequences": "Permanent loop imprisonment"
+              }
+            },
+            "Parallel Dimensions": {
+              "Definition": "Multiple realities existing simultaneously with different versions of characters and worlds based on different choices. Characters travel between dimensions discovering alternate selves and worlds. Features dimensional travel technology and crisis threatening multiple realities. Distinguished by lateral movement between concurrent realities.",
+              "Key_Themes": [
+                "Alternate realities coexisting",
+                "Dimension hopping exploration",
+                "Meeting alternate versions",
+                "Different choices creating timelines",
+                "Threats spanning dimensions"
+              ],
+              "Examples": [
+                "Spider-Man: Into the Spider-Verse",
+                "Everything Everywhere All at Once"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Exploring or protecting multiple realities",
+                "Setting_And_World": "Multiple parallel world versions",
+                "Central_Conflict_Type": "Dimension-spanning threats",
+                "Tone_And_Atmosphere": "Wonder at infinite possibilities",
+                "Character_Arc_Focus": "Accepting alternate selves and identity",
+                "Power_Ability_System": "Dimensional travel abilities",
+                "Stakes_And_Consequences": "Stranded or dimensional collapse"
+              }
+            }
+          }
+        },
+        "Dystopian": {
+          "Definition": "Oppressive future societies where governments, corporations, or systems control populations through various means. Features surveillance states, restricted freedoms, social engineering, or authoritarian rule. Characters often fight system or survive within it. Distinguished by focus on societal control mechanisms and individual resistance.",
+          "Key_Themes": [
+            "Oppressive governmental control",
+            "Loss of individual freedoms",
+            "Surveillance and monitoring",
+            "Social engineering and manipulation",
+            "Resistance against system"
+          ],
+          "Examples": [
+            "1984",
+            "The Hunger Games",
+            "Brave New World"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving or fighting oppressive system",
+            "Setting_And_World": "Future with totalitarian control",
+            "Central_Conflict_Type": "Individual versus system",
+            "Tone_And_Atmosphere": "Oppressive and claustrophobic",
+            "Character_Arc_Focus": "Awakening to truth and choosing resistance",
+            "Power_Ability_System": "Surveillance tech or genetic engineering",
+            "Stakes_And_Consequences": "Execution or permanent mind control"
+          },
+          "Sub-Sub-Genre": {
+            "Oppressive Government Systems": {
+              "Definition": "Totalitarian governments controlling every aspect of citizens' lives through surveillance, propaganda, and force. Features Big Brother-style monitoring, thought police, and severe punishment for dissent. Characters navigate constant surveillance or join resistance. Distinguished by focus on governmental totalitarianism.",
+              "Key_Themes": [
+                "Total government surveillance",
+                "Thought control and propaganda",
+                "Punishment for dissent",
+                "Loss of privacy and freedom",
+                "Underground resistance movements"
+              ],
+              "Examples": [
+                "1984",
+                "V for Vendetta",
+                "The Handmaid's Tale"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving surveillance or joining resistance",
+                "Setting_And_World": "Nation with omnipresent government control",
+                "Central_Conflict_Type": "Individual freedom versus state control",
+                "Tone_And_Atmosphere": "Paranoid and oppressive",
+                "Character_Arc_Focus": "Awakening and choosing to resist",
+                "Power_Ability_System": "Government surveillance technology",
+                "Stakes_And_Consequences": "Execution or becoming unperson"
+              }
+            },
+            "Bio Experiments & Social Engineering": {
+              "Definition": "Societies using biological experimentation, genetic engineering, or social conditioning to control populations. Features predetermined castes, genetic modification, conditioning programs, or biological control mechanisms. Characters may discover they're experiments or fight engineered systems. Distinguished by biological/genetic control focus.",
+              "Key_Themes": [
+                "Genetic engineering control",
+                "Social conditioning programs",
+                "Predetermined caste systems",
+                "Biological experimentation",
+                "Fighting engineered nature"
+              ],
+              "Examples": [
+                "Brave New World",
+                "Gattaca",
+                "Never Let Me Go"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Breaking conditioning or discovering true nature",
+                "Setting_And_World": "Genetically stratified society",
+                "Central_Conflict_Type": "Overcoming programming",
+                "Tone_And_Atmosphere": "Clinical and dehumanizing",
+                "Character_Arc_Focus": "Reclaiming human nature",
+                "Power_Ability_System": "Genetic modifications or conditioning",
+                "Stakes_And_Consequences": "Genetic termination or permanent conditioning"
+              }
+            },
+            "Corporate Megacorp Dominance": {
+              "Definition": "Mega-corporations replacing governments as true powers, controlling society through economic means. Features corporate states, privatized law enforcement, wage slavery, and economic warfare. Characters are corporate assets, wage slaves, or fighting corporate control. Distinguished by corporate rather than governmental control.",
+              "Key_Themes": [
+                "Corporate control replacing government",
+                "Economic warfare and espionage",
+                "Wage slavery systems",
+                "Privatized law and military",
+                "Fighting corporate dominance"
+              ],
+              "Examples": [
+                "RoboCop",
+                "Continuum",
+                "Incorporated"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Escaping or exposing corporate control",
+                "Setting_And_World": "Corporate-controlled cities and states",
+                "Central_Conflict_Type": "Corporate warfare and wage slavery",
+                "Tone_And_Atmosphere": "Cynical capitalism critique",
+                "Character_Arc_Focus": "Breaking corporate loyalty",
+                "Power_Ability_System": "Corporate resources and economic power",
+                "Stakes_And_Consequences": "Assassination or permanent debt slavery"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Mystery & Thriller": {
+      "Definition": "Stories centered on solving mysteries, uncovering hidden truths, or surviving suspenseful dangers with emphasis on investigation, plot twists, and mounting tension. Mystery focuses on solving crimes through clue gathering and deduction, while thriller emphasizes danger and protagonists in jeopardy. Distinguished from drama by puzzle-solving or danger as primary driver.",
+      "Key_Themes": [
+        "Investigation and detective work",
+        "Clues and deduction process",
+        "Plot twists and revelations",
+        "Suspense and mounting tension",
+        "Uncovering hidden truths"
+      ],
+      "Examples": [
+        "The Godfather's Son",
+        "Gone Girl",
+        "Se7en",
+        "Knives Out"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Solving mysteries or surviving danger",
+        "Setting_And_World": "Contemporary settings where mysteries unfold",
+        "Central_Conflict_Type": "Mystery puzzles or dangerous adversaries",
+        "Tone_And_Atmosphere": "Suspenseful with mounting tension",
+        "Character_Arc_Focus": "Solving case or outsmarting adversaries",
+        "Power_Ability_System": "Deductive reasoning and survival skills",
+        "Stakes_And_Consequences": "Unsolved murder or death from danger"
+      },
+      "Sub-Genre": {
+        "Crime & Detective": {
+          "Definition": "Puzzle-focused stories where protagonists methodically investigate crimes, gathering clues and using deductive reasoning to solve mysteries. Emphasis on fair play with reader receiving same clues, logical solution process, and satisfying reveal. Distinguished from thriller by focus on solving puzzle over danger and suspense.",
+          "Key_Themes": [
+            "Crime solving through investigation",
+            "Deductive reasoning and logic",
+            "Clue gathering and analysis",
+            "Fair play mystery construction",
+            "Satisfying solution reveal"
+          ],
+          "Examples": [
+            "Sherlock Holmes",
+            "Knives Out",
+            "Murder on the Orient Express"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Solving crime through clues and deduction",
+            "Setting_And_World": "Crime scenes and investigation settings",
+            "Central_Conflict_Type": "Mystery puzzle and suspect elimination",
+            "Tone_And_Atmosphere": "Intellectual puzzle-solving intrigue",
+            "Character_Arc_Focus": "Demonstrating deductive skills",
+            "Power_Ability_System": "Investigative and logical skills",
+            "Stakes_And_Consequences": "Wrong conviction or killer escaping"
+          },
+          "Sub-Sub-Genre": {
+            "Cozy Mystery": {
+              "Definition": "Lighthearted mysteries in small communities featuring amateur sleuths with minimal graphic violence. Murders occur off-page, suspects are community members, detective often has unique hobby. Distinguished by gentle approach, limited violence, and cozy comfortable atmosphere despite crime.",
+              "Key_Themes": [
+                "Amateur detective solving crimes",
+                "Small community setting",
+                "Minimal graphic content",
+                "Cozy comfortable atmosphere",
+                "Community gossip as investigation tool"
+              ],
+              "Examples": [
+                "Murder She Wrote",
+                "Midsomer Murders",
+                "The Thursday Murder Club"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Amateur sleuth solving community crime",
+                "Setting_And_World": "Charming small towns and cozy shops",
+                "Central_Conflict_Type": "Murder without graphic violence",
+                "Tone_And_Atmosphere": "Lighthearted and comfortable",
+                "Character_Arc_Focus": "Amateur developing detective skills",
+                "Power_Ability_System": "Community knowledge and observation",
+                "Stakes_And_Consequences": "Wrong accusation, minimal danger"
+              }
+            },
+            "Psychological Thriller": {
+              "Definition": "Suspense stories emphasizing psychological tension, unreliable narrators, mind games, and mental states over physical action. Reality becomes questionable through gaslighting, paranoia, or manipulation. Characters cannot trust own perceptions as antagonists use psychological rather than physical tactics. Distinguished from action thriller by internal psychological focus and atmosphere of uncertainty.",
+              "Key_Themes": [
+                "Psychological tension and mind games",
+                "Unreliable narrators and perception",
+                "Mental manipulation and gaslighting",
+                "Questioning reality and sanity",
+                "Internal rather than external threats"
+              ],
+              "Examples": [
+                "Gone Girl",
+                "Shutter Island",
+                "Black Swan",
+                "The Silent Patient"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Escaping psychological manipulation",
+                "Setting_And_World": "Familiar settings turned threatening",
+                "Central_Conflict_Type": "Mental manipulation and reality distortion",
+                "Tone_And_Atmosphere": "Unsettling with slow-building dread",
+                "Character_Arc_Focus": "Trusting perceptions and reclaiming sanity",
+                "Power_Ability_System": "Psychological tactics and mental resilience",
+                "Stakes_And_Consequences": "Mental breakdown or losing sense of self"
+              }
+            },
+            "Investigative Crime": {
+              "Definition": "Stories following investigators (detectives, police, or private investigators) through methodical crime-solving using professional procedures, forensics, and investigative techniques. Features procedural realism, case files, forensic analysis, and the institutional framework of crime investigation. Includes police procedurals, detective mysteries, and PI noir. Distinguished by professional investigation focus and procedural authenticity.",
+              "Key_Themes": [
+                "Professional crime investigation",
+                "Forensic science and evidence analysis",
+                "Procedural methods and protocols",
+                "Detective partnerships and dynamics",
+                "Case-by-case crime solving"
+              ],
+              "Examples": [
+                "True Detective",
+                "Law & Order",
+                "The Wire",
+                "Chinatown"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Solving crimes through professional investigation",
+                "Setting_And_World": "Police stations, crime scenes, PI offices",
+                "Central_Conflict_Type": "Criminal cases with procedural obstacles",
+                "Tone_And_Atmosphere": "Procedural realism varies to noir",
+                "Character_Arc_Focus": "Professional growth and case emotional toll",
+                "Power_Ability_System": "Forensic and investigative expertise",
+                "Stakes_And_Consequences": "Wrong conviction or killer escaping"
+              }
+            }
+          }
+        },
+        "Action Thriller": {
+          "Definition": "Fast-paced thrillers emphasizing action sequences, physical danger, chase scenes, and high-stakes conflicts. Features explosive set pieces, combat, and protagonists with skills for confrontation. Distinguished from psychological thriller by external physical danger and from mystery by action over investigation.",
+          "Key_Themes": [
+            "Action sequences and set pieces",
+            "Physical danger and combat",
+            "Chase scenes and pursuits",
+            "High stakes with immediate consequences",
+            "Fast pacing and momentum"
+          ],
+          "Examples": [
+            "Mission: Impossible",
+            "Die Hard",
+            "The Bourne Identity"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving physical threats and completing missions",
+            "Setting_And_World": "Action-friendly locations with danger",
+            "Central_Conflict_Type": "Physical confrontations and chases",
+            "Tone_And_Atmosphere": "Adrenaline-fueled and relentless",
+            "Character_Arc_Focus": "Using skills to survive",
+            "Power_Ability_System": "Combat training and tactical skills",
+            "Stakes_And_Consequences": "Death or mission failure"
+          },
+          "Sub-Sub-Genre": {
+            "Conspiracy Thriller": {
+              "Definition": "Protagonists uncovering large-scale conspiracies involving powerful organizations where discovering truth puts them in mortal danger. Features layers of conspiracy, inability to trust authorities, and racing to expose truth. Distinguished by scope of conspiracy involving institutional power.",
+              "Key_Themes": [
+                "Uncovering large-scale conspiracies",
+                "Government or corporate secrets",
+                "Dangerous knowledge",
+                "Unable to trust authorities",
+                "Exposing institutional corruption"
+              ],
+              "Examples": [
+                "The Pelican Brief",
+                "Three Days of the Condor",
+                "The Manchurian Candidate"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Exposing conspiracy before being silenced",
+                "Setting_And_World": "Government and corporate power centers",
+                "Central_Conflict_Type": "Individual versus powerful system",
+                "Tone_And_Atmosphere": "Paranoid with deepening scope",
+                "Character_Arc_Focus": "Ordinary person becoming whistleblower",
+                "Power_Ability_System": "Investigation versus institutional power",
+                "Stakes_And_Consequences": "Assassination or truth buried"
+              }
+            },
+            "Assassin & Spy": {
+              "Definition": "Stories of assassins, spies, or covert operatives navigating dangerous missions, espionage, and world of secrets. Features trained killers/spies with specialized skills, international stakes, and moral ambiguity. Distinguished by specific profession and espionage world setting.",
+              "Key_Themes": [
+                "Covert operations and missions",
+                "Espionage and tradecraft",
+                "Assassination and spy work",
+                "Double-crosses and betrayal",
+                "Moral ambiguity of killing"
+              ],
+              "Examples": [
+                "James Bond",
+                "John Wick",
+                "Tinker Tailor Soldier Spy"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Completing missions and surviving betrayals",
+                "Setting_And_World": "International spy networks and shadows",
+                "Central_Conflict_Type": "Mission objectives and handler betrayals",
+                "Tone_And_Atmosphere": "Tense and secretive with moral complexity",
+                "Character_Arc_Focus": "Questioning spy life's toll",
+                "Power_Ability_System": "Specialized spy and combat training",
+                "Stakes_And_Consequences": "Mission failure or betrayal death"
+              }
+            },
+            "Survival Thriller": {
+              "Definition": "Characters fighting for survival against overwhelming odds from natural disasters, hostile environments, or being hunted. Stripped of support, protagonists use ingenuity and endurance to survive. Distinguished by focus on survival against environment or circumstances rather than primarily human antagonists.",
+              "Key_Themes": [
+                "Survival against overwhelming odds",
+                "Hostile environment or circumstances",
+                "Resource scarcity and rationing",
+                "Human endurance and resilience",
+                "Desperate survival choices"
+              ],
+              "Examples": [
+                "The Revenant",
+                "Cast Away",
+                "127 Hours"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving hostile conditions until escape",
+                "Setting_And_World": "Harsh wilderness or disaster environments",
+                "Central_Conflict_Type": "Nature or circumstances as antagonist",
+                "Tone_And_Atmosphere": "Desperate and primal",
+                "Character_Arc_Focus": "Finding will to survive",
+                "Power_Ability_System": "Survival skills and improvisation",
+                "Stakes_And_Consequences": "Death from environment or starvation"
+              }
+            },
+            "Heist & Con Artist": {
+              "Definition": "Stories of elaborate thefts or confidence schemes requiring team coordination and clever execution. Features master thieves or con artists assembling specialized crews for impossible jobs. Distinguished by focus on planning and execution of specific criminal enterprises.",
+              "Key_Themes": [
+                "Elaborate criminal planning",
+                "Specialized crew dynamics",
+                "Impossible heists or cons",
+                "Deception and misdirection",
+                "Twist reveals and complications"
+              ],
+              "Examples": [
+                "Ocean's Eleven",
+                "The Sting",
+                "Catch Me If You Can"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Planning and executing heist or con",
+                "Setting_And_World": "High-value targets and crew hideouts",
+                "Central_Conflict_Type": "Heist obstacles and crew betrayals",
+                "Tone_And_Atmosphere": "Clever and stylish",
+                "Character_Arc_Focus": "Proving criminal mastery",
+                "Power_Ability_System": "Specialized criminal skills",
+                "Stakes_And_Consequences": "Capture or crew betrayal"
+              }
+            },
+            "Vigilante Justice": {
+              "Definition": "Characters taking law into own hands when legal systems fail, operating outside law to punish criminals or right wrongs. Features protagonists who've lost faith in system with personal motivation. Distinguished by focus on extralegal justice and moral justifications.",
+              "Key_Themes": [
+                "Taking law into own hands",
+                "System failure motivating vigilantism",
+                "Personal justice for wrongs",
+                "Moral gray areas of vigilantism",
+                "Whether ends justify means"
+              ],
+              "Examples": [
+                "The Punisher",
+                "Death Wish",
+                "Law Abiding Citizen"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Delivering justice outside the law",
+                "Setting_And_World": "Failed system territories",
+                "Central_Conflict_Type": "Vigilante versus criminals and law",
+                "Tone_And_Atmosphere": "Dark justice with moral complexity",
+                "Character_Arc_Focus": "Maintaining or losing principles",
+                "Power_Ability_System": "Combat skills and planning",
+                "Stakes_And_Consequences": "Becoming monster or capture"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Horror": {
+      "Definition": "Stories designed to frighten, disturb, unsettle, or invoke dread through supernatural threats, psychological terror, graphic violence, existential horror, or monstrous beings. Primary goal is evoking fear, disgust, or unease through various horror techniques. Distinguished from thriller by emphasis on terror and horror over suspense, and by including supernatural or horrific elements beyond realistic danger.",
+      "Key_Themes": [
+        "Fear and terror as primary emotions",
+        "Supernatural or horrific threats",
+        "Survival horror scenarios",
+        "Dread and pervasive unease",
+        "Loss of control or sanity"
+      ],
+      "Examples": [
+        "The Crown's Obsession",
+        "Lord of Mysteries",
+        "The Exorcist",
+        "Get Out",
+        "Hereditary",
+        "Spirit Realm Walker"
+      ],
+      "Comparison": {
+        "Primary_Plot_Driver": "Surviving horror threats or descending into terror",
+        "Setting_And_World": "Ordinary places turned horrific",
+        "Central_Conflict_Type": "Survival against supernatural or monsters",
+        "Tone_And_Atmosphere": "Terrifying with emphasis on dread",
+        "Character_Arc_Focus": "Surviving terror or maintaining sanity",
+        "Power_Ability_System": "No powers; vulnerability is key",
+        "Stakes_And_Consequences": "Death, possession, or permanent insanity"
+      },
+      "Sub-Genre": {
+        "Supernatural Horror": {
+          "Definition": "Horror featuring genuinely supernatural or paranormal threats including ghosts, demons, curses, possessions, or malevolent entities from beyond natural reality. Supernatural forces operate by paranormal world rules and cannot be explained by science. Distinguished from psychological horror by genuine supernatural elements and from creature horror by paranormal rather than physical threats.",
+          "Key_Themes": [
+            "Ghosts and spirits as real threats",
+            "Demonic possession and forces",
+            "Curses with supernatural power",
+            "Paranormal phenomena and hauntings",
+            "Spiritual warfare and exorcism"
+          ],
+          "Examples": [
+            "Spirit Realm Walker",
+            "The Conjuring",
+            "The Exorcist",
+            "The Ring"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving supernatural entity or breaking curse",
+            "Setting_And_World": "Haunted locations or cursed spaces",
+            "Central_Conflict_Type": "Paranormal attacks and possessions",
+            "Tone_And_Atmosphere": "Dread-filled supernatural terror",
+            "Character_Arc_Focus": "Finding spiritual solutions",
+            "Power_Ability_System": "Faith and rituals may help",
+            "Stakes_And_Consequences": "Death, possession, or eternal haunting"
+          },
+          "Sub-Sub-Genre": {
+            "Haunted House": {
+              "Definition": "Horror set in locations possessed by malevolent spirits, residual energies, or supernatural forces that trap and terrorize occupants. Buildings have dark histories creating supernatural activity. Distinguished from other supernatural horror by specific location as primary threat and characters being trapped within. Explores homes as prisons and sanctuaries turned nightmares.",
+              "Key_Themes": [
+                "Haunted locations trapping occupants",
+                "Malevolent spirits in specific place",
+                "Cannot escape haunted location",
+                "Escalating supernatural phenomena",
+                "Dark history revealed through haunting"
+              ],
+              "Examples": [
+                "Spirit Realm Walker",
+                "The Shining",
+                "The Haunting of Hill House",
+                "Poltergeist"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Escaping or ending the haunting",
+                "Setting_And_World": "Specific haunted structures",
+                "Central_Conflict_Type": "Spirits attacking, location trapping",
+                "Tone_And_Atmosphere": "Claustrophobic escalating dread",
+                "Character_Arc_Focus": "Discovering cause and escaping",
+                "Power_Ability_System": "History knowledge may help",
+                "Stakes_And_Consequences": "Death or becoming part of haunting"
+              }
+            },
+            "Demonic Horror": {
+              "Definition": "Horror involving literal demons, satanic forces, demonic possession, and battles against infernal evil from hell or otherworldly realms. Unlike ghosts bound to locations, demons actively pursue and corrupt victims. Often includes religious elements with faith as weapon. Distinguished by specific demonic/satanic threats and religious warfare framework.",
+              "Key_Themes": [
+                "Demonic entities and possession",
+                "Satanic forces and rituals",
+                "Exorcism as spiritual battle",
+                "Soul corruption and danger",
+                "Religious warfare against evil"
+              ],
+              "Examples": [
+                "The Exorcist",
+                "The Rite",
+                "Insidious"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Performing exorcism or resisting possession",
+                "Setting_And_World": "Anywhere demons manifest",
+                "Central_Conflict_Type": "Demonic possession and spiritual warfare",
+                "Tone_And_Atmosphere": "Religiously dark with corruption",
+                "Character_Arc_Focus": "Faith testing and spiritual strength",
+                "Power_Ability_System": "Faith and holy items as defense",
+                "Stakes_And_Consequences": "Permanent possession or damnation"
+              }
+            },
+            "Occult & Witchcraft": {
+              "Definition": "Horror centered on dark magic, occult practices, witchcraft, forbidden rituals, and supernatural consequences of dabbling in forbidden knowledge. Magic is real and dangerous with practitioners often losing control or paying horrific prices. Distinguished by emphasis on human practitioners of dark arts and forbidden knowledge pursuit.",
+              "Key_Themes": [
+                "Dark magic and witchcraft practices",
+                "Forbidden rituals with consequences",
+                "Cursed artifacts and grimoires",
+                "Summoning forces beyond control",
+                "Price and corruption of occult power"
+              ],
+              "Examples": [
+                "The Witch",
+                "Hereditary",
+                "Suspiria"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Stopping ritual or escaping magic consequences",
+                "Setting_And_World": "Occult sites and ritual locations",
+                "Central_Conflict_Type": "Dark magic consequences and covens",
+                "Tone_And_Atmosphere": "Dark mystical with forbidden danger",
+                "Character_Arc_Focus": "Resisting occult temptation",
+                "Power_Ability_System": "Occult knowledge may counter",
+                "Stakes_And_Consequences": "Death, transformation, or curse permanence"
+              }
+            }
+          }
+        },
+        "Monster & Creature Horror": {
+          "Definition": "Horror featuring physical monsters, creatures, beasts, or inhuman threats that hunt, kill, attack, or terrorize humans through physical violence. Creatures share physical tangibility and predatory nature with alien logic or pure predatory instinct. Distinguished from supernatural horror by physical rather than paranormal nature and from slasher by non-human threats. Explores humans stripped of apex predator status.",
+          "Key_Themes": [
+            "Monster threats hunting humans",
+            "Humans as prey not predators",
+            "Body horror from creature attacks",
+            "Survival against inhuman predators",
+            "Incomprehensible monster motivations"
+          ],
+          "Examples": [
+            "The Crown's Obsession",
+            "Alien",
+            "Jaws",
+            "The Thing"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving monster attacks",
+            "Setting_And_World": "Anywhere monsters hunt",
+            "Central_Conflict_Type": "Physical survival against creatures",
+            "Tone_And_Atmosphere": "Primal fear and body horror",
+            "Character_Arc_Focus": "Survival instinct and adaptation",
+            "Power_Ability_System": "Monsters have physical superiority",
+            "Stakes_And_Consequences": "Death or transformation into monster"
+          },
+          "Sub-Sub-Genre": {
+            "Zombie Horror": {
+              "Definition": "Horror featuring undead risen corpses or infected humans driven by hunger for flesh, creating overwhelming horde threats and infection/bite risk. Zombies are relentless, mindless, and overwhelming through numbers. Central horror from infection inevitability, watching loved ones turn, and hopelessness against endless undead. Distinguished from zombie apocalypse fiction by horror emphasis over adventure.",
+              "Key_Themes": [
+                "Undead hordes overwhelming humans",
+                "Infection spread through bites",
+                "Watching loved ones transform",
+                "Hopelessness against endless zombies",
+                "Survival group paranoia"
+              ],
+              "Examples": [
+                "Night of the Living Dead",
+                "28 Days Later",
+                "Train to Busan"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving zombie hordes",
+                "Setting_And_World": "Outbreak locations with undead",
+                "Central_Conflict_Type": "Zombie attacks and infection paranoia",
+                "Tone_And_Atmosphere": "Hopeless dread with relentless undead",
+                "Character_Arc_Focus": "Maintaining humanity amid horror",
+                "Power_Ability_System": "Zombies have numbers and infection",
+                "Stakes_And_Consequences": "Death and resurrection as zombie"
+              }
+            },
+            "Vampire & Werewolf Horror": {
+              "Definition": "Horror focused on vampires or werewolves as genuine monsters and predators emphasizing their dangerous, inhuman, predatory nature rather than romanticized versions. These creatures hunt humans as prey with inhuman hunger overriding humanity. Distinguished from paranormal romance by horror emphasis and monster threat focus rather than romantic relationships.",
+              "Key_Themes": [
+                "Vampires/werewolves as predatory monsters",
+                "Hunting humans for blood or flesh",
+                "Transformation curse horror",
+                "Losing humanity to monster nature",
+                "Unstoppable supernatural killers"
+              ],
+              "Examples": [
+                "The Crown's Obsession",
+                "30 Days of Night",
+                "An American Werewolf in London",
+                "Nosferatu"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving vampire/werewolf predation",
+                "Setting_And_World": "Gothic or feral hunting grounds",
+                "Central_Conflict_Type": "Monster hunting humans",
+                "Tone_And_Atmosphere": "Gothic or feral predator-prey horror",
+                "Character_Arc_Focus": "Surviving or resisting transformation",
+                "Power_Ability_System": "Supernatural predatory abilities",
+                "Stakes_And_Consequences": "Death or permanent transformation"
+              }
+            },
+            "Alien & Unknown Creatures": {
+              "Definition": "Horror featuring alien beings from space, unknown organisms from deep sea or underground, or incomprehensible creatures beyond human understanding. Creatures operate by completely alien biology and logic making behavior unpredictable and terrifying. Distinguished from sci-fi alien contact by horror emphasis and incomprehensible nature. Explores cosmic horror of unknown life beyond comprehension.",
+              "Key_Themes": [
+                "Alien beings beyond comprehension",
+                "Unknown organisms defying classification",
+                "Body horror from alien infection",
+                "Incomprehensible creature behavior",
+                "Parasitic aliens taking hosts"
+              ],
+              "Examples": [
+                "Alien",
+                "The Thing",
+                "Annihilation"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Surviving alien creature threat",
+                "Setting_And_World": "Space, deep sea, or underground",
+                "Central_Conflict_Type": "Alien attacks and infection",
+                "Tone_And_Atmosphere": "Cosmic dread with body horror",
+                "Character_Arc_Focus": "Surviving incomprehensible threat",
+                "Power_Ability_System": "Aliens beyond human understanding",
+                "Stakes_And_Consequences": "Death or body takeover"
+              }
+            }
+          }
+        },
+        "Slasher & Gore": {
+          "Definition": "Horror emphasizing graphic violence, serial killers, slasher villains with iconic weapons, and visceral fear through gore and body horror. Violence is graphic, explicit, and central to horror with creative or brutal murder methods. Features survival horror as victims try escaping killers. Distinguished from other horror by emphasis on visual violence and gore, slasher villain archetypes, and body count structure.",
+          "Key_Themes": [
+            "Serial killers hunting victims",
+            "Graphic violence and gore",
+            "Body horror and mutilation",
+            "Unstoppable killer pursuit",
+            "Survival horror from slasher"
+          ],
+          "Examples": [
+            "Halloween",
+            "Friday the 13th",
+            "Scream"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Surviving slasher killer pursuit",
+            "Setting_And_World": "Isolated locations where killer hunts",
+            "Central_Conflict_Type": "Killer hunting victims",
+            "Tone_And_Atmosphere": "Graphic and visceral",
+            "Character_Arc_Focus": "Final girl survival and resourcefulness",
+            "Power_Ability_System": "Killers have inhuman durability",
+            "Stakes_And_Consequences": "Brutal graphic death"
+          },
+          "Sub-Sub-Genre": {
+            "Serial Killer": {
+              "Definition": "Horror centered on human serial killers, their psychology, hunting patterns, and victims attempting to survive or stop them. Unlike supernatural monsters, killers are human making horror more grounded and disturbing. Features killer's twisted psychology, hunting patterns, and cat and mouse dynamics. Distinguished from slasher by focus on serial killer psychology and victim perspective.",
+              "Key_Themes": [
+                "Human monsters as serial killers",
+                "Killer psychology and motivations",
+                "Hunting patterns and victim selection",
+                "Cat and mouse survival dynamics",
+                "Human capacity for evil"
+              ],
+              "Examples": [
+                "Silence of the Lambs",
+                "Se7en",
+                "Zodiac"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Escaping or catching serial killer",
+                "Setting_And_World": "Killer's hunting grounds",
+                "Central_Conflict_Type": "Psychological game with human monster",
+                "Tone_And_Atmosphere": "Disturbing human evil",
+                "Character_Arc_Focus": "Understanding killer to survive/catch",
+                "Power_Ability_System": "Killers have psychological advantages",
+                "Stakes_And_Consequences": "Becoming next victim"
+              }
+            },
+            "Torture Horror": {
+              "Definition": "Extreme horror focused on torture, prolonged physical and psychological suffering of captive victims, and sadistic antagonists deriving pleasure from inflicting pain. Features graphic depictions of suffering, torture devices, and victims' desperate escape attempts. Distinguished from other horror by specific focus on torture and suffering as primary horror element with extreme graphic content.",
+              "Key_Themes": [
+                "Extreme graphic torture",
+                "Prolonged victim suffering",
+                "Sadistic antagonists enjoying pain",
+                "Captivity and imprisonment",
+                "Desperate survival and escape attempts"
+              ],
+              "Examples": [
+                "Saw",
+                "Hostel",
+                "The Texas Chain Saw Massacre"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Escaping torture situation",
+                "Setting_And_World": "Torture chambers and captivity",
+                "Central_Conflict_Type": "Enduring torture and finding escape",
+                "Tone_And_Atmosphere": "Extreme graphic suffering",
+                "Character_Arc_Focus": "Will to survive extreme torment",
+                "Power_Ability_System": "Torturers have complete control",
+                "Stakes_And_Consequences": "Death through prolonged torture"
+              }
+            }
+          }
+        },
+        "Cosmic & Existential Horror": {
+          "Definition": "Horror emphasizing humanity's cosmic insignificance, incomprehensible cosmic entities beyond human understanding, and existential dread from confronting unknowable forces indifferent to humanity. Horror comes from cosmic indifference and incomprehensibility rather than malevolence. Cannot be fought or reasoned with, only survived or fled. Distinguished from other horror by philosophical and existential rather than physical or psychological focus.",
+          "Key_Themes": [
+            "Human cosmic insignificance",
+            "Incomprehensible cosmic entities",
+            "Existential dread from forbidden truth",
+            "Universe's cold indifference to humanity",
+            "Madness from forbidden knowledge"
+          ],
+          "Examples": [
+            "Lord of Mysteries",
+            "Annihilation (2018)",
+            "The Mist (2007)",
+            "The Dunwich Horror"
+          ],
+          "Comparison": {
+            "Primary_Plot_Driver": "Confronting incomprehensible cosmic truth",
+            "Setting_And_World": "Anywhere cosmic forces manifest",
+            "Central_Conflict_Type": "Human insignificance versus unknowable entities",
+            "Tone_And_Atmosphere": "Philosophically terrifying, nihilistic dread",
+            "Character_Arc_Focus": "Sanity loss from cosmic comprehension",
+            "Power_Ability_System": "None; humans utterly powerless",
+            "Stakes_And_Consequences": "Madness, extinction, reality collapse"
+          },
+          "Sub-Sub-Genre": {
+            "Lovecraftian Horror": {
+              "Definition": "Horror featuring ancient cosmic entities existing before humanity, forbidden knowledge or texts driving insanity when comprehended, and humanity's utter cosmic insignificance before incomprehensible powers. Based on H.P. Lovecraft's cosmic horror tradition featuring Old Ones, ancient civilizations worshipping them, and cultists seeking to awaken sleeping entities. Central horror comes from comprehending humanity's meaninglessness and encountering entities whose mere existence breaks human minds. Features non-Euclidean geometry, eldritch entities, and sanity as depleting resource.",
+              "Key_Themes": [
+                "Ancient cosmic Old Ones",
+                "Forbidden knowledge causing insanity",
+                "Eldritch entities beyond comprehension",
+                "Sanity as depleting resource",
+                "Cultists awakening ancient powers"
+              ],
+              "Examples": [
+                "Lord of Mysteries",
+                "The Call of Cthulhu (2005)",
+                "Color Out of Space (2019)",
+                "Reverend Insanity",
+                "The Shadow Over Innsmouth"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Preventing Old One awakening",
+                "Setting_And_World": "Ancient ruins, forbidden libraries, cult sites",
+                "Central_Conflict_Type": "Cultists, eldritch entities, forbidden texts",
+                "Tone_And_Atmosphere": "Lovecraftian dread, non-Euclidean wrongness",
+                "Character_Arc_Focus": "Sanity erosion from cosmic truth",
+                "Power_Ability_System": "None; knowledge itself destroys sanity",
+                "Stakes_And_Consequences": "Insanity, Old One awakening, soul consumption"
+              }
+            },
+            "Apocalyptic Horror": {
+              "Definition": "Horror of world-ending scenarios, extinction-level events, and dread of humanity's final moments where no hope of survival exists. Features inevitable doom approaching with no escape possible. Distinguished from post-apocalyptic survival by focus on the apocalypse itself and inevitability of doom rather than survival after. Explores finality of death, meaning when everything ends, and the terror of witnessing humanity's extinction unfold in real-time with complete helplessness.",
+              "Key_Themes": [
+                "World-ending scenarios unfolding",
+                "Humanity's inevitable extinction",
+                "No escape or hope for survival",
+                "Finality and absolute end dread",
+                "Witnessing humanity's last moments"
+              ],
+              "Examples": [
+                "Melancholia (2011)",
+                "These Final Hours (2013)",
+                "I Have No Mouth, and I Must Scream",
+                "The Road (novel)"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Witnessing inevitable extinction unfold",
+                "Setting_And_World": "Anywhere during world's destruction",
+                "Central_Conflict_Type": "Unstoppable apocalypse, choosing how to die",
+                "Tone_And_Atmosphere": "Hopeless finality, existential despair",
+                "Character_Arc_Focus": "Finding meaning before absolute end",
+                "Power_Ability_System": "None; forces beyond all resistance",
+                "Stakes_And_Consequences": "Total extinction, reality's end, no survivors"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Mythological & Superhero": {
+      "Definition": "",
+      "Key_Themes": [],
+      "Examples": [],
+      "Comparison": {},
+      "Sub-Genre": {
+        "Superhero": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {}
+        },
+        "Mythological": {
+          "Definition": "",
+          "Key_Themes": [],
+          "Examples": [],
+          "Comparison": {},
+          "Sub-Sub-Genre": {}
+        }
+      }
+    }
+  }
+}
