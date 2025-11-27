@@ -300,8 +300,7 @@
                 if (data.Genre && typeof data.Genre === 'object') {
                     taxonomy = data;
                     primaryTaxonomyLoaded = true;
-                    // Initialize by loading primary taxonomy
-        loadPrimaryTaxonomy();
+                    createTree(false);
                     showToast('Taxonomy loaded', 'success');
                 } else {
                     throw new Error('Invalid taxonomy format');
@@ -904,7 +903,8 @@
             }
         });
 
-        createTree(false);
+        // Load taxonomy from JSON file on page load
+        loadPrimaryTaxonomy();
     </script>
 </body>
 </html>
