@@ -1,4 +1,4 @@
-# Genre Taxonomy Report
+# Genre Taxonomy Report.
  
 ## How to use
 1. Open HTML
