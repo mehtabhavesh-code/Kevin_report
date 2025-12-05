@@ -188,10 +188,10 @@
         .cell-tag.secondary { background: linear-gradient(135deg, #fff4e6, #ffedd5); border: 1px solid #fbd38d; color: #c05621; }
         .cell-text { font-size: 13px; line-height: 1.6; color: #4a5568; }
         .cell-empty { color: #a0aec0; font-style: italic; }
-        /* Shows specific */
-        .show-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 36px; height: 36px; padding: 0 8px; background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border-radius: 8px; font-weight: 700; font-size: 13px; }
-        .show-actions { display: flex; gap: 6px; flex-wrap: nowrap; }
-        .show-edit-btn, .show-delete-btn { border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 500; transition: all 0.2s; white-space: nowrap; }
+        /* Shows specific - MODIFIED */
+        .show-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; height: 28px; padding: 0 6px; background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border-radius: 6px; font-weight: 700; font-size: 12px; }
+        .show-actions { display: flex; gap: 4px; flex-wrap: wrap; }
+        .show-edit-btn, .show-delete-btn { border: none; padding: 6px 8px; border-radius: 5px; cursor: pointer; font-size: 11px; font-weight: 500; transition: all 0.2s; white-space: nowrap; }
         .show-edit-btn { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; }
         .show-delete-btn { background: linear-gradient(135deg, #e53e3e, #c53030); color: white; }
         .show-edit-btn:hover, .show-delete-btn:hover { transform: translateY(-1px); }
@@ -341,7 +341,6 @@
     <div class="drag-ghost" id="dragGhost"></div>
     <div class="toast" id="toast"></div>
     <script>
-        // File paths for preloading (relative to HTML file location)
         const TAXONOMY_URL = './taxonomy.json';
         const SHOWS_URL = './shows_tagging.csv';
         
@@ -361,9 +360,8 @@
         let showFilters = {};
         let showSort = {key:'rank',dir:'asc'};
         let taxFilters = {};
-        let taxSort = {key:'_original',dir:'asc'}; // Default to original JSON order
+        let taxSort = {key:'_original',dir:'asc'};
 
-        // ========== PRELOAD FUNCTIONS ==========
         function showLoadStatus(message, type) {
             const el = document.getElementById('loadStatus');
             el.textContent = message;
@@ -376,28 +374,17 @@
             console.log('Loading taxonomy from:', TAXONOMY_URL);
             try {
                 const response = await fetch(TAXONOMY_URL);
-                console.log('Taxonomy response status:', response.status, response.ok);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
+                if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 const text = await response.text();
-                console.log('Taxonomy raw text length:', text.length);
-                if (!text || text.trim().length === 0) {
-                    throw new Error('Empty response received');
-                }
+                if (!text || text.trim().length === 0) throw new Error('Empty response received');
                 const data = JSON.parse(text);
-                console.log('Taxonomy parsed, keys:', Object.keys(data));
                 if (data.Genre && typeof data.Genre === 'object') {
                     taxonomy = data;
                     createTree(false);
-                    console.log('✓ Taxonomy loaded successfully, genres:', Object.keys(taxonomy.Genre).length);
                     return true;
-                } else {
-                    throw new Error('Invalid taxonomy format - missing Genre object');
-                }
+                } else throw new Error('Invalid taxonomy format - missing Genre object');
             } catch (err) {
-                console.error('✗ Failed to load taxonomy:', err.message);
-                console.error('Full error:', err);
+                console.error('Failed to load taxonomy:', err.message);
                 taxonomy = {"Genre":{}};
                 createTree(false);
                 return false;
@@ -408,108 +395,63 @@
             console.log('Loading shows from:', SHOWS_URL);
             try {
                 const response = await fetch(SHOWS_URL);
-                console.log('Shows response status:', response.status, response.ok);
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
+                if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 const text = await response.text();
-                console.log('Shows CSV length:', text.length);
-                if (!text || text.trim().length === 0) {
-                    throw new Error('Empty CSV received');
-                }
+                if (!text || text.trim().length === 0) throw new Error('Empty CSV received');
                 parseShowsCSV(text);
-                console.log('✓ Shows loaded successfully:', showsData.length, 'shows');
                 return true;
             } catch (err) {
-                console.error('✗ Failed to load shows:', err.message);
-                console.error('Full error:', err);
+                console.error('Failed to load shows:', err.message);
                 showsData = [];
                 return false;
             }
         }
 
         function normalizeHeader(h) {
-            // Normalize header by trimming whitespace and converting to lowercase for matching
             return h.trim().toLowerCase().replace(/[_\s]+/g, ' ');
         }
 
         function parseShowsCSV(text) {
             const lines = text.split(/\r?\n/).filter(l => l.trim());
-            if (lines.length < 1) {
-                console.warn('CSV has no lines');
-                return;
-            }
+            if (lines.length < 1) return;
             const headers = parseCSVLine(lines[0]);
             const headerMap = {};
-            
-            // Create normalized header map
             const expectedHeaders = {
-                'show name': 'name',
-                'show rank': 'rank', 
-                'show id': 'id',
-                'genre': 'genre',
-                'sub genre': 'subGenre',
-                'sub sub genre': 'subSubGenre',
-                'key themes': 'keyThemes',
-                'secondary themes': 'secondaryThemes',
-                'reason': 'reason'
+                'show name': 'name', 'show rank': 'rank', 'show id': 'id',
+                'genre': 'genre', 'sub genre': 'subGenre', 'sub sub genre': 'subSubGenre',
+                'key themes': 'keyThemes', 'secondary themes': 'secondaryThemes', 'reason': 'reason'
             };
-            
             headers.forEach((h, i) => {
                 const normalized = normalizeHeader(h);
-                if (expectedHeaders[normalized]) {
-                    headerMap[expectedHeaders[normalized]] = i;
-                }
+                if (expectedHeaders[normalized]) headerMap[expectedHeaders[normalized]] = i;
             });
-            
-            console.log('CSV Headers found:', headers);
-            console.log('Header map:', headerMap);
-            
             showsData = [];
             for (let i = 1; i < lines.length; i++) {
                 const values = parseCSVLine(lines[i]);
                 if (values.length < 2) continue;
-                
                 const getValue = (key) => {
                     const idx = headerMap[key];
                     return idx !== undefined && values[idx] !== undefined ? values[idx].trim() : '';
                 };
-                
                 showsData.push({
-                    name: getValue('name'),
-                    rank: parseInt(getValue('rank')) || 0,
-                    id: getValue('id'),
-                    genre: getValue('genre'),
-                    subGenre: getValue('subGenre'),
-                    subSubGenre: getValue('subSubGenre'),
-                    keyThemes: getValue('keyThemes'),
-                    secondaryThemes: getValue('secondaryThemes'),
-                    reason: getValue('reason')
+                    name: getValue('name'), rank: parseInt(getValue('rank')) || 0, id: getValue('id'),
+                    genre: getValue('genre'), subGenre: getValue('subGenre'), subSubGenre: getValue('subSubGenre'),
+                    keyThemes: getValue('keyThemes'), secondaryThemes: getValue('secondaryThemes'), reason: getValue('reason')
                 });
             }
-            console.log('Parsed shows:', showsData.length);
         }
 
         async function reloadTaxonomy() {
             const success = await loadTaxonomy();
-            if (success) {
-                showToast('Taxonomy reloaded from file', 'success');
-            } else {
-                showToast('Could not load taxonomy.json - using empty', 'error');
-            }
+            showToast(success ? 'Taxonomy reloaded from file' : 'Could not load taxonomy.json - using empty', success ? 'success' : 'error');
         }
 
         async function reloadShows() {
             const success = await loadShows();
             renderShowsTable();
-            if (success) {
-                showToast('Shows reloaded from file', 'success');
-            } else {
-                showToast('Could not load shows_tagging.csv', 'error');
-            }
+            showToast(success ? 'Shows reloaded from file' : 'Could not load shows_tagging.csv', success ? 'success' : 'error');
         }
 
-        // ========== CORE FUNCTIONS ==========
         function switchSection(section) {
             document.querySelectorAll('.toggle-btn').forEach((b,i) => b.classList.toggle('active', (section==='taxonomy'&&i===0)||(section==='tabular'&&i===1)||(section==='shows'&&i===2)));
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
@@ -833,7 +775,7 @@
         function expandAll() { document.querySelectorAll('.node-content').forEach(n => n.classList.add('expanded')); document.querySelectorAll('.children').forEach(c => c.classList.remove('collapsed')); }
         function collapseAll() { document.querySelectorAll('.node-content').forEach(n => n.classList.remove('expanded')); document.querySelectorAll('.children').forEach(c => c.classList.add('collapsed')); }
 
-        // ========== TAXONOMY TABULAR ==========
+        // ========== TAXONOMY TABULAR - MODIFIED COLUMN ORDER ==========
         function getTaxonomyRows() {
             const rows = [], g = taxonomy.Genre || {};
             let originalIndex = 0;
@@ -866,18 +808,18 @@
             const activeFilterKey = activeEl && activeEl.classList.contains('col-filter') ? activeEl.dataset.filterkey : null;
             const cursorPos = activeFilterKey ? activeEl.selectionStart : null;
             
+            // MODIFIED: New column order and widths
             const cols = [
-                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'220px'},
-                {key:'definition',label:'Definition',group:'content',minW:'280px'},
-                {key:'examples',label:'Examples',group:'content',minW:'180px'},
-                {key:'keyThemes',label:'Key Themes',group:'content',minW:'180px'},
-                {key:'secondaryThemes',label:'Secondary Themes',group:'content',minW:'180px'}
+                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'176px'},      // 80% of 220px
+                {key:'definition',label:'Definition',group:'content',minW:'336px'},    // +20% of 280px
+                {key:'keyThemes',label:'Key Themes',group:'content',minW:'360px'},     // 2x of 180px
+                {key:'secondaryThemes',label:'Secondary Themes',group:'content',minW:'360px'}, // 2x of 180px
+                {key:'examples',label:'Examples',group:'content',minW:'180px'}         // Moved after themes
             ];
             COMPARISON_KEYS.forEach(k => cols.push({key:'comp_'+k,label:COMPARISON_LABELS[k],group:'comparison',minW:'160px'}));
             
             let rows = getTaxonomyRows();
             
-            // Apply filters
             Object.keys(taxFilters).forEach(k => { 
                 const v = (taxFilters[k]||'').toLowerCase(); 
                 if (!v) return;
@@ -891,7 +833,6 @@
                 });
             });
             
-            // Apply sorting - default to original order (_original)
             if (taxSort.key !== '_original') {
                 rows.sort((a, b) => { 
                     let va, vb;
@@ -916,7 +857,6 @@
                     return 0;
                 });
             } else {
-                // Sort by original index
                 rows.sort((a, b) => {
                     if (taxSort.dir === 'asc') return a._idx - b._idx;
                     return b._idx - a._idx;
@@ -939,7 +879,8 @@
                 const ex = (r.examples||[]).map(t => `<span class="cell-tag example">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const kt = (r.keyThemes||[]).map(t => `<span class="cell-tag theme">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const st = (r.secondaryThemes||[]).map(t => `<span class="cell-tag secondary">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
-                html += `<tr><td><div class="branch-path">${branchHtml}</div></td><td><div class="cell-text">${r.definition || '<span class="cell-empty">-</span>'}</div></td><td>${ex}</td><td>${kt}</td><td>${st}</td>`;
+                // MODIFIED: New column order - branch, definition, keyThemes, secondaryThemes, examples
+                html += `<tr><td><div class="branch-path">${branchHtml}</div></td><td><div class="cell-text">${r.definition || '<span class="cell-empty">-</span>'}</div></td><td>${kt}</td><td>${st}</td><td>${ex}</td>`;
                 COMPARISON_KEYS.forEach(k => { html += `<td><div class="cell-text">${r.comparison[k] || '<span class="cell-empty">-</span>'}</div></td>`; });
                 html += `</tr>`;
             });
@@ -964,11 +905,11 @@
         }
         function clearTabularFilters() { 
             taxFilters = {}; 
-            taxSort = {key:'_original',dir:'asc'}; // Reset to original order
+            taxSort = {key:'_original',dir:'asc'};
             renderTaxonomyTable(); 
         }
 
-        // ========== SHOWS SECTION ==========
+        // ========== SHOWS SECTION - MODIFIED COLUMN WIDTHS ==========
         function importShowsCSV() { document.getElementById('csvFileInput').click(); }
         function handleCSVImport(event) {
             const file = event.target.files[0]; if (!file) return;
@@ -1000,12 +941,13 @@
         }
         function exportShowsCSV() { if (showsData.length === 0) { showToast('No shows to export', 'error'); return; } const headers = ['Show Name', 'Show Rank', 'Show ID', 'Genre', 'Sub Genre', 'Sub Sub Genre', 'Key Themes', 'Secondary Themes', 'Reason']; let csv = headers.join(',') + '\n'; showsData.forEach(s => { csv += [`"${(s.name || '').replace(/"/g, '""')}"`, s.rank || '', `"${(s.id || '').replace(/"/g, '""')}"`, `"${(s.genre || '').replace(/"/g, '""')}"`, `"${(s.subGenre || '').replace(/"/g, '""')}"`, `"${(s.subSubGenre || '').replace(/"/g, '""')}"`, `"${(s.keyThemes || '').replace(/"/g, '""')}"`, `"${(s.secondaryThemes || '').replace(/"/g, '""')}"`, `"${(s.reason || '').replace(/"/g, '""')}"`].join(',') + '\n'; }); downloadFile(csv, 'shows_tagging.csv', 'text/csv'); showToast('CSV exported!', 'success'); }
 
+        // MODIFIED: Updated column widths for Shows
         const SHOW_COLUMNS = [
-            {key:'rank',label:'Rank',minW:'70px'},
-            {key:'name',label:'Show Name',minW:'160px'},
+            {key:'rank',label:'Rank',minW:'50px'},              // Reduced from 70px
+            {key:'name',label:'Show Name',minW:'112px'},        // 70% of 160px
             {key:'branch',label:'Genre Path',minW:'220px'},
-            {key:'keyThemes',label:'Key Themes',minW:'200px'},
-            {key:'secondaryThemes',label:'Secondary Themes',minW:'200px'},
+            {key:'keyThemes',label:'Key Themes',minW:'240px'},  // +20% of 200px
+            {key:'secondaryThemes',label:'Secondary Themes',minW:'240px'}, // +20% of 200px
             {key:'reason',label:'Reason',minW:'250px'}
         ];
 
@@ -1040,7 +982,8 @@
             SHOW_COLUMNS.forEach(c => {
                 html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${showSort.key===c.key?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div><input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${showFilters[c.key]||''}" oninput="updateShowFilter('${c.key}',this.value)"></th>`;
             });
-            html += `<th class="col-default" style="min-width:90px">Actions</th></tr></thead><tbody>`;
+            // MODIFIED: Reduced actions column width
+            html += `<th class="col-default" style="min-width:60px">Actions</th></tr></thead><tbody>`;
             
             filtered.forEach(s => {
                 const origIdx = showsData.indexOf(s);
@@ -1080,32 +1023,18 @@
         document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal('deleteModal'); closeCompareModal(); closeInfoPopup(); closeModal('showModal'); if (compareMode) toggleCompareMode(); } });
         document.addEventListener('click', e => { const popup = document.getElementById('infoPopup'); if (popup.classList.contains('active') && !popup.contains(e.target) && !e.target.classList.contains('info-icon')) { if (!infoPopupState.editing) closeInfoPopup(); } });
 
-        // Initialize on page load
         document.addEventListener('DOMContentLoaded', async function() {
-            console.log('=== Initializing Application ===');
-            console.log('Current URL:', window.location.href);
-            console.log('Taxonomy URL:', TAXONOMY_URL);
-            console.log('Shows URL:', SHOWS_URL);
-            
-            // Load taxonomy
             const taxLoaded = await loadTaxonomy();
-            
-            // Load shows
             const showsLoaded = await loadShows();
-            
-            // Render initial views
             renderShowsTable();
             
-            // Show status
             let statusMsg = [];
-            if (taxLoaded) statusMsg.push('✓ Taxonomy loaded');
+            if (taxLoaded) statusMsg.push('✔ Taxonomy loaded');
             else statusMsg.push('✗ Taxonomy: using empty (place taxonomy.json in same folder)');
-            if (showsLoaded) statusMsg.push('✓ Shows loaded (' + showsData.length + ')');
+            if (showsLoaded) statusMsg.push('✔ Shows loaded (' + showsData.length + ')');
             else statusMsg.push('✗ Shows: none (place shows_tagging.csv in same folder)');
             
             showLoadStatus(statusMsg.join(' | '), taxLoaded || showsLoaded ? 'success' : 'error');
-            
-            console.log('=== Initialization Complete ===');
         });
     </script>
 </body>
