@@ -174,8 +174,9 @@
         .col-filter { width: 100%; min-width: 80px; padding: 7px 10px; border: 1px solid rgba(0,0,0,0.15); border-radius: 6px; font-size: 12px; background: rgba(255,255,255,0.95); }
         .col-filter:focus { outline: none; border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.15); }
         /* Branch path styling */
-        .branch-path { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-        .branch-tag { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 8px; font-weight: 600; font-size: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); white-space: nowrap; margin: 2px 0; }
+        .branch-path { display: flex; align-items: flex-start; gap: 4px; flex-wrap: wrap; flex-direction: column; }
+        .branch-path-row { display: flex; align-items: center; gap: 4px; }
+        .branch-tag { display: inline-flex; align-items: center; padding: 5px 10px; border-radius: 8px; font-weight: 600; font-size: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); white-space: nowrap; margin: 1px 0; }
         .branch-tag.l0 { background: linear-gradient(135deg, #e8f4f8, #dceef5); border: 1px solid #0066cc; color: #0055aa; }
         .branch-tag.l1 { background: linear-gradient(135deg, #fff4e6, #ffedd5); border: 1px solid #ff9800; color: #e67700; }
         .branch-tag.l2 { background: linear-gradient(135deg, #f3e5f5, #ead5ed); border: 1px solid #9c27b0; color: #7b1fa2; }
@@ -188,7 +189,7 @@
         .cell-text { font-size: 13px; line-height: 1.6; color: #4a5568; }
         .cell-empty { color: #a0aec0; font-style: italic; }
         /* Shows specific - MODIFIED */
-        .show-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 4px; background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border-radius: 5px; font-weight: 700; font-size: 11px; }
+        .show-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; height: 20px; padding: 0 3px; background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border-radius: 4px; font-weight: 700; font-size: 10px; }
         .show-name-cell { word-wrap: break-word; overflow-wrap: break-word; }
         .show-actions { display: flex; gap: 4px; flex-wrap: wrap; }
         .show-edit-btn, .show-delete-btn { border: none; padding: 6px 8px; border-radius: 5px; cursor: pointer; font-size: 11px; font-weight: 500; transition: all 0.2s; white-space: nowrap; }
@@ -810,9 +811,9 @@
             
             // MODIFIED: New column order and widths
             const cols = [
-                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'123px'},      // 70% of 176px
-                {key:'definition',label:'Definition',group:'content',minW:'362px'},    // +26px from genre path savings
-                {key:'keyThemes',label:'Key Themes',group:'content',minW:'387px'},     // +27px from genre path savings
+                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'86px'},       // 70% of 123px, wraps to 3 lines
+                {key:'definition',label:'Definition',group:'content',minW:'388px'},    // +26px (70% of 37px saved)
+                {key:'keyThemes',label:'Key Themes',group:'content',minW:'398px'},     // +11px (30% of 37px saved)
                 {key:'secondaryThemes',label:'Secondary Themes',group:'content',minW:'360px'},
                 {key:'examples',label:'Examples',group:'content',minW:'180px'}
             ];
@@ -874,8 +875,8 @@
             
             rows.forEach(r => {
                 let branchHtml = `<span class="branch-tag l0">${r.genre}</span>`;
-                if (r.subGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l1">${r.subGenre}</span>`;
-                if (r.subSubGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l2">${r.subSubGenre}</span>`;
+                if (r.subGenre) branchHtml += `<span class="branch-tag l1">${r.subGenre}</span>`;
+                if (r.subSubGenre) branchHtml += `<span class="branch-tag l2">${r.subSubGenre}</span>`;
                 const ex = (r.examples||[]).map(t => `<span class="cell-tag example">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const kt = (r.keyThemes||[]).map(t => `<span class="cell-tag theme">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const st = (r.secondaryThemes||[]).map(t => `<span class="cell-tag secondary">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
@@ -943,12 +944,12 @@
 
         // MODIFIED: Updated column widths for Shows
         const SHOW_COLUMNS = [
-            {key:'rank',label:'Rank',minW:'25px'},              // 50% of 50px
-            {key:'name',label:'Show Name',minW:'78px'},         // 70% of 112px (text wraps)
-            {key:'branch',label:'Genre Path',minW:'176px'},     // 80% of 220px
-            {key:'keyThemes',label:'Key Themes',minW:'274px'},  // +34px from savings
-            {key:'secondaryThemes',label:'Secondary Themes',minW:'274px'}, // +34px from savings
-            {key:'reason',label:'Reason',minW:'285px'}          // +35px from savings
+            {key:'rank',label:'Rank',minW:'12px',noFilter:true},  // 50% of 25px, no filter
+            {key:'name',label:'Show Name',minW:'55px'},           // 70% of 78px (text wraps)
+            {key:'branch',label:'Genre Path',minW:'141px'},       // 80% of 176px
+            {key:'keyThemes',label:'Key Themes',minW:'302px'},    // +28px (40% of 71px saved)
+            {key:'secondaryThemes',label:'Secondary Themes',minW:'288px'}, // +14px (20% of 71px saved)
+            {key:'reason',label:'Reason',minW:'313px'}            // +28px (40% of 71px saved)
         ];
 
         function renderShowsTable() {
@@ -980,7 +981,8 @@
             
             let html = `<table class="data-table"><thead><tr>`;
             SHOW_COLUMNS.forEach(c => {
-                html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${showSort.key===c.key?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div><input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${showFilters[c.key]||''}" oninput="updateShowFilter('${c.key}',this.value)"></th>`;
+                const filterHtml = c.noFilter ? '' : `<input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${showFilters[c.key]||''}" oninput="updateShowFilter('${c.key}',this.value)">`;
+                html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${showSort.key===c.key?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div>${filterHtml}</th>`;
             });
             // MODIFIED: Reduced actions column width
             html += `<th class="col-default" style="min-width:60px">Actions</th></tr></thead><tbody>`;
@@ -988,8 +990,8 @@
             filtered.forEach(s => {
                 const origIdx = showsData.indexOf(s);
                 let branchHtml = `<span class="branch-tag l0">${s.genre || '-'}</span>`;
-                if (s.subGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l1">${s.subGenre}</span>`;
-                if (s.subSubGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l2">${s.subSubGenre}</span>`;
+                if (s.subGenre) branchHtml += `<span class="branch-tag l1">${s.subGenre}</span>`;
+                if (s.subSubGenre) branchHtml += `<span class="branch-tag l2">${s.subSubGenre}</span>`;
                 const ktTags = s.keyThemes ? s.keyThemes.split(';').map(t => `<span class="cell-tag theme">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 const stTags = s.secondaryThemes ? s.secondaryThemes.split(';').map(t => `<span class="cell-tag secondary">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 html += `<tr>
