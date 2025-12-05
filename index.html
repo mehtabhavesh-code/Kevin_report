@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,13 @@
     <title>Genre Taxonomy Tree Editor</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #2b6cb0 100%); padding: 20px; min-height: 100vh; }
-        .container { max-width: 100%; background: #ffffff; border-radius: 16px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.1); }
-        h1 { text-align: center; color: #1a365d; margin-bottom: 10px; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
-        .stats { text-align: center; color: #718096; margin-bottom: 20px; font-size: 14px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #2b6cb0 100%); padding: 20px; min-height: 100vh; font-size: 15px; }
+        .container { max-width: 100%; background: #ffffff; border-radius: 16px; padding: 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); }
+        h1 { text-align: center; color: #1a365d; margin-bottom: 10px; font-size: 28px; font-weight: 700; }
+        .stats { text-align: center; color: #718096; margin-bottom: 20px; font-size: 15px; }
         .stats span { font-weight: 600; color: #2d3748; }
         .legend { display: flex; justify-content: center; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
-        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #4a5568; }
+        .legend-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #4a5568; }
         .legend-box { width: 24px; height: 24px; border-radius: 6px; border: 2px solid #ddd; }
         .level-0 { background: linear-gradient(135deg, #e8f4f8, #d0e8f0); border-color: #0066cc !important; }
         .level-1 { background: linear-gradient(135deg, #fff4e6, #ffe8cc); border-color: #ff9800 !important; }
@@ -20,218 +21,266 @@
         .tree { margin-top: 20px; }
         .genre-node { margin: 8px 0; position: relative; }
         .genre-node.dragging-source { opacity: 0.3; transform: scale(0.98); }
-        .node-content { padding: 12px 16px; border-radius: 10px; cursor: pointer; transition: all 0.25s ease; border: 2px solid; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+        .node-content { padding: 14px 18px; border-radius: 10px; cursor: pointer; transition: all 0.25s ease; border: 2px solid; font-weight: 600; display: flex; align-items: center; gap: 10px; }
         .node-content:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); transform: translateY(-1px); }
-        .l0-node > .node-content { background: linear-gradient(135deg, #e8f4f8, #dceef5); border-color: #0066cc; color: #0055aa; font-size: 16px; }
-        .l1-node > .node-content { background: linear-gradient(135deg, #fff4e6, #ffedd5); border-color: #ff9800; color: #e67700; font-size: 14px; margin-left: 40px; }
-        .l2-node > .node-content { background: linear-gradient(135deg, #f3e5f5, #ead5ed); border-color: #9c27b0; color: #7b1fa2; font-size: 13px; margin-left: 80px; }
+        .l0-node > .node-content { background: linear-gradient(135deg, #e8f4f8, #dceef5); border-color: #0066cc; color: #0055aa; font-size: 17px; }
+        .l1-node > .node-content { background: linear-gradient(135deg, #fff4e6, #ffedd5); border-color: #ff9800; color: #e67700; font-size: 15px; margin-left: 40px; }
+        .l2-node > .node-content { background: linear-gradient(135deg, #f3e5f5, #ead5ed); border-color: #9c27b0; color: #7b1fa2; font-size: 14px; margin-left: 80px; }
         .children { margin-top: 5px; }
         .collapsed { display: none; }
-        .expand-icon { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; transition: transform 0.3s ease; font-weight: bold; cursor: pointer; border-radius: 5px; font-size: 11px; }
+        .expand-icon { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; transition: transform 0.3s ease; font-weight: bold; cursor: pointer; border-radius: 5px; font-size: 12px; }
         .expand-icon:hover { background: rgba(0,0,0,0.08); }
         .node-content.expanded > .expand-icon { transform: rotate(90deg); }
-        .node-count { display: inline-block; background: rgba(0,0,0,0.08); padding: 3px 10px; border-radius: 12px; font-size: 11px; margin-left: 6px; font-weight: 500; }
+        .node-count { display: inline-block; background: rgba(0,0,0,0.08); padding: 4px 12px; border-radius: 12px; font-size: 12px; margin-left: 6px; font-weight: 500; }
         .controls { text-align: center; margin-bottom: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-        .btn { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border: none; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.25s; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0,102,204,0.3); }
+        .btn { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border: none; padding: 11px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.25s; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(0,102,204,0.3); }
         .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,102,204,0.4); }
         .btn-success { background: linear-gradient(135deg, #28a745, #1e7e34); box-shadow: 0 2px 8px rgba(40,167,69,0.3); }
-        .btn-success:hover { box-shadow: 0 4px 12px rgba(40,167,69,0.4); }
         .btn-purple { background: linear-gradient(135deg, #6f42c1, #5a32a3); box-shadow: 0 2px 8px rgba(111,66,193,0.3); }
-        .btn-purple:hover { box-shadow: 0 4px 12px rgba(111,66,193,0.4); }
         .btn-secondary { background: linear-gradient(135deg, #6c757d, #5a6268); box-shadow: 0 2px 8px rgba(108,117,125,0.3); }
-        .btn-secondary:hover { box-shadow: 0 4px 12px rgba(108,117,125,0.4); }
+        .btn-warning { background: linear-gradient(135deg, #fd7e14, #e56b0a); box-shadow: 0 2px 8px rgba(253,126,20,0.3); }
         .btn:disabled { background: #ccc; cursor: not-allowed; transform: none; box-shadow: none; }
         .node-label { flex: 1; min-width: 50px; }
-        .node-label-input { flex: 1; border: 2px solid currentColor; border-radius: 6px; padding: 4px 8px; font-size: inherit; font-weight: inherit; font-family: inherit; color: inherit; background: white; min-width: 100px; outline: none; }
+        .node-label-input { flex: 1; border: 2px solid currentColor; border-radius: 6px; padding: 6px 10px; font-size: inherit; font-weight: inherit; font-family: inherit; color: inherit; background: white; min-width: 100px; outline: none; }
         .node-actions { display: none; gap: 4px; margin-left: auto; }
         .node-content:hover .node-actions { display: flex; }
-        .action-btn { background: rgba(0,0,0,0.08); border: none; border-radius: 6px; width: 26px; height: 26px; cursor: pointer; font-size: 11px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+        .action-btn { background: rgba(0,0,0,0.08); border: none; border-radius: 6px; width: 28px; height: 28px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
         .action-btn:hover { background: rgba(0,0,0,0.15); transform: scale(1.1); }
         .action-btn.delete:hover { background: #ff4444; color: white; }
-        .drag-handle { cursor: grab; padding: 0 4px; opacity: 0.3; user-select: none; font-size: 12px; transition: opacity 0.2s; }
+        .drag-handle { cursor: grab; padding: 0 4px; opacity: 0.3; user-select: none; font-size: 14px; transition: opacity 0.2s; }
         .drag-handle:hover { opacity: 0.8; }
         .drop-placeholder { border: 2px dashed #999; border-radius: 10px; background: rgba(0,0,0,0.03); margin: 8px 0; display: none; }
         .drop-placeholder.active { display: block; }
-        .drop-placeholder.l0 { height: 48px; border-color: #0066cc; background: rgba(0,102,204,0.08); }
-        .drop-placeholder.l1 { height: 44px; margin-left: 40px; border-color: #ff9800; background: rgba(255,152,0,0.08); }
-        .drop-placeholder.l2 { height: 42px; margin-left: 80px; border-color: #9c27b0; background: rgba(156,39,176,0.08); }
-        .level-indicator { position: fixed; padding: 8px 14px; background: rgba(45,55,72,0.95); color: white; border-radius: 8px; font-size: 12px; pointer-events: none; z-index: 1000; display: none; backdrop-filter: blur(4px); }
+        .drop-placeholder.l0 { height: 50px; border-color: #0066cc; background: rgba(0,102,204,0.08); }
+        .drop-placeholder.l1 { height: 46px; margin-left: 40px; border-color: #ff9800; background: rgba(255,152,0,0.08); }
+        .drop-placeholder.l2 { height: 44px; margin-left: 80px; border-color: #9c27b0; background: rgba(156,39,176,0.08); }
+        .level-indicator { position: fixed; padding: 10px 16px; background: rgba(45,55,72,0.95); color: white; border-radius: 8px; font-size: 13px; pointer-events: none; z-index: 1000; display: none; backdrop-filter: blur(4px); }
         .level-indicator.active { display: block; }
-        .level-indicator .level-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; margin-left: 4px; font-weight: 600; }
+        .level-indicator .level-badge { display: inline-block; padding: 3px 10px; border-radius: 4px; margin-left: 4px; font-weight: 600; }
         .level-indicator .level-badge.l0 { background: #0066cc; }
         .level-indicator .level-badge.l1 { background: #ff9800; }
         .level-indicator .level-badge.l2 { background: #9c27b0; }
-        .drag-ghost { position: fixed; padding: 10px 16px; border-radius: 10px; font-weight: 600; pointer-events: none; z-index: 999; opacity: 0.95; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transform: rotate(2deg); max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+        .drag-ghost { position: fixed; padding: 12px 18px; border-radius: 10px; font-weight: 600; pointer-events: none; z-index: 999; opacity: 0.95; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transform: rotate(2deg); max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; }
         .drag-ghost.l0 { background: #e8f4f8; border: 2px solid #0066cc; color: #0066cc; }
         .drag-ghost.l1 { background: #fff4e6; border: 2px solid #ff9800; color: #f57c00; }
         .drag-ghost.l2 { background: #f3e5f5; border: 2px solid #9c27b0; color: #7b1fa2; }
         .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: none; align-items: center; justify-content: center; z-index: 2000; backdrop-filter: blur(3px); }
         .modal-overlay.active { display: flex; }
         .modal { background: white; border-radius: 16px; padding: 24px; max-width: 600px; width: 90%; box-shadow: 0 25px 80px rgba(0,0,0,0.35); max-height: 85vh; overflow-y: auto; }
-        .modal-title { font-size: 18px; font-weight: 700; color: #2d3748; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .modal-title { font-size: 20px; font-weight: 700; color: #2d3748; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
         .modal-title.danger { color: #c53030; }
-        .modal-content { margin-bottom: 20px; }
-        .delete-preview { background: #f7fafc; border-radius: 10px; padding: 14px; margin-top: 12px; font-size: 13px; max-height: 180px; overflow-y: auto; border: 1px solid #e2e8f0; }
-        .delete-preview .preview-item { padding: 4px 0; display: flex; align-items: center; gap: 6px; }
+        .modal-content { margin-bottom: 20px; font-size: 15px; }
+        .delete-preview { background: #f7fafc; border-radius: 10px; padding: 14px; margin-top: 12px; font-size: 14px; max-height: 180px; overflow-y: auto; border: 1px solid #e2e8f0; }
+        .delete-preview .preview-item { padding: 5px 0; display: flex; align-items: center; gap: 6px; }
         .delete-preview .preview-l0 { color: #0066cc; font-weight: 600; }
         .delete-preview .preview-l1 { color: #f57c00; margin-left: 16px; }
-        .delete-preview .preview-l2 { color: #7b1fa2; margin-left: 32px; font-size: 12px; }
-        .delete-summary { margin-top: 12px; padding: 10px 14px; background: #fff5f5; border-radius: 8px; color: #c53030; font-size: 13px; border: 1px solid #feb2b2; }
+        .delete-preview .preview-l2 { color: #7b1fa2; margin-left: 32px; }
+        .delete-summary { margin-top: 12px; padding: 12px 16px; background: #fff5f5; border-radius: 8px; color: #c53030; font-size: 14px; border: 1px solid #feb2b2; }
         .modal-buttons { display: flex; gap: 10px; justify-content: flex-end; }
-        .modal-btn { padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; }
+        .modal-btn { padding: 11px 22px; border-radius: 8px; border: none; cursor: pointer; font-size: 15px; font-weight: 500; transition: all 0.2s; }
         .modal-btn-cancel { background: #edf2f7; color: #4a5568; }
         .modal-btn-cancel:hover { background: #e2e8f0; }
         .modal-btn-delete { background: linear-gradient(135deg, #e53e3e, #c53030); color: white; }
         .modal-btn-delete:hover { transform: translateY(-1px); }
         .modal-btn-primary { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; }
         .modal-btn-primary:hover { transform: translateY(-1px); }
-        .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #2d3748; color: white; padding: 14px 28px; border-radius: 10px; font-size: 14px; z-index: 3000; opacity: 0; transition: opacity 0.3s; pointer-events: none; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #2d3748; color: white; padding: 16px 30px; border-radius: 10px; font-size: 15px; z-index: 3000; opacity: 0; transition: opacity 0.3s; pointer-events: none; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
         .toast.show { opacity: 1; }
         .toast.success { background: linear-gradient(135deg, #28a745, #1e7e34); }
         .toast.error { background: linear-gradient(135deg, #e53e3e, #c53030); }
         .file-input { display: none; }
-        .node-checkbox { width: 16px; height: 16px; cursor: pointer; accent-color: #0066cc; }
+        .node-checkbox { width: 18px; height: 18px; cursor: pointer; accent-color: #0066cc; }
         .compare-mode .node-checkbox { display: inline-block !important; }
         .node-checkbox { display: none; }
-        .info-icon { opacity: 0.4; font-size: 12px; cursor: pointer; transition: opacity 0.2s; }
+        .info-icon { opacity: 0.4; font-size: 14px; cursor: pointer; transition: opacity 0.2s; }
         .node-content:hover .info-icon { opacity: 0.8; }
-        .selected-count { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; padding: 3px 10px; border-radius: 12px; font-size: 12px; margin-left: 4px; font-weight: 500; }
-
-        /* Example tags on node bar */
+        .selected-count { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; padding: 4px 12px; border-radius: 12px; font-size: 13px; margin-left: 4px; font-weight: 500; }
         .node-examples { display: flex; gap: 6px; align-items: center; margin-left: auto; flex-shrink: 0; }
-        .node-example-tag { background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.15); padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 500; color: #4a5568; white-space: nowrap; max-width: 100px; overflow: hidden; text-overflow: ellipsis; }
+        .node-example-tag { background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.15); padding: 4px 10px; border-radius: 10px; font-size: 12px; font-weight: 500; color: #4a5568; white-space: nowrap; max-width: 120px; overflow: hidden; text-overflow: ellipsis; }
         .l0-node .node-example-tag { background: rgba(255,255,255,0.8); border-color: #0066cc40; color: #0055aa; }
         .l1-node .node-example-tag { background: rgba(255,255,255,0.8); border-color: #ff980040; color: #e67700; }
         .l2-node .node-example-tag { background: rgba(255,255,255,0.8); border-color: #9c27b040; color: #7b1fa2; }
-
-        /* Info Popup - Fixed for scrolling */
-        .info-popup { 
-            position: fixed; 
-            background: white; 
-            border-radius: 14px; 
-            box-shadow: 0 15px 50px rgba(0,0,0,0.25); 
-            z-index: 1500; 
-            max-width: 520px; 
-            width: 95%; 
-            display: none; 
-            border: 2px solid #e2e8f0;
-            flex-direction: column;
-            overflow: hidden;
-        }
+        .info-popup { position: fixed; background: white; border-radius: 14px; box-shadow: 0 15px 50px rgba(0,0,0,0.25); z-index: 1500; max-width: 560px; width: 95%; display: none; border: 2px solid #e2e8f0; flex-direction: column; overflow: hidden; }
         .info-popup.active { display: flex; }
         .info-popup.l0 { border-color: #0066cc; }
         .info-popup.l1 { border-color: #ff9800; }
         .info-popup.l2 { border-color: #9c27b0; }
-        .info-popup-header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 18px 20px 14px 20px;
-            border-bottom: 1px solid #e2e8f0; 
-            flex-shrink: 0;
-            background: white;
-        }
-        .info-popup-title { font-weight: 700; font-size: 17px; }
+        .info-popup-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px 14px 20px; border-bottom: 1px solid #e2e8f0; flex-shrink: 0; background: white; }
+        .info-popup-title { font-weight: 700; font-size: 19px; }
         .info-popup.l0 .info-popup-title { color: #0066cc; }
         .info-popup.l1 .info-popup-title { color: #f57c00; }
         .info-popup.l2 .info-popup-title { color: #7b1fa2; }
-        .info-popup-close { background: none; border: none; font-size: 22px; cursor: pointer; color: #a0aec0; transition: color 0.2s; }
+        .info-popup-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #a0aec0; transition: color 0.2s; }
         .info-popup-close:hover { color: #4a5568; }
-        .info-popup-body {
-            padding: 16px 20px 20px 20px;
-            overflow-y: auto;
-            flex: 1 1 auto;
-            min-height: 0;
-            max-height: calc(100% - 120px);
-        }
-        .info-popup-section { margin-bottom: 16px; }
+        .info-popup-body { padding: 18px 22px 22px 22px; overflow-y: auto; flex: 1 1 auto; min-height: 0; max-height: calc(100% - 120px); }
+        .info-popup-section { margin-bottom: 18px; }
         .info-popup-section:last-child { margin-bottom: 0; padding-bottom: 16px; }
-        .info-popup-label { font-size: 11px; font-weight: 600; color: #718096; text-transform: uppercase; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; }
-        .info-popup-edit { font-size: 10px; color: #0066cc; cursor: pointer; font-weight: 500; }
+        .info-popup-label { font-size: 12px; font-weight: 600; color: #718096; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; letter-spacing: 0.5px; }
+        .info-popup-edit { font-size: 11px; color: #0066cc; cursor: pointer; font-weight: 500; }
         .info-popup-edit:hover { text-decoration: underline; }
-        .info-popup-text { font-size: 13px; line-height: 1.6; color: #4a5568; }
+        .info-popup-text { font-size: 15px; line-height: 1.7; color: #4a5568; }
         .info-popup-text.collapsed { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-        .read-more-btn { color: #0066cc; cursor: pointer; font-size: 12px; margin-top: 6px; display: inline-block; font-weight: 500; }
+        .read-more-btn { color: #0066cc; cursor: pointer; font-size: 13px; margin-top: 8px; display: inline-block; font-weight: 500; }
         .read-more-btn:hover { text-decoration: underline; }
-        .info-popup-tags { display: flex; flex-wrap: wrap; gap: 6px; max-height: 100px; overflow-y: auto; }
-        .info-popup-tag { background: #edf2f7; padding: 4px 10px; border-radius: 12px; font-size: 11px; color: #4a5568; font-weight: 500; }
-        .info-popup-comparison { background: #f7fafc; border-radius: 10px; padding: 12px; margin-top: 8px; border: 1px solid #e2e8f0; }
-        .info-popup-comp-item { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #e2e8f0; }
+        .info-popup-tags { display: flex; flex-wrap: wrap; gap: 8px; max-height: 120px; overflow-y: auto; }
+        .info-popup-tag { background: #edf2f7; padding: 6px 14px; border-radius: 14px; font-size: 13px; color: #4a5568; font-weight: 500; }
+        .info-popup-comparison { background: #f7fafc; border-radius: 10px; padding: 14px; margin-top: 8px; border: 1px solid #e2e8f0; }
+        .info-popup-comp-item { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #e2e8f0; }
         .info-popup-comp-item:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
-        .info-popup-comp-label { font-size: 11px; font-weight: 600; color: #0066cc; margin-bottom: 3px; }
-        .info-popup-comp-text { font-size: 12px; color: #4a5568; line-height: 1.5; }
-        .info-popup-textarea { width: 100%; min-height: 60px; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 13px; font-family: inherit; resize: vertical; transition: border-color 0.2s; }
+        .info-popup-comp-label { font-size: 12px; font-weight: 600; color: #0066cc; margin-bottom: 4px; }
+        .info-popup-comp-text { font-size: 14px; color: #4a5568; line-height: 1.6; }
+        .info-popup-textarea { width: 100%; min-height: 70px; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; resize: vertical; transition: border-color 0.2s; }
         .info-popup-textarea:focus { outline: none; border-color: #0066cc; }
-        .info-popup-input { width: 100%; padding: 8px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 12px; margin-bottom: 4px; }
-        .info-popup-actions { 
-            display: none; 
-            gap: 10px; 
-            justify-content: flex-end; 
-            padding: 14px 20px;
-            border-top: 1px solid #e2e8f0; 
-            background: #f7fafc;
-            border-radius: 0 0 12px 12px;
-            flex-shrink: 0;
-        }
-        .info-popup-actions.visible {
-            display: flex;
-        }
-
-        /* Compare Modal */
-        .compare-modal { max-width: 90%; width: 90%; max-height: 85vh; padding: 20px; }
-        .compare-table-wrapper { overflow-x: auto; max-height: 65vh; }
-        .compare-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-        .compare-table th, .compare-table td { border: 1px solid #e2e8f0; padding: 12px; text-align: left; vertical-align: top; }
+        .info-popup-actions { display: none; gap: 10px; justify-content: flex-end; padding: 14px 20px; border-top: 1px solid #e2e8f0; background: #f7fafc; border-radius: 0 0 12px 12px; flex-shrink: 0; }
+        .info-popup-actions.visible { display: flex; }
+        .compare-modal { max-width: 92%; width: 92%; max-height: 88vh; padding: 20px; }
+        .compare-table-wrapper { overflow: auto; max-height: 68vh; }
+        .compare-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        .compare-table th, .compare-table td { border: 1px solid #e2e8f0; padding: 14px; text-align: left; vertical-align: top; }
         .compare-table th { background: #f7fafc; font-weight: 600; position: sticky; top: 0; z-index: 1; color: #4a5568; }
-        .compare-table th:first-child { min-width: 140px; background: #edf2f7; }
-        .compare-table td:first-child { font-weight: 600; background: #f7fafc; min-width: 140px; color: #4a5568; }
-        .compare-table td { min-width: 180px; max-width: 280px; }
-        .compare-header-cell { max-width: 200px; }
-        .compare-header-cell .level-badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 10px; margin-bottom: 4px; color: white; font-weight: 600; }
+        .compare-table th:first-child { min-width: 160px; background: #edf2f7; }
+        .compare-table td:first-child { font-weight: 600; background: #f7fafc; min-width: 160px; color: #4a5568; }
+        .compare-table td { min-width: 200px; max-width: 300px; }
+        .compare-header-cell { max-width: 220px; }
+        .compare-header-cell .level-badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 11px; margin-bottom: 6px; color: white; font-weight: 600; }
         .compare-header-cell .level-badge.l0 { background: #0066cc; }
         .compare-header-cell .level-badge.l1 { background: #ff9800; }
         .compare-header-cell .level-badge.l2 { background: #9c27b0; }
-        .compare-header-cell .name { font-size: 13px; word-wrap: break-word; }
-        .compare-tag { display: inline-block; background: #e8f4f8; padding: 3px 8px; border-radius: 8px; font-size: 10px; margin: 2px; font-weight: 500; }
-
+        .compare-header-cell .name { font-size: 14px; word-wrap: break-word; }
+        .compare-tag { display: inline-block; background: #e8f4f8; padding: 5px 10px; border-radius: 10px; font-size: 12px; margin: 3px; font-weight: 500; }
+        .section-toggle { display: flex; justify-content: center; margin-bottom: 20px; }
+        .toggle-container { display: flex; background: #edf2f7; border-radius: 12px; padding: 5px; gap: 4px; }
+        .toggle-btn { padding: 12px 24px; border: none; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 600; transition: all 0.3s; background: transparent; color: #718096; }
+        .toggle-btn.active { background: white; color: #0066cc; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .toggle-btn:hover:not(.active) { color: #4a5568; }
+        .section { display: none; }
+        .section.active { display: block; }
+        .shows-section { padding: 20px 0; }
+        .shows-controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; justify-content: center; }
+        /* Tables */
+        .table-container { max-height: 75vh; overflow: auto; border: 1px solid #e2e8f0; border-radius: 12px; background: white; }
+        .data-table { border-collapse: collapse; font-size: 13px; }
+        .data-table th { padding: 14px 16px; text-align: left; font-weight: 600; border-bottom: 2px solid #e2e8f0; vertical-align: top; position: sticky; top: 0; z-index: 2; white-space: nowrap; }
+        .data-table th.col-hierarchy { background: linear-gradient(135deg, #e8f4f8, #dceef5); color: #0055aa; border-bottom-color: #0066cc; }
+        .data-table th.col-content { background: linear-gradient(135deg, #f3e5f5, #ead5ed); color: #6b46c1; border-bottom-color: #9c27b0; }
+        .data-table th.col-comparison { background: linear-gradient(135deg, #e6fffa, #d5f5f0); color: #047857; border-bottom-color: #10b981; }
+        .data-table th.col-default { background: linear-gradient(135deg, #f7fafc, #edf2f7); color: #4a5568; }
+        .data-table th .th-label { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; cursor: pointer; font-size: 13px; }
+        .data-table th .th-label:hover { opacity: 0.8; }
+        .data-table th .sort-icon { font-size: 11px; opacity: 0.5; }
+        .data-table td { padding: 16px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+        .data-table tr:hover { background: #fafbfc; }
+        .data-table tr:nth-child(even) { background: #fcfcfd; }
+        .data-table tr:nth-child(even):hover { background: #f7f8fa; }
+        .col-filter { width: 100%; min-width: 80px; padding: 7px 10px; border: 1px solid rgba(0,0,0,0.15); border-radius: 6px; font-size: 12px; background: rgba(255,255,255,0.95); }
+        .col-filter:focus { outline: none; border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.15); }
+        /* Branch path styling */
+        .branch-path { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+        .branch-tag { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 8px; font-weight: 600; font-size: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); white-space: nowrap; margin: 2px 0; }
+        .branch-tag.l0 { background: linear-gradient(135deg, #e8f4f8, #dceef5); border: 1px solid #0066cc; color: #0055aa; }
+        .branch-tag.l1 { background: linear-gradient(135deg, #fff4e6, #ffedd5); border: 1px solid #ff9800; color: #e67700; }
+        .branch-tag.l2 { background: linear-gradient(135deg, #f3e5f5, #ead5ed); border: 1px solid #9c27b0; color: #7b1fa2; }
+        .branch-arrow { color: #a0aec0; font-size: 14px; font-weight: bold; }
+        /* Tags styling */
+        .cell-tag { display: inline-block; padding: 5px 12px; border-radius: 12px; font-size: 12px; font-weight: 500; margin: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
+        .cell-tag.example { background: linear-gradient(135deg, #e8f4f8, #dceef5); border: 1px solid #bee3f8; color: #2c5282; }
+        .cell-tag.theme { background: linear-gradient(135deg, #f3e5f5, #ead5ed); border: 1px solid #d6bcfa; color: #6b46c1; }
+        .cell-tag.secondary { background: linear-gradient(135deg, #fff4e6, #ffedd5); border: 1px solid #fbd38d; color: #c05621; }
+        .cell-text { font-size: 13px; line-height: 1.6; color: #4a5568; }
+        .cell-empty { color: #a0aec0; font-style: italic; }
+        /* Shows specific */
+        .show-rank { display: inline-flex; align-items: center; justify-content: center; min-width: 36px; height: 36px; padding: 0 8px; background: linear-gradient(135deg, #0066cc, #0052a3); color: white; border-radius: 8px; font-weight: 700; font-size: 13px; }
+        .show-actions { display: flex; gap: 6px; flex-wrap: nowrap; }
+        .show-edit-btn, .show-delete-btn { border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 500; transition: all 0.2s; white-space: nowrap; }
+        .show-edit-btn { background: linear-gradient(135deg, #0066cc, #0052a3); color: white; }
+        .show-delete-btn { background: linear-gradient(135deg, #e53e3e, #c53030); color: white; }
+        .show-edit-btn:hover, .show-delete-btn:hover { transform: translateY(-1px); }
+        .empty-state { text-align: center; padding: 60px 20px; color: #718096; }
+        .empty-state-icon { font-size: 56px; margin-bottom: 16px; }
+        .empty-state-text { font-size: 18px; margin-bottom: 8px; }
+        .empty-state-subtext { font-size: 14px; color: #a0aec0; }
+        .show-modal { max-width: 720px; }
+        .show-modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .show-modal-field { margin-bottom: 16px; }
+        .show-modal-field.full-width { grid-column: 1 / -1; }
+        .show-modal-label { font-size: 13px; font-weight: 600; color: #4a5568; margin-bottom: 6px; display: block; }
+        .show-modal-input { width: 100%; padding: 11px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; transition: border-color 0.2s; }
+        .show-modal-input:focus { outline: none; border-color: #0066cc; }
+        .show-modal-textarea { width: 100%; min-height: 90px; padding: 11px 14px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; resize: vertical; }
+        .show-modal-textarea:focus { outline: none; border-color: #0066cc; }
+        .load-status { text-align: center; padding: 10px; font-size: 13px; color: #718096; background: #f7fafc; border-radius: 8px; margin-bottom: 15px; }
+        .load-status.success { background: #e6fffa; color: #047857; }
+        .load-status.error { background: #fff5f5; color: #c53030; }
         @media (max-width: 768px) {
             .container { padding: 15px; }
             h1 { font-size: 22px; }
             .l1-node > .node-content, .drop-placeholder.l1 { margin-left: 20px; }
             .l2-node > .node-content, .drop-placeholder.l2 { margin-left: 40px; }
-            .btn { padding: 8px 12px; font-size: 12px; }
+            .btn { padding: 8px 12px; font-size: 13px; }
             .node-examples { display: none; }
+            .show-modal-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🎭 Audio Show Genre Taxonomy</h1>
-        <div class="stats" id="stats"></div>
-        <div class="legend">
-            <div class="legend-item"><div class="legend-box level-0"></div><span>L0: Main Genre</span></div>
-            <div class="legend-item"><div class="legend-box level-1"></div><span>L1: Sub-Genre</span></div>
-            <div class="legend-item"><div class="legend-box level-2"></div><span>L2: Sub-Sub-Genre</span></div>
+        <div id="loadStatus" class="load-status" style="display:none;"></div>
+        <div class="section-toggle">
+            <div class="toggle-container">
+                <button class="toggle-btn active" onclick="switchSection('taxonomy')">📚 Taxonomy</button>
+                <button class="toggle-btn" onclick="switchSection('tabular')">📊 Taxonomy Tabular</button>
+                <button class="toggle-btn" onclick="switchSection('shows')">🎬 Shows</button>
+            </div>
         </div>
-        <div class="controls">
-            <button class="btn" onclick="expandAll()">Expand All</button>
-            <button class="btn" onclick="collapseAll()">Collapse All</button>
-            <button class="btn" onclick="addL0Node()">+ Add Genre</button>
-            <button class="btn btn-purple" id="compareBtn" onclick="toggleCompareMode()">🔀 Compare</button>
-            <button class="btn btn-secondary" onclick="importJSON()">📂 Import JSON</button>
-            <button class="btn btn-secondary" onclick="resetToPrimary()">🔄 Reset</button>
-            <button class="btn btn-success" onclick="downloadJSON()">📥 Export JSON</button>
-            <button class="btn btn-success" onclick="downloadHTML()">📄 Export HTML</button>
+        <div id="taxonomySection" class="section active">
+            <div class="stats" id="stats"></div>
+            <div class="legend">
+                <div class="legend-item"><div class="legend-box level-0"></div><span>L0: Main Genre</span></div>
+                <div class="legend-item"><div class="legend-box level-1"></div><span>L1: Sub-Genre</span></div>
+                <div class="legend-item"><div class="legend-box level-2"></div><span>L2: Sub-Sub-Genre</span></div>
+            </div>
+            <div class="controls">
+                <button class="btn" onclick="expandAll()">Expand All</button>
+                <button class="btn" onclick="collapseAll()">Collapse All</button>
+                <button class="btn" onclick="addL0Node()">+ Add Genre</button>
+                <button class="btn btn-purple" id="compareBtn" onclick="toggleCompareMode()">🔀 Compare</button>
+                <button class="btn btn-warning" onclick="reloadTaxonomy()">🔄 Reset</button>
+                <button class="btn btn-secondary" onclick="importJSON()">📂 Import JSON</button>
+                <button class="btn btn-success" onclick="downloadJSON()">📥 Export JSON</button>
+            </div>
+            <div id="compareBar" style="display:none; text-align:center; padding:14px; background:linear-gradient(135deg, #e8f4f8, #dceef5); border-radius:10px; margin-bottom:15px; border: 1px solid #bee3f8;">
+                <span style="color:#2c5282;font-size:15px;">Select up to 5 nodes to compare</span>
+                <span class="selected-count" id="selectedCount">0</span>
+                <button class="btn btn-purple" id="runCompareBtn" onclick="showCompareModal()" disabled style="margin-left:10px;">Compare Selected</button>
+                <button class="btn btn-secondary" onclick="toggleCompareMode()" style="margin-left:5px;">Cancel</button>
+            </div>
+            <div class="tree" id="tree"></div>
         </div>
-        <div id="compareBar" style="display:none; text-align:center; padding:12px; background:linear-gradient(135deg, #e8f4f8, #dceef5); border-radius:10px; margin-bottom:15px; border: 1px solid #bee3f8;">
-            <span style="color:#2c5282;">Select up to 5 nodes to compare</span>
-            <span class="selected-count" id="selectedCount">0</span>
-            <button class="btn btn-purple" id="runCompareBtn" onclick="showCompareModal()" disabled style="margin-left:10px;">Compare Selected</button>
-            <button class="btn btn-secondary" onclick="toggleCompareMode()" style="margin-left:5px;">Cancel</button>
+        <div id="tabularSection" class="section">
+            <div class="controls" style="margin-bottom:20px;">
+                <button class="btn btn-secondary" onclick="clearTabularFilters()">Clear Filters</button>
+            </div>
+            <div class="table-container" id="taxTableContainer"></div>
         </div>
-        <div class="tree" id="tree"><div style="text-align:center;padding:40px;color:#718096;">Loading taxonomy...</div></div>
+        <div id="showsSection" class="section shows-section">
+            <div class="shows-controls">
+                <button class="btn btn-warning" onclick="reloadShows()">🔄 Reset</button>
+                <button class="btn btn-secondary" onclick="importShowsCSV()">📂 Import CSV</button>
+                <button class="btn btn-success" onclick="exportShowsCSV()">📥 Export CSV</button>
+                <button class="btn" onclick="openAddShowModal()">+ Add Show</button>
+                <button class="btn btn-secondary" onclick="clearShowFilters()">Clear Filters</button>
+            </div>
+            <div class="table-container" id="showsTableContainer"></div>
+            <div class="empty-state" id="showsEmptyState">
+                <div class="empty-state-icon">📺</div>
+                <div class="empty-state-text">No shows added yet</div>
+                <div class="empty-state-subtext">Import a CSV or add shows manually to get started</div>
+            </div>
+        </div>
     </div>
     <input type="file" id="fileInput" class="file-input" accept=".json" onchange="handleFileImport(event)">
+    <input type="file" id="csvFileInput" class="file-input" accept=".csv" onchange="handleCSVImport(event)">
     <div class="modal-overlay" id="deleteModal">
         <div class="modal">
             <div class="modal-title danger">⚠️ Confirm Deletion</div>
@@ -255,14 +304,34 @@
             </div>
         </div>
     </div>
+    <div class="modal-overlay" id="showModal">
+        <div class="modal show-modal">
+            <div class="modal-title" id="showModalTitle">Add Show</div>
+            <div class="modal-content">
+                <div class="show-modal-grid">
+                    <div class="show-modal-field"><label class="show-modal-label">Show Name *</label><input type="text" class="show-modal-input" id="showNameInput"></div>
+                    <div class="show-modal-field"><label class="show-modal-label">Show Rank</label><input type="number" class="show-modal-input" id="showRankInput" min="1"></div>
+                    <div class="show-modal-field"><label class="show-modal-label">Show ID</label><input type="text" class="show-modal-input" id="showIdInput"></div>
+                    <div class="show-modal-field"><label class="show-modal-label">Genre</label><input type="text" class="show-modal-input" id="showGenreInput"></div>
+                    <div class="show-modal-field"><label class="show-modal-label">Sub Genre</label><input type="text" class="show-modal-input" id="showSubGenreInput"></div>
+                    <div class="show-modal-field"><label class="show-modal-label">Sub Sub Genre</label><input type="text" class="show-modal-input" id="showSubSubGenreInput"></div>
+                    <div class="show-modal-field full-width"><label class="show-modal-label">Key Themes (separate with ;)</label><input type="text" class="show-modal-input" id="showKeyThemesInput" placeholder="Theme 1 ; Theme 2 ; Theme 3"></div>
+                    <div class="show-modal-field full-width"><label class="show-modal-label">Secondary Themes (separate with ;)</label><input type="text" class="show-modal-input" id="showSecondaryThemesInput" placeholder="Theme 1 ; Theme 2 ; Theme 3"></div>
+                    <div class="show-modal-field full-width"><label class="show-modal-label">Reason</label><textarea class="show-modal-textarea" id="showReasonInput" placeholder="Reason for classification..."></textarea></div>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn modal-btn-cancel" onclick="closeModal('showModal')">Cancel</button>
+                <button class="modal-btn modal-btn-primary" onclick="saveShow()">Save</button>
+            </div>
+        </div>
+    </div>
     <div class="info-popup" id="infoPopup">
         <div class="info-popup-header">
             <span class="info-popup-title" id="infoPopupTitle">Genre Name</span>
             <button class="info-popup-close" onclick="closeInfoPopup()">×</button>
         </div>
-        <div class="info-popup-body" id="infoPopupBody">
-            <div id="infoPopupContent"></div>
-        </div>
+        <div class="info-popup-body" id="infoPopupBody"><div id="infoPopupContent"></div></div>
         <div class="info-popup-actions" id="infoPopupActions">
             <button class="modal-btn modal-btn-cancel" onclick="closeInfoPopup()">Cancel</button>
             <button class="modal-btn modal-btn-primary" onclick="saveInfoPopup()">Save</button>
@@ -272,16 +341,15 @@
     <div class="drag-ghost" id="dragGhost"></div>
     <div class="toast" id="toast"></div>
     <script>
-        // Path to your primary taxonomy JSON file (relative to site root)
-        const PRIMARY_TAXONOMY_URL = './taxonomy.json';
-        
-        // Fallback if fetch fails (empty taxonomy)
-        const FALLBACK_TAXONOMY = {"Genre":{}};
+        // File paths for preloading (relative to HTML file location)
+        const TAXONOMY_URL = './taxonomy.json';
+        const SHOWS_URL = './shows_tagging.csv';
         
         const COMPARISON_KEYS = ["Primary_Plot_Driver","Setting_And_World","Central_Conflict_Type","Tone_And_Atmosphere","Character_Arc_Focus","Power_Ability_System","Stakes_And_Consequences"];
         const COMPARISON_LABELS = {"Primary_Plot_Driver":"Primary Plot Driver","Setting_And_World":"Setting & World","Central_Conflict_Type":"Central Conflict Type","Tone_And_Atmosphere":"Tone & Atmosphere","Character_Arc_Focus":"Character Arc Focus","Power_Ability_System":"Power/Ability System","Stakes_And_Consequences":"Stakes & Consequences"};
 
-        let taxonomy = FALLBACK_TAXONOMY;
+        let taxonomy = {"Genre":{}};
+        let showsData = [];
         let expandedState = new Set();
         let dragState = { active: false };
         let pendingDelete = null;
@@ -289,27 +357,165 @@
         let hoverTimeout = null;
         let compareMode = false;
         let selectedNodes = [];
-        let primaryTaxonomyLoaded = false;
+        let editingShowIndex = -1;
+        let showFilters = {};
+        let showSort = {key:'rank',dir:'asc'};
+        let taxFilters = {};
+        let taxSort = {key:'_original',dir:'asc'}; // Default to original JSON order
 
-        // Load primary taxonomy on page load
-        async function loadPrimaryTaxonomy() {
+        // ========== PRELOAD FUNCTIONS ==========
+        function showLoadStatus(message, type) {
+            const el = document.getElementById('loadStatus');
+            el.textContent = message;
+            el.className = 'load-status ' + type;
+            el.style.display = 'block';
+            setTimeout(() => { el.style.display = 'none'; }, 4000);
+        }
+
+        async function loadTaxonomy() {
+            console.log('Loading taxonomy from:', TAXONOMY_URL);
             try {
-                const response = await fetch(PRIMARY_TAXONOMY_URL);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                const data = await response.json();
+                const response = await fetch(TAXONOMY_URL);
+                console.log('Taxonomy response status:', response.status, response.ok);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const text = await response.text();
+                console.log('Taxonomy raw text length:', text.length);
+                if (!text || text.trim().length === 0) {
+                    throw new Error('Empty response received');
+                }
+                const data = JSON.parse(text);
+                console.log('Taxonomy parsed, keys:', Object.keys(data));
                 if (data.Genre && typeof data.Genre === 'object') {
                     taxonomy = data;
-                    primaryTaxonomyLoaded = true;
                     createTree(false);
-                    showToast('Taxonomy loaded', 'success');
+                    console.log('✓ Taxonomy loaded successfully, genres:', Object.keys(taxonomy.Genre).length);
+                    return true;
                 } else {
-                    throw new Error('Invalid taxonomy format');
+                    throw new Error('Invalid taxonomy format - missing Genre object');
                 }
             } catch (err) {
-                console.error('Failed to load primary taxonomy:', err);
-                showToast('Using empty taxonomy - primary failed to load', 'error');
+                console.error('✗ Failed to load taxonomy:', err.message);
+                console.error('Full error:', err);
+                taxonomy = {"Genre":{}};
                 createTree(false);
+                return false;
             }
+        }
+
+        async function loadShows() {
+            console.log('Loading shows from:', SHOWS_URL);
+            try {
+                const response = await fetch(SHOWS_URL);
+                console.log('Shows response status:', response.status, response.ok);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const text = await response.text();
+                console.log('Shows CSV length:', text.length);
+                if (!text || text.trim().length === 0) {
+                    throw new Error('Empty CSV received');
+                }
+                parseShowsCSV(text);
+                console.log('✓ Shows loaded successfully:', showsData.length, 'shows');
+                return true;
+            } catch (err) {
+                console.error('✗ Failed to load shows:', err.message);
+                console.error('Full error:', err);
+                showsData = [];
+                return false;
+            }
+        }
+
+        function normalizeHeader(h) {
+            // Normalize header by trimming whitespace and converting to lowercase for matching
+            return h.trim().toLowerCase().replace(/[_\s]+/g, ' ');
+        }
+
+        function parseShowsCSV(text) {
+            const lines = text.split(/\r?\n/).filter(l => l.trim());
+            if (lines.length < 1) {
+                console.warn('CSV has no lines');
+                return;
+            }
+            const headers = parseCSVLine(lines[0]);
+            const headerMap = {};
+            
+            // Create normalized header map
+            const expectedHeaders = {
+                'show name': 'name',
+                'show rank': 'rank', 
+                'show id': 'id',
+                'genre': 'genre',
+                'sub genre': 'subGenre',
+                'sub sub genre': 'subSubGenre',
+                'key themes': 'keyThemes',
+                'secondary themes': 'secondaryThemes',
+                'reason': 'reason'
+            };
+            
+            headers.forEach((h, i) => {
+                const normalized = normalizeHeader(h);
+                if (expectedHeaders[normalized]) {
+                    headerMap[expectedHeaders[normalized]] = i;
+                }
+            });
+            
+            console.log('CSV Headers found:', headers);
+            console.log('Header map:', headerMap);
+            
+            showsData = [];
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLine(lines[i]);
+                if (values.length < 2) continue;
+                
+                const getValue = (key) => {
+                    const idx = headerMap[key];
+                    return idx !== undefined && values[idx] !== undefined ? values[idx].trim() : '';
+                };
+                
+                showsData.push({
+                    name: getValue('name'),
+                    rank: parseInt(getValue('rank')) || 0,
+                    id: getValue('id'),
+                    genre: getValue('genre'),
+                    subGenre: getValue('subGenre'),
+                    subSubGenre: getValue('subSubGenre'),
+                    keyThemes: getValue('keyThemes'),
+                    secondaryThemes: getValue('secondaryThemes'),
+                    reason: getValue('reason')
+                });
+            }
+            console.log('Parsed shows:', showsData.length);
+        }
+
+        async function reloadTaxonomy() {
+            const success = await loadTaxonomy();
+            if (success) {
+                showToast('Taxonomy reloaded from file', 'success');
+            } else {
+                showToast('Could not load taxonomy.json - using empty', 'error');
+            }
+        }
+
+        async function reloadShows() {
+            const success = await loadShows();
+            renderShowsTable();
+            if (success) {
+                showToast('Shows reloaded from file', 'success');
+            } else {
+                showToast('Could not load shows_tagging.csv', 'error');
+            }
+        }
+
+        // ========== CORE FUNCTIONS ==========
+        function switchSection(section) {
+            document.querySelectorAll('.toggle-btn').forEach((b,i) => b.classList.toggle('active', (section==='taxonomy'&&i===0)||(section==='tabular'&&i===1)||(section==='shows'&&i===2)));
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(section==='taxonomy'?'taxonomySection':section==='tabular'?'tabularSection':'showsSection').classList.add('active');
+            if(section==='shows') renderShowsTable();
+            if(section==='tabular') renderTaxonomyTable();
         }
 
         function getNodeData(path, level) {
@@ -327,12 +533,6 @@
         }
 
         function importJSON() { document.getElementById('fileInput').click(); }
-
-        function resetToPrimary() {
-            if (confirm('Reset to the original taxonomy? Your current changes will be lost.')) {
-                loadPrimaryTaxonomy();
-            }
-        }
 
         function handleFileImport(event) {
             const file = event.target.files[0];
@@ -354,23 +554,14 @@
 
         function downloadJSON() {
             const json = JSON.stringify(taxonomy, null, 2);
-            downloadFile(json, 'genre_taxonomy.json', 'application/json');
+            downloadFile(json, 'taxonomy.json', 'application/json');
             showToast('JSON exported!', 'success');
-        }
-
-        function downloadHTML() {
-            let html = document.documentElement.outerHTML;
-            const ts = JSON.stringify(taxonomy, null, 8);
-            html = html.replace(/const EMBEDDED_TAXONOMY = null;/, `const EMBEDDED_TAXONOMY = ${ts};`);
-            downloadFile(html, 'genre_taxonomy_editor.html', 'text/html');
-            showToast('HTML exported!', 'success');
         }
 
         function downloadFile(content, filename, type) {
             const blob = new Blob([content], { type });
             const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url; a.download = filename; a.click();
+            const a = document.createElement('a'); a.href = url; a.download = filename; a.click();
             URL.revokeObjectURL(url);
         }
 
@@ -381,13 +572,7 @@
         }
 
         function closeModal(id) { document.getElementById(id).classList.remove('active'); }
-        
-        function closeCompareModal() {
-            closeModal('compareModal');
-            if (compareMode) {
-                toggleCompareMode();
-            }
-        }
+        function closeCompareModal() { closeModal('compareModal'); if (compareMode) toggleCompareMode(); }
 
         function updateStats() {
             let l0 = 0, l1 = 0, l2 = 0;
@@ -445,60 +630,43 @@
         function createNode(name, level, path) {
             const node = document.createElement('div');
             node.className = `genre-node l${level}-node`;
-            node.dataset.level = level;
-            node.dataset.path = path.join('|||');
-            node.dataset.name = name;
+            node.dataset.level = level; node.dataset.path = path.join('|||'); node.dataset.name = name;
             const hasChildren = level < 2;
             let childCount = '';
             const g = taxonomy.Genre;
             if (level === 0) {
                 const s = g[path[0]]?.["Sub-Genre"] || {};
                 const l1c = Object.keys(s).length;
-                let l2c = 0;
-                Object.values(s).forEach(x => l2c += Object.keys(x["Sub-Sub-Genre"] || {}).length);
+                let l2c = 0; Object.values(s).forEach(x => l2c += Object.keys(x["Sub-Sub-Genre"] || {}).length);
                 childCount = `<span class="node-count">${l1c} sub, ${l2c} cat</span>`;
             } else if (level === 1) {
                 const ss = g[path[0]]?.["Sub-Genre"]?.[path[1]]?.["Sub-Sub-Genre"] || {};
                 childCount = `<span class="node-count">${Object.keys(ss).length}</span>`;
             }
-            
-            // Get examples for this node (top 3)
             const nodeData = getNodeData(path, level);
             const examples = nodeData?.Examples || [];
-            const top3Examples = examples.slice(0, 3);
-            let examplesHtml = '';
-            if (top3Examples.length > 0) {
-                examplesHtml = '<div class="node-examples">' + 
-                    top3Examples.map(ex => `<span class="node-example-tag" title="${ex}">${ex}</span>`).join('') + 
-                    '</div>';
-            }
-            
+            const top3 = examples.slice(0, 3);
+            let exHtml = top3.length ? '<div class="node-examples">' + top3.map(ex => `<span class="node-example-tag" title="${ex}">${ex}</span>`).join('') + '</div>' : '';
             const pathStr = path.join('|||');
-            node.innerHTML = `
-                <div class="node-content" draggable="true">
-                    <input type="checkbox" class="node-checkbox" data-path="${pathStr}" data-level="${level}" data-name="${name}" onclick="event.stopPropagation();toggleNodeSelection(this)">
-                    <span class="drag-handle">⋮⋮</span>
-                    ${hasChildren ? '<span class="expand-icon">▶</span>' : ''}
-                    <span class="node-label">${name}</span>
-                    ${examplesHtml}
-                    <span class="info-icon" title="View details">ℹ️</span>
-                    ${childCount}
-                    <div class="node-actions">
-                        <button class="action-btn" onclick="event.stopPropagation();startRename(this)" title="Rename">✏️</button>
-                        ${hasChildren ? `<button class="action-btn" onclick="event.stopPropagation();addChild('${pathStr}',${level})" title="Add">➕</button>` : ''}
-                        <button class="action-btn delete" onclick="event.stopPropagation();showDeleteModal('${pathStr}',${level})" title="Delete">🗑️</button>
-                    </div>
+            node.innerHTML = `<div class="node-content" draggable="true">
+                <input type="checkbox" class="node-checkbox" data-path="${pathStr}" data-level="${level}" data-name="${name}" onclick="event.stopPropagation();toggleNodeSelection(this)">
+                <span class="drag-handle">⋮⋮</span>
+                ${hasChildren ? '<span class="expand-icon">▶</span>' : ''}
+                <span class="node-label">${name}</span>
+                ${exHtml}
+                <span class="info-icon" title="View details">ℹ️</span>
+                ${childCount}
+                <div class="node-actions">
+                    <button class="action-btn" onclick="event.stopPropagation();startRename(this)" title="Rename">✏️</button>
+                    ${hasChildren ? `<button class="action-btn" onclick="event.stopPropagation();addChild('${pathStr}',${level})" title="Add">➕</button>` : ''}
+                    <button class="action-btn delete" onclick="event.stopPropagation();showDeleteModal('${pathStr}',${level})" title="Delete">🗑️</button>
                 </div>
-                ${hasChildren ? '<div class="children collapsed"></div>' : ''}`;
+            </div>${hasChildren ? '<div class="children collapsed"></div>' : ''}`;
             const content = node.querySelector('.node-content');
             const label = node.querySelector('.node-label');
             const infoIcon = node.querySelector('.info-icon');
             if (hasChildren) {
-                node.querySelector('.expand-icon').addEventListener('click', e => {
-                    e.stopPropagation();
-                    content.classList.toggle('expanded');
-                    node.querySelector('.children').classList.toggle('collapsed');
-                });
+                node.querySelector('.expand-icon').addEventListener('click', e => { e.stopPropagation(); content.classList.toggle('expanded'); node.querySelector('.children').classList.toggle('collapsed'); });
             }
             label.addEventListener('dblclick', e => { e.stopPropagation(); startRename(label); });
             infoIcon.addEventListener('mouseenter', e => { hoverTimeout = setTimeout(() => showInfoPopup(path, level, e.clientX, e.clientY), 400); });
@@ -513,8 +681,7 @@
         }
 
         function toggleCompareMode() {
-            compareMode = !compareMode;
-            selectedNodes = [];
+            compareMode = !compareMode; selectedNodes = [];
             document.getElementById('compareBar').style.display = compareMode ? 'block' : 'none';
             document.getElementById('compareBtn').textContent = compareMode ? '❌ Exit Compare' : '🔀 Compare';
             document.getElementById('tree').classList.toggle('compare-mode', compareMode);
@@ -527,9 +694,7 @@
             if (cb.checked) {
                 if (selectedNodes.length >= 5) { cb.checked = false; showToast('Max 5 nodes', 'error'); return; }
                 selectedNodes.push({ path: pathStr.split('|||'), level: parseInt(cb.dataset.level), name: cb.dataset.name });
-            } else {
-                selectedNodes = selectedNodes.filter(n => n.path.join('|||') !== pathStr);
-            }
+            } else { selectedNodes = selectedNodes.filter(n => n.path.join('|||') !== pathStr); }
             updateSelectedCount();
         }
 
@@ -542,162 +707,75 @@
             if (selectedNodes.length < 2) return;
             const wrapper = document.getElementById('compareTableWrapper');
             let html = '<table class="compare-table"><thead><tr><th>Attribute</th>';
-            selectedNodes.forEach(n => {
-                html += `<th class="compare-header-cell"><div class="level-badge l${n.level}">L${n.level}</div><div class="name">${n.name}</div></th>`;
-            });
+            selectedNodes.forEach(n => { html += `<th class="compare-header-cell"><div class="level-badge l${n.level}">L${n.level}</div><div class="name">${n.name}</div></th>`; });
             html += '</tr></thead><tbody>';
-            html += '<tr><td>Examples</td>';
-            selectedNodes.forEach(n => {
-                const data = getNodeData(n.path, n.level);
-                const ex = data?.Examples || [];
-                html += `<td>${ex.length ? ex.map(e => `<span class="compare-tag">${e}</span>`).join('') : '<em>None</em>'}</td>`;
-            });
-            html += '</tr>';
-            COMPARISON_KEYS.forEach(key => {
-                html += `<tr><td>${COMPARISON_LABELS[key]}</td>`;
-                selectedNodes.forEach(n => {
-                    const data = getNodeData(n.path, n.level);
-                    const val = data?.Comparison?.[key] || '';
-                    html += `<td>${val || '<em>Not defined</em>'}</td>`;
-                });
-                html += '</tr>';
-            });
+            html += '<tr><td>Examples</td>'; selectedNodes.forEach(n => { const d = getNodeData(n.path, n.level); const ex = d?.Examples || []; html += `<td>${ex.length ? ex.map(e => `<span class="compare-tag">${e}</span>`).join('') : '<em>None</em>'}</td>`; }); html += '</tr>';
+            html += '<tr><td>Key Themes</td>'; selectedNodes.forEach(n => { const d = getNodeData(n.path, n.level); const t = d?.Key_Themes || []; html += `<td>${t.length ? t.map(e => `<span class="compare-tag">${e}</span>`).join('') : '<em>None</em>'}</td>`; }); html += '</tr>';
+            html += '<tr><td>Secondary Themes</td>'; selectedNodes.forEach(n => { const d = getNodeData(n.path, n.level); const t = d?.Secondary_Themes || []; html += `<td>${t.length ? t.map(e => `<span class="compare-tag">${e}</span>`).join('') : '<em>None</em>'}</td>`; }); html += '</tr>';
+            COMPARISON_KEYS.forEach(key => { html += `<tr><td>${COMPARISON_LABELS[key]}</td>`; selectedNodes.forEach(n => { const d = getNodeData(n.path, n.level); html += `<td>${d?.Comparison?.[key] || '<em>Not defined</em>'}</td>`; }); html += '</tr>'; });
             html += '</tbody></table>';
             wrapper.innerHTML = html;
             document.getElementById('compareModal').classList.add('active');
         }
 
         function showInfoPopup(path, level, x, y) {
-            const data = getNodeData(path, level);
-            if (!data) return;
+            const data = getNodeData(path, level); if (!data) return;
             const popup = document.getElementById('infoPopup');
-            const title = document.getElementById('infoPopupTitle');
-            const content = document.getElementById('infoPopupContent');
-            const actions = document.getElementById('infoPopupActions');
+            document.getElementById('infoPopupTitle').textContent = path[level];
             popup.className = `info-popup active l${level}`;
-            title.textContent = path[level];
-            infoPopupState = { path: [...path], level, editing: false, defExpanded: false };
-            const def = data.Definition || '';
-            const examples = data.Examples || [];
-            const themes = data.Key_Themes || [];
-            const comp = data.Comparison || {};
-            let compHtml = '';
-            COMPARISON_KEYS.forEach(key => {
-                compHtml += `<div class="info-popup-comp-item"><div class="info-popup-comp-label">${COMPARISON_LABELS[key]}</div><div class="info-popup-comp-text">${comp[key] || '<em>Not defined</em>'}</div></div>`;
-            });
-            content.innerHTML = `
-                <div class="info-popup-section">
-                    <div class="info-popup-label">Definition <span class="info-popup-edit" onclick="editAllFields()">✏️ Edit All</span></div>
-                    <div class="info-popup-text collapsed" id="defText">${def || '<em>No definition</em>'}</div>
-                    <span class="read-more-btn" id="readMoreBtn" onclick="toggleDefExpand()">Read More</span>
-                </div>
-                <div class="info-popup-section">
-                    <div class="info-popup-label">Examples</div>
-                    <div class="info-popup-tags">${examples.length ? examples.map(e => `<span class="info-popup-tag">${e}</span>`).join('') : '<em style="font-size:12px;color:#a0aec0;">No examples</em>'}</div>
-                </div>
-                <div class="info-popup-section">
-                    <div class="info-popup-label">Key Themes</div>
-                    <div class="info-popup-tags">${themes.length ? themes.map(t => `<span class="info-popup-tag">${t}</span>`).join('') : '<em style="font-size:12px;color:#a0aec0;">No themes</em>'}</div>
-                </div>
-                <div class="info-popup-section">
-                    <div class="info-popup-label">Comparison</div>
-                    <div class="info-popup-comparison">${compHtml}</div>
-                </div>`;
-            actions.classList.remove('visible');
-            
-            const margin = 20;
-            const popupWidth = Math.min(520, window.innerWidth - margin * 2);
-            const maxHeight = window.innerHeight - margin * 2;
-            
-            let left = x + 10;
-            let top = y + 10;
-            
-            if (left + popupWidth > window.innerWidth - margin) {
-                left = Math.max(margin, window.innerWidth - popupWidth - margin);
-            }
-            
-            if (top + maxHeight > window.innerHeight - margin) {
-                top = margin;
-            }
-            
-            popup.style.left = left + 'px';
-            popup.style.top = top + 'px';
-            popup.style.maxHeight = (window.innerHeight - top - margin) + 'px';
+            infoPopupState = { path: [...path], level, editing: false };
+            const def = data.Definition || '', examples = data.Examples || [], themes = data.Key_Themes || [], secThemes = data.Secondary_Themes || [], comp = data.Comparison || {};
+            let compHtml = ''; COMPARISON_KEYS.forEach(key => { compHtml += `<div class="info-popup-comp-item"><div class="info-popup-comp-label">${COMPARISON_LABELS[key]}</div><div class="info-popup-comp-text">${comp[key] || '<em>Not defined</em>'}</div></div>`; });
+            document.getElementById('infoPopupContent').innerHTML = `
+                <div class="info-popup-section"><div class="info-popup-label">Definition <span class="info-popup-edit" onclick="editAllFields()">✏️ Edit All</span></div><div class="info-popup-text collapsed" id="defText">${def || '<em>No definition</em>'}</div><span class="read-more-btn" id="readMoreBtn" onclick="toggleDefExpand()">Read More</span></div>
+                <div class="info-popup-section"><div class="info-popup-label">Examples</div><div class="info-popup-tags">${examples.length ? examples.map(e => `<span class="info-popup-tag">${e}</span>`).join('') : '<em style="color:#a0aec0;">No examples</em>'}</div></div>
+                <div class="info-popup-section"><div class="info-popup-label">Key Themes</div><div class="info-popup-tags">${themes.length ? themes.map(t => `<span class="info-popup-tag">${t}</span>`).join('') : '<em style="color:#a0aec0;">No themes</em>'}</div></div>
+                <div class="info-popup-section"><div class="info-popup-label">Secondary Themes</div><div class="info-popup-tags">${secThemes.length ? secThemes.map(t => `<span class="info-popup-tag">${t}</span>`).join('') : '<em style="color:#a0aec0;">No secondary themes</em>'}</div></div>
+                <div class="info-popup-section"><div class="info-popup-label">Comparison</div><div class="info-popup-comparison">${compHtml}</div></div>`;
+            document.getElementById('infoPopupActions').classList.remove('visible');
+            const margin = 20, popupWidth = Math.min(560, window.innerWidth - margin * 2);
+            let left = x + 10, top = y + 10;
+            if (left + popupWidth > window.innerWidth - margin) left = Math.max(margin, window.innerWidth - popupWidth - margin);
+            if (top + 400 > window.innerHeight - margin) top = margin;
+            popup.style.left = left + 'px'; popup.style.top = top + 'px'; popup.style.maxHeight = (window.innerHeight - top - margin) + 'px';
         }
 
-        function toggleDefExpand() {
-            const defText = document.getElementById('defText');
-            const btn = document.getElementById('readMoreBtn');
-            if (defText.classList.contains('collapsed')) {
-                defText.classList.remove('collapsed');
-                btn.textContent = 'Show Less';
-            } else {
-                defText.classList.add('collapsed');
-                btn.textContent = 'Read More';
-            }
-        }
+        function toggleDefExpand() { const d = document.getElementById('defText'), b = document.getElementById('readMoreBtn'); d.classList.toggle('collapsed'); b.textContent = d.classList.contains('collapsed') ? 'Read More' : 'Show Less'; }
 
         function editAllFields() {
-            const data = getNodeData(infoPopupState.path, infoPopupState.level);
-            if (!data) return;
-            const content = document.getElementById('infoPopupContent');
-            const actions = document.getElementById('infoPopupActions');
+            const data = getNodeData(infoPopupState.path, infoPopupState.level); if (!data) return;
             infoPopupState.editing = true;
-            const def = data.Definition || '';
-            const examples = (data.Examples || []).join('\n');
-            const themes = (data.Key_Themes || []).join('\n');
-            const comp = data.Comparison || {};
-            let compInputs = '';
-            COMPARISON_KEYS.forEach(key => {
-                compInputs += `<div style="margin-bottom:10px;"><label style="font-size:11px;font-weight:600;color:#718096;text-transform:uppercase;letter-spacing:0.5px;">${COMPARISON_LABELS[key]}</label><textarea class="info-popup-textarea" id="comp_${key}" style="min-height:40px;margin-top:4px;">${comp[key] || ''}</textarea></div>`;
-            });
-            content.innerHTML = `
+            const def = data.Definition || '', examples = (data.Examples || []).join('\n'), themes = (data.Key_Themes || []).join('\n'), secThemes = (data.Secondary_Themes || []).join('\n'), comp = data.Comparison || {};
+            let compInputs = ''; COMPARISON_KEYS.forEach(key => { compInputs += `<div style="margin-bottom:12px;"><label style="font-size:12px;font-weight:600;color:#718096;text-transform:uppercase;">${COMPARISON_LABELS[key]}</label><textarea class="info-popup-textarea" id="comp_${key}" style="min-height:50px;margin-top:6px;">${comp[key] || ''}</textarea></div>`; });
+            document.getElementById('infoPopupContent').innerHTML = `
                 <div class="info-popup-section"><div class="info-popup-label">Definition</div><textarea class="info-popup-textarea" id="editDef">${def}</textarea></div>
-                <div class="info-popup-section"><div class="info-popup-label">Examples (one per line)</div><textarea class="info-popup-textarea" id="editExamples" style="min-height:50px;">${examples}</textarea></div>
-                <div class="info-popup-section"><div class="info-popup-label">Key Themes (one per line)</div><textarea class="info-popup-textarea" id="editThemes" style="min-height:50px;">${themes}</textarea></div>
+                <div class="info-popup-section"><div class="info-popup-label">Examples (one per line)</div><textarea class="info-popup-textarea" id="editExamples">${examples}</textarea></div>
+                <div class="info-popup-section"><div class="info-popup-label">Key Themes (one per line)</div><textarea class="info-popup-textarea" id="editThemes">${themes}</textarea></div>
+                <div class="info-popup-section"><div class="info-popup-label">Secondary Themes (one per line)</div><textarea class="info-popup-textarea" id="editSecondaryThemes">${secThemes}</textarea></div>
                 <div class="info-popup-section"><div class="info-popup-label">Comparison</div>${compInputs}</div>`;
-            actions.classList.add('visible');
-            
-            const popup = document.getElementById('infoPopup');
-            const margin = 20;
-            const currentTop = parseInt(popup.style.top) || margin;
-            popup.style.maxHeight = (window.innerHeight - currentTop - margin) + 'px';
-            
-            document.getElementById('infoPopupBody').scrollTop = 0;
+            document.getElementById('infoPopupActions').classList.add('visible');
         }
 
         function saveInfoPopup() {
             const def = document.getElementById('editDef').value.trim();
-            const exText = document.getElementById('editExamples').value.trim();
-            const thText = document.getElementById('editThemes').value.trim();
-            const examples = exText ? exText.split('\n').map(x => x.trim()).filter(x => x) : [];
-            const themes = thText ? thText.split('\n').map(x => x.trim()).filter(x => x) : [];
-            const comp = {};
-            COMPARISON_KEYS.forEach(key => { comp[key] = document.getElementById('comp_' + key).value.trim(); });
+            const examples = document.getElementById('editExamples').value.trim().split('\n').map(x => x.trim()).filter(x => x);
+            const themes = document.getElementById('editThemes').value.trim().split('\n').map(x => x.trim()).filter(x => x);
+            const secThemes = document.getElementById('editSecondaryThemes').value.trim().split('\n').map(x => x.trim()).filter(x => x);
+            const comp = {}; COMPARISON_KEYS.forEach(key => { comp[key] = document.getElementById('comp_' + key).value.trim(); });
             setNodeField(infoPopupState.path, infoPopupState.level, 'Definition', def);
             setNodeField(infoPopupState.path, infoPopupState.level, 'Examples', examples);
             setNodeField(infoPopupState.path, infoPopupState.level, 'Key_Themes', themes);
+            setNodeField(infoPopupState.path, infoPopupState.level, 'Secondary_Themes', secThemes);
             setNodeField(infoPopupState.path, infoPopupState.level, 'Comparison', comp);
-            showToast('Saved!', 'success');
-            closeInfoPopup();
-            createTree();
+            showToast('Saved!', 'success'); closeInfoPopup(); createTree();
         }
 
-        function closeInfoPopup() {
-            document.getElementById('infoPopup').classList.remove('active');
-            infoPopupState = { path: null, level: null, editing: false };
-        }
+        function closeInfoPopup() { document.getElementById('infoPopup').classList.remove('active'); infoPopupState = { path: null, level: null, editing: false }; }
 
         function startRename(el, selectAll = false) {
-            const node = el.closest('.genre-node');
-            const label = node.querySelector('.node-label');
-            const currentName = node.dataset.name;
-            const path = node.dataset.path.split('|||');
-            const level = parseInt(node.dataset.level);
-            const input = document.createElement('input');
-            input.type = 'text'; input.className = 'node-label-input'; input.value = currentName;
-            label.replaceWith(input); input.focus();
-            if (selectAll) input.select(); else input.setSelectionRange(input.value.length, input.value.length);
+            const node = el.closest('.genre-node'), label = node.querySelector('.node-label'), currentName = node.dataset.name, path = node.dataset.path.split('|||'), level = parseInt(node.dataset.level);
+            const input = document.createElement('input'); input.type = 'text'; input.className = 'node-label-input'; input.value = currentName;
+            label.replaceWith(input); input.focus(); if (selectAll) input.select(); else input.setSelectionRange(input.value.length, input.value.length);
             const save = () => { const nn = input.value.trim() || currentName; if (nn !== currentName) renameInTaxonomy(path, level, currentName, nn); createTree(); };
             input.addEventListener('blur', save);
             input.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); input.blur(); } if (e.key === 'Escape') { input.value = currentName; input.blur(); } });
@@ -711,200 +789,324 @@
         }
 
         function addChild(pathStr, level) {
-            const path = pathStr.split('|||');
-            const names = ['Main Genre', 'Sub-Genre', 'Category'];
-            const newName = `New ${names[level + 1]}`;
-            const g = taxonomy.Genre;
-            const template = { Definition: '', Key_Themes: [], Examples: [], Comparison: {} };
+            const path = pathStr.split('|||'), names = ['Main Genre', 'Sub-Genre', 'Category'], newName = `New ${names[level + 1]}`, g = taxonomy.Genre;
+            const template = { Definition: '', Key_Themes: [], Secondary_Themes: [], Examples: [], Comparison: {} };
             if (level === 0) { if (!g[path[0]]["Sub-Genre"]) g[path[0]]["Sub-Genre"] = {}; g[path[0]]["Sub-Genre"][newName] = { ...template, "Sub-Sub-Genre": {} }; }
             else { if (!g[path[0]]["Sub-Genre"][path[1]]["Sub-Sub-Genre"]) g[path[0]]["Sub-Genre"][path[1]]["Sub-Sub-Genre"] = {}; g[path[0]]["Sub-Genre"][path[1]]["Sub-Sub-Genre"][newName] = { ...template }; }
-            expandedState.add(pathStr);
-            if (level === 1) expandedState.add(path[0]);
-            createTree();
+            expandedState.add(pathStr); if (level === 1) expandedState.add(path[0]); createTree();
             setTimeout(() => { const np = level === 0 ? `${path[0]}|||${newName}` : `${path[0]}|||${path[1]}|||${newName}`; const nn = document.querySelector(`[data-path="${np}"]`); if (nn) startRename(nn.querySelector('.node-label'), true); }, 50);
         }
 
         function addL0Node() {
             const newName = 'New Main Genre';
-            taxonomy.Genre[newName] = { Definition: '', Key_Themes: [], Examples: [], Comparison: {}, "Sub-Genre": {} };
+            taxonomy.Genre[newName] = { Definition: '', Key_Themes: [], Secondary_Themes: [], Examples: [], Comparison: {}, "Sub-Genre": {} };
             createTree();
             setTimeout(() => { const nn = document.querySelector(`[data-path="${newName}"]`); if (nn) startRename(nn.querySelector('.node-label'), true); }, 50);
         }
 
         function showDeleteModal(pathStr, level) {
-            const path = pathStr.split('|||');
-            const preview = document.getElementById('deletePreview');
-            const summary = document.getElementById('deleteSummary');
-            let html = '', l1c = 0, l2c = 0;
-            const g = taxonomy.Genre;
-            if (level === 0) {
-                html += `<div class="preview-item preview-l0">📁 ${path[0]}</div>`;
-                const s = g[path[0]]?.["Sub-Genre"] || {};
-                Object.keys(s).forEach(l1 => { l1c++; html += `<div class="preview-item preview-l1">📂 ${l1}</div>`; Object.keys(s[l1]["Sub-Sub-Genre"] || {}).forEach(l2 => { l2c++; html += `<div class="preview-item preview-l2">📄 ${l2}</div>`; }); });
-                summary.innerHTML = `Delete <strong>1 Main Genre</strong>, <strong>${l1c} Sub-Genres</strong>, <strong>${l2c} Categories</strong>`;
-            } else if (level === 1) {
-                html += `<div class="preview-item preview-l1">📂 ${path[1]}</div>`;
-                const ss = g[path[0]]?.["Sub-Genre"]?.[path[1]]?.["Sub-Sub-Genre"] || {};
-                Object.keys(ss).forEach(l2 => { l2c++; html += `<div class="preview-item preview-l2">📄 ${l2}</div>`; });
-                summary.innerHTML = `Delete <strong>1 Sub-Genre</strong>, <strong>${l2c} Categories</strong>`;
-            } else { html += `<div class="preview-item preview-l2">📄 ${path[2]}</div>`; summary.innerHTML = `Delete <strong>1 Category</strong>`; }
-            preview.innerHTML = html;
-            pendingDelete = { path, level };
+            const path = pathStr.split('|||'), preview = document.getElementById('deletePreview'), summary = document.getElementById('deleteSummary');
+            let html = '', l1c = 0, l2c = 0; const g = taxonomy.Genre;
+            if (level === 0) { html += `<div class="preview-item preview-l0">📁 ${path[0]}</div>`; const s = g[path[0]]?.["Sub-Genre"] || {}; Object.keys(s).forEach(l1 => { l1c++; html += `<div class="preview-item preview-l1">📂 ${l1}</div>`; Object.keys(s[l1]["Sub-Sub-Genre"] || {}).forEach(l2 => { l2c++; html += `<div class="preview-item preview-l2">📄 ${l2}</div>`; }); }); summary.innerHTML = `Delete <strong>1 Main Genre</strong>, <strong>${l1c} Sub-Genres</strong>, <strong>${l2c} Categories</strong>`; }
+            else if (level === 1) { html += `<div class="preview-item preview-l1">📂 ${path[1]}</div>`; const ss = g[path[0]]?.["Sub-Genre"]?.[path[1]]?.["Sub-Sub-Genre"] || {}; Object.keys(ss).forEach(l2 => { l2c++; html += `<div class="preview-item preview-l2">📄 ${l2}</div>`; }); summary.innerHTML = `Delete <strong>1 Sub-Genre</strong>, <strong>${l2c} Categories</strong>`; }
+            else { html += `<div class="preview-item preview-l2">📄 ${path[2]}</div>`; summary.innerHTML = `Delete <strong>1 Category</strong>`; }
+            preview.innerHTML = html; pendingDelete = { path, level };
             document.getElementById('deleteModal').classList.add('active');
             document.getElementById('confirmDeleteBtn').onclick = confirmDelete;
         }
 
         function confirmDelete() {
             if (!pendingDelete) return;
-            const { path, level } = pendingDelete;
-            const g = taxonomy.Genre;
-            if (level === 0) delete g[path[0]];
-            else if (level === 1) delete g[path[0]]["Sub-Genre"][path[1]];
-            else delete g[path[0]]["Sub-Genre"][path[1]]["Sub-Sub-Genre"][path[2]];
-            closeModal('deleteModal');
-            pendingDelete = null;
-            createTree();
+            const { path, level } = pendingDelete, g = taxonomy.Genre;
+            if (level === 0) delete g[path[0]]; else if (level === 1) delete g[path[0]]["Sub-Genre"][path[1]]; else delete g[path[0]]["Sub-Genre"][path[1]]["Sub-Sub-Genre"][path[2]];
+            closeModal('deleteModal'); pendingDelete = null; createTree();
         }
 
-        function handleDragStart(e, node) {
-            e.stopPropagation();
-            dragState = { active: true, sourceNode: node, sourcePath: node.dataset.path, sourceLevel: parseInt(node.dataset.level), sourceName: node.dataset.name };
-            node.classList.add('dragging-source');
-            const ghost = document.getElementById('dragGhost');
-            ghost.textContent = node.dataset.name;
-            ghost.className = `drag-ghost l${node.dataset.level}`;
-            const img = new Image(); img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
-            e.dataTransfer.setDragImage(img, 0, 0);
-            dragState.placeholder = document.createElement('div');
-            dragState.placeholder.className = 'drop-placeholder';
-        }
-
-        function handleDragEnd() {
-            if (!dragState.active) return;
-            dragState.sourceNode?.classList.remove('dragging-source');
-            document.getElementById('dragGhost').style.display = 'none';
-            document.getElementById('levelIndicator').classList.remove('active');
-            dragState.placeholder?.remove();
-            dragState = { active: false };
-        }
-
-        function handleDragOver(e, targetNode) {
-            e.preventDefault(); e.stopPropagation();
-            if (!dragState.active || targetNode === dragState.sourceNode || targetNode.contains(dragState.sourceNode)) return;
-            const tl = parseInt(targetNode.dataset.level);
-            const rect = targetNode.querySelector('.node-content').getBoundingClientRect();
-            const before = e.clientY < rect.top + rect.height / 2;
-            const rx = e.clientX - rect.left;
-            let dl = tl;
-            if (rx > 120 && tl <= 1) dl = 2; else if (rx > 60 && tl === 0) dl = 1;
-            const ghost = document.getElementById('dragGhost');
-            ghost.style.display = 'block'; ghost.style.left = (e.clientX + 15) + 'px'; ghost.style.top = (e.clientY - 20) + 'px';
-            const ind = document.getElementById('levelIndicator');
-            const names = ['Main Genre', 'Sub-Genre', 'Category'];
-            ind.innerHTML = `Drop as <span class="level-badge l${dl}">${names[dl]}</span>`;
-            ind.style.left = (e.clientX + 15) + 'px'; ind.style.top = (e.clientY + 20) + 'px';
-            ind.classList.add('active');
-            const ph = dragState.placeholder;
-            ph.className = `drop-placeholder active l${dl}`;
-            ph.dataset.targetPath = targetNode.dataset.path;
-            ph.dataset.insertBefore = before;
-            ph.dataset.dropLevel = dl;
-            if (before) targetNode.parentNode.insertBefore(ph, targetNode);
-            else targetNode.parentNode.insertBefore(ph, targetNode.nextSibling);
-        }
-
-        function handleDrop(e, targetNode) {
-            e.preventDefault(); e.stopPropagation();
-            if (!dragState.active || !dragState.placeholder?.parentNode) return;
-            const dl = parseInt(dragState.placeholder.dataset.dropLevel);
-            const tp = dragState.placeholder.dataset.targetPath.split('|||');
-            const before = dragState.placeholder.dataset.insertBefore === 'true';
-            const sp = dragState.sourcePath.split('|||');
-            const sl = dragState.sourceLevel;
-            const sn = dragState.sourceName;
-            let sd = extractAndRemove(sp, sl);
-            insertAtLocation(sn, sd, sl, dl, tp, before);
-            handleDragEnd();
-            createTree();
-        }
-
-        function extractAndRemove(p, l) {
-            const g = taxonomy.Genre; let d = null;
-            if (l === 0) { d = g[p[0]]; delete g[p[0]]; }
-            else if (l === 1) { d = g[p[0]]["Sub-Genre"][p[1]]; delete g[p[0]]["Sub-Genre"][p[1]]; }
-            else { d = g[p[0]]["Sub-Genre"][p[1]]["Sub-Sub-Genre"][p[2]]; delete g[p[0]]["Sub-Genre"][p[1]]["Sub-Sub-Genre"][p[2]]; }
-            return d;
-        }
-
-        function insertAtLocation(name, data, sl, dl, tp, before) {
-            const g = taxonomy.Genre;
-            const base = { Definition: data.Definition || '', Key_Themes: data.Key_Themes || [], Examples: data.Examples || [], Comparison: data.Comparison || {} };
-            if (dl === 0) {
-                let nd = sl === 0 ? data : { ...base, "Sub-Genre": sl === 1 ? { [name]: data } : {} };
-                const ng = {}; let ins = false;
-                for (const k of Object.keys(g)) { if (k === tp[0] && before && !ins) { ng[name] = nd; ins = true; } ng[k] = g[k]; if (k === tp[0] && !before && !ins) { ng[name] = nd; ins = true; } }
-                if (!ins) ng[name] = nd;
-                taxonomy.Genre = ng;
-            } else if (dl === 1) {
-                let nd = sl === 0 ? (data["Sub-Genre"]?.[Object.keys(data["Sub-Genre"] || {})[0]] || { ...base, "Sub-Sub-Genre": {} }) : sl === 1 ? data : { ...base, "Sub-Sub-Genre": {} };
-                const parent = g[tp[0]]["Sub-Genre"];
-                const ns = {}; let ins = false;
-                for (const k of Object.keys(parent)) { if (k === tp[1] && before && !ins) { ns[name] = nd; ins = true; } ns[k] = parent[k]; if (k === tp[1] && !before && !ins) { ns[name] = nd; ins = true; } }
-                if (!ins) ns[name] = nd;
-                g[tp[0]]["Sub-Genre"] = ns;
-            } else {
-                const nd = { ...base };
-                const parent = g[tp[0]]["Sub-Genre"][tp[1]]["Sub-Sub-Genre"];
-                const nss = {}; let ins = false;
-                for (const k of Object.keys(parent)) { if (k === tp[2] && before && !ins) { nss[name] = nd; ins = true; } nss[k] = parent[k]; if (k === tp[2] && !before && !ins) { nss[name] = nd; ins = true; } }
-                if (!ins) nss[name] = nd;
-                g[tp[0]]["Sub-Genre"][tp[1]]["Sub-Sub-Genre"] = nss;
-            }
-        }
-
-        document.getElementById('tree').addEventListener('dragover', e => {
-            if (!dragState.active) return;
-            const last = document.querySelector('.genre-node.l0-node:last-child');
-            if (last && e.clientY > last.getBoundingClientRect().bottom) {
-                e.preventDefault();
-                const ph = dragState.placeholder;
-                ph.className = 'drop-placeholder active l0';
-                ph.dataset.targetPath = ''; ph.dataset.dropLevel = '0';
-                document.getElementById('tree').appendChild(ph);
-                const ghost = document.getElementById('dragGhost');
-                ghost.style.display = 'block'; ghost.style.left = (e.clientX + 15) + 'px'; ghost.style.top = (e.clientY - 20) + 'px';
-                const ind = document.getElementById('levelIndicator');
-                ind.innerHTML = 'Drop as <span class="level-badge l0">Main Genre</span>';
-                ind.style.left = (e.clientX + 15) + 'px'; ind.style.top = (e.clientY + 20) + 'px';
-                ind.classList.add('active');
-            }
-        });
-
-        document.getElementById('tree').addEventListener('drop', e => {
-            if (!dragState.active || dragState.placeholder?.dataset.targetPath !== '') return;
-            e.preventDefault();
-            const sd = extractAndRemove(dragState.sourcePath.split('|||'), dragState.sourceLevel);
-            const base = { Definition: sd.Definition || '', Key_Themes: sd.Key_Themes || [], Examples: sd.Examples || [], Comparison: sd.Comparison || {} };
-            let nd = dragState.sourceLevel === 0 ? sd : dragState.sourceLevel === 1 ? { ...base, "Sub-Genre": { [dragState.sourceName]: sd } } : { ...base, "Sub-Genre": {} };
-            taxonomy.Genre[dragState.sourceName] = nd;
-            handleDragEnd();
-            createTree();
-        });
-
+        function handleDragStart(e, node) { e.stopPropagation(); dragState = { active: true, sourceNode: node, sourcePath: node.dataset.path, sourceLevel: parseInt(node.dataset.level), sourceName: node.dataset.name }; node.classList.add('dragging-source'); const ghost = document.getElementById('dragGhost'); ghost.textContent = node.dataset.name; ghost.className = `drag-ghost l${node.dataset.level}`; const img = new Image(); img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; e.dataTransfer.setDragImage(img, 0, 0); dragState.placeholder = document.createElement('div'); dragState.placeholder.className = 'drop-placeholder'; }
+        function handleDragEnd() { if (!dragState.active) return; dragState.sourceNode?.classList.remove('dragging-source'); document.getElementById('dragGhost').style.display = 'none'; document.getElementById('levelIndicator').classList.remove('active'); dragState.placeholder?.remove(); dragState = { active: false }; }
+        function handleDragOver(e, targetNode) { e.preventDefault(); e.stopPropagation(); if (!dragState.active || targetNode === dragState.sourceNode || targetNode.contains(dragState.sourceNode)) return; const tl = parseInt(targetNode.dataset.level), rect = targetNode.querySelector('.node-content').getBoundingClientRect(), before = e.clientY < rect.top + rect.height / 2, rx = e.clientX - rect.left; let dl = tl; if (rx > 120 && tl <= 1) dl = 2; else if (rx > 60 && tl === 0) dl = 1; const ghost = document.getElementById('dragGhost'); ghost.style.display = 'block'; ghost.style.left = (e.clientX + 15) + 'px'; ghost.style.top = (e.clientY - 20) + 'px'; const ind = document.getElementById('levelIndicator'), names = ['Main Genre', 'Sub-Genre', 'Category']; ind.innerHTML = `Drop as <span class="level-badge l${dl}">${names[dl]}</span>`; ind.style.left = (e.clientX + 15) + 'px'; ind.style.top = (e.clientY + 20) + 'px'; ind.classList.add('active'); const ph = dragState.placeholder; ph.className = `drop-placeholder active l${dl}`; ph.dataset.targetPath = targetNode.dataset.path; ph.dataset.insertBefore = before; ph.dataset.dropLevel = dl; if (before) targetNode.parentNode.insertBefore(ph, targetNode); else targetNode.parentNode.insertBefore(ph, targetNode.nextSibling); }
+        function handleDrop(e, targetNode) { e.preventDefault(); e.stopPropagation(); if (!dragState.active || !dragState.placeholder?.parentNode) return; const dl = parseInt(dragState.placeholder.dataset.dropLevel), tp = dragState.placeholder.dataset.targetPath.split('|||'), before = dragState.placeholder.dataset.insertBefore === 'true', sp = dragState.sourcePath.split('|||'), sl = dragState.sourceLevel, sn = dragState.sourceName; let sd = extractAndRemove(sp, sl); insertAtLocation(sn, sd, sl, dl, tp, before); handleDragEnd(); createTree(); }
+        function extractAndRemove(p, l) { const g = taxonomy.Genre; let d = null; if (l === 0) { d = g[p[0]]; delete g[p[0]]; } else if (l === 1) { d = g[p[0]]["Sub-Genre"][p[1]]; delete g[p[0]]["Sub-Genre"][p[1]]; } else { d = g[p[0]]["Sub-Genre"][p[1]]["Sub-Sub-Genre"][p[2]]; delete g[p[0]]["Sub-Genre"][p[1]]["Sub-Sub-Genre"][p[2]]; } return d; }
+        function insertAtLocation(name, data, sl, dl, tp, before) { const g = taxonomy.Genre, base = { Definition: data.Definition || '', Key_Themes: data.Key_Themes || [], Secondary_Themes: data.Secondary_Themes || [], Examples: data.Examples || [], Comparison: data.Comparison || {} }; if (dl === 0) { let nd = sl === 0 ? data : { ...base, "Sub-Genre": sl === 1 ? { [name]: data } : {} }; const ng = {}; let ins = false; for (const k of Object.keys(g)) { if (k === tp[0] && before && !ins) { ng[name] = nd; ins = true; } ng[k] = g[k]; if (k === tp[0] && !before && !ins) { ng[name] = nd; ins = true; } } if (!ins) ng[name] = nd; taxonomy.Genre = ng; } else if (dl === 1) { let nd = sl === 0 ? (data["Sub-Genre"]?.[Object.keys(data["Sub-Genre"] || {})[0]] || { ...base, "Sub-Sub-Genre": {} }) : sl === 1 ? data : { ...base, "Sub-Sub-Genre": {} }; const parent = g[tp[0]]["Sub-Genre"]; const ns = {}; let ins = false; for (const k of Object.keys(parent)) { if (k === tp[1] && before && !ins) { ns[name] = nd; ins = true; } ns[k] = parent[k]; if (k === tp[1] && !before && !ins) { ns[name] = nd; ins = true; } } if (!ins) ns[name] = nd; g[tp[0]]["Sub-Genre"] = ns; } else { const nd = { ...base }; const parent = g[tp[0]]["Sub-Genre"][tp[1]]["Sub-Sub-Genre"]; const nss = {}; let ins = false; for (const k of Object.keys(parent)) { if (k === tp[2] && before && !ins) { nss[name] = nd; ins = true; } nss[k] = parent[k]; if (k === tp[2] && !before && !ins) { nss[name] = nd; ins = true; } } if (!ins) nss[name] = nd; g[tp[0]]["Sub-Genre"][tp[1]]["Sub-Sub-Genre"] = nss; } }
+        document.getElementById('tree').addEventListener('dragover', e => { if (!dragState.active) return; const last = document.querySelector('.genre-node.l0-node:last-child'); if (last && e.clientY > last.getBoundingClientRect().bottom) { e.preventDefault(); const ph = dragState.placeholder; ph.className = 'drop-placeholder active l0'; ph.dataset.targetPath = ''; ph.dataset.dropLevel = '0'; document.getElementById('tree').appendChild(ph); const ghost = document.getElementById('dragGhost'); ghost.style.display = 'block'; ghost.style.left = (e.clientX + 15) + 'px'; ghost.style.top = (e.clientY - 20) + 'px'; const ind = document.getElementById('levelIndicator'); ind.innerHTML = 'Drop as <span class="level-badge l0">Main Genre</span>'; ind.style.left = (e.clientX + 15) + 'px'; ind.style.top = (e.clientY + 20) + 'px'; ind.classList.add('active'); } });
+        document.getElementById('tree').addEventListener('drop', e => { if (!dragState.active || dragState.placeholder?.dataset.targetPath !== '') return; e.preventDefault(); const sd = extractAndRemove(dragState.sourcePath.split('|||'), dragState.sourceLevel), base = { Definition: sd.Definition || '', Key_Themes: sd.Key_Themes || [], Secondary_Themes: sd.Secondary_Themes || [], Examples: sd.Examples || [], Comparison: sd.Comparison || {} }; let nd = dragState.sourceLevel === 0 ? sd : dragState.sourceLevel === 1 ? { ...base, "Sub-Genre": { [dragState.sourceName]: sd } } : { ...base, "Sub-Genre": {} }; taxonomy.Genre[dragState.sourceName] = nd; handleDragEnd(); createTree(); });
         function expandAll() { document.querySelectorAll('.node-content').forEach(n => n.classList.add('expanded')); document.querySelectorAll('.children').forEach(c => c.classList.remove('collapsed')); }
         function collapseAll() { document.querySelectorAll('.node-content').forEach(n => n.classList.remove('expanded')); document.querySelectorAll('.children').forEach(c => c.classList.add('collapsed')); }
 
-        document.addEventListener('dragover', e => { if (dragState.active) e.preventDefault(); });
-        document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal('deleteModal'); closeCompareModal(); closeInfoPopup(); if (compareMode) toggleCompareMode(); } });
-        document.addEventListener('click', e => {
-            const popup = document.getElementById('infoPopup');
-            if (popup.classList.contains('active') && !popup.contains(e.target) && !e.target.classList.contains('info-icon')) {
-                if (!infoPopupState.editing) closeInfoPopup();
-            }
-        });
+        // ========== TAXONOMY TABULAR ==========
+        function getTaxonomyRows() {
+            const rows = [], g = taxonomy.Genre || {};
+            let originalIndex = 0;
+            Object.keys(g).forEach(l0 => {
+                const l0Data = g[l0], subs = l0Data["Sub-Genre"] || {};
+                if (Object.keys(subs).length === 0) { 
+                    rows.push({ _idx: originalIndex++, genre: l0, subGenre: '', subSubGenre: '', definition: l0Data.Definition || '', keyThemes: l0Data.Key_Themes || [], secondaryThemes: l0Data.Secondary_Themes || [], examples: l0Data.Examples || [], comparison: l0Data.Comparison || {} }); 
+                }
+                else { 
+                    Object.keys(subs).forEach(l1 => { 
+                        const l1Data = subs[l1], subsubs = l1Data["Sub-Sub-Genre"] || {};
+                        if (Object.keys(subsubs).length === 0) { 
+                            rows.push({ _idx: originalIndex++, genre: l0, subGenre: l1, subSubGenre: '', definition: l1Data.Definition || '', keyThemes: l1Data.Key_Themes || [], secondaryThemes: l1Data.Secondary_Themes || [], examples: l1Data.Examples || [], comparison: l1Data.Comparison || {} }); 
+                        }
+                        else { 
+                            Object.keys(subsubs).forEach(l2 => { 
+                                const l2Data = subsubs[l2]; 
+                                rows.push({ _idx: originalIndex++, genre: l0, subGenre: l1, subSubGenre: l2, definition: l2Data.Definition || '', keyThemes: l2Data.Key_Themes || [], secondaryThemes: l2Data.Secondary_Themes || [], examples: l2Data.Examples || [], comparison: l2Data.Comparison || {} }); 
+                            }); 
+                        }
+                    }); 
+                }
+            });
+            return rows;
+        }
 
-        // Load taxonomy from JSON file on page load
-        loadPrimaryTaxonomy();
+        function renderTaxonomyTable() {
+            const container = document.getElementById('taxTableContainer');
+            const activeEl = document.activeElement;
+            const activeFilterKey = activeEl && activeEl.classList.contains('col-filter') ? activeEl.dataset.filterkey : null;
+            const cursorPos = activeFilterKey ? activeEl.selectionStart : null;
+            
+            const cols = [
+                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'220px'},
+                {key:'definition',label:'Definition',group:'content',minW:'280px'},
+                {key:'examples',label:'Examples',group:'content',minW:'180px'},
+                {key:'keyThemes',label:'Key Themes',group:'content',minW:'180px'},
+                {key:'secondaryThemes',label:'Secondary Themes',group:'content',minW:'180px'}
+            ];
+            COMPARISON_KEYS.forEach(k => cols.push({key:'comp_'+k,label:COMPARISON_LABELS[k],group:'comparison',minW:'160px'}));
+            
+            let rows = getTaxonomyRows();
+            
+            // Apply filters
+            Object.keys(taxFilters).forEach(k => { 
+                const v = (taxFilters[k]||'').toLowerCase(); 
+                if (!v) return;
+                rows = rows.filter(r => { 
+                    let val = '';
+                    if (k === 'branch') { val = `${r.genre} ${r.subGenre} ${r.subSubGenre}`.toLowerCase(); }
+                    else if (k.startsWith('comp_')) { val = r.comparison[k.replace('comp_','')] || ''; }
+                    else if (k === 'keyThemes' || k === 'secondaryThemes' || k === 'examples') { val = (r[k]||[]).join(' '); }
+                    else { val = r[k] || ''; }
+                    return val.toLowerCase().includes(v);
+                });
+            });
+            
+            // Apply sorting - default to original order (_original)
+            if (taxSort.key !== '_original') {
+                rows.sort((a, b) => { 
+                    let va, vb;
+                    if (taxSort.key === 'branch') { 
+                        va = `${a.genre}${a.subGenre}${a.subSubGenre}`; 
+                        vb = `${b.genre}${b.subGenre}${b.subSubGenre}`; 
+                    }
+                    else if (taxSort.key.startsWith('comp_')) { 
+                        va = a.comparison[taxSort.key.replace('comp_','')] || ''; 
+                        vb = b.comparison[taxSort.key.replace('comp_','')] || ''; 
+                    }
+                    else if (['keyThemes','secondaryThemes','examples'].includes(taxSort.key)) { 
+                        va = (a[taxSort.key]||[]).join(' '); 
+                        vb = (b[taxSort.key]||[]).join(' '); 
+                    }
+                    else { 
+                        va = a[taxSort.key] || ''; 
+                        vb = b[taxSort.key] || ''; 
+                    }
+                    if (va < vb) return taxSort.dir === 'asc' ? -1 : 1; 
+                    if (va > vb) return taxSort.dir === 'asc' ? 1 : -1; 
+                    return 0;
+                });
+            } else {
+                // Sort by original index
+                rows.sort((a, b) => {
+                    if (taxSort.dir === 'asc') return a._idx - b._idx;
+                    return b._idx - a._idx;
+                });
+            }
+            
+            let html = `<table class="data-table"><thead><tr>`;
+            cols.forEach(c => {
+                const colClass = c.group === 'hierarchy' ? 'col-hierarchy' : c.group === 'content' ? 'col-content' : 'col-comparison';
+                const isActive = taxSort.key === c.key;
+                const sortIcon = isActive ? (taxSort.dir === 'asc' ? '▲' : '▼') : '⇅';
+                html += `<th class="${colClass}" style="min-width:${c.minW}"><div class="th-label" onclick="sortTaxTable('${c.key}')">${c.label} <span class="sort-icon">${sortIcon}</span></div><input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${taxFilters[c.key]||''}" oninput="updateTaxFilter('${c.key}',this.value)"></th>`;
+            });
+            html += `</tr></thead><tbody>`;
+            
+            rows.forEach(r => {
+                let branchHtml = `<span class="branch-tag l0">${r.genre}</span>`;
+                if (r.subGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l1">${r.subGenre}</span>`;
+                if (r.subSubGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l2">${r.subSubGenre}</span>`;
+                const ex = (r.examples||[]).map(t => `<span class="cell-tag example">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
+                const kt = (r.keyThemes||[]).map(t => `<span class="cell-tag theme">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
+                const st = (r.secondaryThemes||[]).map(t => `<span class="cell-tag secondary">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
+                html += `<tr><td><div class="branch-path">${branchHtml}</div></td><td><div class="cell-text">${r.definition || '<span class="cell-empty">-</span>'}</div></td><td>${ex}</td><td>${kt}</td><td>${st}</td>`;
+                COMPARISON_KEYS.forEach(k => { html += `<td><div class="cell-text">${r.comparison[k] || '<span class="cell-empty">-</span>'}</div></td>`; });
+                html += `</tr>`;
+            });
+            html += `</tbody></table>`;
+            container.innerHTML = html;
+            
+            if (activeFilterKey) {
+                const newInput = container.querySelector(`input[data-filterkey="${activeFilterKey}"]`);
+                if (newInput) { newInput.focus(); if (cursorPos !== null) newInput.setSelectionRange(cursorPos, cursorPos); }
+            }
+        }
+
+        function updateTaxFilter(key, value) { taxFilters[key] = value; renderTaxonomyTable(); }
+        function sortTaxTable(key) { 
+            if (taxSort.key === key) {
+                taxSort.dir = taxSort.dir === 'asc' ? 'desc' : 'asc'; 
+            } else { 
+                taxSort.key = key; 
+                taxSort.dir = 'asc'; 
+            } 
+            renderTaxonomyTable(); 
+        }
+        function clearTabularFilters() { 
+            taxFilters = {}; 
+            taxSort = {key:'_original',dir:'asc'}; // Reset to original order
+            renderTaxonomyTable(); 
+        }
+
+        // ========== SHOWS SECTION ==========
+        function importShowsCSV() { document.getElementById('csvFileInput').click(); }
+        function handleCSVImport(event) {
+            const file = event.target.files[0]; if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => { parseShowsCSV(e.target.result); renderShowsTable(); showToast(`Imported ${showsData.length} shows!`, 'success'); };
+            reader.readAsText(file); event.target.value = '';
+        }
+        function parseCSVLine(line) { 
+            const result = []; 
+            let current = '', inQuotes = false; 
+            for (let i = 0; i < line.length; i++) { 
+                const char = line[i]; 
+                if (char === '"') { 
+                    if (inQuotes && line[i+1] === '"') {
+                        current += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes; 
+                    }
+                } else if (char === ',' && !inQuotes) { 
+                    result.push(current.trim()); 
+                    current = ''; 
+                } else { 
+                    current += char; 
+                } 
+            } 
+            result.push(current.trim()); 
+            return result; 
+        }
+        function exportShowsCSV() { if (showsData.length === 0) { showToast('No shows to export', 'error'); return; } const headers = ['Show Name', 'Show Rank', 'Show ID', 'Genre', 'Sub Genre', 'Sub Sub Genre', 'Key Themes', 'Secondary Themes', 'Reason']; let csv = headers.join(',') + '\n'; showsData.forEach(s => { csv += [`"${(s.name || '').replace(/"/g, '""')}"`, s.rank || '', `"${(s.id || '').replace(/"/g, '""')}"`, `"${(s.genre || '').replace(/"/g, '""')}"`, `"${(s.subGenre || '').replace(/"/g, '""')}"`, `"${(s.subSubGenre || '').replace(/"/g, '""')}"`, `"${(s.keyThemes || '').replace(/"/g, '""')}"`, `"${(s.secondaryThemes || '').replace(/"/g, '""')}"`, `"${(s.reason || '').replace(/"/g, '""')}"`].join(',') + '\n'; }); downloadFile(csv, 'shows_tagging.csv', 'text/csv'); showToast('CSV exported!', 'success'); }
+
+        const SHOW_COLUMNS = [
+            {key:'rank',label:'Rank',minW:'70px'},
+            {key:'name',label:'Show Name',minW:'160px'},
+            {key:'branch',label:'Genre Path',minW:'220px'},
+            {key:'keyThemes',label:'Key Themes',minW:'200px'},
+            {key:'secondaryThemes',label:'Secondary Themes',minW:'200px'},
+            {key:'reason',label:'Reason',minW:'250px'}
+        ];
+
+        function renderShowsTable() {
+            const container = document.getElementById('showsTableContainer'), emptyState = document.getElementById('showsEmptyState');
+            if (showsData.length === 0) { emptyState.style.display = 'block'; container.style.display = 'none'; return; }
+            emptyState.style.display = 'none'; container.style.display = 'block';
+            
+            const activeEl = document.activeElement;
+            const activeFilterKey = activeEl && activeEl.classList.contains('col-filter') ? activeEl.dataset.filterkey : null;
+            const cursorPos = activeFilterKey ? activeEl.selectionStart : null;
+            
+            let filtered = [...showsData];
+            Object.keys(showFilters).forEach(k => { const v = (showFilters[k]||'').toLowerCase(); if (!v) return;
+                filtered = filtered.filter(s => { let val = '';
+                    if (k === 'branch') { val = `${s.genre} ${s.subGenre} ${s.subSubGenre}`.toLowerCase(); }
+                    else if (k === 'keyThemes' || k === 'secondaryThemes') { val = (s[k]||'').split(';').map(t => t.trim().toLowerCase()).join(' '); }
+                    else if (k === 'rank') { val = String(s.rank || ''); }
+                    else { val = (s[k] || '').toLowerCase(); }
+                    return val.includes(v);
+                });
+            });
+            filtered.sort((a, b) => {
+                let va, vb;
+                if (showSort.key === 'rank') { va = a.rank || 9999; vb = b.rank || 9999; }
+                else if (showSort.key === 'branch') { va = `${a.genre}${a.subGenre}${a.subSubGenre}`.toLowerCase(); vb = `${b.genre}${b.subGenre}${b.subSubGenre}`.toLowerCase(); }
+                else { va = (a[showSort.key] || '').toLowerCase(); vb = (b[showSort.key] || '').toLowerCase(); }
+                if (va < vb) return showSort.dir === 'asc' ? -1 : 1; if (va > vb) return showSort.dir === 'asc' ? 1 : -1; return 0;
+            });
+            
+            let html = `<table class="data-table"><thead><tr>`;
+            SHOW_COLUMNS.forEach(c => {
+                html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${showSort.key===c.key?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div><input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${showFilters[c.key]||''}" oninput="updateShowFilter('${c.key}',this.value)"></th>`;
+            });
+            html += `<th class="col-default" style="min-width:90px">Actions</th></tr></thead><tbody>`;
+            
+            filtered.forEach(s => {
+                const origIdx = showsData.indexOf(s);
+                let branchHtml = `<span class="branch-tag l0">${s.genre || '-'}</span>`;
+                if (s.subGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l1">${s.subGenre}</span>`;
+                if (s.subSubGenre) branchHtml += `<span class="branch-arrow">›</span><span class="branch-tag l2">${s.subSubGenre}</span>`;
+                const ktTags = s.keyThemes ? s.keyThemes.split(';').map(t => `<span class="cell-tag theme">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
+                const stTags = s.secondaryThemes ? s.secondaryThemes.split(';').map(t => `<span class="cell-tag secondary">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
+                html += `<tr>
+                    <td><span class="show-rank">${s.rank || '-'}</span></td>
+                    <td><strong>${s.name}</strong><br><small style="color:#718096;">${s.id || ''}</small></td>
+                    <td><div class="branch-path">${branchHtml}</div></td>
+                    <td>${ktTags}</td>
+                    <td>${stTags}</td>
+                    <td><div class="cell-text">${s.reason || '<span class="cell-empty">-</span>'}</div></td>
+                    <td><div class="show-actions"><button class="show-edit-btn" onclick="editShow(${origIdx})">✏️</button><button class="show-delete-btn" onclick="deleteShow(${origIdx})">🗑️</button></div></td>
+                </tr>`;
+            });
+            html += `</tbody></table>`;
+            container.innerHTML = html;
+            
+            if (activeFilterKey) {
+                const newInput = container.querySelector(`input[data-filterkey="${activeFilterKey}"]`);
+                if (newInput) { newInput.focus(); if (cursorPos !== null) newInput.setSelectionRange(cursorPos, cursorPos); }
+            }
+        }
+
+        function updateShowFilter(key, value) { showFilters[key] = value; renderShowsTable(); }
+        function sortShowsTable(key) { if (showSort.key === key) showSort.dir = showSort.dir === 'asc' ? 'desc' : 'asc'; else { showSort.key = key; showSort.dir = 'asc'; } renderShowsTable(); }
+        function clearShowFilters() { showFilters = {}; renderShowsTable(); }
+        function openAddShowModal() { editingShowIndex = -1; document.getElementById('showModalTitle').textContent = 'Add Show'; ['showNameInput','showRankInput','showIdInput','showGenreInput','showSubGenreInput','showSubSubGenreInput','showKeyThemesInput','showSecondaryThemesInput','showReasonInput'].forEach(id => document.getElementById(id).value = ''); document.getElementById('showModal').classList.add('active'); }
+        function editShow(index) { editingShowIndex = index; const s = showsData[index]; document.getElementById('showModalTitle').textContent = 'Edit Show'; document.getElementById('showNameInput').value = s.name || ''; document.getElementById('showRankInput').value = s.rank || ''; document.getElementById('showIdInput').value = s.id || ''; document.getElementById('showGenreInput').value = s.genre || ''; document.getElementById('showSubGenreInput').value = s.subGenre || ''; document.getElementById('showSubSubGenreInput').value = s.subSubGenre || ''; document.getElementById('showKeyThemesInput').value = s.keyThemes || ''; document.getElementById('showSecondaryThemesInput').value = s.secondaryThemes || ''; document.getElementById('showReasonInput').value = s.reason || ''; document.getElementById('showModal').classList.add('active'); }
+        function saveShow() { const name = document.getElementById('showNameInput').value.trim(); if (!name) { showToast('Show name is required', 'error'); return; } const showData = { name, rank: parseInt(document.getElementById('showRankInput').value) || 0, id: document.getElementById('showIdInput').value.trim(), genre: document.getElementById('showGenreInput').value.trim(), subGenre: document.getElementById('showSubGenreInput').value.trim(), subSubGenre: document.getElementById('showSubSubGenreInput').value.trim(), keyThemes: document.getElementById('showKeyThemesInput').value.trim(), secondaryThemes: document.getElementById('showSecondaryThemesInput').value.trim(), reason: document.getElementById('showReasonInput').value.trim() }; if (editingShowIndex >= 0) { showsData[editingShowIndex] = showData; showToast('Show updated!', 'success'); } else { showsData.push(showData); showToast('Show added!', 'success'); } closeModal('showModal'); renderShowsTable(); }
+        function deleteShow(index) { if (confirm(`Delete "${showsData[index].name}"?`)) { showsData.splice(index, 1); renderShowsTable(); showToast('Show deleted', 'success'); } }
+
+        document.addEventListener('dragover', e => { if (dragState.active) e.preventDefault(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeModal('deleteModal'); closeCompareModal(); closeInfoPopup(); closeModal('showModal'); if (compareMode) toggleCompareMode(); } });
+        document.addEventListener('click', e => { const popup = document.getElementById('infoPopup'); if (popup.classList.contains('active') && !popup.contains(e.target) && !e.target.classList.contains('info-icon')) { if (!infoPopupState.editing) closeInfoPopup(); } });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', async function() {
+            console.log('=== Initializing Application ===');
+            console.log('Current URL:', window.location.href);
+            console.log('Taxonomy URL:', TAXONOMY_URL);
+            console.log('Shows URL:', SHOWS_URL);
+            
+            // Load taxonomy
+            const taxLoaded = await loadTaxonomy();
+            
+            // Load shows
+            const showsLoaded = await loadShows();
+            
+            // Render initial views
+            renderShowsTable();
+            
+            // Show status
+            let statusMsg = [];
+            if (taxLoaded) statusMsg.push('✓ Taxonomy loaded');
+            else statusMsg.push('✗ Taxonomy: using empty (place taxonomy.json in same folder)');
+            if (showsLoaded) statusMsg.push('✓ Shows loaded (' + showsData.length + ')');
+            else statusMsg.push('✗ Shows: none (place shows_tagging.csv in same folder)');
+            
+            showLoadStatus(statusMsg.join(' | '), taxLoaded || showsLoaded ? 'success' : 'error');
+            
+            console.log('=== Initialization Complete ===');
+        });
     </script>
 </body>
 </html>
