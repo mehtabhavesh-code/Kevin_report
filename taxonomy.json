@@ -16,6 +16,18 @@
         "Ancient Prophecy",    "Power Corruption",    "Reluctant Hero",
         "Dark Lord Rising"
       ],
+      "Examples": [
+        "My Vampire System",
+        "Shadow Slave",
+        "My Dragon Princess",
+        "God Eye",
+        "First Legendary Beast Master",
+        "Harry Potter (series)",
+        "The Lord of the Rings",
+        "The Name of the Wind",
+        "Mistborn (series)",
+        "A Song of Ice and Fire"
+      ],
       "Comparison": {
         "Primary_Plot_Driver": "Mastering magic or resolving magical conflicts",
         "Setting_And_World": "Imaginary realms with unique magical laws",
@@ -41,6 +53,18 @@
             "Power Progression", "War and Politics",  "Found Family",
             "Mentor Death",      "Betrayal",          "Siege Warfare",
             "Tournament Arc"
+          ],
+          "Examples": [
+            "God Eye",
+            "Supreme Magus",
+            "King of the Nine Flames",
+            "Rise of the Warrior",
+            "Reincarnated With The Strongest System",
+            "The Wheel of Time",
+            "The Stormlight Archive",
+            "Cradle (series)",
+            "Coiling Dragon",
+            "Martial World"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Epic quests or civilization-scale conflicts",
@@ -72,6 +96,18 @@
                 "Legacy Inheritance",
                 "Heavenly Tribulation"
               ],
+              "Examples": [
+                "Rise of the Warrior",
+                "Battle Through The Heavens",
+                "The Conjurers",
+                "Strongest Replication",
+                "Cultivation Online",
+                "I Shall Seal the Heavens",
+                "Against the Gods",
+                "Tales of Demons and Gods",
+                "Stellar Transformations",
+                "Desolate Era"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Ascending cultivation realms toward immortality",
                 "Setting_And_World": "Ancient Chinese-inspired immortal realms",
@@ -102,6 +138,13 @@
                 "Wandering Swordsman",
                 "Honor Duel"
               ],
+              "Examples": [
+                "Crouching Tiger, Hidden Dragon",
+                "Hero (2002 film)",
+                "The Legend of Condor Heroes",
+                "Demi-Gods and Semi-Devils",
+                "Kung Fu Hustle"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Martial mastery and clan honor",
                 "Setting_And_World": "Historical Chinese dynasties",
@@ -128,6 +171,14 @@
                 "Power Corruption", "Redemption Arc",   "Class Diversity",
                 "Boss Battle"
               ],
+              "Examples": [
+                "Supreme Magus",
+                "The Witcher (series)",
+                "The Kingkiller Chronicle",
+                "The Farseer Trilogy",
+                "Dragonlance Chronicles",
+                "The Riftwar Saga"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Epic quests defeating dark forces",
                 "Setting_And_World": "Medieval fantasy with diverse races",
@@ -153,6 +204,16 @@
                 "Reincarnation",     "Cheat Ability",     "Harem",
                 "Slow Life",         "Kingdom Building",  "Comedy",
                 "Demon Lord Defeat"
+              ],
+              "Examples": [
+                "Strongest Necromancer",
+                "Royal Stitches",
+                "Dark Magus Returns",
+                "That Time I Got Reincarnated as a Slime",
+                "Re:Zero",
+                "Overlord (series)",
+                "The Rising of the Shield Hero",
+                "Mushoku Tensei"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Adapting to fantasy world with unique advantages",
@@ -184,6 +245,14 @@
                 "Face-Slapping",
                 "Tournament Arc"
               ],
+              "Examples": [
+                "God Eye",
+                "The Joseph Family",
+                "Douluo Dalu (Soul Land)",
+                "Star Martial God Technique",
+                "Battle Frenzy",
+                "The Great Ruler"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Discovering and mastering unique powers",
                 "Setting_And_World": "Chinese-inspired with diverse magic",
@@ -209,6 +278,14 @@
                 "Grimdark",         "Betrayal",         "Tragic Backstory",
                 "Revenge",          "Dark Magic",       "War Horror",
                 "Corruption"
+              ],
+              "Examples": [
+                "Shadow Slave",
+                "The First Law trilogy",
+                "The Black Company",
+                "Prince of Thorns",
+                "The Poppy War",
+                "Berserk"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving brutal world or pursuing morally complex goals",
@@ -238,6 +315,18 @@
             "Literary",         "Atmospheric",      "Psychological",
             "Tragic"
           ],
+          "Examples": [
+            "My Vampire System",
+            "First Legendary Beast Master",
+            "Super Gene",
+            "Jack's Retribution",
+            "Soul of a Warrior",
+            "American Gods",
+            "The Ocean at the End of the Lane",
+            "Jonathan Strange & Mr Norrell",
+            "The Night Circus",
+            "Neverwhere"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Surviving dark worlds or uncovering mysteries",
             "Setting_And_World": "Realistic or historical with subtle magic",
@@ -263,6 +352,13 @@
                 "Literary Fiction",  "Family Saga",       "Cultural Heritage",
                 "Metaphorical",      "Poetic",            "Melancholic",
                 "Contemplative"
+              ],
+              "Examples": [
+                "One Hundred Years of Solitude",
+                "Like Water for Chocolate",
+                "The House of the Spirits",
+                "Midnight's Children",
+                "The Master and Margarita"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Emotional journeys with magical undertones",
@@ -294,6 +390,14 @@
                 "Cultural Exploration",
                 "Epic Scope"
               ],
+              "Examples": [
+                "Soul of a Warrior",
+                "The Pillars of the Earth",
+                "The Last Kingdom (series)",
+                "Outlander (series)",
+                "The Accursed Kings",
+                "Wolf Hall"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Historical events with magical influence",
                 "Setting_And_World": "Authentic history with period magic",
@@ -319,6 +423,14 @@
                 "Training Arc",     "Mentor Death",     "Coming of Age",
                 "Self-Discovery",   "Realistic Growth", "Character-Driven",
                 "Earned Victory"
+              ],
+              "Examples": [
+                "First Legendary Beast Master",
+                "My Three Wives Are Beautiful Vampires",
+                "The Codex Alera",
+                "The Powder Mage trilogy",
+                "The Lies of Locke Lamora",
+                "The Blade Itself"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Growth through challenges and practice",
@@ -350,6 +462,14 @@
                 "Supernatural Thriller",
                 "Psychological"
               ],
+              "Examples": [
+                "Lord of Mysteries",
+                "Spirit Realm Walker",
+                "The Sixth Sense",
+                "The Conjuring (series)",
+                "Ghost Whisperer",
+                "Supernatural (TV series)"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Investigating or resolving paranormal events",
                 "Setting_And_World": "Real world with heavy spirit presence",
@@ -380,6 +500,18 @@
                 "Crafting System",
                 "Achievement Hunter"
               ],
+              "Examples": [
+                "My Vampire System",
+                "Super Gene",
+                "Library of Heaven's Path",
+                "Supreme Lord",
+                "Re: Evolution Online",
+                "The Land (series)",
+                "Dungeon Crawler Carl",
+                "He Who Fights with Monsters",
+                "Defiance of the Fall",
+                "Primal Hunter"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Leveling up and conquering dungeons",
                 "Setting_And_World": "VR games or game-like alternate worlds",
@@ -405,6 +537,14 @@
                 "Young Master",    "Face-Slapping",   "Romance",
                 "Business Empire", "Auction Drama",   "Hidden Expert",
                 "Comedy"
+              ],
+              "Examples": [
+                "Jack's Retribution",
+                "Love Potion",
+                "The Wish Lord",
+                "Cultivation Chat Group",
+                "My Senior Brother is Too Steady",
+                "Urban Immortal Cultivator"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Cultivating while maintaining modern cover",
@@ -433,6 +573,17 @@
             "Strong Female Lead", "Romance",            "Political Intrigue",
             "Revenge",            "Identity Struggle",  "Female Rivalry",
             "Emotional Depth"
+          ],
+          "Examples": [
+            "My Dragon Princess",
+            "Heart of a Phoenix",
+            "A Queen Betrayed",
+            "The Princess and The Sea Witch",
+            "A Court of Thorns and Roses (series)",
+            "Graceling",
+            "An Ember in the Ashes",
+            "Throne of Glass (series)",
+            "The Selection (series)"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Female protagonist pursuing agency amid fantasy conflicts",
@@ -464,6 +615,14 @@
                 "Historical Setting",
                 "Female Rivalry"
               ],
+              "Examples": [
+                "Heart of a Phoenix",
+                "A Queen Betrayed",
+                "The Abandoned Empress",
+                "The Remarried Empress",
+                "Who Made Me a Princess",
+                "The Villainess Reverses the Hourglass"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving court politics while pursuing love or status",
                 "Setting_And_World": "Historical courts, noble estates, palace settings",
@@ -489,6 +648,14 @@
                 "Romance",         "CEO Romance",     "Hidden Identity",
                 "Modern Setting",  "Career Focus",    "Comedy",
                 "Jealous Rivals"
+              ],
+              "Examples": [
+                "My Dragon Princess",
+                "Kate Daniels (series)",
+                "Women of the Otherworld (series)",
+                "Guild Hunter (series)",
+                "The Hollows (series)",
+                "Mercy Thompson (series)"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Balancing modern life with supernatural elements",
@@ -520,6 +687,13 @@
                 "Action",
                 "Futuristic Setting"
               ],
+              "Examples": [
+                "The Long Way to a Small, Angry Planet",
+                "Gideon the Ninth",
+                "Aurora Rising",
+                "Empress of Forever",
+                "Neon Dynasty"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Romance and survival in futuristic setting",
                 "Setting_And_World": "Space empires, future Earth, advanced civilizations",
@@ -550,6 +724,18 @@
         "Steamy Romance",    "Fantasy Politics",  "Action",
         "Supernatural"
       ],
+      "Examples": [
+        "The Alpha's Bride",
+        "My Three Wives Are Beautiful Vampires",
+        "Fated To Rebel",
+        "Chosen By Fate, Rejected By The Alpha",
+        "Lunaris Academy",
+        "A Court of Thorns and Roses (series)",
+        "From Blood and Ash",
+        "Serpent & Dove",
+        "House of Earth and Blood",
+        "Kingdom of the Wicked"
+      ],
       "Comparison": {
         "Primary_Plot_Driver": "Romance intertwined with fantasy conflicts",
         "Setting_And_World": "Fantasy realms with integral magic",
@@ -575,6 +761,16 @@
             "Forbidden Love",    "Enemies to Lovers", "Slow Burn",
             "Steamy",            "Dark Romance",      "Action",
             "Gothic"
+          ],
+          "Examples": [
+            "My Three Wives Are Beautiful Vampires",
+            "The Crown's Obsession",
+            "The Vampire Prince",
+            "Twilight (series)",
+            "Hush, Hush (series)",
+            "Beautiful Creatures",
+            "Vampire Academy",
+            "Shadow and Bone"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Romance with mythological creature partner",
@@ -606,6 +802,16 @@
                 "Steamy",
                 "Danger"
               ],
+              "Examples": [
+                "My Three Wives Are Beautiful Vampires",
+                "The Crown's Obsession",
+                "The Vampire Prince",
+                "Twilight (series)",
+                "The Vampire Diaries",
+                "Interview with the Vampire",
+                "Vampire Academy",
+                "A Shade of Vampire"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating blood bonds and turning decisions",
                 "Setting_And_World": "Gothic settings with vampire societies",
@@ -636,6 +842,13 @@
                 "Steamy",
                 "Dark Romance"
               ],
+              "Examples": [
+                "A Court of Thorns and Roses (series)",
+                "The Cruel Prince (series)",
+                "An Enchantment of Ravens",
+                "Spinning Silver",
+                "Wintersong"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Breaking curses and surviving fae bargains",
                 "Setting_And_World": "Fae courts where time flows differently",
@@ -662,6 +875,13 @@
                 "Action",            "Fantasy Adventure", "Size Difference",
                 "Protective Hero"
               ],
+              "Examples": [
+                "My Dragon Princess",
+                "Fourth Wing",
+                "A Deal with the Elf King",
+                "Dragon Bound",
+                "Fire & Blood"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Bonding with dragon or creature mate",
                 "Setting_And_World": "Dragon realms or rider societies",
@@ -687,6 +907,13 @@
                 "Slow Burn",         "Forced Proximity",  "Coven Drama",
                 "Magical Training",  "Forbidden Love",    "Enemies to Lovers",
                 "Mystical"
+              ],
+              "Examples": [
+                "The Princess and The Sea Witch",
+                "A Discovery of Witches",
+                "Serpent & Dove",
+                "Practical Magic",
+                "The Ex Hex"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Discovering magical compatibility",
@@ -716,6 +943,18 @@
             "Pack Politics",      "Steamy",             "Rejection Angst",
             "Instant Attraction"
           ],
+          "Examples": [
+            "The Alpha's Bride",
+            "Fated To Rebel",
+            "Chosen By Fate, Rejected By The Alpha",
+            "Lunaris Academy",
+            "Falling For The Beast",
+            "Mercy Thompson (series)",
+            "Anita Blake (series)",
+            "Shiver (series)",
+            "The Others (series)",
+            "Patricia Briggs' Alpha and Omega"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Finding and claiming fated mate",
             "Setting_And_World": "Pack territories and shifter communities",
@@ -741,6 +980,16 @@
                 "Rejected Mate", "Alpha Romance", "Pack Drama",
                 "Possessive",    "Second Chance", "Fated Mates",
                 "Steamy"
+              ],
+              "Examples": [
+                "The Alpha's Bride",
+                "Fated To Rebel",
+                "Chosen By Fate, Rejected By The Alpha",
+                "Lunaris Academy",
+                "Shiver (series)",
+                "Blood and Chocolate",
+                "Moon Called",
+                "The Last Werewolf"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Finding and completing mate bond",
@@ -768,6 +1017,13 @@
                 "Paranormal World", "Action Romance",   "Steamy",
                 "Protective Hero"
               ],
+              "Examples": [
+                "Falling For The Beast",
+                "Kate Daniels (series)",
+                "Guild Hunter (series)",
+                "Psy-Changeling (series)",
+                "Black Dagger Brotherhood"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating species-specific romance rules",
                 "Setting_And_World": "Diverse supernatural communities",
@@ -780,43 +1036,84 @@
             }
           }
         },
-        "Dark Academia Romance": {
-          "Definition": "Romance set in elite academic institutions with gothic atmospheres, intellectual pursuits, and mysterious or dangerous undercurrents. Features scholarly protagonists navigating forbidden relationships, secret societies, and academic obsessions within aesthetically dark, often historical educational settings. Distinguished by emphasis on intellectual connection, atmospheric settings, and the intertwining of knowledge-seeking with romantic passion.",
+        "Dark Romance": {
+          "Definition": "Romance within romantasy settings unfolding in morally complex, emotionally intense, or psychologically dangerous circumstances involving supernatural beings or magical elements. Features characters with flawed, damaged, or ethically ambiguous traits navigating love in dark fantasy contexts. The romance remains central but the tone, themes, and relationship dynamics are darker, riskier, and more emotionally volatile than traditional romantasy.",
           "Key_Themes": [
-            "Forbidden Student-Professor",
-            "Secret Society Romance",
-            "Intellectual Rivalry to Love",
-            "Gothic University Setting",
-            "Scholarly Obsession",
-            "Hidden Knowledge Quest",
-            "Academic Competition"
+            "Morally Gray Characters",
+            "Obsessive Supernatural Love",
+            "Dark Magic Consequences",
+            "Power Imbalance with Magic",
+            "Forbidden Magical Bond",
+            "Captivity Romance",
+            "Redemption Through Love"
           ],
           "Secondary_Themes": [
-            "Enemies to Lovers", "Forbidden Romance", "Mystery",
-            "Gothic",            "Dark Romance",      "Intellectual",
-            "Atmospheric"
+            "Anti-Hero",       "Possessive",      "Angsty",
+            "Steamy",          "Gothic",          "Intense",
+            "Captive Romance"
+          ],
+          "Examples": [
+            "The Crown's Obsession",
+            "Kingdom of the Wicked",
+            "From Blood and Ash",
+            "Belladonna",
+            "The Shadows Between Us"
           ],
           "Comparison": {
-            "Primary_Plot_Driver": "Romance amid academic intrigue and secrets",
-            "Setting_And_World": "Gothic universities or elite academies",
-            "Central_Conflict_Type": "Institutional barriers and dangerous secrets",
-            "Tone_And_Atmosphere": "Atmospheric, intellectual, darkly romantic",
-            "Character_Arc_Focus": "Balancing passion with academic ambition",
-            "Power_Ability_System": "Knowledge and institutional influence",
-            "Stakes_And_Consequences": "Academic ruin or deadly secrets exposed"
+            "Primary_Plot_Driver": "Intense supernatural romantic connection despite darkness",
+            "Setting_And_World": "Dark fantasy realms with dangerous magic",
+            "Central_Conflict_Type": "Supernatural darkness versus love's redemption",
+            "Tone_And_Atmosphere": "Dark, intense, emotionally volatile with magic",
+            "Character_Arc_Focus": "Finding love despite or through supernatural darkness",
+            "Power_Ability_System": "Dark magic and psychological supernatural power",
+            "Stakes_And_Consequences": "Magical corruption or bond destruction"
           },
-          "Sub-Sub-Genre": {}
+          "Sub-Sub-Genre": {
+            "Dark Academia & Other Dark Romance": {
+              "Definition": "Romance set in elite magical academies or gothic scholarly institutions with dark atmospheres, intellectual pursuits intertwined with supernatural elements, and mysterious or dangerous magical undercurrents. Features scholarly protagonists navigating forbidden relationships, secret magical societies, and academic obsessions within aesthetically dark educational fantasy settings. Distinguished by emphasis on intellectual magical connection, gothic atmospheric settings, and intertwining of magical knowledge-seeking with romantic passion.",
+              "Key_Themes": [
+                "Forbidden Magical Academy Romance",
+                "Secret Supernatural Society",
+                "Intellectual Magical Rivalry",
+                "Gothic Academy Setting",
+                "Scholarly Magical Obsession",
+                "Hidden Magical Knowledge",
+                "Academic Supernatural Competition"
+              ],
+              "Secondary_Themes": [
+                "Enemies to Lovers", "Forbidden Romance", "Mystery",
+                "Gothic",            "Dark Romance",      "Intellectual",
+                "Atmospheric"
+              ],
+              "Examples": [
+                "Ninth House",
+                "A Deadly Education",
+                "The Atlas Six",
+                "Bloodwitch",
+                "These Violent Delights"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Romance amid magical academic intrigue and secrets",
+                "Setting_And_World": "Gothic magical universities or elite supernatural academies",
+                "Central_Conflict_Type": "Institutional magical barriers and dangerous supernatural secrets",
+                "Tone_And_Atmosphere": "Atmospheric, intellectual, darkly romantic with magic",
+                "Character_Arc_Focus": "Balancing magical passion with academic ambition",
+                "Power_Ability_System": "Magical knowledge and institutional supernatural influence",
+                "Stakes_And_Consequences": "Academic ruin or deadly magical secrets exposed"
+              }
+            }
+          }
         },
-        "Isekai & Portal Romance": {
-          "Definition": "Romance where one or both protagonists are transported to another world, with the romantic relationship developing across dimensional boundaries or within the new world setting. Features fish-out-of-water romance dynamics, cultural adaptation alongside romantic development, and often the choice between returning home or staying for love. Distinguished by world-crossing as catalyst for romance and dimensional barriers as romantic obstacles.",
+        "Isekai & Portal": {
+          "Definition": "Romantasy where one or both protagonists are transported to fantasy worlds, with the romantic relationship developing across dimensional boundaries, within the new magical world setting, or as catalyst for world-crossing. Features fish-out-of-water romance dynamics in fantasy realms, cultural magical adaptation alongside romantic development, and often the choice between returning home or staying for supernatural love. Distinguished by world-crossing as catalyst for fantasy romance and dimensional barriers as romantic obstacles in magical settings.",
           "Key_Themes": [
-            "Transported to Romance",
-            "Choose Home or Love",
-            "Culture Clash Romance",
-            "Outsider Perspective Love",
-            "Cross-Dimensional Bond",
-            "Adaptation Through Love",
-            "Destiny Across Worlds"
+            "Transported to Fantasy Romance",
+            "Choose Home or Magical Love",
+            "Culture Clash in Fantasy",
+            "Outsider Supernatural Perspective",
+            "Cross-Dimensional Magical Bond",
+            "Adaptation Through Fantasy Love",
+            "Destiny Across Fantasy Worlds"
           ],
           "Secondary_Themes": [
             "Time Travel Romance",
@@ -827,16 +1124,61 @@
             "Epic Romance",
             "Adventure"
           ],
+          "Examples": [
+            "Royal Stitches",
+            "Dark Magus Returns",
+            "Outlander (series)",
+            "A Court of Thorns and Roses",
+            "From Blood and Ash"
+          ],
           "Comparison": {
-            "Primary_Plot_Driver": "Building love while adapting to new world",
+            "Primary_Plot_Driver": "Building love while adapting to fantasy world",
             "Setting_And_World": "Fantasy realm with transported protagonist",
-            "Central_Conflict_Type": "Dimensional barriers and return dilemmas",
-            "Tone_And_Atmosphere": "Wonder and romantic longing",
-            "Character_Arc_Focus": "Finding home in love versus original world",
-            "Power_Ability_System": "Varies by transported world rules",
-            "Stakes_And_Consequences": "Permanent separation across worlds"
+            "Central_Conflict_Type": "Dimensional magical barriers and return dilemmas",
+            "Tone_And_Atmosphere": "Fantasy wonder and romantic longing",
+            "Character_Arc_Focus": "Finding home in supernatural love versus original world",
+            "Power_Ability_System": "Varies by transported fantasy world rules",
+            "Stakes_And_Consequences": "Permanent separation across magical worlds"
           },
-          "Sub-Sub-Genre": {}
+          "Sub-Sub-Genre": {
+            "Isekai & Portal Romance": {
+              "Definition": "Romance where one or both protagonists are transported to fantasy worlds through portals, summoning, death, or magical accidents, with the romantic relationship developing across dimensional boundaries or within the new magical world setting. Features fish-out-of-water romance dynamics in fantasy realms, cultural magical adaptation alongside romantic development, and often the choice between returning home or staying for supernatural love. Distinguished by world-crossing as catalyst for fantasy romance and dimensional barriers as romantic obstacles in magical settings.",
+              "Key_Themes": [
+                "Transported to Fantasy Romance",
+                "Choose Home or Magical Love",
+                "Culture Clash in Fantasy",
+                "Outsider Supernatural Perspective",
+                "Cross-Dimensional Magical Bond",
+                "Adaptation Through Fantasy Love",
+                "Destiny Across Fantasy Worlds"
+              ],
+              "Secondary_Themes": [
+                "Time Travel Romance",
+                "Portal Fantasy",
+                "Fish Out of Water",
+                "Slow Burn",
+                "Cultural Differences",
+                "Epic Romance",
+                "Adventure"
+              ],
+              "Examples": [
+                "Royal Stitches",
+                "Dark Magus Returns",
+                "Outlander (series)",
+                "A Court of Thorns and Roses",
+                "From Blood and Ash"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Building love while adapting to new magical world",
+                "Setting_And_World": "Fantasy realm with transported protagonist",
+                "Central_Conflict_Type": "Dimensional magical barriers and return dilemmas",
+                "Tone_And_Atmosphere": "Fantasy wonder and romantic longing",
+                "Character_Arc_Focus": "Finding home in supernatural love versus original world",
+                "Power_Ability_System": "Varies by transported fantasy world rules",
+                "Stakes_And_Consequences": "Permanent separation across magical worlds"
+              }
+            }
+          }
         }
       }
     },
@@ -855,6 +1197,18 @@
         "Slow Burn",         "Enemies to Lovers", "Friends to Lovers",
         "Second Chance",     "Forbidden Love",    "Forced Proximity",
         "Emotional"
+      ],
+      "Examples": [
+        "The Duke's Masked Bride",
+        "The Royal Accident",
+        "The Billionaire's Accidental Bride",
+        "Between The Sheets With Mr. Billionaire",
+        "Rekindled Heartache",
+        "Pride and Prejudice",
+        "The Notebook",
+        "Me Before You",
+        "The Hating Game",
+        "Beach Read"
       ],
       "Comparison": {
         "Primary_Plot_Driver": "Developing romance and overcoming obstacles",
@@ -882,6 +1236,18 @@
             "Realistic",       "Modern Setting",  "Relatable",
             "Heartwarming"
           ],
+          "Examples": [
+            "The Royal Accident",
+            "The Billionaire's Accidental Bride",
+            "Between The Sheets With Mr. Billionaire",
+            "Rekindled Heartache",
+            "Trading Up",
+            "Beach Read",
+            "People We Meet on Vacation",
+            "The Kiss Quotient",
+            "Red, White & Royal Blue",
+            "The Unhoneymooners"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Modern couples overcoming contemporary obstacles",
             "Setting_And_World": "Current time with modern settings",
@@ -907,6 +1273,18 @@
                 "Alpha Male",       "Possessive",       "Cinderella Story",
                 "Steamy",           "Glamorous",        "Powerful Hero",
                 "Contract Romance"
+              ],
+              "Examples": [
+                "The Royal Accident",
+                "The Billionaire's Accidental Bride",
+                "Between The Sheets With Mr. Billionaire",
+                "Rekindled Heartache",
+                "Trading Up",
+                "Fifty Shades of Grey",
+                "Bared to You",
+                "The Hating Game",
+                "Beautiful Bastard",
+                "Wallbanger"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Wealthy alpha falling for ordinary partner",
@@ -938,6 +1316,10 @@
                 "Secret Relationship",
                 "Romantic Tension"
               ],
+              "Examples": [
+                "The Hating Game",   "The Kiss Quotient", "The Deal",
+                "99 Percent Mine",   "The Roommate"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating attraction while working together",
                 "Setting_And_World": "Corporate offices and work environments",
@@ -968,6 +1350,13 @@
                 "Sports Drama",
                 "Protective"
               ],
+              "Examples": [
+                "The Deal (Off-Campus series)",
+                "Kulti",
+                "The Wall of Winnipeg and Me",
+                "The Score",
+                "A Kingdom of Dreams"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Balancing sports demands with romance",
                 "Setting_And_World": "Sports facilities and competitions",
@@ -979,7 +1368,7 @@
               }
             },
             "Dark Romance": {
-              "Definition": "Romance unfolding within morally complex, emotionally intense, or psychologically dangerous circumstances, often involving characters with flawed, damaged, or ethically ambiguous traits. The romance remains central but the tone, themes, and relationship dynamics are darker, riskier, and more emotionally volatile than traditional romance. Explores boundaries of attraction, power, obsession, trauma, and redemption.",
+              "Definition": "Romance unfolding within morally complex, emotionally intense, or psychologically dangerous contemporary circumstances, often involving characters with flawed, damaged, or ethically ambiguous traits. The romance remains central but the tone, themes, and relationship dynamics are darker, riskier, and more emotionally volatile than traditional romance. Explores boundaries of attraction, power, obsession, trauma, and redemption in modern settings.",
               "Key_Themes": [
                 "Morally Gray Characters",
                 "Obsessive Love",
@@ -993,6 +1382,18 @@
                 "Anti-Hero",       "Possessive",      "Angsty",
                 "Steamy",          "Morally Gray",    "Intense",
                 "Captive Romance"
+              ],
+              "Examples": [
+                "Cupid's Curse",
+                "Price of Love",
+                "Love Trap",
+                "Hellbound With You",
+                "My Sister's Husband",
+                "Credence",
+                "Corrupt",
+                "Vicious",
+                "Captive in the Dark",
+                "Tears of Tess"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Intense, morally complex romantic connection",
@@ -1020,6 +1421,13 @@
                 "Steamy",         "Modern Setting", "Action Romance",
                 "Secret World"
               ],
+              "Examples": [
+                "City of Bones (Mortal Instruments)",
+                "Hush, Hush",
+                "Beautiful Creatures",
+                "Shiver",
+                "Twilight"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Romance with paranormal complications",
                 "Setting_And_World": "Modern world with hidden paranormal",
@@ -1045,6 +1453,13 @@
                 "Second Chance",     "Friends to Lovers", "Heartwarming",
                 "Emotional",         "Wholesome",         "Feel-Good",
                 "Community"
+              ],
+              "Examples": [
+                "It Ends with Us",
+                "The Hating Game",
+                "Virgin River (series)",
+                "Sweet Magnolias",
+                "Hart's Hollow Farm"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Finding love in tight-knit community",
@@ -1074,6 +1489,13 @@
             "Sweet Romance",     "High School",       "Identity Struggle",
             "Heartwarming"
           ],
+          "Examples": [
+            "The Fault in Our Stars",
+            "To All the Boys I've Loved Before",
+            "Simon vs. the Homo Sapiens Agenda",
+            "Eleanor & Park",
+            "Anna and the French Kiss"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "First love and identity discovery",
             "Setting_And_World": "High schools, colleges, youth environments",
@@ -1100,6 +1522,13 @@
                 "Nerdy Girl",        "Coming of Age",     "Sweet Romance",
                 "First Love"
               ],
+              "Examples": [
+                "To All the Boys I've Loved Before",
+                "The Deal (Off-Campus series)",
+                "Fangirl",
+                "Anna and the French Kiss",
+                "The DUFF"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Romance while navigating school life",
                 "Setting_And_World": "High schools or college campuses",
@@ -1125,6 +1554,13 @@
                 "Coming Out",        "LGBTQ+",            "Emotional",
                 "Heartwarming",      "Identity Struggle", "Supportive",
                 "First Love"
+              ],
+              "Examples": [
+                "Simon vs. the Homo Sapiens Agenda",
+                "Red, White & Royal Blue",
+                "Aristotle and Dante Discover the Secrets of the Universe",
+                "They Both Die at the End",
+                "The Song of Achilles"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Accepting identity and finding love",
@@ -1154,6 +1590,14 @@
             "Historical",       "Emotional",        "Elegant",
             "Scandalous"
           ],
+          "Examples": [
+            "The Duke's Masked Bride",
+            "Pride and Prejudice",
+            "Outlander",
+            "Jane Eyre",
+            "North and South",
+            "Wuthering Heights"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Navigating historical courtship rules",
             "Setting_And_World": "Specific historical periods",
@@ -1180,6 +1624,14 @@
                 "Class Difference",  "Scandalous",        "Ballroom Romance",
                 "Arranged Marriage"
               ],
+              "Examples": [
+                "The Duke's Masked Bride",
+                "Bridgerton (series)",
+                "Pride and Prejudice",
+                "Persuasion",
+                "Emma",
+                "The Duke and I"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Finding love match in marriage mart",
                 "Setting_And_World": "Regency England ton society",
@@ -1190,7 +1642,7 @@
                 "Stakes_And_Consequences": "Social ruin from scandal"
               }
             },
-            "Historical Western": {
+            "Historical Western Romance": {
               "Definition": "Romance in American West frontier era featuring cowboys, ranchers, pioneers navigating love in harsh conditions. Setting includes ranches, frontier towns, wagon trains. Features rugged individualism, survival challenges, mail-order brides. Distinguished by American West setting and frontier survival elements.",
               "Key_Themes": [
                 "Cowboy Romance",
@@ -1205,6 +1657,10 @@
                 "Mail-Order Bride", "Cowboy Hero",      "Frontier",
                 "Protective",       "Adventure",        "Rugged",
                 "Survival"
+              ],
+              "Examples": [
+                "Redeeming Love",   "These Old Shades", "Lonesome Dove",
+                "Ride the Wind",    "Morning Glory"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Finding love on harsh frontier",
@@ -1236,6 +1692,13 @@
                 "Political Intrigue",
                 "Dramatic"
               ],
+              "Examples": [
+                "The Song of Achilles",
+                "Memoirs of a Geisha",
+                "Cleopatra's Daughter",
+                "The Last Hours of Ancient Sunlight",
+                "Pompeii"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Love across ancient social barriers",
                 "Setting_And_World": "Ancient Rome, Greece, Egypt, China",
@@ -1265,6 +1728,13 @@
                 "Magical",
                 "Romantic",
                 "Feel-Good"
+              ],
+              "Examples": [
+                "Stardust",
+                "The Princess Bride",
+                "Ella Enchanted",
+                "Beauty",
+                "Spindle's End"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Romance enhanced by magical elements",
@@ -1296,6 +1766,18 @@
         "Heartfelt",        "Slice of Life",    "Tearjerker",
         "Inspirational"
       ],
+      "Examples": [
+        "Saving Nora",
+        "Between The Sheets With Mr. Billionaire",
+        "InstaMillionaire",
+        "First Love Never Dies",
+        "A God Among Men",
+        "This Is Us",
+        "The Fault in Our Stars",
+        "Manchester by the Sea",
+        "Moonlight",
+        "Lady Bird"
+      ],
       "Comparison": {
         "Primary_Plot_Driver": "Personal relationships and emotional journeys",
         "Setting_And_World": "Modern realistic settings",
@@ -1320,6 +1802,17 @@
           "Secondary_Themes": [
             "Emotional",    "Family Bonds", "Generational", "Heartfelt",
             "Tearjerker",   "Realistic",    "Healing"
+          ],
+          "Examples": [
+            "Saving Nora",
+            "Between The Sheets With Mr. Billionaire",
+            "First Love Never Dies",
+            "A God Among Men",
+            "This Is Us",
+            "Parenthood",
+            "Modern Family",
+            "The Family Stone",
+            "Little Women"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Navigating family dynamics and conflicts",
@@ -1347,6 +1840,10 @@
                 "Emotional",       "Empowering",      "Difficult",
                 "Recovery"
               ],
+              "Examples": [
+                "The Glass Castle", "Educated",         "Sharp Objects",
+                "Big Little Lies",  "The Great Alone"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping toxicity and building new life",
                 "Setting_And_World": "Toxic home then safe spaces",
@@ -1371,6 +1868,13 @@
               "Secondary_Themes": [
                 "Epic Scope",   "Historical",   "Family Saga",  "Generational",
                 "Legacy",       "Emotional",    "Sweeping"
+              ],
+              "Examples": [
+                "One Hundred Years of Solitude",
+                "The Thorn Birds",
+                "Roots",
+                "The Godfather",
+                "Pachinko"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Understanding generational patterns",
@@ -1397,6 +1901,14 @@
                 "Heartwarming", "Family Love",  "Emotional",    "Supportive",
                 "Wholesome",    "Feel-Good",    "Uplifting"
               ],
+              "Examples": [
+                "Between The Sheets With Mr. Billionaire",
+                "A God Among Men",
+                "Little Women",
+                "The Descendants",
+                "Coco",
+                "Soul Food"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Family facing external challenges together",
                 "Setting_And_World": "Family environments and gatherings",
@@ -1422,6 +1934,14 @@
                 "Emotional",         "Identity Struggle", "Reunion",
                 "Discovery",         "Heartfelt",         "Tearjerker",
                 "Hope"
+              ],
+              "Examples": [
+                "Saving Nora",
+                "First Love Never Dies",
+                "Lion",
+                "Philomena",
+                "Long Lost Family",
+                "The Lost Daughter"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Discovering roots and reuniting with family",
@@ -1451,6 +1971,15 @@
             "Self-Discovery",    "Emotional",         "Realistic",
             "Inspirational"
           ],
+          "Examples": [
+            "InstaMillionaire",
+            "Campus King",
+            "The Perks of Being a Wallflower",
+            "Lady Bird",
+            "The Edge of Seventeen",
+            "Eighth Grade",
+            "Boyhood"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Discovering identity and choosing path",
             "Setting_And_World": "High schools, colleges, transitional stages",
@@ -1476,6 +2005,14 @@
                 "College Life",   "Coming of Age",  "Friendship",
                 "Self-Discovery", "Party Culture",  "Academic",
                 "Young Adult"
+              ],
+              "Examples": [
+                "InstaMillionaire",
+                "Campus King",
+                "The Social Network",
+                "Pitch Perfect",
+                "Dear White People",
+                "Community"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating college and finding direction",
@@ -1503,6 +2040,13 @@
                 "Competition",    "Inspirational",  "Emotional",
                 "Victory"
               ],
+              "Examples": [
+                "Remember the Titans",
+                "Friday Night Lights",
+                "Coach Carter",
+                "The Blind Side",
+                "McFarland, USA"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Achieving athletic goals and personal growth",
                 "Setting_And_World": "Sports facilities, training grounds, competitions",
@@ -1515,7 +2059,7 @@
             }
           }
         },
-        "Professional Drama": {
+        "Workplace Drama": {
           "Definition": "Stories set primarily in professional environments exploring career ambitions, office politics, professional growth, power struggles, and work challenges without romance as central focus. Features realistic portrayal of various industries including corporate, entertainment, medical, legal, and sports. Distinguished from romance by focusing on career rather than love and from family drama by workplace as primary setting.",
           "Key_Themes": [
             "Career Ambition",
@@ -1530,6 +2074,13 @@
             "Career-Focused",     "Political Intrigue", "Ambition",
             "Professional",       "Realistic",          "Competitive",
             "Strategic"
+          ],
+          "Examples": [
+            "The Devil Wears Prada",
+            "Mad Men",
+            "The Office",
+            "Succession",
+            "Billions"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Advancing career and navigating politics",
@@ -1561,6 +2112,13 @@
                 "Power Struggle",
                 "Corporate"
               ],
+              "Examples": [
+                "Succession",
+                "Billions",
+                "Mad Men",
+                "The Wolf of Wall Street",
+                "Wall Street"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Climbing ladder through office politics",
                 "Setting_And_World": "Corporate offices and boardrooms",
@@ -1586,6 +2144,13 @@
                 "Hollywood",         "Fame",              "Scandal",
                 "Glamorous",         "Behind the Scenes", "Ambitious",
                 "Drama"
+              ],
+              "Examples": [
+                "The Devil Wears Prada",
+                "Black Swan",
+                "Birdman",
+                "Whiplash",
+                "La La Land"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving fame and industry pressures",
@@ -1613,6 +2178,10 @@
                 "Emotional",       "Professional",    "Intense",
                 "Realistic"
               ],
+              "Examples": [
+                "Grey's Anatomy",  "ER",              "House",
+                "The Good Doctor", "Scrubs"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Making life-death medical decisions",
                 "Setting_And_World": "Hospitals and medical facilities",
@@ -1638,6 +2207,10 @@
                 "Sports Drama",  "Professional",  "Competition",
                 "Team",          "Inspirational", "Career",
                 "Athletic"
+              ],
+              "Examples": [
+                "Moneyball",        "Any Given Sunday", "Jerry Maguire",
+                "The Blind Side",   "Draft Day"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Maintaining professional sports career",
@@ -1665,6 +2238,13 @@
                 "Justice",         "Ethical Dilemma", "Professional",
                 "Tense"
               ],
+              "Examples": [
+                "Suits",
+                "The Good Wife",
+                "Boston Legal",
+                "A Few Good Men",
+                "To Kill a Mockingbird"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Winning cases and pursuing justice",
                 "Setting_And_World": "Courtrooms, law firms, legal institutions",
@@ -1691,6 +2271,10 @@
                 "Military",          "Brotherhood",       "Duty",
                 "Gritty"
               ],
+              "Examples": [
+                "The Wire",        "True Detective",  "Homeland",
+                "The Shield",      "Generation Kill"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Fulfilling dangerous duty while maintaining ethics",
                 "Setting_And_World": "Police stations, military bases, intelligence agencies",
@@ -1716,6 +2300,14 @@
                 "Crime Drama",    "Family Loyalty", "Betrayal",
                 "Violence",       "Power Struggle", "Gritty",
                 "Dark"
+              ],
+              "Examples": [
+                "The Godfather's Son",
+                "The Godfather trilogy",
+                "The Sopranos",
+                "Goodfellas",
+                "Scarface",
+                "Peaky Blinders"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating criminal world while maintaining loyalty",
@@ -1744,6 +2336,10 @@
             "Historical",     "Period Setting", "Social Drama",
             "Political",      "Cultural",       "Epic Scope",
             "Authentic"
+          ],
+          "Examples": [
+            "Downton Abbey",  "The Crown",      "Mad Men",
+            "Vikings",        "Peaky Blinders"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Navigating historical era challenges",
@@ -1775,6 +2371,13 @@
                 "War",
                 "Historical"
               ],
+              "Examples": [
+                "Game of Thrones",
+                "The Last Kingdom",
+                "Vikings",
+                "The White Queen",
+                "The Spanish Princess"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating royal politics and succession",
                 "Setting_And_World": "Medieval castles and feudal kingdoms",
@@ -1785,30 +2388,70 @@
                 "Stakes_And_Consequences": "Execution or kingdom loss"
               }
             },
-            "Period Epic Drama": {
-              "Definition": "Large-scale historical narratives focusing on major events such as wars, empires, revolutions within specific eras. Features sweeping scope, multiple storylines, and how grand historical events shape individual lives and societies. Distinguished by epic scope, major historical events as backdrop, and exploration of how history affects individuals.",
+            "Historical Western Drama": {
+              "Definition": "Drama set in the American West frontier era (1800s-early 1900s) focusing on pioneers, settlers, outlaws, lawmen, and the harsh realities of frontier life. Features survival challenges, lawlessness, cultural clashes with Native Americans, territorial expansion, and the building of frontier communities. Distinguished by American West setting, focus on frontier survival and societal establishment rather than romance, and exploration of themes like justice, morality, and civilization versus wilderness.",
               "Key_Themes": [
-                "Historical Wars",
-                "Empire Building/Fall",
-                "Revolutionary Movements",
-                "Major Historical Events",
-                "Sweeping Scope",
-                "Multiple Storylines",
-                "Individual vs History"
+                "Frontier Survival",
+                "Lawless Territory",
+                "Pioneer Settlement",
+                "Cultural Clash",
+                "Justice Without Law",
+                "Territorial Expansion",
+                "Building Community"
               ],
               "Secondary_Themes": [
-                "Epic Scope",        "War Drama",         "Historical Events",
-                "Revolution",        "Multiple POV",      "Grand Scale",
-                "Cinematic"
+                "Western",         "Outlaws",         "Lawmen",
+                "Survival",        "Moral Ambiguity", "Violence",
+                "Historical"
+              ],
+              "Examples": [
+                "Deadwood",
+                "Hell on Wheels",
+                "Westworld (Season 1)",
+                "Godless",
+                "1883"
               ],
               "Comparison": {
-                "Primary_Plot_Driver": "Surviving and shaping major historical events",
-                "Setting_And_World": "Historical periods during major events",
-                "Central_Conflict_Type": "Wars, revolutions, empire conflicts",
-                "Tone_And_Atmosphere": "Epic with historical gravity",
-                "Character_Arc_Focus": "Personal journey amid grand history",
-                "Power_Ability_System": "Position and resources in historical context",
-                "Stakes_And_Consequences": "Death or being lost to history"
+                "Primary_Plot_Driver": "Surviving and establishing order in lawless frontier",
+                "Setting_And_World": "1800s American West frontier territories",
+                "Central_Conflict_Type": "Lawlessness, survival, territorial conflicts",
+                "Tone_And_Atmosphere": "Gritty, violent, morally complex",
+                "Character_Arc_Focus": "Maintaining humanity in brutal environment",
+                "Power_Ability_System": "Gunfighting, survival skills, moral authority",
+                "Stakes_And_Consequences": "Death from violence or harsh conditions"
+              }
+            },
+            "Ancient World Drama": {
+              "Definition": "Drama set in ancient civilizations (Rome, Greece, Egypt, Mesopotamia, China, etc.) focusing on political intrigue, warfare, social hierarchies, and the rise and fall of empires. Features gladiatorial combat, senate politics, pharaonic dynasties, military conquests, and the clash of ancient cultures. Distinguished by ancient historical setting, emphasis on empire-building and political machinations, and exploration of power, honor, and legacy in antiquity.",
+              "Key_Themes": [
+                "Empire Building",
+                "Political Machinations",
+                "Gladiatorial Combat",
+                "Military Conquest",
+                "Senate Intrigue",
+                "Pharaonic Dynasties",
+                "Ancient Honor Codes"
+              ],
+              "Secondary_Themes": [
+                "Ancient History",  "Political Drama",  "War",
+                "Epic Battles",     "Social Hierarchy", "Cultural Clash",
+                "Legacy"
+              ],
+              "Examples": [
+                "Rome",
+                "Spartacus",
+                "Troy: Fall of a City",
+                "I, Claudius",
+                "The Last Kingdom"
+              ],
+              "Comparison": {
+                "Primary_Plot_Driver": "Building/maintaining empires and political power",
+                "Setting_And_World": "Ancient Rome, Greece, Egypt, China, etc.",
+                "Central_Conflict_Type": "Political betrayals, military campaigns, social upheaval",
+                "Tone_And_Atmosphere": "Epic with political gravitas and violence",
+                "Character_Arc_Focus": "Seizing power or maintaining legacy",
+                "Power_Ability_System": "Military strategy, political cunning, social status",
+                "Stakes_And_Consequences": "Death, exile, or empire collapse"
               }
             },
             "Alternate History Drama": {
@@ -1831,6 +2474,13 @@
                 "Thought-Provoking",
                 "Creative"
               ],
+              "Examples": [
+                "The Man in the High Castle",
+                "For All Mankind",
+                "11.22.63",
+                "SS-GB",
+                "The Plot Against America"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating alternate historical reality",
                 "Setting_And_World": "Familiar but altered historical periods",
@@ -1839,36 +2489,6 @@
                 "Character_Arc_Focus": "Adapting to different historical outcome",
                 "Power_Ability_System": "Historical position in altered timeline",
                 "Stakes_And_Consequences": "Further altering alternate timeline"
-              }
-            },
-            "Social Reform Drama": {
-              "Definition": "Period dramas focusing on historical social movements, independence struggles, civil rights campaigns, and societal reform efforts within specific eras. Features activists, reformers, and ordinary people fighting for change against established systems. Distinguished by focus on social change movements and historical reform efforts as central narrative.",
-              "Key_Themes": [
-                "Independence Struggle",
-                "Civil Rights Movement",
-                "Social Reform Campaign",
-                "Fighting Injustice",
-                "Revolutionary Spirit",
-                "Grassroots Movement",
-                "Historical Activism"
-              ],
-              "Secondary_Themes": [
-                "Inspirational",
-                "Historical Movement",
-                "Social Justice",
-                "Reform",
-                "Activism",
-                "Struggle",
-                "Triumphant"
-              ],
-              "Comparison": {
-                "Primary_Plot_Driver": "Fighting for social change and reform",
-                "Setting_And_World": "Historical periods of social upheaval",
-                "Central_Conflict_Type": "Reform movement vs established system",
-                "Tone_And_Atmosphere": "Inspirational with historical significance",
-                "Character_Arc_Focus": "Becoming agent of historical change",
-                "Power_Ability_System": "Collective action and moral authority",
-                "Stakes_And_Consequences": "Movement failure or personal martyrdom"
               }
             }
           }
@@ -1889,6 +2509,18 @@
       "Secondary_Themes": [
         "Futuristic",  "Space Opera", "Dystopian",   "AI",
         "Technology",  "Speculative", "Scientific"
+      ],
+      "Examples": [
+        "The Mech Touch",
+        "Soul Record: Apocalypse",
+        "Awakened",
+        "Ashes to Fire",
+        "Major League System",
+        "The Expanse",
+        "Dune",
+        "Foundation",
+        "Neuromancer",
+        "The Three-Body Problem"
       ],
       "Comparison": {
         "Primary_Plot_Driver": "Technology challenges or space conflicts",
@@ -1915,6 +2547,10 @@
             "Space Opera",       "Military",          "Epic Battles",
             "Galactic Politics", "Action",            "Adventure",
             "War"
+          ],
+          "Examples": [
+            "The Mech Touch",    "The Expanse",       "Dune",
+            "Foundation",        "Ender's Game",      "Starship Troopers"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Space battles and galactic intrigue",
@@ -1946,6 +2582,13 @@
                 "Epic Scope",
                 "Power Struggle"
               ],
+              "Examples": [
+                "Dune",
+                "Foundation",
+                "Star Wars (original trilogy)",
+                "The Expanse",
+                "Hyperion Cantos"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Imperial politics and succession",
                 "Setting_And_World": "Vast empire spanning star systems",
@@ -1971,6 +2614,10 @@
                 "Military",      "Space Battles", "Tactical",
                 "Action",        "Soldier POV",   "War Drama",
                 "Combat"
+              ],
+              "Examples": [
+                "The Mech Touch",    "Ender's Game",      "Starship Troopers",
+                "Old Man's War",     "The Forever War"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Military missions and space battles",
@@ -2000,6 +2647,15 @@
             "Bleak",            "Gritty",           "Resource Wars",
             "Desperate"
           ],
+          "Examples": [
+            "Soul Record: Apocalypse",
+            "Awakened",
+            "The Road",
+            "Mad Max series",
+            "The Walking Dead",
+            "Station Eleven",
+            "The Last of Us"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Surviving collapse and rebuilding",
             "Setting_And_World": "Post-collapse ruins and harsh environments",
@@ -2025,6 +2681,14 @@
                 "LitRPG",         "Apocalypse",     "Leveling",
                 "Dungeons",       "Survival",       "Progression",
                 "Game Mechanics"
+              ],
+              "Examples": [
+                "Soul Record: Apocalypse",
+                "Awakened",
+                "The System Apocalypse",
+                "Dungeon Crawler Carl",
+                "Primal Hunter",
+                "Defiance of the Fall"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Leveling to survive transformed world",
@@ -2052,6 +2716,10 @@
                 "Post-Apocalyptic", "Infection",        "Desperate",
                 "Gritty"
               ],
+              "Examples": [
+                "The Walking Dead", "World War Z",      "28 Days Later",
+                "Train to Busan",   "Dawn of the Dead"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving hordes and human dangers",
                 "Setting_And_World": "Zombie-infested ruined civilization",
@@ -2077,6 +2745,13 @@
                 "Nuclear",       "Wasteland",     "Environmental",
                 "Bleak",         "Survival",      "Post-Nuclear",
                 "Desperate"
+              ],
+              "Examples": [
+                "The Road",
+                "Mad Max: Fury Road",
+                "Fallout series",
+                "Snowpiercer",
+                "The Day After Tomorrow"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving hostile environment",
@@ -2106,6 +2781,10 @@
             "Dystopian",          "Corporate",          "Gritty",
             "High Tech Low Life"
           ],
+          "Examples": [
+            "The Mech Touch",     "Neuromancer",        "Blade Runner",
+            "Ghost in the Shell", "Altered Carbon",     "Cyberpunk 2077"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Fighting corporate control or digital threats",
             "Setting_And_World": "Neon cities with massive inequality",
@@ -2131,6 +2810,10 @@
                 "VR",               "Simulation",       "Mind Upload",
                 "Digital World",    "Reality Question", "Philosophical",
                 "Immersive"
+              ],
+              "Examples": [
+                "Extra Life",       "The Matrix",       "Ready Player One",
+                "Sword Art Online", "Existenz",         "eXistenZ"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating or escaping virtual reality",
@@ -2158,6 +2841,13 @@
                 "Consciousness",     "Rights",            "Digital",
                 "Thought-Provoking"
               ],
+              "Examples": [
+                "Ex Machina",
+                "Her",
+                "Westworld",
+                "I, Robot",
+                "A.I. Artificial Intelligence"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "AI seeking recognition or consciousness questions",
                 "Setting_And_World": "Near-future with advanced AI",
@@ -2182,6 +2872,14 @@
               "Secondary_Themes": [
                 "Mecha",        "Giant Robots", "Pilot",        "Action",
                 "War",          "Bonding",      "Combat"
+              ],
+              "Examples": [
+                "The Mech Touch",
+                "Neon Genesis Evangelion",
+                "Gundam series",
+                "Pacific Rim",
+                "Code Geass",
+                "Titanfall"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Mastering mecha and winning battles",
@@ -2211,6 +2909,15 @@
             "Time Loop",         "Butterfly Effect",  "Sci-Fi",
             "Mind-Bending"
           ],
+          "Examples": [
+            "Ashes to Fire",
+            "Major League System",
+            "Back to the Future",
+            "12 Monkeys",
+            "Looper",
+            "Primer",
+            "Tenet"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Changing past or escaping time traps",
             "Setting_And_World": "Multiple timelines or repeating periods",
@@ -2236,6 +2943,14 @@
                 "Regression",    "Second Chance", "Foreknowledge",
                 "Fix Past",      "Do-Over",       "Strategic",
                 "Revenge"
+              ],
+              "Examples": [
+                "Ashes to Fire",
+                "Major League System",
+                "Re:Zero",
+                "Erased",
+                "Life is Strange",
+                "All You Need is Kill"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Using foreknowledge to change fate",
@@ -2263,6 +2978,10 @@
                 "Puzzle",        "Mastery",       "Existential",
                 "Creative"
               ],
+              "Examples": [
+                "Groundhog Day",    "Edge of Tomorrow", "Happy Death Day",
+                "Palm Springs",     "Russian Doll"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Understanding and breaking the loop",
                 "Setting_And_World": "Same period repeating endlessly",
@@ -2288,6 +3007,13 @@
                 "Multiverse",        "Alternate Reality", "Dimension Travel",
                 "Parallel World",    "What If",           "Sci-Fi",
                 "Mind-Bending"
+              ],
+              "Examples": [
+                "Everything Everywhere All at Once",
+                "Doctor Strange in the Multiverse of Madness",
+                "Spider-Man: Into the Spider-Verse",
+                "Rick and Morty",
+                "Sliders"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Exploring or protecting multiple realities",
@@ -2316,6 +3042,13 @@
             "Dystopian",    "Oppressive",   "Resistance",   "Surveillance",
             "Totalitarian", "Dark Future",  "Control"
           ],
+          "Examples": [
+            "1984",
+            "The Handmaid's Tale",
+            "Brave New World",
+            "Fahrenheit 451",
+            "V for Vendetta"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Surviving or fighting oppressive system",
             "Setting_And_World": "Future with totalitarian control",
@@ -2341,6 +3074,13 @@
                 "Totalitarian",  "Surveillance",  "Resistance",
                 "Oppression",    "Dystopian",     "Mind Control",
                 "Freedom Fight"
+              ],
+              "Examples": [
+                "1984",
+                "The Handmaid's Tale",
+                "V for Vendetta",
+                "Equilibrium",
+                "Children of Men"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving surveillance or joining resistance",
@@ -2372,6 +3112,10 @@
                 "Dystopian",
                 "Dehumanizing"
               ],
+              "Examples": [
+                "Brave New World", "Gattaca",         "Never Let Me Go",
+                "The Island",      "Divergent"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Breaking conditioning or discovering true nature",
                 "Setting_And_World": "Genetically stratified society",
@@ -2402,6 +3146,13 @@
                 "Anti-Corporate",
                 "Dark"
               ],
+              "Examples": [
+                "Blade Runner",
+                "RoboCop",
+                "Elysium",
+                "Snowpiercer",
+                "Sorry to Bother You"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping or exposing corporate control",
                 "Setting_And_World": "Corporate-controlled cities and states",
@@ -2431,6 +3182,13 @@
         "Mystery",       "Suspense",      "Thriller",      "Investigation",
         "Plot Twist",    "Tense",         "Detective"
       ],
+      "Examples": [
+        "Gone Girl",
+        "The Girl with the Dragon Tattoo",
+        "Knives Out",
+        "Sherlock Holmes",
+        "True Detective"
+      ],
       "Comparison": {
         "Primary_Plot_Driver": "Solving mysteries or surviving danger",
         "Setting_And_World": "Contemporary settings where mysteries unfold",
@@ -2455,6 +3213,13 @@
           "Secondary_Themes": [
             "Detective",     "Whodunit",      "Clues",         "Investigation",
             "Mystery",       "Clever",        "Puzzle"
+          ],
+          "Examples": [
+            "Sherlock Holmes",
+            "Knives Out",
+            "Murder on the Orient Express",
+            "True Detective",
+            "Broadchurch"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Solving crime through clues and deduction",
@@ -2482,6 +3247,13 @@
                 "Gentle",         "Charming",       "Lighthearted",
                 "Community"
               ],
+              "Examples": [
+                "Murder, She Wrote",
+                "The No. 1 Ladies' Detective Agency",
+                "Agatha Raisin",
+                "Miss Marple series",
+                "Midsomer Murders"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Amateur sleuth solving community crime",
                 "Setting_And_World": "Charming small towns and cozy shops",
@@ -2508,6 +3280,13 @@
                 "Twisty",        "Paranoia",      "Dark",
                 "Mental"
               ],
+              "Examples": [
+                "Gone Girl",
+                "Shutter Island",
+                "The Girl on the Train",
+                "Black Swan",
+                "Memento"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping psychological manipulation",
                 "Setting_And_World": "Familiar settings turned threatening",
@@ -2533,6 +3312,10 @@
                 "Police Procedural", "Detective",         "Forensics",
                 "Investigation",     "Noir",              "Crime Drama",
                 "Professional"
+              ],
+              "Examples": [
+                "True Detective", "The Wire",       "CSI",
+                "Mindhunter",     "Luther"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Solving crimes through professional investigation",
@@ -2561,6 +3344,13 @@
             "Action",     "Thriller",   "Chase",      "Combat",
             "Explosive",  "Fast-Paced", "Adrenaline"
           ],
+          "Examples": [
+            "Mission: Impossible series",
+            "John Wick series",
+            "The Bourne Identity",
+            "Die Hard",
+            "Mad Max: Fury Road"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Surviving physical threats and completing missions",
             "Setting_And_World": "Action-friendly locations with danger",
@@ -2586,6 +3376,13 @@
                 "Conspiracy",      "Paranoia",        "Cover-Up",
                 "Whistleblower",   "Political",       "Dangerous Truth",
                 "Thriller"
+              ],
+              "Examples": [
+                "The Pelican Brief",
+                "All the President's Men",
+                "The Manchurian Candidate",
+                "Three Days of the Condor",
+                "Enemy of the State"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Exposing conspiracy before being silenced",
@@ -2613,6 +3410,13 @@
                 "Covert Ops",    "Betrayal",      "International",
                 "Action"
               ],
+              "Examples": [
+                "James Bond series",
+                "The Bourne Identity",
+                "Atomic Blonde",
+                "Tinker Tailor Soldier Spy",
+                "The Americans"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Completing missions and surviving betrayals",
                 "Setting_And_World": "International spy networks and shadows",
@@ -2639,6 +3443,10 @@
                 "Isolation",       "Endurance",       "Nature vs Human",
                 "Primal"
               ],
+              "Examples": [
+                "127 Hours",    "The Revenant", "Cast Away",    "The Grey",
+                "Gravity"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving hostile conditions until escape",
                 "Setting_And_World": "Harsh wilderness or disaster environments",
@@ -2663,6 +3471,13 @@
               "Secondary_Themes": [
                 "Heist",      "Con Artist", "Crew",       "Planning",
                 "Twist",      "Clever",     "Stylish"
+              ],
+              "Examples": [
+                "Ocean's Eleven",
+                "The Italian Job",
+                "Now You See Me",
+                "Catch Me If You Can",
+                "The Sting"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Planning and executing heist or con",
@@ -2690,6 +3505,13 @@
                 "Anti-Hero",       "Dark Justice",    "Moral Ambiguity",
                 "Action"
               ],
+              "Examples": [
+                "The Punisher",
+                "Taken",
+                "Death Wish",
+                "V for Vendetta",
+                "Law Abiding Citizen"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Delivering justice outside the law",
                 "Setting_And_World": "Failed system territories",
@@ -2715,6 +3537,10 @@
         "Horror",       "Scary",        "Terrifying",   "Creepy",
         "Disturbing",   "Supernatural", "Dark"
       ],
+      "Examples": [
+        "The Exorcist",  "The Shining",   "A Quiet Place", "Hereditary",
+        "Get Out"
+      ],
       "Comparison": {
         "Primary_Plot_Driver": "Surviving horror threats or descending into terror",
         "Setting_And_World": "Ordinary places turned horrific",
@@ -2735,6 +3561,10 @@
           "Secondary_Themes": [
             "Ghost",      "Demon",      "Possession", "Haunting",
             "Curse",      "Paranormal", "Spiritual"
+          ],
+          "Examples": [
+            "The Exorcist",  "The Conjuring", "Insidious",     "The Ring",
+            "Poltergeist"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Surviving supernatural entity or breaking curse",
@@ -2762,6 +3592,13 @@
                 "Creepy",         "Isolated",       "Supernatural",
                 "Claustrophobic"
               ],
+              "Examples": [
+                "The Haunting of Hill House",
+                "The Amityville Horror",
+                "Crimson Peak",
+                "The Others",
+                "Sinister"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping or ending the haunting",
                 "Setting_And_World": "Specific haunted structures",
@@ -2788,6 +3625,13 @@
                 "Satanic",          "Religious Horror", "Evil",
                 "Dark"
               ],
+              "Examples": [
+                "The Exorcist",
+                "The Conjuring series",
+                "The Omen",
+                "Constantine",
+                "Hereditary"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Performing exorcism or resisting possession",
                 "Setting_And_World": "Anywhere demons manifest",
@@ -2812,6 +3656,10 @@
               "Secondary_Themes": [
                 "Witchcraft", "Occult",     "Dark Magic", "Ritual",
                 "Curse",      "Forbidden",  "Cult"
+              ],
+              "Examples": [
+                "Rosemary's Baby", "The Witch",       "Suspiria",
+                "The Craft",       "Midsommar"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Stopping ritual or escaping magic consequences",
@@ -2840,6 +3688,10 @@
             "Monster",     "Creature",    "Predator",    "Body Horror",
             "Survival",    "Scary",       "Inhuman"
           ],
+          "Examples": [
+            "Alien",         "The Thing",     "A Quiet Place", "Jaws",
+            "Predator"
+          ],
           "Comparison": {
             "Primary_Plot_Driver"    : "Surviving monster attacks",
             "Setting_And_World"      : "Anywhere monsters hunt",
@@ -2861,6 +3713,13 @@
                 "Zombie",          "Undead",          "Infection",
                 "Horde",           "Survival Horror", "Gore",
                 "Apocalyptic"
+              ],
+              "Examples": [
+                "Night of the Living Dead",
+                "28 Days Later",
+                "Train to Busan",
+                "Dawn of the Dead",
+                "World War Z"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving zombie hordes",
@@ -2888,6 +3747,13 @@
                 "Gothic",         "Feral",          "Monstrous",
                 "Bloodthirsty"
               ],
+              "Examples": [
+                "30 Days of Night",
+                "An American Werewolf in London",
+                "Let the Right One In",
+                "Near Dark",
+                "The Howling"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving vampire/werewolf predation",
                 "Setting_And_World": "Gothic or feral hunting grounds",
@@ -2913,6 +3779,10 @@
                 "Alien",            "Unknown",          "Body Horror",
                 "Parasitic",        "Sci-Fi Horror",    "Incomprehensible",
                 "Terrifying"
+              ],
+              "Examples": [
+                "Alien",        "The Thing",    "Annihilation", "Life",
+                "Cloverfield"
               ],
               "Comparison": {
                 "Primary_Plot_Driver"    : "Surviving alien creature threat",
@@ -2941,6 +3811,13 @@
             "Slasher",       "Gore",          "Serial Killer", "Final Girl",
             "Brutal",        "Graphic",       "Violent"
           ],
+          "Examples": [
+            "Halloween",
+            "Friday the 13th",
+            "A Nightmare on Elm Street",
+            "Scream",
+            "The Texas Chain Saw Massacre"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Surviving slasher killer pursuit",
             "Setting_And_World": "Isolated locations where killer hunts",
@@ -2967,6 +3844,13 @@
                 "Cat and Mouse",   "Human Monster",   "Dark",
                 "Grounded Horror"
               ],
+              "Examples": [
+                "The Silence of the Lambs",
+                "Se7en",
+                "Zodiac",
+                "American Psycho",
+                "Monster"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping or catching serial killer",
                 "Setting_And_World": "Killer's hunting grounds",
@@ -2991,6 +3875,13 @@
               "Secondary_Themes": [
                 "Torture",    "Extreme",    "Sadistic",   "Gore",
                 "Captivity",  "Suffering",  "Disturbing"
+              ],
+              "Examples": [
+                "Saw series",
+                "Hostel series",
+                "The Human Centipede",
+                "Martyrs",
+                "Audition"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping torture situation",
@@ -3020,6 +3911,13 @@
             "Incomprehensible", "Madness",          "Philosophical",
             "Nihilistic"
           ],
+          "Examples": [
+            "The Color Out of Space",
+            "Annihilation",
+            "The Lighthouse",
+            "Event Horizon",
+            "In the Mouth of Madness"
+          ],
           "Comparison": {
             "Primary_Plot_Driver": "Confronting incomprehensible cosmic truth",
             "Setting_And_World": "Anywhere cosmic forces manifest",
@@ -3046,6 +3944,13 @@
                 "Old Ones",         "Cult",             "Cosmic",
                 "Incomprehensible"
               ],
+              "Examples": [
+                "The Call of Cthulhu",
+                "At the Mountains of Madness",
+                "The Color Out of Space",
+                "Annihilation",
+                "Bloodborne (game)"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Preventing Old One awakening",
                 "Setting_And_World": "Ancient ruins, forbidden libraries, cult sites",
@@ -3070,6 +3975,13 @@
               "Secondary_Themes": [
                 "Apocalyptic", "Extinction",  "Hopeless",    "Final Days",
                 "Doom",        "Existential", "Bleak"
+              ],
+              "Examples": [
+                "Melancholia",
+                "The Mist",
+                "Bird Box",
+                "Cabin in the Woods",
+                "The Ritual"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Witnessing inevitable extinction unfold",
@@ -3100,6 +4012,10 @@
         "Superhero", "Mythology", "Epic",      "Heroic",    "Powers",
         "Divine",    "Legendary"
       ],
+      "Examples": [
+        "Thor: Ragnarok",       "Wonder Woman",         "Percy Jackson series",
+        "American Gods",        "The Avengers"
+      ],
       "Comparison": {
         "Primary_Plot_Driver": "Using powers for heroic or divine purposes",
         "Setting_And_World": "Mythological realms or superhero cities",
@@ -3124,6 +4040,13 @@
           "Secondary_Themes": [
             "Mythology", "Gods",      "Divine",    "Quest",     "Legendary",
             "Epic",      "Cultural"
+          ],
+          "Examples": [
+            "Percy Jackson series",
+            "American Gods",
+            "Thor (MCU)",
+            "Immortals",
+            "Clash of the Titans"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Navigating mythological quests or divine conflicts",
@@ -3151,6 +4074,13 @@
                 "Epic",            "Devotional",      "Spiritual",
                 "Cultural"
               ],
+              "Examples": [
+                "Ramayana: The Legend of Prince Rama",
+                "Bahubali series",
+                "Hanuman",
+                "Mahabharat (TV series)",
+                "Devon Ke Dev...Mahadev"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Fulfilling dharmic duty or divine mission",
                 "Setting_And_World": "Ancient India or divine realms",
@@ -3177,6 +4107,13 @@
                 "Hubris",          "Quest",           "Tragic",
                 "Epic"
               ],
+              "Examples": [
+                "Percy Jackson series",
+                "Wonder Woman",
+                "Clash of the Titans",
+                "Immortals",
+                "300"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Completing heroic quests or navigating divine politics",
                 "Setting_And_World": "Ancient Greece and Mount Olympus",
@@ -3201,6 +4138,10 @@
               "Secondary_Themes": [
                 "Norse",       "Egyptian",    "Celtic",      "Japanese",
                 "Cultural",    "Diverse",     "Traditional"
+              ],
+              "Examples": [
+                "Thor (MCU)",      "American Gods",   "Spirited Away",
+                "The Mummy",       "Valhalla Rising"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating culture-specific mythological conflicts",
@@ -3228,6 +4169,10 @@
           "Secondary_Themes": [
             "Superhero",    "Powers",       "Origin Story", "Villain",
             "Action",       "Heroic",       "Justice"
+          ],
+          "Examples": [
+            "The Avengers",      "Spider-Man series", "Batman trilogy",
+            "Black Panther",     "The Incredibles"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Fighting villains and protecting innocents",
@@ -3259,6 +4204,13 @@
                 "Cultural",
                 "Patriotic"
               ],
+              "Examples": [
+                "Ra.One",
+                "Krrish series",
+                "Bhavesh Joshi Superhero",
+                "A Flying Jatt",
+                "Minnal Murali"
+              ],
               "Comparison": {
                 "Primary_Plot_Driver": "Protecting Indian communities with powers",
                 "Setting_And_World": "Indian cities and cultural settings",
@@ -3284,6 +4236,13 @@
                 "MCU",             "Team-Up",         "Action",
                 "Humor",           "Character Drama", "Cosmic",
                 "Blockbuster"
+              ],
+              "Examples": [
+                "The Avengers",
+                "Iron Man series",
+                "Black Panther",
+                "Guardians of the Galaxy",
+                "Spider-Man: Homecoming"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Team heroics against escalating threats",
