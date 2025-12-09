@@ -239,7 +239,7 @@
             <div class="legend">
                 <div class="legend-item"><div class="legend-box level-0"></div><span>L0: Main Genre</span></div>
                 <div class="legend-item"><div class="legend-box level-1"></div><span>L1: Sub-Genre</span></div>
-                <div class="legend-item"><div class="legend-box level-2"></div><span>L2: Sub-Sub-Genre</span></div>
+                <div class="legend-item"><div class="legend-box level-2"></div><span>L2: Micro-Genre</span></div>
             </div>
             <div class="controls">
                 <button class="btn" onclick="expandAll()">Expand All</button>
@@ -526,7 +526,7 @@
                 l1 += Object.keys(s).length;
                 Object.values(s).forEach(y => l2 += Object.keys(y["Sub-Sub-Genre"] || {}).length);
             });
-            document.getElementById('stats').innerHTML = `<span>${l0}</span> Main Genres • <span>${l1}</span> Sub-Genres • <span>${l2}</span> Sub-Sub-Genres`;
+            document.getElementById('stats').innerHTML = `<span>${l0}</span> Genres • <span>${l1}</span> Sub-Genres • <span>${l2}</span> Micro-Genres`;
         }
 
         function saveExpandedState() {
