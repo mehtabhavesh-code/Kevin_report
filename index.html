@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -314,6 +313,7 @@
                     <div class="show-modal-field"><label class="show-modal-label">Show Name *</label><input type="text" class="show-modal-input" id="showNameInput"></div>
                     <div class="show-modal-field"><label class="show-modal-label">Show Rank</label><input type="number" class="show-modal-input" id="showRankInput" min="1"></div>
                     <div class="show-modal-field"><label class="show-modal-label">Show ID</label><input type="text" class="show-modal-input" id="showIdInput"></div>
+                    <div class="show-modal-field"><label class="show-modal-label">Show Language</label><input type="text" class="show-modal-input" id="showLanguageInput"></div>
                     <div class="show-modal-field"><label class="show-modal-label">Genre</label><input type="text" class="show-modal-input" id="showGenreInput"></div>
                     <div class="show-modal-field"><label class="show-modal-label">Sub Genre</label><input type="text" class="show-modal-input" id="showSubGenreInput"></div>
                     <div class="show-modal-field"><label class="show-modal-label">Sub Sub Genre</label><input type="text" class="show-modal-input" id="showSubSubGenreInput"></div>
@@ -419,7 +419,7 @@
             const headers = parseCSVLine(lines[0]);
             const headerMap = {};
             const expectedHeaders = {
-                'show name': 'name', 'show rank': 'rank', 'show id': 'id',
+                'show name': 'name', 'show rank': 'rank', 'show id': 'id', 'show language': 'language',
                 'genre': 'genre', 'sub genre': 'subGenre', 'sub sub genre': 'subSubGenre',
                 'key themes': 'keyThemes', 'secondary themes': 'secondaryThemes', 'reason': 'reason'
             };
@@ -436,7 +436,7 @@
                     return idx !== undefined && values[idx] !== undefined ? values[idx].trim() : '';
                 };
                 showsData.push({
-                    name: getValue('name'), rank: parseInt(getValue('rank')) || 0, id: getValue('id'),
+                    name: getValue('name'), rank: parseInt(getValue('rank')) || 0, id: getValue('id'), language: getValue('language'),
                     genre: getValue('genre'), subGenre: getValue('subGenre'), subSubGenre: getValue('subSubGenre'),
                     keyThemes: getValue('keyThemes'), secondaryThemes: getValue('secondaryThemes'), reason: getValue('reason')
                 });
@@ -941,11 +941,12 @@
             result.push(current.trim()); 
             return result; 
         }
-        function exportShowsCSV() { if (showsData.length === 0) { showToast('No shows to export', 'error'); return; } const headers = ['Show Name', 'Show Rank', 'Show ID', 'Genre', 'Sub Genre', 'Sub Sub Genre', 'Key Themes', 'Secondary Themes', 'Reason']; let csv = headers.join(',') + '\n'; showsData.forEach(s => { csv += [`"${(s.name || '').replace(/"/g, '""')}"`, s.rank || '', `"${(s.id || '').replace(/"/g, '""')}"`, `"${(s.genre || '').replace(/"/g, '""')}"`, `"${(s.subGenre || '').replace(/"/g, '""')}"`, `"${(s.subSubGenre || '').replace(/"/g, '""')}"`, `"${(s.keyThemes || '').replace(/"/g, '""')}"`, `"${(s.secondaryThemes || '').replace(/"/g, '""')}"`, `"${(s.reason || '').replace(/"/g, '""')}"`].join(',') + '\n'; }); downloadFile(csv, 'shows_tagging.csv', 'text/csv'); showToast('CSV exported!', 'success'); }
+        function exportShowsCSV() { if (showsData.length === 0) { showToast('No shows to export', 'error'); return; } const headers = ['Show Name', 'Show Rank', 'Show ID', 'Show Language', 'Genre', 'Sub Genre', 'Sub Sub Genre', 'Key Themes', 'Secondary Themes', 'Reason']; let csv = headers.join(',') + '\n'; showsData.forEach(s => { csv += [`"${(s.name || '').replace(/"/g, '""')}"`, s.rank || '', `"${(s.id || '').replace(/"/g, '""')}"`, `"${(s.language || '').replace(/"/g, '""')}"`, `"${(s.genre || '').replace(/"/g, '""')}"`, `"${(s.subGenre || '').replace(/"/g, '""')}"`, `"${(s.subSubGenre || '').replace(/"/g, '""')}"`, `"${(s.keyThemes || '').replace(/"/g, '""')}"`, `"${(s.secondaryThemes || '').replace(/"/g, '""')}"`, `"${(s.reason || '').replace(/"/g, '""')}"`].join(',') + '\n'; }); downloadFile(csv, 'shows_tagging.csv', 'text/csv'); showToast('CSV exported!', 'success'); }
 
         // MODIFIED: Updated column widths for Shows
         const SHOW_COLUMNS = [
             {key:'rank',label:'Rank',minW:'12px',noFilter:true},  // 50% of 25px, no filter
+            {key:'language',label:'Language',minW:'12px'},        // Same width as rank
             {key:'name',label:'Show Name',minW:'55px'},           // 70% of 78px (text wraps)
             {key:'branch',label:'Genre Path',minW:'141px'},       // 80% of 176px
             {key:'keyThemes',label:'Key Themes',minW:'302px'},    // +28px (40% of 71px saved)
@@ -997,6 +998,7 @@
                 const stTags = s.secondaryThemes ? s.secondaryThemes.split(';').map(t => `<span class="cell-tag secondary">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 html += `<tr>
                     <td><span class="show-rank">${s.rank || '-'}</span></td>
+                    <td>${s.language || '<span class="cell-empty">-</span>'}</td>
                     <td class="show-name-cell"><strong>${s.name}</strong><br><small style="color:#718096;">${s.id || ''}</small></td>
                     <td><div class="branch-path">${branchHtml}</div></td>
                     <td>${ktTags}</td>
@@ -1017,9 +1019,9 @@
         function updateShowFilter(key, value) { showFilters[key] = value; renderShowsTable(); }
         function sortShowsTable(key) { if (showSort.key === key) showSort.dir = showSort.dir === 'asc' ? 'desc' : 'asc'; else { showSort.key = key; showSort.dir = 'asc'; } renderShowsTable(); }
         function clearShowFilters() { showFilters = {}; renderShowsTable(); }
-        function openAddShowModal() { editingShowIndex = -1; document.getElementById('showModalTitle').textContent = 'Add Show'; ['showNameInput','showRankInput','showIdInput','showGenreInput','showSubGenreInput','showSubSubGenreInput','showKeyThemesInput','showSecondaryThemesInput','showReasonInput'].forEach(id => document.getElementById(id).value = ''); document.getElementById('showModal').classList.add('active'); }
-        function editShow(index) { editingShowIndex = index; const s = showsData[index]; document.getElementById('showModalTitle').textContent = 'Edit Show'; document.getElementById('showNameInput').value = s.name || ''; document.getElementById('showRankInput').value = s.rank || ''; document.getElementById('showIdInput').value = s.id || ''; document.getElementById('showGenreInput').value = s.genre || ''; document.getElementById('showSubGenreInput').value = s.subGenre || ''; document.getElementById('showSubSubGenreInput').value = s.subSubGenre || ''; document.getElementById('showKeyThemesInput').value = s.keyThemes || ''; document.getElementById('showSecondaryThemesInput').value = s.secondaryThemes || ''; document.getElementById('showReasonInput').value = s.reason || ''; document.getElementById('showModal').classList.add('active'); }
-        function saveShow() { const name = document.getElementById('showNameInput').value.trim(); if (!name) { showToast('Show name is required', 'error'); return; } const showData = { name, rank: parseInt(document.getElementById('showRankInput').value) || 0, id: document.getElementById('showIdInput').value.trim(), genre: document.getElementById('showGenreInput').value.trim(), subGenre: document.getElementById('showSubGenreInput').value.trim(), subSubGenre: document.getElementById('showSubSubGenreInput').value.trim(), keyThemes: document.getElementById('showKeyThemesInput').value.trim(), secondaryThemes: document.getElementById('showSecondaryThemesInput').value.trim(), reason: document.getElementById('showReasonInput').value.trim() }; if (editingShowIndex >= 0) { showsData[editingShowIndex] = showData; showToast('Show updated!', 'success'); } else { showsData.push(showData); showToast('Show added!', 'success'); } closeModal('showModal'); renderShowsTable(); }
+        function openAddShowModal() { editingShowIndex = -1; document.getElementById('showModalTitle').textContent = 'Add Show'; ['showNameInput','showRankInput','showIdInput','showLanguageInput','showGenreInput','showSubGenreInput','showSubSubGenreInput','showKeyThemesInput','showSecondaryThemesInput','showReasonInput'].forEach(id => document.getElementById(id).value = ''); document.getElementById('showModal').classList.add('active'); }
+        function editShow(index) { editingShowIndex = index; const s = showsData[index]; document.getElementById('showModalTitle').textContent = 'Edit Show'; document.getElementById('showNameInput').value = s.name || ''; document.getElementById('showRankInput').value = s.rank || ''; document.getElementById('showIdInput').value = s.id || ''; document.getElementById('showLanguageInput').value = s.language || ''; document.getElementById('showGenreInput').value = s.genre || ''; document.getElementById('showSubGenreInput').value = s.subGenre || ''; document.getElementById('showSubSubGenreInput').value = s.subSubGenre || ''; document.getElementById('showKeyThemesInput').value = s.keyThemes || ''; document.getElementById('showSecondaryThemesInput').value = s.secondaryThemes || ''; document.getElementById('showReasonInput').value = s.reason || ''; document.getElementById('showModal').classList.add('active'); }
+        function saveShow() { const name = document.getElementById('showNameInput').value.trim(); if (!name) { showToast('Show name is required', 'error'); return; } const showData = { name, rank: parseInt(document.getElementById('showRankInput').value) || 0, id: document.getElementById('showIdInput').value.trim(), language: document.getElementById('showLanguageInput').value.trim(), genre: document.getElementById('showGenreInput').value.trim(), subGenre: document.getElementById('showSubGenreInput').value.trim(), subSubGenre: document.getElementById('showSubSubGenreInput').value.trim(), keyThemes: document.getElementById('showKeyThemesInput').value.trim(), secondaryThemes: document.getElementById('showSecondaryThemesInput').value.trim(), reason: document.getElementById('showReasonInput').value.trim() }; if (editingShowIndex >= 0) { showsData[editingShowIndex] = showData; showToast('Show updated!', 'success'); } else { showsData.push(showData); showToast('Show added!', 'success'); } closeModal('showModal'); renderShowsTable(); }
         function deleteShow(index) { if (confirm(`Delete "${showsData[index].name}"?`)) { showsData.splice(index, 1); renderShowsTable(); showToast('Show deleted', 'success'); } }
 
         document.addEventListener('dragover', e => { if (dragState.active) e.preventDefault(); });
