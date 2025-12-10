@@ -12,8 +12,12 @@
         "World-Threatening Catastrophe"
       ],
       "Secondary_Themes": [
-        "Epic Quest",          "Mentor-Student Bond", "Magical Creatures",
-        "Ancient Prophecy",    "Power Corruption",    "Reluctant Hero",
+        "Epic Quest",
+        "Mentor-Student Bond",
+        "Magical Creatures",
+        "Ancient Prophecy",
+        "Power Corruption",
+        "Reluctant Hero",
         "Dark Lord Rising"
       ],
       "Examples": [
@@ -50,8 +54,12 @@
             "Realm-Hopping Adventures"
           ],
           "Secondary_Themes": [
-            "Power Progression", "War and Politics",  "Found Family",
-            "Mentor Death",      "Betrayal",          "Siege Warfare",
+            "Power Progression",
+            "War and Politics",
+            "Found Family",
+            "Mentor Death",
+            "Betrayal",
+            "Siege Warfare",
             "Tournament Arc"
           ],
           "Examples": [
@@ -97,6 +105,7 @@
                 "Heavenly Tribulation"
               ],
               "Examples": [
+                "My Dragon Princessr",
                 "Rise of the Warrior",
                 "Battle Through The Heavens",
                 "The Conjurers",
@@ -105,8 +114,7 @@
                 "I Shall Seal the Heavens",
                 "Against the Gods",
                 "Tales of Demons and Gods",
-                "Stellar Transformations",
-                "Desolate Era"
+                "Stellar Transformations"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Ascending cultivation realms toward immortality",
@@ -167,8 +175,12 @@
                 "Dark Lord Confrontation"
               ],
               "Secondary_Themes": [
-                "Epic Quest",       "Found Family",     "Mentor Sacrifice",
-                "Power Corruption", "Redemption Arc",   "Class Diversity",
+                "Epic Quest",
+                "Found Family",
+                "Mentor Sacrifice",
+                "Power Corruption",
+                "Redemption Arc",
+                "Class Diversity",
                 "Boss Battle"
               ],
               "Examples": [
@@ -201,8 +213,12 @@
                 "Summoned Hero Trope"
               ],
               "Secondary_Themes": [
-                "Reincarnation",     "Cheat Ability",     "Harem",
-                "Slow Life",         "Kingdom Building",  "Comedy",
+                "Reincarnation",
+                "Cheat Ability",
+                "Harem",
+                "Slow Life",
+                "Kingdom Building",
+                "Comedy",
                 "Demon Lord Defeat"
               ],
               "Examples": [
@@ -247,6 +263,7 @@
               ],
               "Examples": [
                 "God Eye",
+		"Heart of a Phoenix",
                 "The Joseph Family",
                 "Douluo Dalu (Soul Land)",
                 "Star Martial God Technique",
@@ -275,8 +292,12 @@
                 "Hope Dies First"
               ],
               "Secondary_Themes": [
-                "Grimdark",         "Betrayal",         "Tragic Backstory",
-                "Revenge",          "Dark Magic",       "War Horror",
+                "Grimdark",
+                "Betrayal",
+                "Tragic Backstory",
+                "Revenge",
+                "Dark Magic",
+                "War Horror",
                 "Corruption"
               ],
               "Examples": [
@@ -311,8 +332,12 @@
             "Ambiguous Supernatural"
           ],
           "Secondary_Themes": [
-            "Mystery",          "Slow Burn",        "Character-Driven",
-            "Literary",         "Atmospheric",      "Psychological",
+            "Mystery",
+            "Slow Burn",
+            "Character-Driven",
+            "Literary",
+            "Atmospheric",
+            "Psychological",
             "Tragic"
           ],
           "Examples": [
@@ -349,8 +374,12 @@
                 "Generational Stories"
               ],
               "Secondary_Themes": [
-                "Literary Fiction",  "Family Saga",       "Cultural Heritage",
-                "Metaphorical",      "Poetic",            "Melancholic",
+                "Literary Fiction",
+                "Family Saga",
+                "Cultural Heritage",
+                "Metaphorical",
+                "Poetic",
+                "Melancholic",
                 "Contemplative"
               ],
               "Examples": [
@@ -420,8 +449,12 @@
                 "Hard Work Over Stats"
               ],
               "Secondary_Themes": [
-                "Training Arc",     "Mentor Death",     "Coming of Age",
-                "Self-Discovery",   "Realistic Growth", "Character-Driven",
+                "Training Arc",
+                "Mentor Death",
+                "Coming of Age",
+                "Self-Discovery",
+                "Realistic Growth",
+                "Character-Driven",
                 "Earned Victory"
               ],
               "Examples": [
@@ -534,8 +567,12 @@
                 "Normal Life Facade"
               ],
               "Secondary_Themes": [
-                "Young Master",    "Face-Slapping",   "Romance",
-                "Business Empire", "Auction Drama",   "Hidden Expert",
+                "Young Master",
+                "Face-Slapping",
+                "Romance",
+                "Business Empire",
+                "Auction Drama",
+                "Hidden Expert",
                 "Comedy"
               ],
               "Examples": [
@@ -557,154 +594,6 @@
               }
             }
           }
-        },
-        "Female Fantasy": {
-          "Definition": "Fantasy stories centered on female protagonists navigating worlds where romance, relationships, personal agency, and emotional journeys are primary drivers alongside fantasy elements. Features women overcoming societal constraints, building power through various means, and pursuing goals that interweave personal fulfillment with larger conflicts. Distinguished from general fantasy by explicit focus on female experience and from pure romance by fantasy worldbuilding being integral rather than backdrop.",
-          "Key_Themes": [
-            "Female Empowerment Journey",
-            "Romance as Plot Driver",
-            "Overcoming Gender Barriers",
-            "Court Politics Navigation",
-            "Building Female Alliances",
-            "Reclaiming Agency",
-            "Love vs Duty Conflict"
-          ],
-          "Secondary_Themes": [
-            "Strong Female Lead", "Romance",            "Political Intrigue",
-            "Revenge",            "Identity Struggle",  "Female Rivalry",
-            "Emotional Depth"
-          ],
-          "Examples": [
-            "My Dragon Princess",
-            "Heart of a Phoenix",
-            "A Queen Betrayed",
-            "The Princess and The Sea Witch",
-            "A Court of Thorns and Roses (series)",
-            "Graceling",
-            "An Ember in the Ashes",
-            "Throne of Glass (series)",
-            "The Selection (series)"
-          ],
-          "Comparison": {
-            "Primary_Plot_Driver": "Female protagonist pursuing agency amid fantasy conflicts",
-            "Setting_And_World": "Fantasy settings with gendered power structures",
-            "Central_Conflict_Type": "Social maneuvering, romance obstacles, and survival",
-            "Tone_And_Atmosphere": "Emotional depth with fantasy intrigue",
-            "Character_Arc_Focus": "Claiming autonomy and navigating relationships",
-            "Power_Ability_System": "Varied; often social, magical, or knowledge-based",
-            "Stakes_And_Consequences": "Loss of status, heartbreak, or death"
-          },
-          "Sub-Sub-Genre": {
-            "Historical Fantasy": {
-              "Definition": "Female-focused fantasy set in historical or pseudo-historical periods featuring aristocratic societies, royal courts, or ancient civilizations. Protagonists navigate rigid social hierarchies, arranged marriages, palace intrigue, and gendered expectations while pursuing romance or personal goals. Often features reincarnation, transmigration, or regression into historical settings. Distinguished by historical aesthetics, court politics, and female protagonist navigating period-specific constraints.",
-              "Key_Themes": [
-                "Reincarnation into Nobility",
-                "Arranged Marriage Escape",
-                "Court Intrigue Mastery",
-                "Villainess Redemption",
-                "Time Travel Knowledge",
-                "Political Marriage Alliance",
-                "Rising Through Ranks"
-              ],
-              "Secondary_Themes": [
-                "Transmigration",
-                "Revenge",
-                "Romance",
-                "Court Politics",
-                "Scheming",
-                "Historical Setting",
-                "Female Rivalry"
-              ],
-              "Examples": [
-                "Heart of a Phoenix",
-                "A Queen Betrayed",
-                "The Abandoned Empress",
-                "The Remarried Empress",
-                "Who Made Me a Princess",
-                "The Villainess Reverses the Hourglass"
-              ],
-              "Comparison": {
-                "Primary_Plot_Driver": "Surviving court politics while pursuing love or status",
-                "Setting_And_World": "Historical courts, noble estates, palace settings",
-                "Central_Conflict_Type": "Political rivals, arranged marriages, family schemes",
-                "Tone_And_Atmosphere": "Elegant intrigue with romantic tension",
-                "Character_Arc_Focus": "Rising in status or escaping tragic fate",
-                "Power_Ability_System": "Social influence, knowledge from past life, rare magic",
-                "Stakes_And_Consequences": "Exile, death, or losing love interest to rivals"
-              }
-            },
-            "Urban Female Fantasy": {
-              "Definition": "Female-focused fantasy set in contemporary or modern settings where magic, supernatural elements, or fantasy systems intersect with urban life. Protagonists balance careers, relationships, and personal growth while navigating hidden magical worlds or awakening to supernatural abilities. Features modern relationship dynamics, career conflicts, and contemporary social issues alongside fantasy elements. Distinguished by modern setting, relatable contemporary struggles, and female protagonist discovering or managing magical abilities in everyday life.",
-              "Key_Themes": [
-                "Career Woman with Powers",
-                "Hidden Magical Identity",
-                "Modern Romance Drama",
-                "CEO Male Lead",
-                "Secret Supernatural World",
-                "Work-Life-Magic Balance",
-                "Contemporary Struggles"
-              ],
-              "Secondary_Themes": [
-                "Romance",         "CEO Romance",     "Hidden Identity",
-                "Modern Setting",  "Career Focus",    "Comedy",
-                "Jealous Rivals"
-              ],
-              "Examples": [
-                "My Dragon Princess",
-                "Kate Daniels (series)",
-                "Women of the Otherworld (series)",
-                "Guild Hunter (series)",
-                "The Hollows (series)",
-                "Mercy Thompson (series)"
-              ],
-              "Comparison": {
-                "Primary_Plot_Driver": "Balancing modern life with supernatural elements",
-                "Setting_And_World": "Contemporary cities with hidden magic",
-                "Central_Conflict_Type": "Career obstacles, romantic rivals, supernatural threats",
-                "Tone_And_Atmosphere": "Contemporary drama with fantasy elements",
-                "Character_Arc_Focus": "Achieving success while managing dual life",
-                "Power_Ability_System": "Modern manifestations of magic or hidden abilities",
-                "Stakes_And_Consequences": "Career ruin, exposure, or relationship collapse"
-              }
-            },
-            "Sci-fi & Futuristic Fantasy": {
-              "Definition": "Female-focused stories blending science fiction settings with fantasy elements or romance-driven narratives. Features female protagonists in interstellar empires, futuristic societies, or technology-advanced worlds navigating relationships, power structures, and personal agency. May include ABO dynamics, sentinel/guide bonds, mecha pilots, or space opera romance. Distinguished by sci-fi aesthetics combined with relationship-focused narratives and female protagonist perspective.",
-              "Key_Themes": [
-                "Interstellar Romance",
-                "Futuristic Court Politics",
-                "Mecha Pilot Heroine",
-                "ABO Dynamics",
-                "Space Empire Intrigue",
-                "Advanced Tech Powers",
-                "Sentinel-Guide Bond"
-              ],
-              "Secondary_Themes": [
-                "Romance",
-                "Space Opera",
-                "ABO",
-                "Mecha",
-                "Political Intrigue",
-                "Action",
-                "Futuristic Setting"
-              ],
-              "Examples": [
-                "The Long Way to a Small, Angry Planet",
-                "Gideon the Ninth",
-                "Aurora Rising",
-                "Empress of Forever",
-                "Neon Dynasty"
-              ],
-              "Comparison": {
-                "Primary_Plot_Driver": "Romance and survival in futuristic setting",
-                "Setting_And_World": "Space empires, future Earth, advanced civilizations",
-                "Central_Conflict_Type": "Interstellar conflicts, social hierarchies, romantic obstacles",
-                "Tone_And_Atmosphere": "Sci-fi wonder with romantic focus",
-                "Character_Arc_Focus": "Finding love and agency in futuristic society",
-                "Power_Ability_System": "Technology, genetic abilities, or special bonds",
-                "Stakes_And_Consequences": "Planetary destruction, social exile, or losing partner"
-              }
-            }
-          }
         }
       }
     },
@@ -720,8 +609,12 @@
         "Forbidden Love Across Species"
       ],
       "Secondary_Themes": [
-        "Enemies to Lovers", "Forced Proximity",  "Slow Burn",
-        "Steamy Romance",    "Fantasy Politics",  "Action",
+        "Enemies to Lovers",
+        "Forced Proximity",
+        "Slow Burn",
+        "Steamy Romance",
+        "Fantasy Politics",
+        "Action",
         "Supernatural"
       ],
       "Examples": [
@@ -758,8 +651,12 @@
             "Eternal Love Promise"
           ],
           "Secondary_Themes": [
-            "Forbidden Love",    "Enemies to Lovers", "Slow Burn",
-            "Steamy",            "Dark Romance",      "Action",
+            "Forbidden Love",
+            "Enemies to Lovers",
+            "Slow Burn",
+            "Steamy",
+            "Dark Romance",
+            "Action",
             "Gothic"
           ],
           "Examples": [
@@ -871,8 +768,12 @@
                 "Powerful Being Romance"
               ],
               "Secondary_Themes": [
-                "Fated Mates",       "Possessive Alpha",  "Steamy",
-                "Action",            "Fantasy Adventure", "Size Difference",
+                "Fated Mates",
+                "Possessive Alpha",
+                "Steamy",
+                "Action",
+                "Fantasy Adventure",
+                "Size Difference",
                 "Protective Hero"
               ],
               "Examples": [
@@ -904,8 +805,12 @@
                 "Magic Through Emotion"
               ],
               "Secondary_Themes": [
-                "Slow Burn",         "Forced Proximity",  "Coven Drama",
-                "Magical Training",  "Forbidden Love",    "Enemies to Lovers",
+                "Slow Burn",
+                "Forced Proximity",
+                "Coven Drama",
+                "Magical Training",
+                "Forbidden Love",
+                "Enemies to Lovers",
                 "Mystical"
               ],
               "Examples": [
@@ -939,8 +844,12 @@
             "Mate Bond Completion"
           ],
           "Secondary_Themes": [
-            "Fated Mates",        "Alpha Hero",         "Possessive Romance",
-            "Pack Politics",      "Steamy",             "Rejection Angst",
+            "Fated Mates",
+            "Alpha Hero",
+            "Possessive Romance",
+            "Pack Politics",
+            "Steamy",
+            "Rejection Angst",
             "Instant Attraction"
           ],
           "Examples": [
@@ -977,14 +886,19 @@
                 "Territorial Marking"
               ],
               "Secondary_Themes": [
-                "Rejected Mate", "Alpha Romance", "Pack Drama",
-                "Possessive",    "Second Chance", "Fated Mates",
+                "Rejected Mate",
+                "Alpha Romance",
+                "Pack Drama",
+                "Possessive",
+                "Second Chance",
+                "Fated Mates",
                 "Steamy"
               ],
               "Examples": [
                 "The Alpha's Bride",
                 "Fated To Rebel",
                 "Chosen By Fate, Rejected By The Alpha",
+		"Titans of Texas",
                 "Lunaris Academy",
                 "Shiver (series)",
                 "Blood and Chocolate",
@@ -1013,8 +927,12 @@
                 "Unique Powers Per Type"
               ],
               "Secondary_Themes": [
-                "Bear Shifter",     "Dragon Shifter",   "Fated Mates",
-                "Paranormal World", "Action Romance",   "Steamy",
+                "Bear Shifter",
+                "Dragon Shifter",
+                "Fated Mates",
+                "Paranormal World",
+                "Action Romance",
+                "Steamy",
                 "Protective Hero"
               ],
               "Examples": [
@@ -1048,8 +966,12 @@
             "Redemption Through Love"
           ],
           "Secondary_Themes": [
-            "Anti-Hero",       "Possessive",      "Angsty",
-            "Steamy",          "Gothic",          "Intense",
+            "Anti-Hero",
+            "Possessive",
+            "Angsty",
+            "Steamy",
+            "Gothic",
+            "Intense",
             "Captive Romance"
           ],
           "Examples": [
@@ -1081,8 +1003,12 @@
                 "Academic Supernatural Competition"
               ],
               "Secondary_Themes": [
-                "Enemies to Lovers", "Forbidden Romance", "Mystery",
-                "Gothic",            "Dark Romance",      "Intellectual",
+                "Enemies to Lovers",
+                "Forbidden Romance",
+                "Mystery",
+                "Gothic",
+                "Dark Romance",
+                "Intellectual",
                 "Atmospheric"
               ],
               "Examples": [
@@ -1194,8 +1120,12 @@
         "Happy Ending Promise"
       ],
       "Secondary_Themes": [
-        "Slow Burn",         "Enemies to Lovers", "Friends to Lovers",
-        "Second Chance",     "Forbidden Love",    "Forced Proximity",
+        "Slow Burn",
+        "Enemies to Lovers",
+        "Friends to Lovers",
+        "Second Chance",
+        "Forbidden Love",
+        "Forced Proximity",
         "Emotional"
       ],
       "Examples": [
@@ -1232,8 +1162,12 @@
             "Communication Struggles"
           ],
           "Secondary_Themes": [
-            "Slow Burn",       "Romantic Comedy", "Emotional",
-            "Realistic",       "Modern Setting",  "Relatable",
+            "Slow Burn",
+            "Romantic Comedy",
+            "Emotional",
+            "Realistic",
+            "Modern Setting",
+            "Relatable",
             "Heartwarming"
           ],
           "Examples": [
@@ -1270,8 +1204,12 @@
                 "Class Difference Barrier"
               ],
               "Secondary_Themes": [
-                "Alpha Male",       "Possessive",       "Cinderella Story",
-                "Steamy",           "Glamorous",        "Powerful Hero",
+                "Alpha Male",
+                "Possessive",
+                "Cinderella Story",
+                "Steamy",
+                "Glamorous",
+                "Powerful Hero",
                 "Contract Romance"
               ],
               "Examples": [
@@ -1317,8 +1255,11 @@
                 "Romantic Tension"
               ],
               "Examples": [
-                "The Hating Game",   "The Kiss Quotient", "The Deal",
-                "99 Percent Mine",   "The Roommate"
+                "The Hating Game",
+                "The Kiss Quotient",
+                "The Deal",
+                "99 Percent Mine",
+                "The Roommate"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating attraction while working together",
@@ -1379,8 +1320,12 @@
                 "Dangerous Attraction"
               ],
               "Secondary_Themes": [
-                "Anti-Hero",       "Possessive",      "Angsty",
-                "Steamy",          "Morally Gray",    "Intense",
+                "Anti-Hero",
+                "Possessive",
+                "Angsty",
+                "Steamy",
+                "Morally Gray",
+                "Intense",
                 "Captive Romance"
               ],
               "Examples": [
@@ -1417,8 +1362,12 @@
                 "Normal World Secret Magic"
               ],
               "Secondary_Themes": [
-                "Forbidden Love", "Supernatural",   "Mystery",
-                "Steamy",         "Modern Setting", "Action Romance",
+                "Forbidden Love",
+                "Supernatural",
+                "Mystery",
+                "Steamy",
+                "Modern Setting",
+                "Action Romance",
                 "Secret World"
               ],
               "Examples": [
@@ -1450,8 +1399,12 @@
                 "Local Business Romance"
               ],
               "Secondary_Themes": [
-                "Second Chance",     "Friends to Lovers", "Heartwarming",
-                "Emotional",         "Wholesome",         "Feel-Good",
+                "Second Chance",
+                "Friends to Lovers",
+                "Heartwarming",
+                "Emotional",
+                "Wholesome",
+                "Feel-Good",
                 "Community"
               ],
               "Examples": [
@@ -1485,8 +1438,12 @@
             "Young Adult Emotions"
           ],
           "Secondary_Themes": [
-            "First Love",        "Coming of Age",     "Emotional",
-            "Sweet Romance",     "High School",       "Identity Struggle",
+            "First Love",
+            "Coming of Age",
+            "Emotional",
+            "Sweet Romance",
+            "High School",
+            "Identity Struggle",
             "Heartwarming"
           ],
           "Examples": [
@@ -1518,8 +1475,12 @@
                 "Popular vs Nerd"
               ],
               "Secondary_Themes": [
-                "Enemies to Lovers", "Friends to Lovers", "Popular Guy",
-                "Nerdy Girl",        "Coming of Age",     "Sweet Romance",
+                "Enemies to Lovers",
+                "Friends to Lovers",
+                "Popular Guy",
+                "Nerdy Girl",
+                "Coming of Age",
+                "Sweet Romance",
                 "First Love"
               ],
               "Examples": [
@@ -1551,8 +1512,12 @@
                 "First Queer Relationship"
               ],
               "Secondary_Themes": [
-                "Coming Out",        "LGBTQ+",            "Emotional",
-                "Heartwarming",      "Identity Struggle", "Supportive",
+                "Coming Out",
+                "LGBTQ+",
+                "Emotional",
+                "Heartwarming",
+                "Identity Struggle",
+                "Supportive",
                 "First Love"
               ],
               "Examples": [
@@ -1586,8 +1551,12 @@
             "Propriety vs Passion"
           ],
           "Secondary_Themes": [
-            "Slow Burn",        "Forbidden Love",   "Class Difference",
-            "Historical",       "Emotional",        "Elegant",
+            "Slow Burn",
+            "Forbidden Love",
+            "Class Difference",
+            "Historical",
+            "Emotional",
+            "Elegant",
             "Scandalous"
           ],
           "Examples": [
@@ -1620,8 +1589,12 @@
                 "Witty Banter"
               ],
               "Secondary_Themes": [
-                "Enemies to Lovers", "Slow Burn",         "Witty Banter",
-                "Class Difference",  "Scandalous",        "Ballroom Romance",
+                "Enemies to Lovers",
+                "Slow Burn",
+                "Witty Banter",
+                "Class Difference",
+                "Scandalous",
+                "Ballroom Romance",
                 "Arranged Marriage"
               ],
               "Examples": [
@@ -1654,13 +1627,20 @@
                 "Wild West Adventure"
               ],
               "Secondary_Themes": [
-                "Mail-Order Bride", "Cowboy Hero",      "Frontier",
-                "Protective",       "Adventure",        "Rugged",
+                "Mail-Order Bride",
+                "Cowboy Hero",
+                "Frontier",
+                "Protective",
+                "Adventure",
+                "Rugged",
                 "Survival"
               ],
               "Examples": [
-                "Redeeming Love",   "These Old Shades", "Lonesome Dove",
-                "Ride the Wind",    "Morning Glory"
+                "Redeeming Love",
+                "These Old Shades",
+                "Lonesome Dove",
+                "Ride the Wind",
+                "Morning Glory"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Finding love on harsh frontier",
@@ -1762,8 +1742,12 @@
         "Life Challenges"
       ],
       "Secondary_Themes": [
-        "Emotional",        "Realistic",        "Character-Driven",
-        "Heartfelt",        "Slice of Life",    "Tearjerker",
+        "Emotional",
+        "Realistic",
+        "Character-Driven",
+        "Heartfelt",
+        "Slice of Life",
+        "Tearjerker",
         "Inspirational"
       ],
       "Examples": [
@@ -1800,8 +1784,13 @@
             "Chosen Family"
           ],
           "Secondary_Themes": [
-            "Emotional",    "Family Bonds", "Generational", "Heartfelt",
-            "Tearjerker",   "Realistic",    "Healing"
+            "Emotional",
+            "Family Bonds",
+            "Generational",
+            "Heartfelt",
+            "Tearjerker",
+            "Realistic",
+            "Healing"
           ],
           "Examples": [
             "Saving Nora",
@@ -1836,13 +1825,20 @@
                 "Redemption Possibility"
               ],
               "Secondary_Themes": [
-                "Abuse Survival",  "Healing Journey", "Found Family",
-                "Emotional",       "Empowering",      "Difficult",
+                "Abuse Survival",
+                "Healing Journey",
+                "Found Family",
+                "Emotional",
+                "Empowering",
+                "Difficult",
                 "Recovery"
               ],
               "Examples": [
-                "The Glass Castle", "Educated",         "Sharp Objects",
-                "Big Little Lies",  "The Great Alone"
+                "The Glass Castle",
+                "Educated",
+                "Sharp Objects",
+                "Big Little Lies",
+                "The Great Alone"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Escaping toxicity and building new life",
@@ -1866,8 +1862,13 @@
                 "Multi-Decade Story"
               ],
               "Secondary_Themes": [
-                "Epic Scope",   "Historical",   "Family Saga",  "Generational",
-                "Legacy",       "Emotional",    "Sweeping"
+                "Epic Scope",
+                "Historical",
+                "Family Saga",
+                "Generational",
+                "Legacy",
+                "Emotional",
+                "Sweeping"
               ],
               "Examples": [
                 "One Hundred Years of Solitude",
@@ -1898,8 +1899,13 @@
                 "Chosen Family Love"
               ],
               "Secondary_Themes": [
-                "Heartwarming", "Family Love",  "Emotional",    "Supportive",
-                "Wholesome",    "Feel-Good",    "Uplifting"
+                "Heartwarming",
+                "Family Love",
+                "Emotional",
+                "Supportive",
+                "Wholesome",
+                "Feel-Good",
+                "Uplifting"
               ],
               "Examples": [
                 "Between The Sheets With Mr. Billionaire",
@@ -1931,8 +1937,12 @@
                 "Belonging Quest"
               ],
               "Secondary_Themes": [
-                "Emotional",         "Identity Struggle", "Reunion",
-                "Discovery",         "Heartfelt",         "Tearjerker",
+                "Emotional",
+                "Identity Struggle",
+                "Reunion",
+                "Discovery",
+                "Heartfelt",
+                "Tearjerker",
                 "Hope"
               ],
               "Examples": [
@@ -1967,8 +1977,12 @@
             "Personal Growth"
           ],
           "Secondary_Themes": [
-            "Coming of Age",     "Identity Struggle", "First Love",
-            "Self-Discovery",    "Emotional",         "Realistic",
+            "Coming of Age",
+            "Identity Struggle",
+            "First Love",
+            "Self-Discovery",
+            "Emotional",
+            "Realistic",
             "Inspirational"
           ],
           "Examples": [
@@ -2002,8 +2016,12 @@
                 "College Friendships"
               ],
               "Secondary_Themes": [
-                "College Life",   "Coming of Age",  "Friendship",
-                "Self-Discovery", "Party Culture",  "Academic",
+                "College Life",
+                "Coming of Age",
+                "Friendship",
+                "Self-Discovery",
+                "Party Culture",
+                "Academic",
                 "Young Adult"
               ],
               "Examples": [
@@ -2036,8 +2054,12 @@
                 "Sports as Life Lesson"
               ],
               "Secondary_Themes": [
-                "Sports Drama",   "Underdog Story", "Team Spirit",
-                "Competition",    "Inspirational",  "Emotional",
+                "Sports Drama",
+                "Underdog Story",
+                "Team Spirit",
+                "Competition",
+                "Inspirational",
+                "Emotional",
                 "Victory"
               ],
               "Examples": [
@@ -2071,8 +2093,12 @@
             "Industry Challenges"
           ],
           "Secondary_Themes": [
-            "Career-Focused",     "Political Intrigue", "Ambition",
-            "Professional",       "Realistic",          "Competitive",
+            "Career-Focused",
+            "Political Intrigue",
+            "Ambition",
+            "Professional",
+            "Realistic",
+            "Competitive",
             "Strategic"
           ],
           "Examples": [
@@ -2141,8 +2167,12 @@
                 "Celebrity Pressure"
               ],
               "Secondary_Themes": [
-                "Hollywood",         "Fame",              "Scandal",
-                "Glamorous",         "Behind the Scenes", "Ambitious",
+                "Hollywood",
+                "Fame",
+                "Scandal",
+                "Glamorous",
+                "Behind the Scenes",
+                "Ambitious",
                 "Drama"
               ],
               "Examples": [
@@ -2174,13 +2204,20 @@
                 "Medical Mystery"
               ],
               "Secondary_Themes": [
-                "Medical",         "Life and Death",  "Ethical Dilemma",
-                "Emotional",       "Professional",    "Intense",
+                "Medical",
+                "Life and Death",
+                "Ethical Dilemma",
+                "Emotional",
+                "Professional",
+                "Intense",
                 "Realistic"
               ],
               "Examples": [
-                "Grey's Anatomy",  "ER",              "House",
-                "The Good Doctor", "Scrubs"
+                "Grey's Anatomy",
+                "ER",
+                "House",
+                "The Good Doctor",
+                "Scrubs"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Making life-death medical decisions",
@@ -2204,13 +2241,20 @@
                 "Post-Career Identity"
               ],
               "Secondary_Themes": [
-                "Sports Drama",  "Professional",  "Competition",
-                "Team",          "Inspirational", "Career",
+                "Sports Drama",
+                "Professional",
+                "Competition",
+                "Team",
+                "Inspirational",
+                "Career",
                 "Athletic"
               ],
               "Examples": [
-                "Moneyball",        "Any Given Sunday", "Jerry Maguire",
-                "The Blind Side",   "Draft Day"
+                "Moneyball",
+                "Any Given Sunday",
+                "Jerry Maguire",
+                "The Blind Side",
+                "Draft Day"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Maintaining professional sports career",
@@ -2234,8 +2278,12 @@
                 "System Corruption"
               ],
               "Secondary_Themes": [
-                "Legal Thriller",  "Courtroom Drama", "Investigation",
-                "Justice",         "Ethical Dilemma", "Professional",
+                "Legal Thriller",
+                "Courtroom Drama",
+                "Investigation",
+                "Justice",
+                "Ethical Dilemma",
+                "Professional",
                 "Tense"
               ],
               "Examples": [
@@ -2267,13 +2315,20 @@
                 "Sacrifices for Service"
               ],
               "Secondary_Themes": [
-                "Action Drama",      "Police Procedural", "Spy Thriller",
-                "Military",          "Brotherhood",       "Duty",
+                "Action Drama",
+                "Police Procedural",
+                "Spy Thriller",
+                "Military",
+                "Brotherhood",
+                "Duty",
                 "Gritty"
               ],
               "Examples": [
-                "The Wire",        "True Detective",  "Homeland",
-                "The Shield",      "Generation Kill"
+                "The Wire",
+                "True Detective",
+                "Homeland",
+                "The Shield",
+                "Generation Kill"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Fulfilling dangerous duty while maintaining ethics",
@@ -2297,8 +2352,12 @@
                 "Violence as Business"
               ],
               "Secondary_Themes": [
-                "Crime Drama",    "Family Loyalty", "Betrayal",
-                "Violence",       "Power Struggle", "Gritty",
+                "Crime Drama",
+                "Family Loyalty",
+                "Betrayal",
+                "Violence",
+                "Power Struggle",
+                "Gritty",
                 "Dark"
               ],
               "Examples": [
@@ -2333,13 +2392,20 @@
             "Historical Events Impact"
           ],
           "Secondary_Themes": [
-            "Historical",     "Period Setting", "Social Drama",
-            "Political",      "Cultural",       "Epic Scope",
+            "Historical",
+            "Period Setting",
+            "Social Drama",
+            "Political",
+            "Cultural",
+            "Epic Scope",
             "Authentic"
           ],
           "Examples": [
-            "Downton Abbey",  "The Crown",      "Mad Men",
-            "Vikings",        "Peaky Blinders"
+            "Downton Abbey",
+            "The Crown",
+            "Mad Men",
+            "Vikings",
+            "Peaky Blinders"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Navigating historical era challenges",
@@ -2372,6 +2438,7 @@
                 "Historical"
               ],
               "Examples": [
+		"A Queen Betrayed",
                 "Game of Thrones",
                 "The Last Kingdom",
                 "Vikings",
@@ -2400,8 +2467,12 @@
                 "Building Community"
               ],
               "Secondary_Themes": [
-                "Western",         "Outlaws",         "Lawmen",
-                "Survival",        "Moral Ambiguity", "Violence",
+                "Western",
+                "Outlaws",
+                "Lawmen",
+                "Survival",
+                "Moral Ambiguity",
+                "Violence",
                 "Historical"
               ],
               "Examples": [
@@ -2433,8 +2504,12 @@
                 "Ancient Honor Codes"
               ],
               "Secondary_Themes": [
-                "Ancient History",  "Political Drama",  "War",
-                "Epic Battles",     "Social Hierarchy", "Cultural Clash",
+                "Ancient History",
+                "Political Drama",
+                "War",
+                "Epic Battles",
+                "Social Hierarchy",
+                "Cultural Clash",
                 "Legacy"
               ],
               "Examples": [
@@ -2507,8 +2582,13 @@
         "Human Evolution"
       ],
       "Secondary_Themes": [
-        "Futuristic",  "Space Opera", "Dystopian",   "AI",
-        "Technology",  "Speculative", "Scientific"
+        "Futuristic",
+        "Space Opera",
+        "Dystopian",
+        "AI",
+        "Technology",
+        "Speculative",
+        "Scientific"
       ],
       "Examples": [
         "The Mech Touch",
@@ -2544,13 +2624,21 @@
             "Epic Scale Battles"
           ],
           "Secondary_Themes": [
-            "Space Opera",       "Military",          "Epic Battles",
-            "Galactic Politics", "Action",            "Adventure",
+            "Space Opera",
+            "Military",
+            "Epic Battles",
+            "Galactic Politics",
+            "Action",
+            "Adventure",
             "War"
           ],
           "Examples": [
-            "The Mech Touch",    "The Expanse",       "Dune",
-            "Foundation",        "Ender's Game",      "Starship Troopers"
+            "The Mech Touch",
+            "The Expanse",
+            "Dune",
+            "Foundation",
+            "Ender's Game",
+            "Starship Troopers"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Space battles and galactic intrigue",
@@ -2611,13 +2699,20 @@
                 "Military Hierarchy"
               ],
               "Secondary_Themes": [
-                "Military",      "Space Battles", "Tactical",
-                "Action",        "Soldier POV",   "War Drama",
+                "Military",
+                "Space Battles",
+                "Tactical",
+                "Action",
+                "Soldier POV",
+                "War Drama",
                 "Combat"
               ],
               "Examples": [
-                "The Mech Touch",    "Ender's Game",      "Starship Troopers",
-                "Old Man's War",     "The Forever War"
+                "The Mech Touch",
+                "Ender's Game",
+                "Starship Troopers",
+                "Old Man's War",
+                "The Forever War"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Military missions and space battles",
@@ -2643,8 +2738,12 @@
             "Adaptation Necessity"
           ],
           "Secondary_Themes": [
-            "Post-Apocalyptic", "Survival",         "Dystopian",
-            "Bleak",            "Gritty",           "Resource Wars",
+            "Post-Apocalyptic",
+            "Survival",
+            "Dystopian",
+            "Bleak",
+            "Gritty",
+            "Resource Wars",
             "Desperate"
           ],
           "Examples": [
@@ -2678,8 +2777,12 @@
                 "Monster Apocalypse"
               ],
               "Secondary_Themes": [
-                "LitRPG",         "Apocalypse",     "Leveling",
-                "Dungeons",       "Survival",       "Progression",
+                "LitRPG",
+                "Apocalypse",
+                "Leveling",
+                "Dungeons",
+                "Survival",
+                "Progression",
                 "Game Mechanics"
               ],
               "Examples": [
@@ -2712,13 +2815,20 @@
                 "Bite Transformation"
               ],
               "Secondary_Themes": [
-                "Zombies",          "Survival Horror",  "Group Dynamics",
-                "Post-Apocalyptic", "Infection",        "Desperate",
+                "Zombies",
+                "Survival Horror",
+                "Group Dynamics",
+                "Post-Apocalyptic",
+                "Infection",
+                "Desperate",
                 "Gritty"
               ],
               "Examples": [
-                "The Walking Dead", "World War Z",      "28 Days Later",
-                "Train to Busan",   "Dawn of the Dead"
+                "The Walking Dead",
+                "World War Z",
+                "28 Days Later",
+                "Train to Busan",
+                "Dawn of the Dead"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Surviving hordes and human dangers",
@@ -2742,8 +2852,12 @@
                 "Human Culpability"
               ],
               "Secondary_Themes": [
-                "Nuclear",       "Wasteland",     "Environmental",
-                "Bleak",         "Survival",      "Post-Nuclear",
+                "Nuclear",
+                "Wasteland",
+                "Environmental",
+                "Bleak",
+                "Survival",
+                "Post-Nuclear",
                 "Desperate"
               ],
               "Examples": [
@@ -2777,13 +2891,21 @@
             "Transhumanism"
           ],
           "Secondary_Themes": [
-            "Cyberpunk",          "Noir",               "Hacking",
-            "Dystopian",          "Corporate",          "Gritty",
+            "Cyberpunk",
+            "Noir",
+            "Hacking",
+            "Dystopian",
+            "Corporate",
+            "Gritty",
             "High Tech Low Life"
           ],
           "Examples": [
-            "The Mech Touch",     "Neuromancer",        "Blade Runner",
-            "Ghost in the Shell", "Altered Carbon",     "Cyberpunk 2077"
+            "The Mech Touch",
+            "Neuromancer",
+            "Blade Runner",
+            "Ghost in the Shell",
+            "Altered Carbon",
+            "Cyberpunk 2077"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Fighting corporate control or digital threats",
@@ -2807,13 +2929,21 @@
                 "Matrix Existence"
               ],
               "Secondary_Themes": [
-                "VR",               "Simulation",       "Mind Upload",
-                "Digital World",    "Reality Question", "Philosophical",
+                "VR",
+                "Simulation",
+                "Mind Upload",
+                "Digital World",
+                "Reality Question",
+                "Philosophical",
                 "Immersive"
               ],
               "Examples": [
-                "Extra Life",       "The Matrix",       "Ready Player One",
-                "Sword Art Online", "Existenz",         "eXistenZ"
+                "Extra Life",
+                "The Matrix",
+                "Ready Player One",
+                "Sword Art Online",
+                "Existenz",
+                "eXistenZ"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating or escaping virtual reality",
@@ -2837,8 +2967,12 @@
                 "Machine Learning"
               ],
               "Secondary_Themes": [
-                "AI",                "Sentient",          "Philosophical",
-                "Consciousness",     "Rights",            "Digital",
+                "AI",
+                "Sentient",
+                "Philosophical",
+                "Consciousness",
+                "Rights",
+                "Digital",
                 "Thought-Provoking"
               ],
               "Examples": [
@@ -2870,8 +3004,13 @@
                 "Synchronization"
               ],
               "Secondary_Themes": [
-                "Mecha",        "Giant Robots", "Pilot",        "Action",
-                "War",          "Bonding",      "Combat"
+                "Mecha",
+                "Giant Robots",
+                "Pilot",
+                "Action",
+                "War",
+                "Bonding",
+                "Combat"
               ],
               "Examples": [
                 "The Mech Touch",
@@ -2905,8 +3044,12 @@
             "Parallel Worlds"
           ],
           "Secondary_Themes": [
-            "Time Travel",       "Paradox",           "Alternate Reality",
-            "Time Loop",         "Butterfly Effect",  "Sci-Fi",
+            "Time Travel",
+            "Paradox",
+            "Alternate Reality",
+            "Time Loop",
+            "Butterfly Effect",
+            "Sci-Fi",
             "Mind-Bending"
           ],
           "Examples": [
@@ -2940,8 +3083,12 @@
                 "Future Memory"
               ],
               "Secondary_Themes": [
-                "Regression",    "Second Chance", "Foreknowledge",
-                "Fix Past",      "Do-Over",       "Strategic",
+                "Regression",
+                "Second Chance",
+                "Foreknowledge",
+                "Fix Past",
+                "Do-Over",
+                "Strategic",
                 "Revenge"
               ],
               "Examples": [
@@ -2974,13 +3121,20 @@
                 "Puzzle Solving"
               ],
               "Secondary_Themes": [
-                "Time Loop",     "Groundhog Day", "Repetition",
-                "Puzzle",        "Mastery",       "Existential",
+                "Time Loop",
+                "Groundhog Day",
+                "Repetition",
+                "Puzzle",
+                "Mastery",
+                "Existential",
                 "Creative"
               ],
               "Examples": [
-                "Groundhog Day",    "Edge of Tomorrow", "Happy Death Day",
-                "Palm Springs",     "Russian Doll"
+                "Groundhog Day",
+                "Edge of Tomorrow",
+                "Happy Death Day",
+                "Palm Springs",
+                "Russian Doll"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Understanding and breaking the loop",
@@ -3004,8 +3158,12 @@
                 "Reality Branching"
               ],
               "Secondary_Themes": [
-                "Multiverse",        "Alternate Reality", "Dimension Travel",
-                "Parallel World",    "What If",           "Sci-Fi",
+                "Multiverse",
+                "Alternate Reality",
+                "Dimension Travel",
+                "Parallel World",
+                "What If",
+                "Sci-Fi",
                 "Mind-Bending"
               ],
               "Examples": [
@@ -3039,8 +3197,13 @@
             "Individual vs State"
           ],
           "Secondary_Themes": [
-            "Dystopian",    "Oppressive",   "Resistance",   "Surveillance",
-            "Totalitarian", "Dark Future",  "Control"
+            "Dystopian",
+            "Oppressive",
+            "Resistance",
+            "Surveillance",
+            "Totalitarian",
+            "Dark Future",
+            "Control"
           ],
           "Examples": [
             "1984",
@@ -3071,8 +3234,12 @@
                 "Totalitarian Rule"
               ],
               "Secondary_Themes": [
-                "Totalitarian",  "Surveillance",  "Resistance",
-                "Oppression",    "Dystopian",     "Mind Control",
+                "Totalitarian",
+                "Surveillance",
+                "Resistance",
+                "Oppression",
+                "Dystopian",
+                "Mind Control",
                 "Freedom Fight"
               ],
               "Examples": [
@@ -3113,8 +3280,11 @@
                 "Dehumanizing"
               ],
               "Examples": [
-                "Brave New World", "Gattaca",         "Never Let Me Go",
-                "The Island",      "Divergent"
+                "Brave New World",
+                "Gattaca",
+                "Never Let Me Go",
+                "The Island",
+                "Divergent"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Breaking conditioning or discovering true nature",
@@ -3179,8 +3349,13 @@
         "Revelation Moment"
       ],
       "Secondary_Themes": [
-        "Mystery",       "Suspense",      "Thriller",      "Investigation",
-        "Plot Twist",    "Tense",         "Detective"
+        "Mystery",
+        "Suspense",
+        "Thriller",
+        "Investigation",
+        "Plot Twist",
+        "Tense",
+        "Detective"
       ],
       "Examples": [
         "Gone Girl",
@@ -3211,8 +3386,13 @@
             "Detective Genius"
           ],
           "Secondary_Themes": [
-            "Detective",     "Whodunit",      "Clues",         "Investigation",
-            "Mystery",       "Clever",        "Puzzle"
+            "Detective",
+            "Whodunit",
+            "Clues",
+            "Investigation",
+            "Mystery",
+            "Clever",
+            "Puzzle"
           ],
           "Examples": [
             "Sherlock Holmes",
@@ -3243,8 +3423,12 @@
                 "Hobby Sleuth"
               ],
               "Secondary_Themes": [
-                "Cozy",           "Amateur Sleuth", "Small Town",
-                "Gentle",         "Charming",       "Lighthearted",
+                "Cozy",
+                "Amateur Sleuth",
+                "Small Town",
+                "Gentle",
+                "Charming",
+                "Lighthearted",
                 "Community"
               ],
               "Examples": [
@@ -3276,8 +3460,12 @@
                 "Mental Breakdown"
               ],
               "Secondary_Themes": [
-                "Psychological", "Unreliable",    "Mind Games",
-                "Twisty",        "Paranoia",      "Dark",
+                "Psychological",
+                "Unreliable",
+                "Mind Games",
+                "Twisty",
+                "Paranoia",
+                "Dark",
                 "Mental"
               ],
               "Examples": [
@@ -3309,13 +3497,20 @@
                 "Crime Scene Work"
               ],
               "Secondary_Themes": [
-                "Police Procedural", "Detective",         "Forensics",
-                "Investigation",     "Noir",              "Crime Drama",
+                "Police Procedural",
+                "Detective",
+                "Forensics",
+                "Investigation",
+                "Noir",
+                "Crime Drama",
                 "Professional"
               ],
               "Examples": [
-                "True Detective", "The Wire",       "CSI",
-                "Mindhunter",     "Luther"
+                "True Detective",
+                "The Wire",
+                "CSI",
+                "Mindhunter",
+                "Luther"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Solving crimes through professional investigation",
@@ -3341,8 +3536,13 @@
             "Adrenaline Rush"
           ],
           "Secondary_Themes": [
-            "Action",     "Thriller",   "Chase",      "Combat",
-            "Explosive",  "Fast-Paced", "Adrenaline"
+            "Action",
+            "Thriller",
+            "Chase",
+            "Combat",
+            "Explosive",
+            "Fast-Paced",
+            "Adrenaline"
           ],
           "Examples": [
             "Mission: Impossible series",
@@ -3373,8 +3573,12 @@
                 "Whistleblower"
               ],
               "Secondary_Themes": [
-                "Conspiracy",      "Paranoia",        "Cover-Up",
-                "Whistleblower",   "Political",       "Dangerous Truth",
+                "Conspiracy",
+                "Paranoia",
+                "Cover-Up",
+                "Whistleblower",
+                "Political",
+                "Dangerous Truth",
                 "Thriller"
               ],
               "Examples": [
@@ -3406,8 +3610,12 @@
                 "Secret Agent"
               ],
               "Secondary_Themes": [
-                "Spy",           "Assassin",      "Espionage",
-                "Covert Ops",    "Betrayal",      "International",
+                "Spy",
+                "Assassin",
+                "Espionage",
+                "Covert Ops",
+                "Betrayal",
+                "International",
                 "Action"
               ],
               "Examples": [
@@ -3439,12 +3647,19 @@
                 "Will to Live"
               ],
               "Secondary_Themes": [
-                "Survival",        "Wilderness",      "Desperate",
-                "Isolation",       "Endurance",       "Nature vs Human",
+                "Survival",
+                "Wilderness",
+                "Desperate",
+                "Isolation",
+                "Endurance",
+                "Nature vs Human",
                 "Primal"
               ],
               "Examples": [
-                "127 Hours",    "The Revenant", "Cast Away",    "The Grey",
+                "127 Hours",
+                "The Revenant",
+                "Cast Away",
+                "The Grey",
                 "Gravity"
               ],
               "Comparison": {
@@ -3469,8 +3684,13 @@
                 "Clever Execution"
               ],
               "Secondary_Themes": [
-                "Heist",      "Con Artist", "Crew",       "Planning",
-                "Twist",      "Clever",     "Stylish"
+                "Heist",
+                "Con Artist",
+                "Crew",
+                "Planning",
+                "Twist",
+                "Clever",
+                "Stylish"
               ],
               "Examples": [
                 "Ocean's Eleven",
@@ -3501,8 +3721,12 @@
                 "Outside the Law"
               ],
               "Secondary_Themes": [
-                "Vigilante",       "Revenge",         "Justice",
-                "Anti-Hero",       "Dark Justice",    "Moral Ambiguity",
+                "Vigilante",
+                "Revenge",
+                "Justice",
+                "Anti-Hero",
+                "Dark Justice",
+                "Moral Ambiguity",
                 "Action"
               ],
               "Examples": [
@@ -3529,16 +3753,28 @@
     "Horror": {
       "Definition": "Stories designed to frighten, disturb, unsettle, or invoke dread through supernatural threats, psychological terror, graphic violence, existential horror, or monstrous beings. Primary goal is evoking fear, disgust, or unease through various horror techniques. Distinguished from thriller by emphasis on terror and horror over suspense, and by including supernatural or horrific elements beyond realistic danger.",
       "Key_Themes": [
-        "Fear and Terror",      "Supernatural Threats", "Survival Horror",
-        "Dread and Unease",     "Loss of Control",      "Monstrous Beings",
+        "Fear and Terror",
+        "Supernatural Threats",
+        "Survival Horror",
+        "Dread and Unease",
+        "Loss of Control",
+        "Monstrous Beings",
         "Psychological Terror"
       ],
       "Secondary_Themes": [
-        "Horror",       "Scary",        "Terrifying",   "Creepy",
-        "Disturbing",   "Supernatural", "Dark"
+        "Horror",
+        "Scary",
+        "Terrifying",
+        "Creepy",
+        "Disturbing",
+        "Supernatural",
+        "Dark"
       ],
       "Examples": [
-        "The Exorcist",  "The Shining",   "A Quiet Place", "Hereditary",
+        "The Exorcist",
+        "The Shining",
+        "A Quiet Place",
+        "Hereditary",
         "Get Out"
       ],
       "Comparison": {
@@ -3554,16 +3790,28 @@
         "Supernatural Horror": {
           "Definition": "Horror featuring genuinely supernatural or paranormal threats including ghosts, demons, curses, possessions, or malevolent entities from beyond natural reality. Supernatural forces operate by paranormal world rules and cannot be explained by science. Distinguished from psychological horror by genuine supernatural elements and from creature horror by paranormal rather than physical threats.",
           "Key_Themes": [
-            "Ghost Hauntings",    "Demonic Possession", "Ancient Curses",
-            "Paranormal Forces",  "Spirit World",       "Exorcism Battle",
+            "Ghost Hauntings",
+            "Demonic Possession",
+            "Ancient Curses",
+            "Paranormal Forces",
+            "Spirit World",
+            "Exorcism Battle",
             "Supernatural Evil"
           ],
           "Secondary_Themes": [
-            "Ghost",      "Demon",      "Possession", "Haunting",
-            "Curse",      "Paranormal", "Spiritual"
+            "Ghost",
+            "Demon",
+            "Possession",
+            "Haunting",
+            "Curse",
+            "Paranormal",
+            "Spiritual"
           ],
           "Examples": [
-            "The Exorcist",  "The Conjuring", "Insidious",     "The Ring",
+            "The Exorcist",
+            "The Conjuring",
+            "Insidious",
+            "The Ring",
             "Poltergeist"
           ],
           "Comparison": {
@@ -3588,8 +3836,12 @@
                 "House as Entity"
               ],
               "Secondary_Themes": [
-                "Haunted House",  "Trapped",        "Ghost",
-                "Creepy",         "Isolated",       "Supernatural",
+                "Haunted House",
+                "Trapped",
+                "Ghost",
+                "Creepy",
+                "Isolated",
+                "Supernatural",
                 "Claustrophobic"
               ],
               "Examples": [
@@ -3621,8 +3873,12 @@
                 "Faith vs Evil"
               ],
               "Secondary_Themes": [
-                "Demon",            "Possession",       "Exorcism",
-                "Satanic",          "Religious Horror", "Evil",
+                "Demon",
+                "Possession",
+                "Exorcism",
+                "Satanic",
+                "Religious Horror",
+                "Evil",
                 "Dark"
               ],
               "Examples": [
@@ -3654,12 +3910,20 @@
                 "Price of Power"
               ],
               "Secondary_Themes": [
-                "Witchcraft", "Occult",     "Dark Magic", "Ritual",
-                "Curse",      "Forbidden",  "Cult"
+                "Witchcraft",
+                "Occult",
+                "Dark Magic",
+                "Ritual",
+                "Curse",
+                "Forbidden",
+                "Cult"
               ],
               "Examples": [
-                "Rosemary's Baby", "The Witch",       "Suspiria",
-                "The Craft",       "Midsommar"
+                "Rosemary's Baby",
+                "The Witch",
+                "Suspiria",
+                "The Craft",
+                "Midsommar"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Stopping ritual or escaping magic consequences",
@@ -3685,33 +3949,49 @@
             "Survival Against Monsters"
           ],
           "Secondary_Themes": [
-            "Monster",     "Creature",    "Predator",    "Body Horror",
-            "Survival",    "Scary",       "Inhuman"
+            "Monster",
+            "Creature",
+            "Predator",
+            "Body Horror",
+            "Survival",
+            "Scary",
+            "Inhuman"
           ],
           "Examples": [
-            "Alien",         "The Thing",     "A Quiet Place", "Jaws",
+            "Alien",
+            "The Thing",
+            "A Quiet Place",
+            "Jaws",
             "Predator"
           ],
           "Comparison": {
-            "Primary_Plot_Driver"    : "Surviving monster attacks",
-            "Setting_And_World"      : "Anywhere monsters hunt",
-            "Central_Conflict_Type"  : "Physical survival against creatures",
-            "Tone_And_Atmosphere"    : "Primal fear and body horror",
-            "Character_Arc_Focus"    : "Survival instinct and adaptation",
-            "Power_Ability_System"   : "Monsters have physical superiority",
+            "Primary_Plot_Driver": "Surviving monster attacks",
+            "Setting_And_World": "Anywhere monsters hunt",
+            "Central_Conflict_Type": "Physical survival against creatures",
+            "Tone_And_Atmosphere": "Primal fear and body horror",
+            "Character_Arc_Focus": "Survival instinct and adaptation",
+            "Power_Ability_System": "Monsters have physical superiority",
             "Stakes_And_Consequences": "Death or transformation into monster"
           },
           "Sub-Sub-Genre": {
             "Zombie Horror": {
               "Definition": "Horror featuring undead risen corpses or infected humans driven by hunger for flesh, creating overwhelming horde threats and infection/bite risk. Zombies are relentless, mindless, and overwhelming through numbers. Central horror from infection inevitability, watching loved ones turn, and hopelessness against endless undead. Distinguished from zombie apocalypse fiction by horror emphasis over adventure.",
               "Key_Themes": [
-                "Undead Hordes",     "Infection Spread",  "Loved Ones Turn",
-                "Hopeless Survival", "Zombie Apocalypse", "Bite Danger",
+                "Undead Hordes",
+                "Infection Spread",
+                "Loved Ones Turn",
+                "Hopeless Survival",
+                "Zombie Apocalypse",
+                "Bite Danger",
                 "Relentless Dead"
               ],
               "Secondary_Themes": [
-                "Zombie",          "Undead",          "Infection",
-                "Horde",           "Survival Horror", "Gore",
+                "Zombie",
+                "Undead",
+                "Infection",
+                "Horde",
+                "Survival Horror",
+                "Gore",
                 "Apocalyptic"
               ],
               "Examples": [
@@ -3743,8 +4023,12 @@
                 "Supernatural Killers"
               ],
               "Secondary_Themes": [
-                "Vampire Horror", "Werewolf",       "Predator",
-                "Gothic",         "Feral",          "Monstrous",
+                "Vampire Horror",
+                "Werewolf",
+                "Predator",
+                "Gothic",
+                "Feral",
+                "Monstrous",
                 "Bloodthirsty"
               ],
               "Examples": [
@@ -3776,21 +4060,28 @@
                 "Beyond Understanding"
               ],
               "Secondary_Themes": [
-                "Alien",            "Unknown",          "Body Horror",
-                "Parasitic",        "Sci-Fi Horror",    "Incomprehensible",
+                "Alien",
+                "Unknown",
+                "Body Horror",
+                "Parasitic",
+                "Sci-Fi Horror",
+                "Incomprehensible",
                 "Terrifying"
               ],
               "Examples": [
-                "Alien",        "The Thing",    "Annihilation", "Life",
+                "Alien",
+                "The Thing",
+                "Annihilation",
+                "Life",
                 "Cloverfield"
               ],
               "Comparison": {
-                "Primary_Plot_Driver"    : "Surviving alien creature threat",
-                "Setting_And_World"      : "Space, deep sea, or underground",
-                "Central_Conflict_Type"  : "Alien attacks and infection",
-                "Tone_And_Atmosphere"    : "Cosmic dread with body horror",
-                "Character_Arc_Focus"    : "Surviving incomprehensible threat",
-                "Power_Ability_System"   : "Aliens beyond human understanding",
+                "Primary_Plot_Driver": "Surviving alien creature threat",
+                "Setting_And_World": "Space, deep sea, or underground",
+                "Central_Conflict_Type": "Alien attacks and infection",
+                "Tone_And_Atmosphere": "Cosmic dread with body horror",
+                "Character_Arc_Focus": "Surviving incomprehensible threat",
+                "Power_Ability_System": "Aliens beyond human understanding",
                 "Stakes_And_Consequences": "Death or body takeover"
               }
             }
@@ -3808,8 +4099,13 @@
             "Body Count"
           ],
           "Secondary_Themes": [
-            "Slasher",       "Gore",          "Serial Killer", "Final Girl",
-            "Brutal",        "Graphic",       "Violent"
+            "Slasher",
+            "Gore",
+            "Serial Killer",
+            "Final Girl",
+            "Brutal",
+            "Graphic",
+            "Violent"
           ],
           "Examples": [
             "Halloween",
@@ -3840,8 +4136,12 @@
                 "Human Evil"
               ],
               "Secondary_Themes": [
-                "Serial Killer",   "Psychological",   "Disturbing",
-                "Cat and Mouse",   "Human Monster",   "Dark",
+                "Serial Killer",
+                "Psychological",
+                "Disturbing",
+                "Cat and Mouse",
+                "Human Monster",
+                "Dark",
                 "Grounded Horror"
               ],
               "Examples": [
@@ -3873,8 +4173,13 @@
                 "Graphic Content"
               ],
               "Secondary_Themes": [
-                "Torture",    "Extreme",    "Sadistic",   "Gore",
-                "Captivity",  "Suffering",  "Disturbing"
+                "Torture",
+                "Extreme",
+                "Sadistic",
+                "Gore",
+                "Captivity",
+                "Suffering",
+                "Disturbing"
               ],
               "Examples": [
                 "Saw series",
@@ -3907,8 +4212,12 @@
             "Reality Horror"
           ],
           "Secondary_Themes": [
-            "Cosmic Horror",    "Lovecraftian",     "Existential",
-            "Incomprehensible", "Madness",          "Philosophical",
+            "Cosmic Horror",
+            "Lovecraftian",
+            "Existential",
+            "Incomprehensible",
+            "Madness",
+            "Philosophical",
             "Nihilistic"
           ],
           "Examples": [
@@ -3940,8 +4249,12 @@
                 "Cosmic Insignificance"
               ],
               "Secondary_Themes": [
-                "Lovecraftian",     "Eldritch",         "Sanity Loss",
-                "Old Ones",         "Cult",             "Cosmic",
+                "Lovecraftian",
+                "Eldritch",
+                "Sanity Loss",
+                "Old Ones",
+                "Cult",
+                "Cosmic",
                 "Incomprehensible"
               ],
               "Examples": [
@@ -3973,8 +4286,13 @@
                 "Existential Despair"
               ],
               "Secondary_Themes": [
-                "Apocalyptic", "Extinction",  "Hopeless",    "Final Days",
-                "Doom",        "Existential", "Bleak"
+                "Apocalyptic",
+                "Extinction",
+                "Hopeless",
+                "Final Days",
+                "Doom",
+                "Existential",
+                "Bleak"
               ],
               "Examples": [
                 "Melancholia",
@@ -4009,12 +4327,20 @@
         "Power and Responsibility"
       ],
       "Secondary_Themes": [
-        "Superhero", "Mythology", "Epic",      "Heroic",    "Powers",
-        "Divine",    "Legendary"
+        "Superhero",
+        "Mythology",
+        "Epic",
+        "Heroic",
+        "Powers",
+        "Divine",
+        "Legendary"
       ],
       "Examples": [
-        "Thor: Ragnarok",       "Wonder Woman",         "Percy Jackson series",
-        "American Gods",        "The Avengers"
+        "Thor: Ragnarok",
+        "Wonder Woman",
+        "Percy Jackson series",
+        "American Gods",
+        "The Avengers"
       ],
       "Comparison": {
         "Primary_Plot_Driver": "Using powers for heroic or divine purposes",
@@ -4038,8 +4364,13 @@
             "Epic Narratives"
           ],
           "Secondary_Themes": [
-            "Mythology", "Gods",      "Divine",    "Quest",     "Legendary",
-            "Epic",      "Cultural"
+            "Mythology",
+            "Gods",
+            "Divine",
+            "Quest",
+            "Legendary",
+            "Epic",
+            "Cultural"
           ],
           "Examples": [
             "Percy Jackson series",
@@ -4070,8 +4401,12 @@
                 "Cosmic Cycles"
               ],
               "Secondary_Themes": [
-                "Hindu Mythology", "Avatar",          "Dharma",
-                "Epic",            "Devotional",      "Spiritual",
+                "Hindu Mythology",
+                "Avatar",
+                "Dharma",
+                "Epic",
+                "Devotional",
+                "Spiritual",
                 "Cultural"
               ],
               "Examples": [
@@ -4103,8 +4438,12 @@
                 "Divine Politics"
               ],
               "Secondary_Themes": [
-                "Greek Mythology", "Olympian",        "Hero's Journey",
-                "Hubris",          "Quest",           "Tragic",
+                "Greek Mythology",
+                "Olympian",
+                "Hero's Journey",
+                "Hubris",
+                "Quest",
+                "Tragic",
                 "Epic"
               ],
               "Examples": [
@@ -4136,12 +4475,20 @@
                 "Cultural Values"
               ],
               "Secondary_Themes": [
-                "Norse",       "Egyptian",    "Celtic",      "Japanese",
-                "Cultural",    "Diverse",     "Traditional"
+                "Norse",
+                "Egyptian",
+                "Celtic",
+                "Japanese",
+                "Cultural",
+                "Diverse",
+                "Traditional"
               ],
               "Examples": [
-                "Thor (MCU)",      "American Gods",   "Spirited Away",
-                "The Mummy",       "Valhalla Rising"
+                "Thor (MCU)",
+                "American Gods",
+                "Spirited Away",
+                "The Mummy",
+                "Valhalla Rising"
               ],
               "Comparison": {
                 "Primary_Plot_Driver": "Navigating culture-specific mythological conflicts",
@@ -4167,12 +4514,20 @@
             "Vigilante Heroism"
           ],
           "Secondary_Themes": [
-            "Superhero",    "Powers",       "Origin Story", "Villain",
-            "Action",       "Heroic",       "Justice"
+            "Superhero",
+            "Powers",
+            "Origin Story",
+            "Villain",
+            "Action",
+            "Heroic",
+            "Justice"
           ],
           "Examples": [
-            "The Avengers",      "Spider-Man series", "Batman trilogy",
-            "Black Panther",     "The Incredibles"
+            "The Avengers",
+            "Spider-Man series",
+            "Batman trilogy",
+            "Black Panther",
+            "The Incredibles"
           ],
           "Comparison": {
             "Primary_Plot_Driver": "Fighting villains and protecting innocents",
@@ -4233,8 +4588,12 @@
                 "Avengers Assembly"
               ],
               "Secondary_Themes": [
-                "MCU",             "Team-Up",         "Action",
-                "Humor",           "Character Drama", "Cosmic",
+                "MCU",
+                "Team-Up",
+                "Action",
+                "Humor",
+                "Character Drama",
+                "Cosmic",
                 "Blockbuster"
               ],
               "Examples": [
