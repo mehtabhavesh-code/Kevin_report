@@ -360,7 +360,7 @@
         let selectedNodes = [];
         let editingShowIndex = -1;
         let showFilters = {};
-        let showSort = {key:'rank',dir:'asc'};
+        let showSort = {key:'language',dir:'asc',secondary:'rank'};
         let taxFilters = {};
         let taxSort = {key:'_original',dir:'asc'};
 
@@ -413,6 +413,21 @@
             return h.trim().toLowerCase().replace(/[_\s]+/g, ' ');
         }
 
+        // Sort shows by Language first, then by Rank
+        function sortShowsByLanguageThenRank() {
+            showsData.sort((a, b) => {
+                // First sort by language (case-insensitive)
+                const langA = (a.language || '').toLowerCase();
+                const langB = (b.language || '').toLowerCase();
+                if (langA < langB) return -1;
+                if (langA > langB) return 1;
+                // Then sort by rank (numeric, ascending)
+                const rankA = a.rank || 9999;
+                const rankB = b.rank || 9999;
+                return rankA - rankB;
+            });
+        }
+
         function parseShowsCSV(text) {
             const lines = text.split(/\r?\n/).filter(l => l.trim());
             if (lines.length < 1) return;
@@ -441,6 +456,8 @@
                     keyThemes: getValue('keyThemes'), secondaryThemes: getValue('secondaryThemes'), reason: getValue('reason')
                 });
             }
+            // Sort by Language then Rank after parsing
+            sortShowsByLanguageThenRank();
         }
 
         async function reloadTaxonomy() {
@@ -450,6 +467,8 @@
 
         async function reloadShows() {
             const success = await loadShows();
+            // Reset sort to default (language then rank)
+            showSort = {key:'language',dir:'asc',secondary:'rank'};
             renderShowsTable();
             showToast(success ? 'Shows reloaded from file' : 'Could not load shows_tagging.csv', success ? 'success' : 'error');
         }
@@ -812,9 +831,9 @@
             
             // MODIFIED: New column order and widths
             const cols = [
-                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'86px'},
-                {key:'definition',label:'Definition',group:'content',minW:'388px'},
-                {key:'keyThemes',label:'Key Themes',group:'content',minW:'398px'},
+                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'86px'},       // 70% of 123px, wraps to 3 lines
+                {key:'definition',label:'Definition',group:'content',minW:'388px'},    // +26px (70% of 37px saved)
+                {key:'keyThemes',label:'Key Themes',group:'content',minW:'398px'},     // +11px (30% of 37px saved)
                 {key:'secondaryThemes',label:'Secondary Themes',group:'content',minW:'360px'},
                 {key:'examples',label:'Examples',group:'content',minW:'398px'}
             ];
@@ -881,6 +900,7 @@
                 const ex = (r.examples||[]).map(t => `<span class="cell-tag example">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const kt = (r.keyThemes||[]).map(t => `<span class="cell-tag theme">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const st = (r.secondaryThemes||[]).map(t => `<span class="cell-tag secondary">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
+                // MODIFIED: New column order - branch, definition, keyThemes, secondaryThemes, examples
                 html += `<tr><td><div class="branch-path">${branchHtml}</div></td><td><div class="cell-text">${r.definition || '<span class="cell-empty">-</span>'}</div></td><td>${kt}</td><td>${st}</td><td>${ex}</td>`;
                 COMPARISON_KEYS.forEach(k => { html += `<td><div class="cell-text">${r.comparison[k] || '<span class="cell-empty">-</span>'}</div></td>`; });
                 html += `</tr>`;
@@ -910,12 +930,18 @@
             renderTaxonomyTable(); 
         }
 
-        // ========== SHOWS SECTION ==========
+        // ========== SHOWS SECTION - MODIFIED COLUMN WIDTHS ==========
         function importShowsCSV() { document.getElementById('csvFileInput').click(); }
         function handleCSVImport(event) {
             const file = event.target.files[0]; if (!file) return;
             const reader = new FileReader();
-            reader.onload = (e) => { parseShowsCSV(e.target.result); renderShowsTable(); showToast(`Imported ${showsData.length} shows!`, 'success'); };
+            reader.onload = (e) => { 
+                parseShowsCSV(e.target.result); 
+                // Reset sort to default (language then rank) after import
+                showSort = {key:'language',dir:'asc',secondary:'rank'};
+                renderShowsTable(); 
+                showToast(`Imported ${showsData.length} shows!`, 'success'); 
+            };
             reader.readAsText(file); event.target.value = '';
         }
         function parseCSVLine(line) { 
@@ -942,15 +968,15 @@
         }
         function exportShowsCSV() { if (showsData.length === 0) { showToast('No shows to export', 'error'); return; } const headers = ['Show Name', 'Show Rank', 'Show ID', 'Show Language', 'Genre', 'Sub Genre', 'Sub Sub Genre', 'Key Themes', 'Secondary Themes', 'Reason']; let csv = headers.join(',') + '\n'; showsData.forEach(s => { csv += [`"${(s.name || '').replace(/"/g, '""')}"`, s.rank || '', `"${(s.id || '').replace(/"/g, '""')}"`, `"${(s.language || '').replace(/"/g, '""')}"`, `"${(s.genre || '').replace(/"/g, '""')}"`, `"${(s.subGenre || '').replace(/"/g, '""')}"`, `"${(s.subSubGenre || '').replace(/"/g, '""')}"`, `"${(s.keyThemes || '').replace(/"/g, '""')}"`, `"${(s.secondaryThemes || '').replace(/"/g, '""')}"`, `"${(s.reason || '').replace(/"/g, '""')}"`].join(',') + '\n'; }); downloadFile(csv, 'shows_tagging.csv', 'text/csv'); showToast('CSV exported!', 'success'); }
 
-        // Column order matches CSV: Show Name, Show Rank, Show ID (under name), Show Language, Genre Path, Key Themes, Secondary Themes, Reason
+        // MODIFIED: Updated column widths for Shows
         const SHOW_COLUMNS = [
-            {key:'name',label:'Show Name',minW:'55px'},
-            {key:'rank',label:'Rank',minW:'12px',noFilter:true},
-            {key:'language',label:'Language',minW:'12px'},
-            {key:'branch',label:'Genre Path',minW:'141px'},
-            {key:'keyThemes',label:'Key Themes',minW:'302px'},
-            {key:'secondaryThemes',label:'Secondary Themes',minW:'288px'},
-            {key:'reason',label:'Reason',minW:'313px'}
+            {key:'rank',label:'Rank',minW:'12px',noFilter:true},  // 50% of 25px, no filter
+            {key:'language',label:'Language',minW:'12px'},        // Same width as rank
+            {key:'name',label:'Show Name',minW:'55px'},           // 70% of 78px (text wraps)
+            {key:'branch',label:'Genre Path',minW:'141px'},       // 80% of 176px
+            {key:'keyThemes',label:'Key Themes',minW:'302px'},    // +28px (40% of 71px saved)
+            {key:'secondaryThemes',label:'Secondary Themes',minW:'288px'}, // +14px (20% of 71px saved)
+            {key:'reason',label:'Reason',minW:'313px'}            // +28px (40% of 71px saved)
         ];
 
         function renderShowsTable() {
@@ -972,19 +998,42 @@
                     return val.includes(v);
                 });
             });
+            
+            // Sort by Language then Rank (compound sort)
             filtered.sort((a, b) => {
+                // Check if using default compound sort (language + rank)
+                if (showSort.key === 'language' && showSort.secondary === 'rank') {
+                    // First sort by language
+                    const langA = (a.language || '').toLowerCase();
+                    const langB = (b.language || '').toLowerCase();
+                    let langCompare = 0;
+                    if (langA < langB) langCompare = -1;
+                    else if (langA > langB) langCompare = 1;
+                    if (showSort.dir === 'desc') langCompare = -langCompare;
+                    if (langCompare !== 0) return langCompare;
+                    // Then by rank
+                    const rankA = a.rank || 9999;
+                    const rankB = b.rank || 9999;
+                    return rankA - rankB;
+                }
+                
+                // Single column sort
                 let va, vb;
                 if (showSort.key === 'rank') { va = a.rank || 9999; vb = b.rank || 9999; }
                 else if (showSort.key === 'branch') { va = `${a.genre}${a.subGenre}${a.subSubGenre}`.toLowerCase(); vb = `${b.genre}${b.subGenre}${b.subSubGenre}`.toLowerCase(); }
                 else { va = (a[showSort.key] || '').toLowerCase(); vb = (b[showSort.key] || '').toLowerCase(); }
-                if (va < vb) return showSort.dir === 'asc' ? -1 : 1; if (va > vb) return showSort.dir === 'asc' ? 1 : -1; return 0;
+                if (va < vb) return showSort.dir === 'asc' ? -1 : 1; 
+                if (va > vb) return showSort.dir === 'asc' ? 1 : -1; 
+                return 0;
             });
             
             let html = `<table class="data-table"><thead><tr>`;
             SHOW_COLUMNS.forEach(c => {
                 const filterHtml = c.noFilter ? '' : `<input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${showFilters[c.key]||''}" oninput="updateShowFilter('${c.key}',this.value)">`;
-                html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${showSort.key===c.key?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div>${filterHtml}</th>`;
+                const isActive = showSort.key === c.key;
+                html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${isActive?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div>${filterHtml}</th>`;
             });
+            // MODIFIED: Reduced actions column width
             html += `<th class="col-default" style="min-width:60px">Actions</th></tr></thead><tbody>`;
             
             filtered.forEach(s => {
@@ -995,9 +1044,9 @@
                 const ktTags = s.keyThemes ? s.keyThemes.split(';').map(t => `<span class="cell-tag theme">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 const stTags = s.secondaryThemes ? s.secondaryThemes.split(';').map(t => `<span class="cell-tag secondary">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 html += `<tr>
-                    <td class="show-name-cell"><strong>${s.name}</strong><br><small style="color:#718096;">${s.id || ''}</small></td>
                     <td><span class="show-rank">${s.rank || '-'}</span></td>
                     <td>${s.language || '<span class="cell-empty">-</span>'}</td>
+                    <td class="show-name-cell"><strong>${s.name}</strong><br><small style="color:#718096;">${s.id || ''}</small></td>
                     <td><div class="branch-path">${branchHtml}</div></td>
                     <td>${ktTags}</td>
                     <td>${stTags}</td>
@@ -1015,8 +1064,23 @@
         }
 
         function updateShowFilter(key, value) { showFilters[key] = value; renderShowsTable(); }
-        function sortShowsTable(key) { if (showSort.key === key) showSort.dir = showSort.dir === 'asc' ? 'desc' : 'asc'; else { showSort.key = key; showSort.dir = 'asc'; } renderShowsTable(); }
-        function clearShowFilters() { showFilters = {}; renderShowsTable(); }
+        function sortShowsTable(key) { 
+            if (showSort.key === key) {
+                showSort.dir = showSort.dir === 'asc' ? 'desc' : 'asc'; 
+            } else { 
+                showSort.key = key; 
+                showSort.dir = 'asc'; 
+            }
+            // Remove secondary sort when user manually clicks a column
+            delete showSort.secondary;
+            renderShowsTable(); 
+        }
+        function clearShowFilters() { 
+            showFilters = {}; 
+            // Reset to default compound sort
+            showSort = {key:'language',dir:'asc',secondary:'rank'};
+            renderShowsTable(); 
+        }
         function openAddShowModal() { editingShowIndex = -1; document.getElementById('showModalTitle').textContent = 'Add Show'; ['showNameInput','showRankInput','showIdInput','showLanguageInput','showGenreInput','showSubGenreInput','showSubSubGenreInput','showKeyThemesInput','showSecondaryThemesInput','showReasonInput'].forEach(id => document.getElementById(id).value = ''); document.getElementById('showModal').classList.add('active'); }
         function editShow(index) { editingShowIndex = index; const s = showsData[index]; document.getElementById('showModalTitle').textContent = 'Edit Show'; document.getElementById('showNameInput').value = s.name || ''; document.getElementById('showRankInput').value = s.rank || ''; document.getElementById('showIdInput').value = s.id || ''; document.getElementById('showLanguageInput').value = s.language || ''; document.getElementById('showGenreInput').value = s.genre || ''; document.getElementById('showSubGenreInput').value = s.subGenre || ''; document.getElementById('showSubSubGenreInput').value = s.subSubGenre || ''; document.getElementById('showKeyThemesInput').value = s.keyThemes || ''; document.getElementById('showSecondaryThemesInput').value = s.secondaryThemes || ''; document.getElementById('showReasonInput').value = s.reason || ''; document.getElementById('showModal').classList.add('active'); }
         function saveShow() { const name = document.getElementById('showNameInput').value.trim(); if (!name) { showToast('Show name is required', 'error'); return; } const showData = { name, rank: parseInt(document.getElementById('showRankInput').value) || 0, id: document.getElementById('showIdInput').value.trim(), language: document.getElementById('showLanguageInput').value.trim(), genre: document.getElementById('showGenreInput').value.trim(), subGenre: document.getElementById('showSubGenreInput').value.trim(), subSubGenre: document.getElementById('showSubSubGenreInput').value.trim(), keyThemes: document.getElementById('showKeyThemesInput').value.trim(), secondaryThemes: document.getElementById('showSecondaryThemesInput').value.trim(), reason: document.getElementById('showReasonInput').value.trim() }; if (editingShowIndex >= 0) { showsData[editingShowIndex] = showData; showToast('Show updated!', 'success'); } else { showsData.push(showData); showToast('Show added!', 'success'); } closeModal('showModal'); renderShowsTable(); }
