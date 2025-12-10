@@ -812,9 +812,9 @@
             
             // MODIFIED: New column order and widths
             const cols = [
-                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'86px'},       // 70% of 123px, wraps to 3 lines
-                {key:'definition',label:'Definition',group:'content',minW:'388px'},    // +26px (70% of 37px saved)
-                {key:'keyThemes',label:'Key Themes',group:'content',minW:'398px'},     // +11px (30% of 37px saved)
+                {key:'branch',label:'Genre Path',group:'hierarchy',minW:'86px'},
+                {key:'definition',label:'Definition',group:'content',minW:'388px'},
+                {key:'keyThemes',label:'Key Themes',group:'content',minW:'398px'},
                 {key:'secondaryThemes',label:'Secondary Themes',group:'content',minW:'360px'},
                 {key:'examples',label:'Examples',group:'content',minW:'398px'}
             ];
@@ -881,7 +881,6 @@
                 const ex = (r.examples||[]).map(t => `<span class="cell-tag example">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const kt = (r.keyThemes||[]).map(t => `<span class="cell-tag theme">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
                 const st = (r.secondaryThemes||[]).map(t => `<span class="cell-tag secondary">${t}</span>`).join('') || '<span class="cell-empty">-</span>';
-                // MODIFIED: New column order - branch, definition, keyThemes, secondaryThemes, examples
                 html += `<tr><td><div class="branch-path">${branchHtml}</div></td><td><div class="cell-text">${r.definition || '<span class="cell-empty">-</span>'}</div></td><td>${kt}</td><td>${st}</td><td>${ex}</td>`;
                 COMPARISON_KEYS.forEach(k => { html += `<td><div class="cell-text">${r.comparison[k] || '<span class="cell-empty">-</span>'}</div></td>`; });
                 html += `</tr>`;
@@ -911,7 +910,7 @@
             renderTaxonomyTable(); 
         }
 
-        // ========== SHOWS SECTION - MODIFIED COLUMN WIDTHS ==========
+        // ========== SHOWS SECTION ==========
         function importShowsCSV() { document.getElementById('csvFileInput').click(); }
         function handleCSVImport(event) {
             const file = event.target.files[0]; if (!file) return;
@@ -943,15 +942,15 @@
         }
         function exportShowsCSV() { if (showsData.length === 0) { showToast('No shows to export', 'error'); return; } const headers = ['Show Name', 'Show Rank', 'Show ID', 'Show Language', 'Genre', 'Sub Genre', 'Sub Sub Genre', 'Key Themes', 'Secondary Themes', 'Reason']; let csv = headers.join(',') + '\n'; showsData.forEach(s => { csv += [`"${(s.name || '').replace(/"/g, '""')}"`, s.rank || '', `"${(s.id || '').replace(/"/g, '""')}"`, `"${(s.language || '').replace(/"/g, '""')}"`, `"${(s.genre || '').replace(/"/g, '""')}"`, `"${(s.subGenre || '').replace(/"/g, '""')}"`, `"${(s.subSubGenre || '').replace(/"/g, '""')}"`, `"${(s.keyThemes || '').replace(/"/g, '""')}"`, `"${(s.secondaryThemes || '').replace(/"/g, '""')}"`, `"${(s.reason || '').replace(/"/g, '""')}"`].join(',') + '\n'; }); downloadFile(csv, 'shows_tagging.csv', 'text/csv'); showToast('CSV exported!', 'success'); }
 
-        // MODIFIED: Updated column widths for Shows
+        // Column order matches CSV: Show Name, Show Rank, Show ID (under name), Show Language, Genre Path, Key Themes, Secondary Themes, Reason
         const SHOW_COLUMNS = [
-            {key:'rank',label:'Rank',minW:'12px',noFilter:true},  // 50% of 25px, no filter
-            {key:'language',label:'Language',minW:'12px'},        // Same width as rank
-            {key:'name',label:'Show Name',minW:'55px'},           // 70% of 78px (text wraps)
-            {key:'branch',label:'Genre Path',minW:'141px'},       // 80% of 176px
-            {key:'keyThemes',label:'Key Themes',minW:'302px'},    // +28px (40% of 71px saved)
-            {key:'secondaryThemes',label:'Secondary Themes',minW:'288px'}, // +14px (20% of 71px saved)
-            {key:'reason',label:'Reason',minW:'313px'}            // +28px (40% of 71px saved)
+            {key:'name',label:'Show Name',minW:'55px'},
+            {key:'rank',label:'Rank',minW:'12px',noFilter:true},
+            {key:'language',label:'Language',minW:'12px'},
+            {key:'branch',label:'Genre Path',minW:'141px'},
+            {key:'keyThemes',label:'Key Themes',minW:'302px'},
+            {key:'secondaryThemes',label:'Secondary Themes',minW:'288px'},
+            {key:'reason',label:'Reason',minW:'313px'}
         ];
 
         function renderShowsTable() {
@@ -986,7 +985,6 @@
                 const filterHtml = c.noFilter ? '' : `<input type="text" class="col-filter" data-filterkey="${c.key}" placeholder="Filter..." value="${showFilters[c.key]||''}" oninput="updateShowFilter('${c.key}',this.value)">`;
                 html += `<th class="col-default" style="min-width:${c.minW}"><div class="th-label" onclick="sortShowsTable('${c.key}')">${c.label} <span class="sort-icon">${showSort.key===c.key?(showSort.dir==='asc'?'▲':'▼'):'⇅'}</span></div>${filterHtml}</th>`;
             });
-            // MODIFIED: Reduced actions column width
             html += `<th class="col-default" style="min-width:60px">Actions</th></tr></thead><tbody>`;
             
             filtered.forEach(s => {
@@ -997,9 +995,9 @@
                 const ktTags = s.keyThemes ? s.keyThemes.split(';').map(t => `<span class="cell-tag theme">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 const stTags = s.secondaryThemes ? s.secondaryThemes.split(';').map(t => `<span class="cell-tag secondary">${t.trim()}</span>`).join('') : '<span class="cell-empty">-</span>';
                 html += `<tr>
+                    <td class="show-name-cell"><strong>${s.name}</strong><br><small style="color:#718096;">${s.id || ''}</small></td>
                     <td><span class="show-rank">${s.rank || '-'}</span></td>
                     <td>${s.language || '<span class="cell-empty">-</span>'}</td>
-                    <td class="show-name-cell"><strong>${s.name}</strong><br><small style="color:#718096;">${s.id || ''}</small></td>
                     <td><div class="branch-path">${branchHtml}</div></td>
                     <td>${ktTags}</td>
                     <td>${stTags}</td>
