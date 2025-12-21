@@ -343,8 +343,14 @@
     <div class="drag-ghost" id="dragGhost"></div>
     <div class="toast" id="toast"></div>
     <script>
-        const TAXONOMY_URL = './taxonomy.json';
-        const SHOWS_URL = './shows_tagging.csv';
+        const getBasePath = () => {
+            const path = window.location.pathname;
+            return path.substring(0, path.lastIndexOf('/') + 1);
+        };
+        
+        const BASE_PATH = getBasePath();
+        const TAXONOMY_URL = BASE_PATH + 'taxonomy.json';
+        const SHOWS_URL = BASE_PATH + 'shows_tagging.csv';
         
         const COMPARISON_KEYS = ["Primary_Plot_Driver","Setting_And_World","Central_Conflict_Type","Tone_And_Atmosphere","Character_Arc_Focus","Power_Ability_System","Stakes_And_Consequences"];
         const COMPARISON_LABELS = {"Primary_Plot_Driver":"Primary Plot Driver","Setting_And_World":"Setting & World","Central_Conflict_Type":"Central Conflict Type","Tone_And_Atmosphere":"Tone & Atmosphere","Character_Arc_Focus":"Character Arc Focus","Power_Ability_System":"Power/Ability System","Stakes_And_Consequences":"Stakes & Consequences"};
@@ -375,7 +381,7 @@
         async function loadTaxonomy() {
             console.log('Loading taxonomy from:', TAXONOMY_URL);
             try {
-                const response = await fetch(TAXONOMY_URL);
+                const response = await fetch(TAXONOMY_URL, {cache: 'no-cache', headers: {'Accept': 'application/json'} });
                 if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 const text = await response.text();
                 if (!text || text.trim().length === 0) throw new Error('Empty response received');
@@ -396,7 +402,7 @@
         async function loadShows() {
             console.log('Loading shows from:', SHOWS_URL);
             try {
-                const response = await fetch(SHOWS_URL);
+                const response = await fetch(SHOWS_URL, {cache: 'no-cache', headers: {'Accept': 'application/json'} });
                 if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 const text = await response.text();
                 if (!text || text.trim().length === 0) throw new Error('Empty CSV received');
